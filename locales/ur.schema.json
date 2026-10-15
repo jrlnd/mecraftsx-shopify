@@ -417,6 +417,7 @@
     "comparison_slider": "موازنہ کرنے والا سلائیڈر"
   },
   "options": {
+    "full_with_margins": "مکمل، حاشیوں کے ساتھ",
     "extra_loose": "بہت کھلا",
     "ratio_3_2": "3:2",
     "ratio_4_3": "4:3",

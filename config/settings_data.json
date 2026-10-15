@@ -99,7 +99,7 @@
     "type_letter_spacing_h2": "heading-tight",
     "type_letter_spacing_h3": "heading-tight",
     "page_width": "compact",
-    "card_hover_effect": "lift",
+    "card_hover_effect": "subtle-zoom",
     "logo_height": 30,
     "logo_height_mobile": 26,
     "badge_font_family": "subheading",
@@ -110,7 +110,8 @@
     "focus_outline_color": "#E97D6A",
     "type_font_button_primary": "subheading",
     "type_font_button_secondary": "subheading",
-    "button_letter_spacing": "loose"
+    "button_letter_spacing": "loose",
+    "show_second_image_on_hover": false
   },
   "presets": {
     "Atelier": {

@@ -417,6 +417,7 @@
     "comparison_slider": "מחוון השוואה"
   },
   "options": {
+    "full_with_margins": "מלא, עם שוליים",
     "extra_loose": "מרווח מאוד",
     "ratio_3_2": "3:2",
     "ratio_4_3": "4:3",

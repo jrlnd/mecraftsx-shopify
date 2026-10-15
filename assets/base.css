@@ -373,6 +373,13 @@ p:empty {
   grid-column: 1 / -1;
 }
 
+/* Full width with page margins: content spans the viewport but keeps the page gutter.
+   Doubled class so the gutter wins over .spacing-style on the section's inner wrapper. */
+.section.section--full-width-gutter > * {
+  grid-column: 1 / -1;
+  padding-inline: var(--page-margin);
+}
+
 @media screen and (max-width: 749px) {
   .section--mobile-full-width > * {
     grid-column: 1 / -1;

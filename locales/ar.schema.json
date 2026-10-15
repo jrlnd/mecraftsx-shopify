@@ -417,6 +417,7 @@
     "comparison_slider": "شريط تمرير المقارنة"
   },
   "options": {
+    "full_with_margins": "كامل، مع هوامش",
     "extra_loose": "متباعد جدًا",
     "ratio_3_2": "3:2",
     "ratio_4_3": "4:3",

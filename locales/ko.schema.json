@@ -598,6 +598,7 @@
     "title_preset": "제목 사전 설정"
   },
   "options": {
+    "full_with_margins": "전체(여백 포함)",
     "extra_loose": "매우 넓게",
     "ratio_3_2": "3:2",
     "ratio_4_3": "4:3",

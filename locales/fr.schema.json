@@ -598,6 +598,7 @@
     "title_preset": "Préréglage du titre"
   },
   "options": {
+    "full_with_margins": "Pleine, avec marges",
     "extra_loose": "Très espacé",
     "ratio_3_2": "3:2",
     "ratio_4_3": "4:3",

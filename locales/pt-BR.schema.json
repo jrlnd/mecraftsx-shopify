@@ -598,6 +598,7 @@
     "title_preset": "Predefinição de título"
   },
   "options": {
+    "full_with_margins": "Completa, com margens",
     "extra_loose": "Extra-amplo",
     "ratio_3_2": "3:2",
     "ratio_4_3": "4:3",

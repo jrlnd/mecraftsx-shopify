@@ -598,6 +598,7 @@
     "title_preset": "Forhåndsinnstilling for tittel"
   },
   "options": {
+    "full_with_margins": "Full, med marger",
     "extra_loose": "Ekstra løs",
     "ratio_3_2": "3:2",
     "ratio_4_3": "4:3",

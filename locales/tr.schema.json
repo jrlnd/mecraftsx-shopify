@@ -598,6 +598,7 @@
     "title_preset": "Başlık ön ayarı"
   },
   "options": {
+    "full_with_margins": "Tam, kenar boşluklu",
     "extra_loose": "Çok geniş",
     "ratio_3_2": "3:2",
     "ratio_4_3": "4:3",

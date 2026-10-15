@@ -93,7 +93,7 @@
                     "link_preset": "paragraph",
                     "menu_spacing": 8,
                     "text_color": "#F7F2ECD9",
-                    "menu": "footer"
+                    "menu": "footer-v2-menu-shop-column"
                   }
                 },
                 "menu_H4cHLN": {
@@ -104,7 +104,7 @@
                     "link_preset": "paragraph",
                     "menu_spacing": 8,
                     "text_color": "#F7F2ECD9",
-                    "menu": ""
+                    "menu": "footer-v2-menu-help-column"
                   }
                 },
                 "menu_HFzgCj": {
@@ -115,7 +115,7 @@
                     "link_preset": "paragraph",
                     "menu_spacing": 8,
                     "text_color": "#F7F2ECD9",
-                    "menu": ""
+                    "menu": "footer-v2-menu-about-column"
                   }
                 }
               },
@@ -184,7 +184,7 @@
         "footer_columns"
       ],
       "settings": {
-        "section_width": "page-width",
+        "section_width": "full-width-gutter",
         "gap": 0,
         "background_color": "#5A3A24",
         "padding-block-start": 48,
@@ -240,7 +240,7 @@
         "footer_policy_list_YXDWfF"
       ],
       "settings": {
-        "section_width": "page-width",
+        "section_width": "full-width-gutter",
         "gap": 24,
         "divider_thickness": 1,
         "divider_color": "#F7F2EC47",

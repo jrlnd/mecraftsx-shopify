@@ -598,6 +598,7 @@
     "title_preset": "Otsikon esiasetus"
   },
   "options": {
+    "full_with_margins": "Täysi, reunuksilla",
     "extra_loose": "Erittäin väljä",
     "ratio_3_2": "3:2",
     "ratio_4_3": "4:3",

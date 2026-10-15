@@ -499,7 +499,7 @@
         "card_radius": 16,
         "card_background_color": "#EEE5DA",
         "padding-block-start": 72,
-        "padding-block-end": 0
+        "padding-block-end": 72
       }
     },
     "hero_culture": {
@@ -1119,7 +1119,7 @@
         "card_radius": 16,
         "section_width": "page-width",
         "padding-block-start": 72,
-        "padding-block-end": 0
+        "padding-block-end": 72
       }
     },
     "hero_MVUtj6": {
@@ -1728,7 +1728,7 @@
         "horizontal_alignment": "space-between",
         "vertical_alignment": "center",
         "gap": 40,
-        "section_width": "page-width",
+        "section_width": "full-width-gutter",
         "background_media": "none",
         "background_color": "#EEE5DA",
         "padding-block-start": 56,

@@ -598,6 +598,7 @@
     "title_preset": "พรีเซ็ตชื่อ"
   },
   "options": {
+    "full_with_margins": "เต็ม พร้อมระยะขอบ",
     "extra_loose": "ห่างมาก",
     "ratio_3_2": "3:2",
     "ratio_4_3": "4:3",

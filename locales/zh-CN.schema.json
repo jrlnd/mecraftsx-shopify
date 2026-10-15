@@ -598,6 +598,7 @@
     "title_preset": "标题预设"
   },
   "options": {
+    "full_with_margins": "全宽（带边距）",
     "extra_loose": "特宽",
     "ratio_3_2": "3:2",
     "ratio_4_3": "4:3",

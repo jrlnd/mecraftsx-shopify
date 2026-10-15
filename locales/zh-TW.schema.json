@@ -598,6 +598,7 @@
     "title_preset": "標題預設設定"
   },
   "options": {
+    "full_with_margins": "全寬（含邊界）",
     "extra_loose": "特寬",
     "ratio_3_2": "3:2",
     "ratio_4_3": "4:3",

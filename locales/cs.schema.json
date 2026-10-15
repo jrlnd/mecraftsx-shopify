@@ -598,6 +598,7 @@
     "title_preset": "Předvolba nadpisu"
   },
   "options": {
+    "full_with_margins": "Celá, s okraji",
     "extra_loose": "Velmi volné",
     "ratio_3_2": "3:2",
     "ratio_4_3": "4:3",

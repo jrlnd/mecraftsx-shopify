@@ -432,6 +432,7 @@
     "comparison_slider": "Comparison slider"
   },
   "options": {
+    "full_with_margins": "Full, with margins",
     "extra_loose": "Extra loose",
     "ratio_4_3": "4:3",
     "ratio_3_2": "3:2",
