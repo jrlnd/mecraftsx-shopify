@@ -175,6 +175,7 @@
     "disclosures": "Divulgaciones"
   },
   "settings": {
+    "smooth_scroll": "Desplazamiento suave",
     "focus_outline_color": "Contorno de enfoque",
     "heading_text_color": "Color de los encabezados",
     "panel_background": "Fondo del panel",
@@ -1112,6 +1113,7 @@
     "disclosures": "Divulgaciones"
   },
   "info": {
+    "smooth_scroll": "Suaviza el desplazamiento con la rueda del ratón. El desplazamiento táctil no cambia y se desactiva para quienes prefieren menos movimiento.",
     "focus_outline_color": "Contorno que rodea los enlaces y controles enfocados. Déjalo en blanco para usar el color del texto.",
     "heading_text_color": "Déjalo en blanco para que coincida con el color del texto. Las secciones con colores propios mantienen su contraste.",
     "first_row_columns": "Muestra menos tarjetas y más anchas en la primera fila en escritorio",

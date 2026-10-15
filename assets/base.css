@@ -38,6 +38,11 @@ html[scroll-lock] .page-wrapper {
   overflow: hidden;
 }
 
+/* Smooth scrolling (assets/smooth-scroll.js): keep embedded iframes from swallowing wheel events mid-scroll. */
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
 .page-wrapper {
   display: flex;
   flex-direction: column;

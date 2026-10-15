@@ -175,6 +175,7 @@
     "disclosures": "Toelichtingen"
   },
   "settings": {
+    "smooth_scroll": "Vloeiend scrollen",
     "focus_outline_color": "Focuskader",
     "heading_text_color": "Kleur van koppen",
     "panel_background": "Paneelachtergrond",
@@ -1112,6 +1113,7 @@
     "disclosures": "Toelichtingen"
   },
   "info": {
+    "smooth_scroll": "Maakt scrollen met het muiswiel vloeiender. Scrollen met aanraking blijft native en het staat uit voor bezoekers die minder beweging verkiezen.",
     "focus_outline_color": "Kader rond gefocuste links en bedieningselementen. Laat leeg om de tekstkleur te gebruiken.",
     "heading_text_color": "Laat leeg om de tekstkleur te volgen. Secties met eigen kleuren behouden hun contrast.",
     "first_row_columns": "Toon minder, bredere kaarten in de eerste rij op desktop",

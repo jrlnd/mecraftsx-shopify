@@ -175,6 +175,7 @@
     "disclosures": "Opplysninger"
   },
   "settings": {
+    "smooth_scroll": "Jevn rulling",
     "focus_outline_color": "Fokusramme",
     "heading_text_color": "Farge på overskrifter",
     "panel_background": "Panelbakgrunn",
@@ -1112,6 +1113,7 @@
     "disclosures": "Opplysninger"
   },
   "info": {
+    "smooth_scroll": "Gjør rulling med musehjulet mykere. Rulling med berøring er uendret, og funksjonen er av for besøkende som foretrekker redusert bevegelse.",
     "focus_outline_color": "Ramme rundt lenker og kontroller med fokus. La feltet stå tomt for å bruke tekstfargen.",
     "heading_text_color": "La feltet stå tomt for å matche tekstfargen. Seksjoner med egne farger beholder kontrasten.",
     "first_row_columns": "Vis færre, bredere kort i første rad på datamaskin",

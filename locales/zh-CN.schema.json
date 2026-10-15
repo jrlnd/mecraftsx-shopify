@@ -175,6 +175,7 @@
     "disclosures": "披露信息"
   },
   "settings": {
+    "smooth_scroll": "平滑滚动",
     "focus_outline_color": "焦点轮廓",
     "heading_text_color": "标题颜色",
     "panel_background": "面板背景",
@@ -1112,6 +1113,7 @@
     "disclosures": "披露信息"
   },
   "info": {
+    "smooth_scroll": "让鼠标滚轮滚动更平滑。触控滚动保持原生，并且对偏好减少动态效果的访客关闭。",
     "focus_outline_color": "聚焦的链接和控件周围显示的轮廓。留空则使用文本颜色。",
     "heading_text_color": "留空则与文本颜色一致。使用自定义颜色的分区会保持其对比度。",
     "first_row_columns": "在桌面端第一行显示更少、更宽的卡片",

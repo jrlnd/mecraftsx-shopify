@@ -175,6 +175,7 @@
     "disclosures": "Upplysningar"
   },
   "settings": {
+    "smooth_scroll": "Mjuk rullning",
     "focus_outline_color": "Fokusram",
     "heading_text_color": "Färg på rubriker",
     "panel_background": "Panelbakgrund",
@@ -1112,6 +1113,7 @@
     "disclosures": "Upplysningar"
   },
   "info": {
+    "smooth_scroll": "Gör rullning med mushjulet mjukare. Rullning med pekskärm förblir inbyggd och är avstängd för besökare som föredrar minskad rörelse.",
     "focus_outline_color": "Ram runt länkar och kontroller i fokus. Lämna tomt för att använda textfärgen.",
     "heading_text_color": "Lämna tomt för att matcha textfärgen. Avsnitt med egna färger behåller sin kontrast.",
     "first_row_columns": "Visa färre, bredare kort i första raden på dator",

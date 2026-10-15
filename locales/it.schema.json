@@ -175,6 +175,7 @@
     "disclosures": "Informative"
   },
   "settings": {
+    "smooth_scroll": "Scorrimento fluido",
     "focus_outline_color": "Contorno di focus",
     "heading_text_color": "Colore dei titoli",
     "panel_background": "Sfondo del pannello",
@@ -1112,6 +1113,7 @@
     "disclosures": "Informative"
   },
   "info": {
+    "smooth_scroll": "Rende più fluido lo scorrimento con la rotellina. Lo scorrimento touch resta nativo ed è disattivato per chi preferisce ridurre il movimento.",
     "focus_outline_color": "Contorno mostrato attorno a link e controlli attivi. Lascia vuoto per usare il colore del testo.",
     "heading_text_color": "Lascia vuoto per usare il colore del testo. Le sezioni con colori propri mantengono il loro contrasto.",
     "first_row_columns": "Mostra meno schede, più larghe, nella prima riga su desktop",

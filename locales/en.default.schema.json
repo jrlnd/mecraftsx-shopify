@@ -227,6 +227,7 @@
     "work_quickly_to_ship": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>"
   },
   "info": {
+    "smooth_scroll": "Eases mouse-wheel scrolling. Touch scrolling stays native, and it's off for visitors who prefer reduced motion.",
     "focus_outline_color": "Outline shown around focused links and controls. Leave blank to use the text color.",
     "heading_text_color": "Leave blank to match the text color. Sections with their own colors keep their contrast.",
     "first_row_columns": "Show fewer, wider cards in the first row on desktop",
@@ -761,6 +762,7 @@
     "below_media": "Below media"
   },
   "settings": {
+    "smooth_scroll": "Smooth scrolling",
     "focus_outline_color": "Focus outline",
     "heading_text_color": "Heading color",
     "first_row_columns": "First row columns",

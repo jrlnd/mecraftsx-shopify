@@ -35,7 +35,8 @@
       "@theme/sticky-add-to-cart": "{{ 'sticky-add-to-cart.js' | asset_url }}",
       "@theme/fly-to-cart": "{{ 'fly-to-cart.js' | asset_url }}",
       "@theme/scroll-container": "{{ 'scroll-container.js' | asset_url }}",
-      "@theme/theme-drawer": "{{ 'theme-drawer.js' | asset_url }}"
+      "@theme/theme-drawer": "{{ 'theme-drawer.js' | asset_url }}",
+      "@theme/lenis": "{{ 'lenis.js' | asset_url }}"
     }
   }
 </script>
@@ -140,6 +141,16 @@
 {% if settings.show_add_discount_code %}
   <script
     src="{{ 'cart-discount.js' | asset_url }}"
+    type="module"
+    fetchpriority="low"
+  ></script>
+{% endif %}
+{%- comment -%}
+  Skipped in the theme editor so Lenis doesn't fight the editor scrolling to selected sections.
+{%- endcomment -%}
+{% if settings.smooth_scroll and request.design_mode == false %}
+  <script
+    src="{{ 'smooth-scroll.js' | asset_url }}"
     type="module"
     fetchpriority="low"
   ></script>

@@ -175,6 +175,7 @@
     "disclosures": "開示情報"
   },
   "settings": {
+    "smooth_scroll": "スムーズスクロール",
     "focus_outline_color": "フォーカスの枠線",
     "heading_text_color": "見出しの色",
     "panel_background": "パネルの背景",
@@ -1112,6 +1113,7 @@
     "disclosures": "開示情報"
   },
   "info": {
+    "smooth_scroll": "マウスホイールのスクロールを滑らかにします。タッチ操作のスクロールは変わらず、視差効果を減らす設定の訪問者には無効になります。",
     "focus_outline_color": "フォーカスされたリンクやコントロールの周囲に表示される枠線です。空白にするとテキストの色が使用されます。",
     "heading_text_color": "空白にするとテキストの色と同じになります。独自の色を持つセクションではコントラストが保たれます。",
     "first_row_columns": "デスクトップで1行目に表示するカードを少なく、幅広くします",

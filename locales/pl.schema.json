@@ -175,6 +175,7 @@
     "disclosures": "Informacje prawne"
   },
   "settings": {
+    "smooth_scroll": "Płynne przewijanie",
     "focus_outline_color": "Obrys fokusu",
     "heading_text_color": "Kolor nagłówków",
     "panel_background": "Tło panelu",
@@ -1112,6 +1113,7 @@
     "disclosures": "Informacje prawne"
   },
   "info": {
+    "smooth_scroll": "Wygładza przewijanie kółkiem myszy. Przewijanie dotykowe pozostaje natywne i jest wyłączone dla osób preferujących ograniczony ruch.",
     "focus_outline_color": "Obrys wokół aktywnych linków i elementów sterujących. Pozostaw puste, aby użyć koloru tekstu.",
     "heading_text_color": "Pozostaw puste, aby dopasować do koloru tekstu. Sekcje z własnymi kolorami zachowują kontrast.",
     "first_row_columns": "Pokazuj mniej szerszych kart w pierwszym rzędzie na komputerze",

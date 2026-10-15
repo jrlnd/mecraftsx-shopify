@@ -175,6 +175,7 @@
     "disclosures": "Prohlášení"
   },
   "settings": {
+    "smooth_scroll": "Plynulé posouvání",
     "focus_outline_color": "Obrys zaměření",
     "heading_text_color": "Barva nadpisů",
     "panel_background": "Pozadí panelu",
@@ -1112,6 +1113,7 @@
     "disclosures": "Prohlášení"
   },
   "info": {
+    "smooth_scroll": "Zjemní posouvání kolečkem myši. Dotykové posouvání zůstává nativní a pro návštěvníky s preferencí omezeného pohybu je vypnuto.",
     "focus_outline_color": "Obrys zobrazený kolem zaměřených odkazů a ovládacích prvků. Ponechte prázdné pro barvu textu.",
     "heading_text_color": "Ponechte prázdné, aby odpovídala barvě textu. Sekce s vlastními barvami si zachovají kontrast.",
     "first_row_columns": "Na počítači zobrazí v prvním řádku méně širších karet",

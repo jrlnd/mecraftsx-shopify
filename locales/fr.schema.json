@@ -175,6 +175,7 @@
     "disclosures": "Divulgations"
   },
   "settings": {
+    "smooth_scroll": "Défilement fluide",
     "focus_outline_color": "Contour de focus",
     "heading_text_color": "Couleur des titres",
     "panel_background": "Arrière-plan du panneau",
@@ -1112,6 +1113,7 @@
     "disclosures": "Divulgations"
   },
   "info": {
+    "smooth_scroll": "Adoucit le défilement à la molette. Le défilement tactile reste natif, et l'effet est désactivé pour les visiteurs qui préfèrent réduire les animations.",
     "focus_outline_color": "Contour affiché autour des liens et commandes ciblés. Laissez vide pour utiliser la couleur du texte.",
     "heading_text_color": "Laissez vide pour reprendre la couleur du texte. Les sections avec leurs propres couleurs conservent leur contraste.",
     "first_row_columns": "Affiche moins de cartes, plus larges, dans la première rangée sur ordinateur",
