@@ -158,6 +158,10 @@
     "navigation": "التنقل"
   },
   "html_defaults": {
+    "testimonial_quote": "<p>أضف اقتباسًا قصيرًا من عميل سعيد.</p>",
+    "what_customers_say": "<p>آراء العملاء</p>",
+    "media_overlap_heading": "<h2>قصتنا</h2>",
+    "card_grid_heading": "<h2>تسوق حسب الفئة</h2>",
     "join_our_email_list": "<h2>انضم إلى قائمتنا البريدية</h2>",
     "get_exclusive_deals_and_early_access_to_new_products": "<p>احصل على صفقات حصرية ووصول مبكر إلى المنتجات الجديدة.</p>",
     "artistry_in_action": "<p>الفن في العمل </p>",
@@ -215,6 +219,9 @@
     "work_quickly_to_ship": "<p>سنعمل بسرعة لشحن طلبك في أقرب وقت ممكن. بمجرد شحن طلبك، ستتلقى رسالة بريد إلكتروني تحتوي على مزيد من المعلومات. تختلف أوقات التوصيل حسب موقعك.</p>"
   },
   "info": {
+    "focus_outline_color": "الحد الظاهر حول الروابط وعناصر التحكم عند التركيز عليها. اتركه فارغًا لاستخدام لون النص.",
+    "heading_text_color": "اتركه فارغًا ليطابق لون النص. تحتفظ الأقسام ذات الألوان الخاصة بتباينها.",
+    "first_row_columns": "اعرض بطاقات أقل وأعرض في الصف الأول على أجهزة سطح المكتب",
     "actions_display_style": "تُستخدم الأيقونات دائماً على الهاتف المحمول",
     "applies_on_image_only": "ينطبق على الصور فقط",
     "aspect_ratio_adjusted": "معدل في بعض التخطيطات",
@@ -244,6 +251,10 @@
     "media_type_info": "تمت تعبئة الميزات من روابط القائمة الخاصة بك"
   },
   "names": {
+    "testimonials": "الشهادات",
+    "testimonial": "شهادة",
+    "media_overlap": "بطاقة متداخلة",
+    "card_grid": "شبكة البطاقات",
     "column": "عمود",
     "product_title": "عنوان المنتج",
     "custom_liquid": "Liquid مخصص",
@@ -406,6 +417,9 @@
     "comparison_slider": "شريط تمرير المقارنة"
   },
   "options": {
+    "extra_loose": "متباعد جدًا",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "above_carousel": "أعلى العرض الدائري",
     "accent": "تمييز",
     "all": "الكل",
@@ -688,6 +702,14 @@
     "below_media": "أسفل الوسائط"
   },
   "settings": {
+    "focus_outline_color": "حد التركيز",
+    "heading_text_color": "لون العناوين",
+    "panel_background": "خلفية اللوحة",
+    "show_quote_mark": "إظهار علامة الاقتباس",
+    "quote": "الاقتباس",
+    "card_background": "خلفية البطاقة",
+    "overlap": "التداخل",
+    "first_row_columns": "أعمدة الصف الأول",
     "accordion": "أكورديون",
     "account": "حساب",
     "actions_display_style": "نمط القائمة",
@@ -1103,6 +1125,7 @@
     "bottom_row_text": "نص الصف السفلي"
   },
   "text_defaults": {
+    "testimonial_author": "اسم العميل",
     "accordion_heading": "عنوان القائمة المنسدلة",
     "are_purchases_final_sale": "هل هناك أي مشتريات تعتبر بيعاً نهائياً؟",
     "be_bold": "كن جريئًا.",

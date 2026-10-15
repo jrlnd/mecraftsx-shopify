@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "testimonials": "Testimonios",
+    "testimonial": "Testimonio",
+    "media_overlap": "Tarjeta superpuesta",
+    "card_grid": "Cuadrícula de tarjetas",
     "404": "404",
     "colors": "Paleta de colores",
     "custom_section": "Sección personalizada",
@@ -171,6 +175,14 @@
     "disclosures": "Divulgaciones"
   },
   "settings": {
+    "focus_outline_color": "Contorno de enfoque",
+    "heading_text_color": "Color de los encabezados",
+    "panel_background": "Fondo del panel",
+    "show_quote_mark": "Mostrar comillas",
+    "quote": "Cita",
+    "card_background": "Fondo de la tarjeta",
+    "overlap": "Superposición",
+    "first_row_columns": "Columnas de la primera fila",
     "alignment": "Alineación",
     "autoplay": "Reproducción automática",
     "background": "Fondo",
@@ -586,6 +598,9 @@
     "title_preset": "Preajuste del título"
   },
   "options": {
+    "extra_loose": "Muy amplio",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "apple": "Apple",
     "arrow": "Flecha",
     "auto": "Auto",
@@ -996,6 +1011,10 @@
     "page_text_color_contrast_info": "Las secciones con un color de fondo personalizado usarán este color del texto solo cuando haya suficiente contraste de color."
   },
   "html_defaults": {
+    "testimonial_quote": "<p>Agrega una cita breve de un cliente satisfecho.</p>",
+    "what_customers_say": "<p>Lo que dicen los clientes</p>",
+    "media_overlap_heading": "<h2>Nuestra historia</h2>",
+    "card_grid_heading": "<h2>Compra por categoría</h2>",
     "share_information_about_your": "<p>Comparte información sobre tu marca con tus clientes. Describe un producto, anuncia novedades o da la bienvenida a quienes visitan tu tienda.</p>",
     "bestseller_h2": "<h2>Más vendidos</h2>",
     "bestseller_h3": "<h3>Más vendidos</h3>",
@@ -1053,6 +1072,7 @@
     "shop_collection": "<p>Descubre nuestra colección seleccionada con favoritos seleccionados a mano que combinan estilo y calidad.</p>"
   },
   "text_defaults": {
+    "testimonial_author": "Nombre del cliente",
     "button_label": "Comprar ahora",
     "collapsible_row": "Fila plegable",
     "heading": "Título",
@@ -1091,6 +1111,9 @@
     "disclosures": "Divulgaciones"
   },
   "info": {
+    "focus_outline_color": "Contorno que rodea los enlaces y controles enfocados. Déjalo en blanco para usar el color del texto.",
+    "heading_text_color": "Déjalo en blanco para que coincida con el color del texto. Las secciones con colores propios mantienen su contraste.",
+    "first_row_columns": "Muestra menos tarjetas y más anchas en la primera fila en escritorio",
     "carousel_layout_on_mobile": "En dispositivos móviles siempre se usa el carrusel",
     "video_alt_text": "Describe el video para personas usuarias de tecnologías de asistencia",
     "video_autoplay": "Los videos estarán silenciados de forma predeterminada",

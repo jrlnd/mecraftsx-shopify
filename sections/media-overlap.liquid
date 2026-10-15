@@ -1,0 +1,334 @@
+{% comment %}
+  Section contract.
+  Shows a large image with a content card that overlaps its edge, plus an optional
+  centered header above. The card holds merchant-managed text and button blocks.
+  @example
+  <!-- Add "Media with overlapping card" in the theme editor and choose an image -->
+{% endcomment %}
+
+{% liquid
+  if section.settings.background_color != blank
+    render 'contrast-override', background_color: section.settings.background_color, section_id: section.id
+  endif
+
+  if section.settings.card_background_color != blank
+    assign card_id = section.id | append: '-card'
+    render 'contrast-override', background_color: section.settings.card_background_color, section_id: card_id
+  endif
+
+  assign image = section.settings.image
+  assign loading = 'lazy'
+  if section.index <= 2
+    assign loading = 'eager'
+  endif
+%}
+
+<div
+  class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
+></div>
+
+<div
+  class="
+    section
+    section--page-width
+    media-overlap-section
+    spacing-style
+    {% if section.settings.background_color != blank %}color-custom-{{ section.id }}{% endif %}
+  "
+  style="{% render 'spacing-style', settings: section.settings %}"
+>
+  <div class="media-overlap-section__inner">
+    {% content_for 'block', type: 'group', id: 'media-overlap-header' %}
+
+    <div
+      class="media-overlap media-overlap--media-{{ section.settings.media_position }}"
+      style="
+        --media-overlap-offset: {{ section.settings.overlap }}px;
+        --media-overlap-media-radius: {{ section.settings.media_radius }}px;
+        --media-overlap-card-radius: {{ section.settings.card_radius }}px;
+      "
+    >
+      <div class="media-overlap__media">
+        {%- if image != blank -%}
+          {{
+            image
+            | image_url: width: 2400
+            | image_tag:
+              widths: '600, 900, 1200, 1600, 2000, 2400',
+              sizes: '(min-width: 750px) 60vw, 100vw',
+              loading: loading,
+              class: 'media-overlap__image'
+          }}
+        {%- else -%}
+          {{ 'lifestyle-1' | placeholder_svg_tag: 'media-overlap__image media-overlap__image--placeholder' }}
+        {%- endif -%}
+      </div>
+
+      <div
+        class="
+          media-overlap__card
+          {% if section.settings.card_background_color != blank %}color-custom-{{ card_id }}{% endif %}
+        "
+        style="--media-overlap-card-padding: {{ section.settings.card_padding }}px;"
+      >
+        {% content_for 'blocks' %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+  .media-overlap-section__inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-4xl);
+    min-width: 0;
+  }
+
+  .media-overlap-section__inner > .group-block:not(:has(.group-block-content > *)) {
+    display: none;
+  }
+
+  .media-overlap {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .media-overlap__media {
+    min-width: 0;
+    overflow: hidden;
+    border-radius: var(--media-overlap-media-radius);
+  }
+
+  .media-overlap__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .media-overlap__image--placeholder {
+    background-color: rgb(var(--color-foreground-rgb) / var(--opacity-5));
+  }
+
+  .media-overlap__card {
+    position: relative;
+    z-index: var(--layer-flat);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-md);
+    min-width: 0;
+    margin-block-start: calc(var(--media-overlap-offset) * -1);
+    margin-inline: var(--padding-lg);
+    padding: var(--media-overlap-card-padding);
+    border-radius: var(--media-overlap-card-radius);
+    background-color: var(--color-background);
+    overflow-wrap: anywhere;
+  }
+
+  @media screen and (min-width: 750px) {
+    .media-overlap {
+      grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+      align-items: end;
+    }
+
+    .media-overlap__card {
+      margin-block: 0 var(--media-overlap-offset);
+      margin-inline: calc(var(--media-overlap-offset) * -1) 0;
+    }
+
+    .media-overlap--media-right .media-overlap__media {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    .media-overlap--media-right {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.55fr);
+    }
+
+    .media-overlap--media-right .media-overlap__card {
+      grid-column: 1;
+      grid-row: 1;
+      margin-inline: 0 calc(var(--media-overlap-offset) * -1);
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.media_overlap",
+  "class": "section-wrapper",
+  "blocks": [
+    {
+      "type": "text"
+    },
+    {
+      "type": "button"
+    },
+    {
+      "type": "icon"
+    },
+    {
+      "type": "spacer"
+    },
+    {
+      "type": "@app"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:settings.image"
+    },
+    {
+      "type": "select",
+      "id": "media_position",
+      "label": "t:settings.media_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:options.left"
+        },
+        {
+          "value": "right",
+          "label": "t:options.right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "media_radius",
+      "label": "t:settings.image_border_radius",
+      "min": 0,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "t:names.card"
+    },
+    {
+      "type": "range",
+      "id": "overlap",
+      "label": "t:settings.overlap",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "card_padding",
+      "label": "t:settings.padding",
+      "min": 16,
+      "max": 64,
+      "step": 4,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "card_radius",
+      "label": "t:settings.corner_radius",
+      "min": 0,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "card_background_color",
+      "label": "t:settings.card_background",
+      "alpha": true,
+      "default": "{{ settings.color_palette.color2 }}"
+    },
+    {
+      "type": "header",
+      "content": "t:content.colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:settings.background",
+      "alpha": true
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.media_overlap",
+      "category": "t:categories.storytelling",
+      "blocks": {
+        "media-overlap-header": {
+          "type": "group",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "center",
+            "gap": 8
+          },
+          "blocks": {
+            "heading": {
+              "type": "text",
+              "settings": {
+                "text": "t:html_defaults.media_overlap_heading",
+                "type_preset": "h2",
+                "width": "100%",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": ["heading"]
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "t:html_defaults.product_story",
+            "width": "100%"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "label": "t:text_defaults.button_label"
+          }
+        }
+      },
+      "block_order": ["text", "button"]
+    }
+  ]
+}
+{% endschema %}

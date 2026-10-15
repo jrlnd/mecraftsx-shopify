@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "testimonials": "คำรับรอง",
+    "testimonial": "คำรับรอง",
+    "media_overlap": "การ์ดซ้อนทับ",
+    "card_grid": "ตารางการ์ด",
     "404": "404",
     "colors": "จานสี",
     "custom_section": "ส่วนที่กำหนดเอง",
@@ -171,6 +175,14 @@
     "disclosures": "การเปิดเผยข้อมูล"
   },
   "settings": {
+    "focus_outline_color": "เส้นขอบโฟกัส",
+    "heading_text_color": "สีหัวข้อ",
+    "panel_background": "พื้นหลังแผง",
+    "show_quote_mark": "แสดงเครื่องหมายคำพูด",
+    "quote": "คำพูด",
+    "card_background": "พื้นหลังการ์ด",
+    "overlap": "การซ้อนทับ",
+    "first_row_columns": "คอลัมน์แถวแรก",
     "alignment": "การจัดตำแหน่ง",
     "autoplay": "เล่นอัตโนมัติ",
     "background": "พื้นหลัง",
@@ -586,6 +598,9 @@
     "title_preset": "พรีเซ็ตชื่อ"
   },
   "options": {
+    "extra_loose": "ห่างมาก",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "apple": "Apple",
     "arrow": "ลูกศร",
     "auto": "อัตโนมัติ",
@@ -996,6 +1011,10 @@
     "page_text_color_contrast_info": "ส่วนที่มีสีพื้นหลังแบบกำหนดเองจะใช้สีตัวอักษรนี้ก็ต่อเมื่อมีความเปรียบต่างของสีเพียงพอ"
   },
   "html_defaults": {
+    "testimonial_quote": "<p>เพิ่มคำพูดสั้นๆ จากลูกค้าที่พึงพอใจ</p>",
+    "what_customers_say": "<p>เสียงจากลูกค้า</p>",
+    "media_overlap_heading": "<h2>เรื่องราวของเรา</h2>",
+    "card_grid_heading": "<h2>ช้อปตามหมวดหมู่</h2>",
     "share_information_about_your": "<p>แชร์ข้อมูลเกี่ยวกับแบรนด์ของคุณกับลูกค้า อธิบายสินค้า ประกาศข่าวสาร หรือต้อนรับลูกค้าสู่ร้านค้าของคุณ</p>",
     "bestseller_h2": "<h2>สินค้าขายดี</h2>",
     "bestseller_h3": "<h3>สินค้าขายดี</h3>",
@@ -1053,6 +1072,7 @@
     "featured_collection_h3": "<h3>คอลเลกชันแนะนำ</h3>"
   },
   "text_defaults": {
+    "testimonial_author": "ชื่อลูกค้า",
     "button_label": "ช้อปเลย",
     "collapsible_row": "แถวที่พับเก็บได้",
     "heading": "หัวเรื่อง",
@@ -1091,6 +1111,9 @@
     "disclosures": "การเปิดเผยข้อมูล"
   },
   "info": {
+    "focus_outline_color": "เส้นขอบที่แสดงรอบลิงก์และตัวควบคุมที่ได้รับโฟกัส เว้นว่างไว้เพื่อใช้สีข้อความ",
+    "heading_text_color": "เว้นว่างไว้เพื่อให้ตรงกับสีข้อความ ส่วนที่มีสีของตัวเองจะคงคอนทราสต์ไว้",
+    "first_row_columns": "แสดงการ์ดน้อยลงแต่กว้างขึ้นในแถวแรกบนเดสก์ท็อป",
     "video_alt_text": "โปรดอธิบายวิดีโอสำหรับผู้ใช้เทคโนโลยีความช่วยเหลือพิเศษ",
     "video_autoplay": "วิดีโอจะถูกปิดเสียงตามค่าเริ่มต้น",
     "video_external": "ใช้ URL ของ YouTube หรือ Vimeo",

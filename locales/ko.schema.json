@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "testimonials": "고객 후기",
+    "testimonial": "고객 후기",
+    "media_overlap": "겹침 카드",
+    "card_grid": "카드 그리드",
     "404": "404",
     "custom_section": "사용자 지정 섹션",
     "icon": "아이콘",
@@ -171,6 +175,14 @@
     "disclosures": "고지 사항"
   },
   "settings": {
+    "focus_outline_color": "포커스 윤곽선",
+    "heading_text_color": "제목 색상",
+    "panel_background": "패널 배경",
+    "show_quote_mark": "따옴표 표시",
+    "quote": "인용문",
+    "card_background": "카드 배경",
+    "overlap": "겹침",
+    "first_row_columns": "첫 번째 행 열",
     "autoplay": "자동 재생",
     "background": "배경",
     "border_radius": "모서리 반경",
@@ -586,6 +598,9 @@
     "title_preset": "제목 사전 설정"
   },
   "options": {
+    "extra_loose": "매우 넓게",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "apple": "Apple",
     "arrow": "화살표",
     "banana": "바나나",
@@ -996,6 +1011,10 @@
     "page_text_color_contrast_info": "사용자 지정 배경 색상이 있는 섹션은 색상 대비가 충분한 경우에만 이 텍스트 색상을 사용합니다."
   },
   "html_defaults": {
+    "testimonial_quote": "<p>만족한 고객의 짧은 후기를 추가하세요.</p>",
+    "what_customers_say": "<p>고객 후기</p>",
+    "media_overlap_heading": "<h2>우리의 이야기</h2>",
+    "card_grid_heading": "<h2>카테고리별 쇼핑</h2>",
     "share_information_about_your": "<p>고객과 브랜드에 대한 정보를 공유하세요. 제품을 설명하거나, 공지 사항을 알리거나, 스토어를 방문하는 고객을 환영할 수 있습니다.</p>",
     "bestseller_h2": "<h2>베스트셀러</h2>",
     "bestseller_h3": "<h3>베스트셀러</h3>",
@@ -1053,6 +1072,7 @@
     "featured_collection_h3": "<h3>추천 컬렉션</h3>"
   },
   "text_defaults": {
+    "testimonial_author": "고객 이름",
     "collapsible_row": "축소 가능 행",
     "button_label": "지금 쇼핑하기",
     "heading": "제목",
@@ -1091,6 +1111,9 @@
     "disclosures": "고지 사항"
   },
   "info": {
+    "focus_outline_color": "포커스된 링크와 컨트롤 주위에 표시되는 윤곽선입니다. 비워 두면 텍스트 색상이 사용됩니다.",
+    "heading_text_color": "비워 두면 텍스트 색상과 동일하게 표시됩니다. 자체 색상이 있는 섹션은 대비를 유지합니다.",
+    "first_row_columns": "데스크톱에서 첫 번째 행에 더 적고 넓은 카드를 표시합니다",
     "carousel_layout_on_mobile": "모바일에서는 항상 캐러셀이 사용됩니다.",
     "video_alt_text": "보조 기술 사용자를 위해 비디오를 설명하세요",
     "video_autoplay": "비디오는 기본적으로 음소거됩니다",

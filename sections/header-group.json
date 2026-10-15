@@ -29,11 +29,11 @@
           "static": true,
           "settings": {
             "menu": "main-menu",
-            "type_font_primary_size": "0.875rem",
+            "type_font_primary_size": "0.75rem",
             "menu_font_style": "inverse",
-            "type_font_primary_link": "body",
+            "type_font_primary_link": "subheading",
             "type_case_primary_link": "uppercase",
-            "menu_style": "featured_products",
+            "menu_style": "text",
             "featured_products_aspect_ratio": "4 / 5",
             "featured_collections_aspect_ratio": "16 / 9",
             "image_border_radius": 0,
@@ -52,28 +52,59 @@
         "show_search": true,
         "search_position": "right",
         "search_row": "top",
-        "show_country": true,
+        "show_country": false,
         "country_selector_style": false,
-        "show_language": true,
+        "show_language": false,
         "localization_font": "body",
         "localization_font_size": "0.875rem",
         "localization_position": "right",
         "localization_row": "top",
-        "section_width": "page-width",
+        "section_width": "full-width",
         "section_height": "standard",
         "enable_sticky_header": "always",
         "divider_width": 0,
         "divider_size": "page-width",
-        "border_width": 0,
-        "background_color_top": "{{ settings.color_palette.background }}",
-        "text_color_transparent_home": "{{ settings.color_palette.background }}",
+        "border_width": 1,
+        "background_color_top": "#FDFAF6",
+        "text_color_transparent_home": "#FDFAF6",
         "enable_transparent_header_home": true,
-        "enable_transparent_header_product": true,
-        "enable_transparent_header_collection": false
+        "enable_transparent_header_product": false,
+        "enable_transparent_header_collection": false,
+        "text_color_top": "#5A3A24",
+        "bottom_border_color": "#E2D6C6"
+      }
+    },
+    "header_announcements": {
+      "type": "header-announcements",
+      "blocks": {
+        "announcement_shipping": {
+          "type": "_announcement",
+          "settings": {
+            "text": "Free U.S. shipping on orders over $75",
+            "font": "var(--font-subheading--family)",
+            "font_size": "0.75rem",
+            "weight": "600",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "text_color": "#F7F2EC"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_shipping"
+      ],
+      "settings": {
+        "speed": 5,
+        "section_width": "full-width",
+        "background_color": "#5A3A24",
+        "divider_width": 0,
+        "padding-block-start": 10,
+        "padding-block-end": 10
       }
     }
   },
   "order": [
+    "header_announcements",
     "header_section"
   ]
 }

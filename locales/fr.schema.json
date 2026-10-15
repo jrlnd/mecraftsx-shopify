@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "testimonials": "Témoignages",
+    "testimonial": "Témoignage",
+    "media_overlap": "Carte superposée",
+    "card_grid": "Grille de cartes",
     "404": "404",
     "custom_section": "Section personnalisée",
     "icon": "Icône",
@@ -171,6 +175,14 @@
     "disclosures": "Divulgations"
   },
   "settings": {
+    "focus_outline_color": "Contour de focus",
+    "heading_text_color": "Couleur des titres",
+    "panel_background": "Arrière-plan du panneau",
+    "show_quote_mark": "Afficher les guillemets",
+    "quote": "Citation",
+    "card_background": "Arrière-plan de la carte",
+    "overlap": "Chevauchement",
+    "first_row_columns": "Colonnes de la première rangée",
     "autoplay": "Lecture automatique",
     "background": "Arrière-plan",
     "border_radius": "Rayon de la bordure",
@@ -586,6 +598,9 @@
     "title_preset": "Préréglage du titre"
   },
   "options": {
+    "extra_loose": "Très espacé",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "apple": "Pomme",
     "arrow": "Flèche",
     "banana": "Banane",
@@ -996,6 +1011,10 @@
     "page_text_color_contrast_info": "Les sections avec une couleur d’arrière-plan personnalisée utiliseront cette couleur du texte uniquement si le contraste des couleurs est suffisant."
   },
   "html_defaults": {
+    "testimonial_quote": "<p>Ajoutez une courte citation d’un client satisfait.</p>",
+    "what_customers_say": "<p>Ce que disent nos clients</p>",
+    "media_overlap_heading": "<h2>Notre histoire</h2>",
+    "card_grid_heading": "<h2>Acheter par catégorie</h2>",
     "share_information_about_your": "<p>Partagez des informations sur votre marque avec vos clients. Décrivez un produit, faites des annonces ou accueillez les clients dans votre boutique.</p>",
     "bestseller_h2": "<h2>Meilleures ventes</h2>",
     "bestseller_h3": "<h3>Meilleures ventes</h3>",
@@ -1053,6 +1072,7 @@
     "featured_collection_h3": "<h3>Collection en vedette</h3>"
   },
   "text_defaults": {
+    "testimonial_author": "Nom du client",
     "collapsible_row": "Rangée réductible",
     "button_label": "Acheter maintenant",
     "heading": "Titre",
@@ -1091,6 +1111,9 @@
     "disclosures": "Divulgations"
   },
   "info": {
+    "focus_outline_color": "Contour affiché autour des liens et commandes ciblés. Laissez vide pour utiliser la couleur du texte.",
+    "heading_text_color": "Laissez vide pour reprendre la couleur du texte. Les sections avec leurs propres couleurs conservent leur contraste.",
+    "first_row_columns": "Affiche moins de cartes, plus larges, dans la première rangée sur ordinateur",
     "carousel_layout_on_mobile": "Le carrousel est toujours utilisé sur mobile",
     "video_alt_text": "Décrivez la vidéo pour les utilisateurs de technologies d’assistance",
     "video_autoplay": "Les vidéos seront mises en sourdine par défaut",

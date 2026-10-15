@@ -158,6 +158,10 @@
     "navigation": "نیویگیشن"
   },
   "html_defaults": {
+    "testimonial_quote": "<p>کسی مطمئن صارف کا مختصر اقتباس شامل کریں۔</p>",
+    "what_customers_say": "<p>صارفین کیا کہتے ہیں</p>",
+    "media_overlap_heading": "<h2>ہماری کہانی</h2>",
+    "card_grid_heading": "<h2>زمرہ کے لحاظ سے خریداری کریں</h2>",
     "join_our_email_list": "<h2>ہماری ای میل لسٹ میں شامل ہوں</h2>",
     "get_exclusive_deals_and_early_access_to_new_products": "<p>نئی پروڈکٹ پر خصوصی ڈیل اور ابتدائی رسائی حاصل کریں۔</p>",
     "artistry_in_action": "<p>فنکاری عملی شکل میں </p>",
@@ -215,6 +219,9 @@
     "work_quickly_to_ship": "<p>ہم جلد از جلد آپ کا آرڈر شپ کرنے کے لیے تیزی سے کام کریں گے۔ آپ کا آرڈر شپ ہونے کے بعد، آپ کو مزید معلومات کے ساتھ ایک ای میل موصول ہوگی۔ آپ کے مقام کے لحاظ سے ترسیل کے اوقات مختلف ہو سکتے ہیں۔</p>"
   },
   "info": {
+    "focus_outline_color": "فوکس شدہ لنکس اور کنٹرولز کے گرد دکھائی جانے والی آؤٹ لائن۔ ٹیکسٹ کا رنگ استعمال کرنے کے لیے خالی چھوڑیں۔",
+    "heading_text_color": "ٹیکسٹ کے رنگ سے میل کھانے کے لیے خالی چھوڑیں۔ اپنے رنگوں والے سیکشنز کا کنٹراسٹ برقرار رہتا ہے۔",
+    "first_row_columns": "ڈیسک ٹاپ پر پہلی قطار میں کم اور چوڑے کارڈ دکھائیں",
     "actions_display_style": "موبائل پر ہمیشہ آئیکن استعمال ہوتے ہیں",
     "applies_on_image_only": "صرف تصاویر پر لاگو ہوتا ہے",
     "aspect_ratio_adjusted": "کچھ لے آؤٹ میں ایڈجسٹ کیا گیا",
@@ -244,6 +251,10 @@
     "media_type_info": "خصوصیات آپ کے مینو کے لنک سے پُر کی گئی ہیں"
   },
   "names": {
+    "testimonials": "تاثرات",
+    "testimonial": "تاثرات",
+    "media_overlap": "اوورلیپنگ کارڈ",
+    "card_grid": "کارڈ گرڈ",
     "column": "کالم",
     "product_title": "پروڈکٹ کا ٹائٹل",
     "custom_liquid": "کسٹم Liquid",
@@ -406,6 +417,9 @@
     "comparison_slider": "موازنہ کرنے والا سلائیڈر"
   },
   "options": {
+    "extra_loose": "بہت کھلا",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "above_carousel": "کیرول کے اوپر",
     "accent": "ایکسنٹ",
     "all": "سبھی",
@@ -688,6 +702,14 @@
     "below_media": "میڈیا کے نیچے"
   },
   "settings": {
+    "focus_outline_color": "فوکس کی آؤٹ لائن",
+    "heading_text_color": "سرخیوں کا رنگ",
+    "panel_background": "پینل کا پس منظر",
+    "show_quote_mark": "کوٹیشن مارک دکھائیں",
+    "quote": "اقتباس",
+    "card_background": "کارڈ کا پس منظر",
+    "overlap": "اوورلیپ",
+    "first_row_columns": "پہلی قطار کے کالم",
     "accordion": "ایکارڈین",
     "account": "اکاؤنٹ",
     "actions_display_style": "مینو کا اسٹائل",
@@ -1103,6 +1125,7 @@
     "bottom_row_text": "نچلی قطار کا متن"
   },
   "text_defaults": {
+    "testimonial_author": "صارف کا نام",
     "accordion_heading": "ایکارڈین کی سرخی",
     "are_purchases_final_sale": "کیا کوئی بھی خریداری حتمی سیل ہے؟",
     "be_bold": "نڈر بنیں۔",

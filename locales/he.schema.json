@@ -158,6 +158,10 @@
     "navigation": "ניווט"
   },
   "html_defaults": {
+    "testimonial_quote": "<p>הוסיפו ציטוט קצר מלקוח מרוצה.</p>",
+    "what_customers_say": "<p>מה הלקוחות אומרים</p>",
+    "media_overlap_heading": "<h2>הסיפור שלנו</h2>",
+    "card_grid_heading": "<h2>קנו לפי קטגוריה</h2>",
     "join_our_email_list": "<h2>הצטרף לרשימת הדיוור שלנו</h2>",
     "get_exclusive_deals_and_early_access_to_new_products": "<p>קבל מבצעים בלעדיים וגישה מוקדמת למוצרים חדשים.</p>",
     "artistry_in_action": "<p>אומנות בפעולה </p>",
@@ -215,6 +219,9 @@
     "work_quickly_to_ship": "<p>נעבוד מהר כדי לשלוח את ההזמנה שלך בהקדם האפשרי. לאחר שההזמנה שלך תישלח, תקבל דוא&quot;ל עם מידע נוסף. זמני האספקה משתנים בהתאם למיקומך.</p>"
   },
   "info": {
+    "focus_outline_color": "מסגרת שמוצגת סביב קישורים ופקדים בפוקוס. השאירו ריק כדי להשתמש בצבע הטקסט.",
+    "heading_text_color": "השאירו ריק כדי להתאים לצבע הטקסט. סקשנים עם צבעים משלהם שומרים על הניגודיות.",
+    "first_row_columns": "הצג פחות כרטיסים ורחבים יותר בשורה הראשונה במחשב",
     "actions_display_style": "תמיד נעשה שימוש בסמלים בנייד",
     "applies_on_image_only": "חל על תמונות בלבד",
     "aspect_ratio_adjusted": "מותאם בחלק מהפריסות",
@@ -244,6 +251,10 @@
     "media_type_info": "התכונות מאוכלסות מקישורי התפריט שלך"
   },
   "names": {
+    "testimonials": "המלצות",
+    "testimonial": "המלצה",
+    "media_overlap": "כרטיס חופף",
+    "card_grid": "רשת כרטיסים",
     "column": "עמודה",
     "product_title": "כותרת מוצר",
     "custom_liquid": "Custom Liquid",
@@ -406,6 +417,9 @@
     "comparison_slider": "מחוון השוואה"
   },
   "options": {
+    "extra_loose": "מרווח מאוד",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "above_carousel": "מעל הקרוסלה",
     "accent": "הדגשה",
     "all": "הכול",
@@ -688,6 +702,14 @@
     "direction_top_start": "למעלה, התחלה"
   },
   "settings": {
+    "focus_outline_color": "מסגרת מיקוד",
+    "heading_text_color": "צבע הכותרות",
+    "panel_background": "רקע הלוח",
+    "show_quote_mark": "הצג מירכאות",
+    "quote": "ציטוט",
+    "card_background": "רקע הכרטיס",
+    "overlap": "חפיפה",
+    "first_row_columns": "עמודות בשורה הראשונה",
     "accordion": "אקורדיון",
     "account": "חשבון",
     "actions_display_style": "סגנון תפריט",
@@ -1103,6 +1125,7 @@
     "bottom_row_text": "טקסט לשורה התחתונה"
   },
   "text_defaults": {
+    "testimonial_author": "שם הלקוח",
     "accordion_heading": "כותרת אקורדיון",
     "are_purchases_final_sale": "האם יש רכישות שהן מכירה סופית?",
     "be_bold": "להיות נועזים.",

@@ -8,6 +8,9 @@
 
   Effective text colors are exposed as CSS custom properties in color-palette.liquid.
 
+  When a heading color is set in theme settings and the page text color is kept, --color is
+  reset so headings use --color-heading while body text still uses --color-foreground.
+
   Presets control which token categories of CSS variables are emitted:
   - 'content' (default) — base + text + border + form-disabled + accent
                           (the original content-rich behaviour used by sections/blocks)
@@ -49,6 +52,7 @@
   assign preset = preset | default: 'content'
 
   assign has_background = false
+  assign release_heading_color = false
   if background_color != blank and background_color.alpha != 0
     assign has_background = true
   endif
@@ -77,6 +81,10 @@
       if page_text_contrast >= 4.5
         assign effective_text_color = settings.page_text_color
         assign effective_text_color_rgb = settings.page_text_color.rgb
+        # Let headings fall back to the theme heading color, as they do outside overrides.
+        if settings.heading_text_color != blank
+          assign release_heading_color = true
+        endif
       else
         assign effective_text_color = contrast_var
         assign effective_text_color_rgb = contrast_rgb_var
@@ -114,7 +122,11 @@
 
       {% unless skip_contrast %}
         /* Foreground / text — explicit or smart-contrasted */
-        --color: {{ effective_text_color }};
+        {%- if release_heading_color %}
+          --color: initial;
+        {%- else %}
+          --color: {{ effective_text_color }};
+        {%- endif %}
         --color-rgb: {{ effective_text_color_rgb }};
         --color-foreground: {{ effective_text_color }};
         --color-foreground-rgb: {{ effective_text_color_rgb }};

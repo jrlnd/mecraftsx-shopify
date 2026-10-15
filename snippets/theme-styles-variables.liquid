@@ -135,6 +135,7 @@
     --theme-drawer-width: 30rem;
     --narrow-content-width: 36rem;
     --normal-content-width: 42rem;
+    --compact-page-width: 73.75rem;
     --narrow-page-width: 90rem;
     --normal-page-width: 120rem;
     --wide-page-width: 150rem;
@@ -216,6 +217,7 @@
     --letter-spacing--heading-tight: -0.03em;
     --letter-spacing--heading-normal: 0em;
     --letter-spacing--heading-loose: 0.03em;
+    --letter-spacing--heading-extra-loose: 0.14em;
 
     --letter-spacing--body-tight: -0.03em;
     --letter-spacing--body-normal: 0em;
@@ -517,6 +519,7 @@
 
     /* Focus */
     --focus-outline-width: 0.09375rem;
+    --focus-outline-color: {{ settings.focus_outline_color | default: 'currentcolor' }};
     --focus-outline-offset: 0.2em;
 
     /* Badges */
@@ -568,6 +571,11 @@
     /* Button font-family */
     --button-font-family-primary: var(--font-{{ settings.type_font_button_primary }}--family);
     --button-font-family-secondary: var(--font-{{ settings.type_font_button_secondary }}--family);
+    --button-font-weight-primary: var(--font-{{ settings.type_font_button_primary }}--weight);
+    --button-font-weight-secondary: var(--font-{{ settings.type_font_button_secondary }}--weight);
+
+    /* Button letter spacing */
+    --button-letter-spacing: {% if settings.button_letter_spacing == 'loose' %}var(--letter-spacing-sm){% else %}normal{% endif %};
 
     /* Button text case */
     --button-text-case-primary: {{ settings.button_text_case_primary }};

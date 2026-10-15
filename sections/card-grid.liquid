@@ -1,0 +1,369 @@
+{% comment %}
+  Section contract.
+  Lays out merchant-managed cards in an even grid, with an optional wider first row
+  (for example two large tiles above three smaller ones). Each card owns its media,
+  overlay, link, and nested text; the section owns columns, ratio, gap, and corners.
+  @example
+  <!-- Add "Card grid" in the theme editor, then add cards with images or text -->
+{% endcomment %}
+
+{% liquid
+  if section.settings.background_color != blank
+    render 'contrast-override', background_color: section.settings.background_color, section_id: section.id
+  endif
+
+  assign first_row_columns = section.settings.first_row_columns | plus: 0
+  if first_row_columns == 0
+    assign first_row_columns = section.settings.columns
+  endif
+%}
+
+<div
+  class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
+></div>
+
+<div
+  class="
+    section
+    section--{{ section.settings.section_width }}
+    card-grid-section
+    spacing-style
+    {% if section.settings.background_color != blank %}color-custom-{{ section.id }}{% endif %}
+  "
+  style="{% render 'spacing-style', settings: section.settings %}"
+>
+  <div class="card-grid-section__inner">
+    {% content_for 'block', type: 'group', id: 'card-grid-header' %}
+
+    <div
+      class="card-grid card-grid--ratio-{{ section.settings.item_ratio }} card-grid--first-row-{{ first_row_columns }}"
+      style="
+        --card-grid-gap: {{ section.settings.gap }}px;
+        --card-grid-columns: {{ section.settings.columns }};
+        --card-grid-first-row-columns: {{ first_row_columns }};
+        --card-grid-mobile-columns: {{ section.settings.mobile_columns }};
+        --border-radius: {{ section.settings.card_radius }}px;
+      "
+    >
+      {% content_for 'blocks' %}
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+  .card-grid-section__inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-4xl);
+    min-width: 0;
+  }
+
+  .card-grid-section__inner > .group-block:not(:has(.group-block-content > *)) {
+    display: none;
+  }
+
+  /* Wrapping flex rows keep each row's cards equal height while letting the first
+     row use a different column count. */
+  .card-grid {
+    --card-grid-current-columns: var(--card-grid-mobile-columns);
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--card-grid-gap);
+  }
+
+  .card-grid > * {
+    flex: 0 0
+      calc(
+        (100% - (var(--card-grid-current-columns) - 1) * var(--card-grid-gap)) / var(--card-grid-current-columns)
+      );
+    min-width: 0;
+    /* Lets text cards grow past the ratio instead of clipping longer copy. */
+    min-height: min-content;
+  }
+
+  .card-grid--ratio-square > * {
+    aspect-ratio: 1;
+  }
+
+  .card-grid--ratio-landscape > * {
+    aspect-ratio: 4 / 3;
+  }
+
+  .card-grid--ratio-wide > * {
+    aspect-ratio: 3 / 2;
+  }
+
+  .card-grid--ratio-portrait > * {
+    aspect-ratio: 4 / 5;
+  }
+
+  .card-grid .card {
+    height: auto;
+  }
+
+  @media screen and (min-width: 750px) {
+    .card-grid {
+      --card-grid-current-columns: var(--card-grid-columns);
+    }
+
+    /* nth-child() can't read custom properties, so each count gets a rule. Cards with
+       custom colors emit <style> siblings, which are skipped when counting. */
+    .card-grid--first-row-1 > :nth-child(-n + 1 of :not(style)),
+    .card-grid--first-row-2 > :nth-child(-n + 2 of :not(style)),
+    .card-grid--first-row-3 > :nth-child(-n + 3 of :not(style)),
+    .card-grid--first-row-4 > :nth-child(-n + 4 of :not(style)),
+    .card-grid--first-row-5 > :nth-child(-n + 5 of :not(style)),
+    .card-grid--first-row-6 > :nth-child(-n + 6 of :not(style)) {
+      --card-grid-current-columns: var(--card-grid-first-row-columns);
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.card_grid",
+  "class": "section-wrapper",
+  "blocks": [
+    {
+      "type": "_card"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:content.layout"
+    },
+    {
+      "type": "range",
+      "id": "columns",
+      "label": "t:settings.columns",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "select",
+      "id": "first_row_columns",
+      "label": "t:settings.first_row_columns",
+      "info": "t:info.first_row_columns",
+      "options": [
+        {
+          "value": "0",
+          "label": "t:options.auto"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ],
+      "default": "0"
+    },
+    {
+      "type": "select",
+      "id": "mobile_columns",
+      "label": "t:settings.mobile_columns",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "select",
+      "id": "item_ratio",
+      "label": "t:settings.aspect_ratio",
+      "options": [
+        {
+          "value": "auto",
+          "label": "t:options.auto"
+        },
+        {
+          "value": "square",
+          "label": "t:options.square"
+        },
+        {
+          "value": "landscape",
+          "label": "t:options.ratio_4_3"
+        },
+        {
+          "value": "wide",
+          "label": "t:options.ratio_3_2"
+        },
+        {
+          "value": "portrait",
+          "label": "t:options.portrait"
+        }
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "t:settings.gap",
+      "min": 0,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "card_radius",
+      "label": "t:settings.corner_radius",
+      "min": 0,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "t:settings.width",
+      "options": [
+        {
+          "value": "page-width",
+          "label": "t:options.page"
+        },
+        {
+          "value": "full-width",
+          "label": "t:options.full"
+        }
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "header",
+      "content": "t:content.colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:settings.background",
+      "alpha": true
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.card_grid",
+      "category": "t:categories.layout",
+      "settings": {
+        "columns": 3,
+        "item_ratio": "landscape"
+      },
+      "blocks": {
+        "card-grid-header": {
+          "type": "group",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "center",
+            "gap": 8
+          },
+          "blocks": {
+            "heading": {
+              "type": "text",
+              "settings": {
+                "text": "t:html_defaults.card_grid_heading",
+                "type_preset": "h2",
+                "width": "100%",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": ["heading"]
+        },
+        "card-1": {
+          "type": "_card",
+          "settings": {
+            "background_media": "image",
+            "toggle_overlay": true,
+            "overlay_style": "gradient",
+            "overlay_color": "#3b2517b8",
+            "vertical_alignment_flex_direction_column": "flex-end",
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "padding-inline-start": 24,
+            "padding-inline-end": 24
+          }
+        },
+        "card-2": {
+          "type": "_card",
+          "settings": {
+            "background_media": "image",
+            "toggle_overlay": true,
+            "overlay_style": "gradient",
+            "overlay_color": "#3b2517b8",
+            "vertical_alignment_flex_direction_column": "flex-end",
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "padding-inline-start": 24,
+            "padding-inline-end": 24
+          }
+        },
+        "card-3": {
+          "type": "_card",
+          "settings": {
+            "background_media": "image",
+            "toggle_overlay": true,
+            "overlay_style": "gradient",
+            "overlay_color": "#3b2517b8",
+            "vertical_alignment_flex_direction_column": "flex-end",
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "padding-inline-start": 24,
+            "padding-inline-end": 24
+          }
+        }
+      },
+      "block_order": ["card-1", "card-2", "card-3"]
+    }
+  ]
+}
+{% endschema %}

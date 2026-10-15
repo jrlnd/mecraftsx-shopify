@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "testimonials": "Opinie",
+    "testimonial": "Opinia",
+    "media_overlap": "Nakładająca się karta",
+    "card_grid": "Siatka kart",
     "404": "404",
     "custom_section": "Sekcja niestandardowa",
     "icon": "Ikona",
@@ -171,6 +175,14 @@
     "disclosures": "Informacje prawne"
   },
   "settings": {
+    "focus_outline_color": "Obrys fokusu",
+    "heading_text_color": "Kolor nagłówków",
+    "panel_background": "Tło panelu",
+    "show_quote_mark": "Pokaż cudzysłów",
+    "quote": "Cytat",
+    "card_background": "Tło karty",
+    "overlap": "Nakładanie",
+    "first_row_columns": "Kolumny pierwszego rzędu",
     "autoplay": "Autoodtwarzanie",
     "background": "Tło",
     "border_radius": "Promień narożnika",
@@ -586,6 +598,9 @@
     "title_preset": "Gotowe ustawienie tytułu"
   },
   "options": {
+    "extra_loose": "Bardzo luźne",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "apple": "Apple",
     "arrow": "Strzałka",
     "banana": "Banan",
@@ -996,6 +1011,10 @@
     "page_text_color_contrast_info": "Sekcje z niestandardowym kolorem tła będą używać tego koloru tekstu tylko w przypadku wystarczającego kontrastu kolorów."
   },
   "html_defaults": {
+    "testimonial_quote": "<p>Dodaj krótki cytat zadowolonego klienta.</p>",
+    "what_customers_say": "<p>Co mówią klienci</p>",
+    "media_overlap_heading": "<h2>Nasza historia</h2>",
+    "card_grid_heading": "<h2>Kupuj według kategorii</h2>",
     "share_information_about_your": "<p>Podziel się informacjami o swojej marce z klientami. Opisz produkt, ogłaszaj nowości lub witaj klientów w swoim sklepie.</p>",
     "bestseller_h2": "<h2>Bestsellery</h2>",
     "bestseller_h3": "<h3>Bestsellery</h3>",
@@ -1053,6 +1072,7 @@
     "featured_collection_h3": "<h3>Polecana kolekcja</h3>"
   },
   "text_defaults": {
+    "testimonial_author": "Imię klienta",
     "collapsible_row": "Wiersz zwijany",
     "button_label": "Kup teraz",
     "heading": "Nagłówek",
@@ -1091,6 +1111,9 @@
     "disclosures": "Informacje prawne"
   },
   "info": {
+    "focus_outline_color": "Obrys wokół aktywnych linków i elementów sterujących. Pozostaw puste, aby użyć koloru tekstu.",
+    "heading_text_color": "Pozostaw puste, aby dopasować do koloru tekstu. Sekcje z własnymi kolorami zachowują kontrast.",
+    "first_row_columns": "Pokazuj mniej szerszych kart w pierwszym rzędzie na komputerze",
     "video_alt_text": "Opisz wideo dla użytkowników technologii wspomagających",
     "video_autoplay": "Domyślnie filmy będą wyciszone",
     "video_external": "Użyj adresu URL z YouTube lub Vimeo",

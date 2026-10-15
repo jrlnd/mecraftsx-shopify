@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "testimonials": "客户评价",
+    "testimonial": "客户评价",
+    "media_overlap": "重叠卡片",
+    "card_grid": "卡片网格",
     "404": "404",
     "colors": "调色板",
     "custom_section": "自定义分区",
@@ -171,6 +175,14 @@
     "disclosures": "披露信息"
   },
   "settings": {
+    "focus_outline_color": "焦点轮廓",
+    "heading_text_color": "标题颜色",
+    "panel_background": "面板背景",
+    "show_quote_mark": "显示引号",
+    "quote": "引言",
+    "card_background": "卡片背景",
+    "overlap": "重叠",
+    "first_row_columns": "第一行列数",
     "alignment": "对齐方式",
     "autoplay": "自动播放",
     "background": "背景",
@@ -586,6 +598,9 @@
     "title_preset": "标题预设"
   },
   "options": {
+    "extra_loose": "特宽",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "apple": "Apple",
     "arrow": "箭头",
     "auto": "自动",
@@ -996,6 +1011,10 @@
     "page_text_color_contrast_info": "具有自定义背景色的分区仅在颜色对比度足够时才会使用此文本颜色。"
   },
   "html_defaults": {
+    "testimonial_quote": "<p>添加一段满意客户的简短评价。</p>",
+    "what_customers_say": "<p>客户怎么说</p>",
+    "media_overlap_heading": "<h2>我们的故事</h2>",
+    "card_grid_heading": "<h2>按类别选购</h2>",
     "share_information_about_your": "<p>与您的客户分享有关您品牌的信息。描述产品、发布公告或欢迎客户光临您的商店。</p>",
     "bestseller_h2": "<h2>热销产品</h2>",
     "bestseller_h3": "<h3>热销产品</h3>",
@@ -1053,6 +1072,7 @@
     "featured_collection_h3": "<h3>特色系列</h3>"
   },
   "text_defaults": {
+    "testimonial_author": "客户姓名",
     "button_label": "立即购买",
     "collapsible_row": "可折叠行",
     "heading": "标题",
@@ -1091,6 +1111,9 @@
     "disclosures": "披露信息"
   },
   "info": {
+    "focus_outline_color": "聚焦的链接和控件周围显示的轮廓。留空则使用文本颜色。",
+    "heading_text_color": "留空则与文本颜色一致。使用自定义颜色的分区会保持其对比度。",
+    "first_row_columns": "在桌面端第一行显示更少、更宽的卡片",
     "video_alt_text": "为使用辅助技术的用户描述视频",
     "video_autoplay": "视频将默认静音",
     "video_external": "使用 YouTube 或 Vimeo URL",

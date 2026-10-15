@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "testimonials": "Depoimentos",
+    "testimonial": "Depoimento",
+    "media_overlap": "Cartão sobreposto",
+    "card_grid": "Grade de cartões",
     "404": "404",
     "colors": "Paleta de cores",
     "custom_section": "Seção personalizada",
@@ -171,6 +175,14 @@
     "disclosures": "Divulgações"
   },
   "settings": {
+    "focus_outline_color": "Contorno de foco",
+    "heading_text_color": "Cor dos títulos",
+    "panel_background": "Fundo do painel",
+    "show_quote_mark": "Mostrar aspas",
+    "quote": "Citação",
+    "card_background": "Fundo do cartão",
+    "overlap": "Sobreposição",
+    "first_row_columns": "Colunas da primeira linha",
     "alignment": "Alinhamento",
     "autoplay": "Reprodução automática",
     "background": "Plano de fundo",
@@ -586,6 +598,9 @@
     "title_preset": "Predefinição de título"
   },
   "options": {
+    "extra_loose": "Extra-amplo",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "apple": "Apple",
     "arrow": "Seta",
     "auto": "Automático",
@@ -996,6 +1011,10 @@
     "page_text_color_contrast_info": "Seções com uma cor de fundo personalizada usarão esta cor do texto apenas quando houver contraste de cor suficiente."
   },
   "html_defaults": {
+    "testimonial_quote": "<p>Adicione uma citação curta de um cliente satisfeito.</p>",
+    "what_customers_say": "<p>O que dizem os clientes</p>",
+    "media_overlap_heading": "<h2>Nossa história</h2>",
+    "card_grid_heading": "<h2>Compre por categoria</h2>",
     "share_information_about_your": "<p>Compartilhe informações sobre sua marca com seus clientes. Descreva um produto, faça anúncios ou dê as boas-vindas aos clientes em sua loja.</p>",
     "bestseller_h2": "<h2>Mais vendidos</h2>",
     "bestseller_h3": "<h3>Mais vendidos</h3>",
@@ -1053,6 +1072,7 @@
     "introducing_p": "<p><em>Apresentando</em></p>"
   },
   "text_defaults": {
+    "testimonial_author": "Nome do cliente",
     "button_label": "Compre agora",
     "collapsible_row": "Linha expansível",
     "heading": "Título",
@@ -1091,6 +1111,9 @@
     "disclosures": "Divulgações"
   },
   "info": {
+    "focus_outline_color": "Contorno exibido ao redor de links e controles em foco. Deixe em branco para usar a cor do texto.",
+    "heading_text_color": "Deixe em branco para usar a cor do texto. Seções com cores próprias mantêm o contraste.",
+    "first_row_columns": "Mostre menos cartões, mais largos, na primeira linha no desktop",
     "video_alt_text": "Descreva o vídeo para usuários de tecnologia assistiva",
     "video_autoplay": "Os vídeos ficarão sem som por padrão",
     "video_external": "Use um URL do YouTube ou do Vimeo",

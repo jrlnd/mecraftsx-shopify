@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "testimonials": "Reference",
+    "testimonial": "Reference",
+    "media_overlap": "Překrývající karta",
+    "card_grid": "Mřížka karet",
     "404": "404",
     "colors": "Paleta barev",
     "custom_section": "Vlastní sekce",
@@ -171,6 +175,14 @@
     "disclosures": "Prohlášení"
   },
   "settings": {
+    "focus_outline_color": "Obrys zaměření",
+    "heading_text_color": "Barva nadpisů",
+    "panel_background": "Pozadí panelu",
+    "show_quote_mark": "Zobrazit uvozovky",
+    "quote": "Citace",
+    "card_background": "Pozadí karty",
+    "overlap": "Překrytí",
+    "first_row_columns": "Sloupce prvního řádku",
     "alignment": "Zarovnání",
     "autoplay": "Automatické přehrávání",
     "background": "Pozadí",
@@ -586,6 +598,9 @@
     "title_preset": "Předvolba nadpisu"
   },
   "options": {
+    "extra_loose": "Velmi volné",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "apple": "Apple",
     "arrow": "Šipka",
     "auto": "Automaticky",
@@ -996,6 +1011,10 @@
     "page_text_color_contrast_info": "Sekce s vlastní barvou pozadí použijí tuto barvu textu pouze v případě dostatečného barevného kontrastu."
   },
   "html_defaults": {
+    "testimonial_quote": "<p>Přidejte krátkou citaci spokojeného zákazníka.</p>",
+    "what_customers_say": "<p>Co říkají zákazníci</p>",
+    "media_overlap_heading": "<h2>Náš příběh</h2>",
+    "card_grid_heading": "<h2>Nakupujte podle kategorie</h2>",
     "share_information_about_your": "<p>Sdílejte informace o značce se zákazníky. Popište produkt, oznamte novinky nebo přivítejte zákazníky v obchodě.</p>",
     "bestseller_h2": "<h2>Nejprodávanější</h2>",
     "bestseller_h3": "<h3>Nejprodávanější</h3>",
@@ -1053,6 +1072,7 @@
     "featured_collection_h3": "<h3>Doporučená kolekce</h3>"
   },
   "text_defaults": {
+    "testimonial_author": "Jméno zákazníka",
     "button_label": "Nakupujte nyní",
     "collapsible_row": "Rozbalovací řádek",
     "heading": "Nadpis",
@@ -1091,6 +1111,9 @@
     "disclosures": "Prohlášení"
   },
   "info": {
+    "focus_outline_color": "Obrys zobrazený kolem zaměřených odkazů a ovládacích prvků. Ponechte prázdné pro barvu textu.",
+    "heading_text_color": "Ponechte prázdné, aby odpovídala barvě textu. Sekce s vlastními barvami si zachovají kontrast.",
+    "first_row_columns": "Na počítači zobrazí v prvním řádku méně širších karet",
     "video_alt_text": "Popište video pro uživatele asistivních technologií",
     "video_autoplay": "Videa budou ve výchozím nastavení ztlumená",
     "video_external": "Použijte URL z YouTube nebo Vimeo",

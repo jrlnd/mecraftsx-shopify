@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "testimonials": "Testimonianze",
+    "testimonial": "Testimonianza",
+    "media_overlap": "Scheda sovrapposta",
+    "card_grid": "Griglia di schede",
     "404": "404",
     "colors": "Palette colori",
     "custom_section": "Sezione personalizzata",
@@ -171,6 +175,14 @@
     "disclosures": "Informative"
   },
   "settings": {
+    "focus_outline_color": "Contorno di focus",
+    "heading_text_color": "Colore dei titoli",
+    "panel_background": "Sfondo del pannello",
+    "show_quote_mark": "Mostra virgolette",
+    "quote": "Citazione",
+    "card_background": "Sfondo della scheda",
+    "overlap": "Sovrapposizione",
+    "first_row_columns": "Colonne della prima riga",
     "alignment": "Allineamento",
     "autoplay": "Riproduzione automatica",
     "background": "Sfondo",
@@ -586,6 +598,9 @@
     "title_preset": "Preimpostazione titolo"
   },
   "options": {
+    "extra_loose": "Molto ampia",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "apple": "Mela",
     "arrow": "Freccia",
     "auto": "Automatico",
@@ -996,6 +1011,10 @@
     "page_text_color_contrast_info": "Le sezioni con un colore di sfondo personalizzato useranno questo colore del testo solo quando il contrasto cromatico è sufficiente."
   },
   "html_defaults": {
+    "testimonial_quote": "<p>Aggiungi una breve citazione di un cliente soddisfatto.</p>",
+    "what_customers_say": "<p>Cosa dicono i clienti</p>",
+    "media_overlap_heading": "<h2>La nostra storia</h2>",
+    "card_grid_heading": "<h2>Acquista per categoria</h2>",
     "share_information_about_your": "<p>Condividi informazioni sul tuo brand con i clienti. Descrivi un prodotto, fai annunci o dai il benvenuto ai clienti nel tuo negozio.</p>",
     "bestseller_h2": "<h2>Bestseller</h2>",
     "bestseller_h3": "<h3>Bestseller</h3>",
@@ -1053,6 +1072,7 @@
     "featured_collection_h3": "<h3>Collezione in primo piano</h3>"
   },
   "text_defaults": {
+    "testimonial_author": "Nome del cliente",
     "button_label": "Acquista ora",
     "collapsible_row": "Riga comprimibile",
     "heading": "Intestazione",
@@ -1091,6 +1111,9 @@
     "disclosures": "Informative"
   },
   "info": {
+    "focus_outline_color": "Contorno mostrato attorno a link e controlli attivi. Lascia vuoto per usare il colore del testo.",
+    "heading_text_color": "Lascia vuoto per usare il colore del testo. Le sezioni con colori propri mantengono il loro contrasto.",
+    "first_row_columns": "Mostra meno schede, più larghe, nella prima riga su desktop",
     "carousel_layout_on_mobile": "Sui dispositivi mobili viene sempre utilizzato il carosello.",
     "video_alt_text": "Descrivi il video per gli utenti di tecnologie assistive",
     "video_autoplay": "I video saranno senza audio per impostazione predefinita",

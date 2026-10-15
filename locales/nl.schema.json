@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "testimonials": "Getuigenissen",
+    "testimonial": "Getuigenis",
+    "media_overlap": "Overlappende kaart",
+    "card_grid": "Kaartenraster",
     "404": "404",
     "custom_section": "Aangepaste sectie",
     "icon": "Pictogram",
@@ -171,6 +175,14 @@
     "disclosures": "Toelichtingen"
   },
   "settings": {
+    "focus_outline_color": "Focuskader",
+    "heading_text_color": "Kleur van koppen",
+    "panel_background": "Paneelachtergrond",
+    "show_quote_mark": "Aanhalingsteken weergeven",
+    "quote": "Citaat",
+    "card_background": "Kaartachtergrond",
+    "overlap": "Overlap",
+    "first_row_columns": "Kolommen eerste rij",
     "autoplay": "Automatisch afspelen",
     "background": "Achtergrond",
     "border_radius": "Hoekradius",
@@ -586,6 +598,9 @@
     "title_preset": "Titelvoorinstelling"
   },
   "options": {
+    "extra_loose": "Extra ruim",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "apple": "Apple",
     "arrow": "Pijl",
     "banana": "Banaan",
@@ -996,6 +1011,10 @@
     "page_text_color_contrast_info": "Secties met een aangepaste achtergrondkleur gebruiken deze tekstkleur alleen als er voldoende kleurcontrast is."
   },
   "html_defaults": {
+    "testimonial_quote": "<p>Voeg een kort citaat van een tevreden klant toe.</p>",
+    "what_customers_say": "<p>Wat klanten zeggen</p>",
+    "media_overlap_heading": "<h2>Ons verhaal</h2>",
+    "card_grid_heading": "<h2>Shop per categorie</h2>",
     "share_information_about_your": "<p>Deel informatie over je merk met je klanten. Beschrijf een product, doe aankondigingen of heet klanten welkom in je winkel.</p>",
     "bestseller_h2": "<h2>Bestsellers</h2>",
     "bestseller_h3": "<h3>Bestsellers</h3>",
@@ -1053,6 +1072,7 @@
     "featured_collection_h3": "<h3>Uitgelichte collectie</h3>"
   },
   "text_defaults": {
+    "testimonial_author": "Naam van klant",
     "collapsible_row": "Inklapbare rij",
     "button_label": "Shop nu",
     "heading": "Kop",
@@ -1091,6 +1111,9 @@
     "disclosures": "Toelichtingen"
   },
   "info": {
+    "focus_outline_color": "Kader rond gefocuste links en bedieningselementen. Laat leeg om de tekstkleur te gebruiken.",
+    "heading_text_color": "Laat leeg om de tekstkleur te volgen. Secties met eigen kleuren behouden hun contrast.",
+    "first_row_columns": "Toon minder, bredere kaarten in de eerste rij op desktop",
     "carousel_layout_on_mobile": "Op mobiel wordt altijd een carrousel gebruikt",
     "video_alt_text": "Beschrijf de video voor gebruikers van ondersteunende technologie",
     "video_autoplay": "Video's worden standaard gedempt",

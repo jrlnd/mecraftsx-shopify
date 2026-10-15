@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "testimonials": "Suosittelut",
+    "testimonial": "Suosittelu",
+    "media_overlap": "Päällekkäinen kortti",
+    "card_grid": "Korttiruudukko",
     "404": "404",
     "colors": "Väripaletti",
     "custom_section": "Mukautettu osio",
@@ -171,6 +175,14 @@
     "disclosures": "Ilmoitukset"
   },
   "settings": {
+    "focus_outline_color": "Kohdistuksen ääriviiva",
+    "heading_text_color": "Otsikoiden väri",
+    "panel_background": "Paneelin tausta",
+    "show_quote_mark": "Näytä lainausmerkki",
+    "quote": "Lainaus",
+    "card_background": "Kortin tausta",
+    "overlap": "Päällekkäisyys",
+    "first_row_columns": "Ensimmäisen rivin sarakkeet",
     "alignment": "Tasaus",
     "autoplay": "Automaattinen toisto",
     "background": "Tausta",
@@ -586,6 +598,9 @@
     "title_preset": "Otsikon esiasetus"
   },
   "options": {
+    "extra_loose": "Erittäin väljä",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "apple": "Omena",
     "arrow": "Nuoli",
     "auto": "Automaattinen",
@@ -996,6 +1011,10 @@
     "page_text_color_contrast_info": "Osiot, joissa on mukautettu taustaväri, käyttävät tätä tekstin väriä vain, kun värikontrasti on riittävä."
   },
   "html_defaults": {
+    "testimonial_quote": "<p>Lisää lyhyt lainaus tyytyväiseltä asiakkaalta.</p>",
+    "what_customers_say": "<p>Asiakkaiden kokemuksia</p>",
+    "media_overlap_heading": "<h2>Tarinamme</h2>",
+    "card_grid_heading": "<h2>Osta kategorian mukaan</h2>",
     "share_information_about_your": "<p>Jaa tietoja brändistäsi asiakkaillesi. Kuvaile tuotetta, tee ilmoituksia tai toivota asiakkaat tervetulleiksi kauppaasi.</p>",
     "bestseller_h2": "<h2>Myydyimmät</h2>",
     "bestseller_h3": "<h3>Myydyimmät</h3>",
@@ -1053,6 +1072,7 @@
     "featured_collection_h3": "<h3>Esittelyssä oleva kokoelma</h3>"
   },
   "text_defaults": {
+    "testimonial_author": "Asiakkaan nimi",
     "button_label": "Osta nyt",
     "collapsible_row": "Kutistettava rivi",
     "heading": "Otsikko",
@@ -1091,6 +1111,9 @@
     "disclosures": "Ilmoitukset"
   },
   "info": {
+    "focus_outline_color": "Ääriviiva kohdistettujen linkkien ja säätimien ympärillä. Jätä tyhjäksi, jos haluat käyttää tekstin väriä.",
+    "heading_text_color": "Jätä tyhjäksi, jos haluat saman värin kuin tekstillä. Omilla väreillä varustetut osiot säilyttävät kontrastinsa.",
+    "first_row_columns": "Näytä ensimmäisellä rivillä vähemmän, leveämpiä kortteja tietokoneella",
     "carousel_layout_on_mobile": "Mobiilissa käytetään aina karusellia.",
     "video_alt_text": "Kuvaile video avustavan teknologian käyttäjille",
     "video_autoplay": "Videot mykistetään oletusarvoisesti",

@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "testimonials": "Müşteri yorumları",
+    "testimonial": "Müşteri yorumu",
+    "media_overlap": "Üst üste kart",
+    "card_grid": "Kart ızgarası",
     "404": "404",
     "custom_section": "Özel bölüm",
     "icon": "Simge",
@@ -171,6 +175,14 @@
     "disclosures": "Bildirimler"
   },
   "settings": {
+    "focus_outline_color": "Odak çerçevesi",
+    "heading_text_color": "Başlık rengi",
+    "panel_background": "Panel arka planı",
+    "show_quote_mark": "Tırnak işaretini göster",
+    "quote": "Alıntı",
+    "card_background": "Kart arka planı",
+    "overlap": "Örtüşme",
+    "first_row_columns": "İlk satır sütunları",
     "autoplay": "Otomatik oynatma",
     "background": "Arka plan",
     "border_radius": "Köşe yarıçapı",
@@ -586,6 +598,9 @@
     "title_preset": "Başlık ön ayarı"
   },
   "options": {
+    "extra_loose": "Çok geniş",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "apple": "Apple",
     "arrow": "Ok",
     "banana": "Muz",
@@ -996,6 +1011,10 @@
     "page_text_color_contrast_info": "Özel arka plan rengine sahip bölümler, yalnızca yeterli renk kontrastı olduğunda bu metin rengini kullanır."
   },
   "html_defaults": {
+    "testimonial_quote": "<p>Memnun bir müşteriden kısa bir alıntı ekleyin.</p>",
+    "what_customers_say": "<p>Müşterilerimiz ne diyor</p>",
+    "media_overlap_heading": "<h2>Hikâyemiz</h2>",
+    "card_grid_heading": "<h2>Kategoriye göre alışveriş</h2>",
     "share_information_about_your": "<p>Markanızla ilgili bilgileri müşterilerinizle paylaşın. Bir ürünü açıklayın, duyurular yapın veya mağazanıza gelen müşterileri karşılayın.</p>",
     "bestseller_h2": "<h2>Çok satanlar</h2>",
     "bestseller_h3": "<h3>Çok satanlar</h3>",
@@ -1053,6 +1072,7 @@
     "introducing_p": "<p><em>Karşınızda</em></p>"
   },
   "text_defaults": {
+    "testimonial_author": "Müşteri adı",
     "collapsible_row": "Daraltılabilir satır",
     "button_label": "Hemen alışveriş yap",
     "heading": "Başlık",
@@ -1091,6 +1111,9 @@
     "disclosures": "Bildirimler"
   },
   "info": {
+    "focus_outline_color": "Odaklanılan bağlantıların ve kontrollerin çevresinde gösterilen çerçeve. Metin rengini kullanmak için boş bırakın.",
+    "heading_text_color": "Metin rengiyle eşleşmesi için boş bırakın. Kendi renkleri olan bölümler kontrastlarını korur.",
+    "first_row_columns": "Masaüstünde ilk satırda daha az ve daha geniş kart göster",
     "video_alt_text": "Yardımcı teknoloji kullanıcıları için videoyu açıklayın",
     "video_autoplay": "Videolar varsayılan olarak sessize alınır",
     "video_external": "Bir YouTube veya Vimeo URL'si kullanın",

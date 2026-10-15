@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "testimonials": "お客様の声",
+    "testimonial": "お客様の声",
+    "media_overlap": "重なりカード",
+    "card_grid": "カードグリッド",
     "404": "404",
     "colors": "カラーパレット",
     "custom_section": "カスタムセクション",
@@ -171,6 +175,14 @@
     "disclosures": "開示情報"
   },
   "settings": {
+    "focus_outline_color": "フォーカスの枠線",
+    "heading_text_color": "見出しの色",
+    "panel_background": "パネルの背景",
+    "show_quote_mark": "引用符を表示",
+    "quote": "引用",
+    "card_background": "カードの背景",
+    "overlap": "重なり",
+    "first_row_columns": "1行目の列数",
     "alignment": "配置",
     "autoplay": "自動再生",
     "background": "背景",
@@ -586,6 +598,9 @@
     "title_preset": "タイトルプリセット"
   },
   "options": {
+    "extra_loose": "非常に広い",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "apple": "Apple",
     "arrow": "矢印",
     "auto": "自動",
@@ -996,6 +1011,10 @@
     "page_text_color_contrast_info": "カスタム背景色を使用したセクションでは、色のコントラストが十分な場合にのみ、このテキストの配色が使用されます。"
   },
   "html_defaults": {
+    "testimonial_quote": "<p>満足したお客様の短い声を追加してください。</p>",
+    "what_customers_say": "<p>お客様の声</p>",
+    "media_overlap_heading": "<h2>私たちのストーリー</h2>",
+    "card_grid_heading": "<h2>カテゴリーから探す</h2>",
     "share_information_about_your": "<p>ブランドに関する情報をお客様に伝えましょう。商品の説明、お知らせ、ストアへのお客様への歓迎メッセージなどに使用します。</p>",
     "bestseller_h2": "<h2>ベストセラー</h2>",
     "bestseller_h3": "<h3>ベストセラー</h3>",
@@ -1053,6 +1072,7 @@
     "introducing_p": "<p><em>新登場</em></p>"
   },
   "text_defaults": {
+    "testimonial_author": "お客様の名前",
     "button_label": "今すぐ購入",
     "collapsible_row": "折りたたみ可能な行",
     "heading": "見出し",
@@ -1091,6 +1111,9 @@
     "disclosures": "開示情報"
   },
   "info": {
+    "focus_outline_color": "フォーカスされたリンクやコントロールの周囲に表示される枠線です。空白にするとテキストの色が使用されます。",
+    "heading_text_color": "空白にするとテキストの色と同じになります。独自の色を持つセクションではコントラストが保たれます。",
+    "first_row_columns": "デスクトップで1行目に表示するカードを少なく、幅広くします",
     "video_alt_text": "支援技術のユーザーのために動画の説明を記述します",
     "video_autoplay": "動画はデフォルトでミュートになります",
     "video_external": "YouTubeまたはVimeoのURLを使用します",

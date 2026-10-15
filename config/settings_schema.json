@@ -66,6 +66,12 @@
           "background": "#ffffff",
           "foreground": "#000000"
         }
+      },
+      {
+        "type": "color",
+        "id": "focus_outline_color",
+        "label": "t:settings.focus_outline_color",
+        "info": "t:info.focus_outline_color"
       }
     ]
   },
@@ -82,6 +88,12 @@
         "label": "t:settings.page_text_color",
         "default": "{{ settings.color_palette.foreground }}",
         "info": "t:info.page_text_color_default_info"
+      },
+      {
+        "type": "color",
+        "id": "heading_text_color",
+        "label": "t:settings.heading_text_color",
+        "info": "t:info.heading_text_color"
       },
       {
         "type": "paragraph",
@@ -303,6 +315,10 @@
           {
             "value": "heading-loose",
             "label": "t:options.loose"
+          },
+          {
+            "value": "heading-extra-loose",
+            "label": "t:options.extra_loose"
           }
         ],
         "default": "heading-normal"
@@ -451,6 +467,10 @@
           {
             "value": "heading-loose",
             "label": "t:options.loose"
+          },
+          {
+            "value": "heading-extra-loose",
+            "label": "t:options.extra_loose"
           }
         ],
         "default": "heading-normal"
@@ -607,6 +627,10 @@
           {
             "value": "heading-loose",
             "label": "t:options.loose"
+          },
+          {
+            "value": "heading-extra-loose",
+            "label": "t:options.extra_loose"
           }
         ],
         "default": "heading-normal"
@@ -763,6 +787,10 @@
           {
             "value": "heading-loose",
             "label": "t:options.loose"
+          },
+          {
+            "value": "heading-extra-loose",
+            "label": "t:options.extra_loose"
           }
         ],
         "default": "heading-normal"
@@ -919,6 +947,10 @@
           {
             "value": "heading-loose",
             "label": "t:options.loose"
+          },
+          {
+            "value": "heading-extra-loose",
+            "label": "t:options.extra_loose"
           }
         ],
         "default": "heading-normal"
@@ -1075,6 +1107,10 @@
           {
             "value": "heading-loose",
             "label": "t:options.loose"
+          },
+          {
+            "value": "heading-extra-loose",
+            "label": "t:options.extra_loose"
           }
         ],
         "default": "heading-normal"
@@ -1111,6 +1147,10 @@
         "id": "page_width",
         "label": "t:settings.page_width",
         "options": [
+          {
+            "value": "compact",
+            "label": "t:options.compact"
+          },
           {
             "value": "narrow",
             "label": "t:options.narrow"
@@ -1340,6 +1380,10 @@
             "label": "t:options.body"
           },
           {
+            "value": "subheading",
+            "label": "t:options.subheading"
+          },
+          {
             "value": "accent",
             "label": "t:options.accent"
           }
@@ -1417,6 +1461,10 @@
             "label": "t:options.body"
           },
           {
+            "value": "subheading",
+            "label": "t:options.subheading"
+          },
+          {
             "value": "accent",
             "label": "t:options.accent"
           }
@@ -1446,6 +1494,22 @@
       {
         "type": "paragraph",
         "content": "t:info.pills_usage"
+      },
+      {
+        "type": "select",
+        "id": "button_letter_spacing",
+        "label": "t:settings.letter_spacing",
+        "options": [
+          {
+            "value": "normal",
+            "label": "t:options.normal"
+          },
+          {
+            "value": "loose",
+            "label": "t:options.loose"
+          }
+        ],
+        "default": "normal"
       },
       {
         "type": "range",

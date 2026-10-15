@@ -85,6 +85,9 @@
           assign sizes = '100vw'
         else
           case settings.page_width
+            when 'compact'
+              # Compact: max 73.75rem (1180px)
+              assign sizes = '(min-width: 1180px) 1180px, 100vw'
             when 'narrow'
               # Narrow: max 90rem (1440px)
               assign sizes = '(min-width: 1440px) 1440px, 100vw'

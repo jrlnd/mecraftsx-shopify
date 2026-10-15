@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "testimonials": "Udtalelser",
+    "testimonial": "Udtalelse",
+    "media_overlap": "Overlappende kort",
+    "card_grid": "Kortgitter",
     "404": "404",
     "colors": "Farvepalet",
     "custom_section": "Brugerdefineret sektion",
@@ -171,6 +175,14 @@
     "disclosures": "Oplysninger"
   },
   "settings": {
+    "focus_outline_color": "Fokusramme",
+    "heading_text_color": "Farve på overskrifter",
+    "panel_background": "Panelbaggrund",
+    "show_quote_mark": "Vis anførselstegn",
+    "quote": "Citat",
+    "card_background": "Kortbaggrund",
+    "overlap": "Overlap",
+    "first_row_columns": "Kolonner i første række",
     "alignment": "Justering",
     "autoplay": "Automatisk afspilning",
     "background": "Baggrund",
@@ -586,6 +598,9 @@
     "title_preset": "Forudindstilling for titel"
   },
   "options": {
+    "extra_loose": "Ekstra løs",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "apple": "Apple",
     "arrow": "Pil",
     "auto": "Auto",
@@ -996,6 +1011,10 @@
     "page_text_color_contrast_info": "Afsnit med en brugerdefineret baggrundsfarve bruger kun denne tekstfarve, når der er tilstrækkelig farvekontrast."
   },
   "html_defaults": {
+    "testimonial_quote": "<p>Tilføj et kort citat fra en glad kunde.</p>",
+    "what_customers_say": "<p>Det siger kunderne</p>",
+    "media_overlap_heading": "<h2>Vores historie</h2>",
+    "card_grid_heading": "<h2>Shop efter kategori</h2>",
     "share_information_about_your": "<p>Del oplysninger om dit brand med dine kunder. Beskriv et produkt, kom med meddelelser, eller byd kunder velkommen i din butik.</p>",
     "bestseller_h2": "<h2>Bestsellere</h2>",
     "bestseller_h3": "<h3>Bestsellere</h3>",
@@ -1053,6 +1072,7 @@
     "shop_collection": "<p>Opdag vores nøje udvalgte kollektion med håndplukkede favoritter, der forener stil og kvalitet.</p>"
   },
   "text_defaults": {
+    "testimonial_author": "Kundens navn",
     "button_label": "Køb nu",
     "collapsible_row": "Række, der kan skjules",
     "heading": "Overskrift",
@@ -1091,6 +1111,9 @@
     "disclosures": "Oplysninger"
   },
   "info": {
+    "focus_outline_color": "Ramme rundt om links og kontrolelementer med fokus. Lad feltet være tomt for at bruge tekstfarven.",
+    "heading_text_color": "Lad feltet være tomt for at matche tekstfarven. Sektioner med egne farver beholder deres kontrast.",
+    "first_row_columns": "Vis færre, bredere kort i første række på computer",
     "carousel_layout_on_mobile": "Karrusellen bruges altid på mobil",
     "video_alt_text": "Beskriv videoen for brugere af hjælpeteknologi",
     "video_autoplay": "Videoer vil som standard være uden lyd",

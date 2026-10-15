@@ -1,0 +1,257 @@
+{% comment %}
+  Section contract.
+  Rotates customer quotes inside a rounded panel, with previous/next arrows and dots.
+  Reuses the theme slideshow component, so swipe, keyboard, and dot behavior match
+  other slideshows. Quotes are `_testimonial` blocks; the header is a static group.
+  @example
+  <!-- Add "Testimonials" in the theme editor, then add a quote per customer -->
+{% endcomment %}
+
+{% liquid
+  if section.settings.background_color != blank
+    render 'contrast-override', background_color: section.settings.background_color, section_id: section.id
+  endif
+
+  if section.settings.panel_color != blank
+    assign panel_id = section.id | append: '-panel'
+    render 'contrast-override', background_color: section.settings.panel_color, section_id: panel_id
+  endif
+
+  assign slide_count = section.blocks.size
+%}
+
+{% capture slides %}
+  {% content_for 'blocks' %}
+{% endcapture %}
+
+{% if slide_count > 1 %}
+  {% capture controls %}
+    {%- render 'slideshow-controls',
+      style: 'dots',
+      item_count: slide_count,
+      show_arrows: true,
+      arrows_on_media: false,
+      controls_on_media: false,
+      pagination_position: 'center',
+      icon_style: 'arrow'
+    -%}
+  {% endcapture %}
+{% endif %}
+
+<div
+  class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
+></div>
+
+<div
+  class="
+    section
+    section--page-width
+    testimonials-section
+    spacing-style
+    {% if section.settings.background_color != blank %}color-custom-{{ section.id }}{% endif %}
+  "
+  style="{% render 'spacing-style', settings: section.settings %}"
+>
+  <div
+    class="testimonials{% if section.settings.panel_color != blank %} color-custom-{{ panel_id }}{% endif %}"
+    style="--testimonials-radius: {{ section.settings.corner_radius }}px;"
+  >
+    {% content_for 'block', type: 'group', id: 'testimonials-header' %}
+
+    {%- if section.settings.show_quote_mark -%}
+      <span
+        class="testimonials__mark"
+        aria-hidden="true"
+      >
+        &ldquo;
+      </span>
+    {%- endif -%}
+
+    {% render 'slideshow',
+      class: 'testimonials__slideshow',
+      slides: slides,
+      slide_count: slide_count,
+      controls: controls,
+      show_arrows: false,
+      autoplay: section.settings.autoplay,
+      autoplay_speed: section.settings.autoplay_speed
+    %}
+  </div>
+</div>
+
+{% stylesheet %}
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-xl);
+    min-width: 0;
+    padding: var(--padding-6xl) var(--padding-xl) var(--padding-5xl);
+    border-radius: var(--testimonials-radius);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  .testimonials > .group-block:not(:has(.group-block-content > *)) {
+    display: none;
+  }
+
+  .testimonials__mark {
+    font-family: var(--font-heading--family);
+    font-weight: var(--font-heading--weight);
+    font-size: 7.5rem;
+    line-height: 0.6;
+    height: 0.45em;
+    color: rgb(var(--color-foreground-rgb) / var(--opacity-20));
+  }
+
+  .testimonials__slideshow {
+    width: 100%;
+  }
+
+  /* Section-scoped so these win over the shared slideshow-controls defaults. */
+  .testimonials-section .testimonials slideshow-controls {
+    justify-content: center;
+    gap: var(--gap-xl);
+    width: fit-content;
+    margin: var(--gap-xl) auto 0;
+    mix-blend-mode: normal;
+  }
+
+  .testimonials-section .testimonials .slideshow-control--previous,
+  .testimonials-section .testimonials .slideshow-control--next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.375rem;
+    height: 2.375rem;
+    border: var(--style-border-width) solid rgb(var(--color-foreground-rgb) / var(--opacity-20));
+    border-radius: 50%;
+    color: var(--color-foreground);
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.testimonials",
+  "class": "section-wrapper",
+  "blocks": [
+    {
+      "type": "_testimonial"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_quote_mark",
+      "label": "t:settings.show_quote_mark",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "t:settings.auto_rotate_slides",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "t:settings.speed",
+      "min": 3,
+      "max": 9,
+      "step": 1,
+      "unit": "s",
+      "default": 6,
+      "visible_if": "{{ section.settings.autoplay }}"
+    },
+    {
+      "type": "header",
+      "content": "t:content.colors"
+    },
+    {
+      "type": "color",
+      "id": "panel_color",
+      "label": "t:settings.panel_background",
+      "alpha": true,
+      "default": "{{ settings.color_palette.color2 }}"
+    },
+    {
+      "type": "range",
+      "id": "corner_radius",
+      "label": "t:settings.corner_radius",
+      "min": 0,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:settings.background",
+      "alpha": true
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.testimonials",
+      "category": "t:categories.storytelling",
+      "blocks": {
+        "testimonials-header": {
+          "type": "group",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "center"
+          },
+          "blocks": {
+            "eyebrow": {
+              "type": "text",
+              "settings": {
+                "text": "t:html_defaults.what_customers_say",
+                "type_preset": "h6",
+                "width": "100%",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": ["eyebrow"]
+        },
+        "quote-1": {
+          "type": "_testimonial"
+        },
+        "quote-2": {
+          "type": "_testimonial"
+        }
+      },
+      "block_order": ["quote-1", "quote-2"]
+    }
+  ]
+}
+{% endschema %}

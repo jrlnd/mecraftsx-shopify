@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "testimonials": "Kundeomtaler",
+    "testimonial": "Kundeomtale",
+    "media_overlap": "Overlappende kort",
+    "card_grid": "Kortrutenett",
     "404": "404",
     "colors": "Fargepalett",
     "custom_section": "Egendefinert seksjon",
@@ -171,6 +175,14 @@
     "disclosures": "Opplysninger"
   },
   "settings": {
+    "focus_outline_color": "Fokusramme",
+    "heading_text_color": "Farge på overskrifter",
+    "panel_background": "Panelbakgrunn",
+    "show_quote_mark": "Vis anførselstegn",
+    "quote": "Sitat",
+    "card_background": "Kortbakgrunn",
+    "overlap": "Overlapp",
+    "first_row_columns": "Kolonner i første rad",
     "alignment": "Justering",
     "autoplay": "Autospill",
     "background": "Bakgrunn",
@@ -586,6 +598,9 @@
     "title_preset": "Forhåndsinnstilling for tittel"
   },
   "options": {
+    "extra_loose": "Ekstra løs",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "apple": "Eple",
     "arrow": "Pil",
     "auto": "Auto",
@@ -996,6 +1011,10 @@
     "page_text_color_contrast_info": "Seksjoner med en egendefinert bakgrunnsfarge bruker bare denne tekstfargen når det er tilstrekkelig fargekontrast."
   },
   "html_defaults": {
+    "testimonial_quote": "<p>Legg til et kort sitat fra en fornøyd kunde.</p>",
+    "what_customers_say": "<p>Dette sier kundene</p>",
+    "media_overlap_heading": "<h2>Vår historie</h2>",
+    "card_grid_heading": "<h2>Handle etter kategori</h2>",
     "share_information_about_your": "<p>Del informasjon om merkevaren din med kundene. Beskriv et produkt, kom med kunngjøringer eller ønsk kundene velkommen til butikken.</p>",
     "bestseller_h2": "<h2>Bestselgere</h2>",
     "bestseller_h3": "<h3>Bestselgere</h3>",
@@ -1053,6 +1072,7 @@
     "featured_collection_h3": "<h3>Utvalgt samling</h3>"
   },
   "text_defaults": {
+    "testimonial_author": "Kundens navn",
     "button_label": "Handle nå",
     "collapsible_row": "Sammenleggbar rad",
     "heading": "Overskrift",
@@ -1091,6 +1111,9 @@
     "disclosures": "Opplysninger"
   },
   "info": {
+    "focus_outline_color": "Ramme rundt lenker og kontroller med fokus. La feltet stå tomt for å bruke tekstfargen.",
+    "heading_text_color": "La feltet stå tomt for å matche tekstfargen. Seksjoner med egne farger beholder kontrasten.",
+    "first_row_columns": "Vis færre, bredere kort i første rad på datamaskin",
     "carousel_layout_on_mobile": "Karusell brukes alltid på mobil",
     "video_alt_text": "Beskriv videoen for brukere av hjelpeteknologi",
     "video_autoplay": "Videoer dempes som standard",

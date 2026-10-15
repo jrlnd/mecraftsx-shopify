@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "testimonials": "Kundomdömen",
+    "testimonial": "Kundomdöme",
+    "media_overlap": "Överlappande kort",
+    "card_grid": "Kortrutnät",
     "404": "404",
     "colors": "Färgpalett",
     "custom_section": "Anpassad sektion",
@@ -171,6 +175,14 @@
     "disclosures": "Upplysningar"
   },
   "settings": {
+    "focus_outline_color": "Fokusram",
+    "heading_text_color": "Färg på rubriker",
+    "panel_background": "Panelbakgrund",
+    "show_quote_mark": "Visa citattecken",
+    "quote": "Citat",
+    "card_background": "Kortbakgrund",
+    "overlap": "Överlappning",
+    "first_row_columns": "Kolumner i första raden",
     "alignment": "Justering",
     "autoplay": "Autouppspelning",
     "background": "Bakgrund",
@@ -586,6 +598,9 @@
     "title_preset": "Förinställning för rubrik"
   },
   "options": {
+    "extra_loose": "Extra luftigt",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "apple": "Apple",
     "arrow": "Pil",
     "auto": "Auto",
@@ -996,6 +1011,10 @@
     "page_text_color_contrast_info": "Sektioner med anpassad bakgrundsfärg använder endast den här textfärgen om färgkontrasten är tillräcklig."
   },
   "html_defaults": {
+    "testimonial_quote": "<p>Lägg till ett kort citat från en nöjd kund.</p>",
+    "what_customers_say": "<p>Det här säger kunderna</p>",
+    "media_overlap_heading": "<h2>Vår historia</h2>",
+    "card_grid_heading": "<h2>Handla efter kategori</h2>",
     "share_information_about_your": "<p>Dela information om ditt varumärke med dina kunder. Beskriv en produkt, gör tillkännagivanden eller välkomna kunder till din butik.</p>",
     "bestseller_h2": "<h2>Bästsäljare</h2>",
     "bestseller_h3": "<h3>Bästsäljare</h3>",
@@ -1053,6 +1072,7 @@
     "featured_collection_h3": "<h3>Utvald kollektion</h3>"
   },
   "text_defaults": {
+    "testimonial_author": "Kundens namn",
     "button_label": "Handla nu",
     "collapsible_row": "Komprimerbar rad",
     "heading": "Rubrik",
@@ -1091,6 +1111,9 @@
     "disclosures": "Upplysningar"
   },
   "info": {
+    "focus_outline_color": "Ram runt länkar och kontroller i fokus. Lämna tomt för att använda textfärgen.",
+    "heading_text_color": "Lämna tomt för att matcha textfärgen. Avsnitt med egna färger behåller sin kontrast.",
+    "first_row_columns": "Visa färre, bredare kort i första raden på dator",
     "video_alt_text": "Beskriv videon för användare av hjälpmedelsteknik",
     "video_autoplay": "Videor kommer att vara tystade som standard",
     "video_external": "Använd en URL från YouTube eller Vimeo",

@@ -175,6 +175,10 @@
     --palette-lightest-rgb: {{ palette_lightest.rgb }};
     --palette-darkest: {{ palette_darkest }};
     --palette-darkest-rgb: {{ palette_darkest.rgb }};
+    {%- if settings.heading_text_color != blank %}
+      /* Headings fall back to this only where no scoped --color is set (contrast overrides set one). */
+      --color-heading: {{ settings.heading_text_color }};
+    {%- endif %}
     {% render 'brightness-opacities', background: settings.page_background_color %}
 
     --color-primary-button-text: rgb({{ settings.palette_primary_button_text.rgba }});

@@ -1,0 +1,93 @@
+{%- doc -%}
+  Renders one customer quote as a slide inside the testimonials section.
+  Reads `quote` and `author` from block settings.
+
+  @example
+  {% content_for 'blocks' %}
+{%- enddoc -%}
+
+{%- assign block_index = section.blocks | find_index: 'id', block.id -%}
+
+{% capture children %}
+  <figure class="testimonial">
+    {%- if block.settings.quote != blank -%}
+      <blockquote class="testimonial__quote h2">{{ block.settings.quote }}</blockquote>
+    {%- endif -%}
+    {%- if block.settings.author != blank -%}
+      <figcaption class="testimonial__author">{{ block.settings.author | escape }}</figcaption>
+    {%- endif -%}
+  </figure>
+{% endcapture %}
+
+{% render 'slideshow-slide',
+  index: block_index,
+  class: 'testimonial-slide',
+  children: children,
+  attributes: block.shopify_attributes
+%}
+
+{% stylesheet %}
+  .testimonial-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-xl);
+    max-width: min(100%, 40rem);
+    margin: 0 auto;
+    padding-inline: var(--padding-sm);
+    text-align: center;
+  }
+
+  .testimonial__quote {
+    margin: 0;
+    text-wrap: pretty;
+    overflow-wrap: anywhere;
+  }
+
+  .testimonial__quote > :first-child {
+    margin-block-start: 0;
+  }
+
+  .testimonial__quote > :last-child {
+    margin-block-end: 0;
+  }
+
+  .testimonial__author {
+    font-size: var(--font-size--xs);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgb(var(--color-foreground-rgb) / var(--opacity-70));
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.testimonial",
+  "tag": null,
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "quote",
+      "label": "t:settings.quote",
+      "default": "t:html_defaults.testimonial_quote"
+    },
+    {
+      "type": "text",
+      "id": "author",
+      "label": "t:settings.show_author",
+      "default": "t:text_defaults.testimonial_author"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.testimonial"
+    }
+  ]
+}
+{% endschema %}

@@ -233,13 +233,13 @@ p:empty {
 
 /* Focus */
 *:focus-visible {
-  outline: var(--focus-outline-width) solid currentcolor;
+  outline: var(--focus-outline-width) solid var(--focus-outline-color, currentcolor);
   outline-offset: var(--focus-outline-offset);
 }
 
 @supports not selector(:focus-visible) {
   *:focus {
-    outline: var(--focus-outline-width) solid currentcolor;
+    outline: var(--focus-outline-width) solid var(--focus-outline-color, currentcolor);
     outline-offset: var(--focus-outline-offset);
   }
 }
@@ -265,6 +265,7 @@ p:empty {
 .page-width-wide,
 .page-width-normal,
 .page-width-narrow,
+.page-width-compact,
 .page-width-content {
   --page-margin: max(16px, var(--safe-area-inset-left, 0px), var(--safe-area-inset-right, 0px));
 }
@@ -273,6 +274,7 @@ p:empty {
   .page-width-wide,
   .page-width-normal,
   .page-width-narrow,
+  .page-width-compact,
   .page-width-content {
     --page-margin: max(40px, var(--safe-area-inset-left, 0px), var(--safe-area-inset-right, 0px));
   }
@@ -286,6 +288,11 @@ p:empty {
 
 .page-width-normal {
   --page-content-width: var(--normal-page-width);
+  --page-width: calc(var(--page-content-width) + (var(--page-margin) * 2));
+}
+
+.page-width-compact {
+  --page-content-width: var(--compact-page-width);
   --page-width: calc(var(--page-content-width) + (var(--page-margin) * 2));
 }
 
@@ -633,7 +640,7 @@ h1,
   line-height: var(--font-h1--line-height);
   letter-spacing: var(--font-h1--letter-spacing);
   text-transform: var(--font-h1--case);
-  color: var(--color);
+  color: var(--color, var(--color-heading));
 }
 
 @media screen and (max-width: 1200px) {
@@ -655,7 +662,7 @@ h2,
   line-height: var(--font-h2--line-height);
   letter-spacing: var(--font-h2--letter-spacing);
   text-transform: var(--font-h2--case);
-  color: var(--color);
+  color: var(--color, var(--color-heading));
 }
 
 @media screen and (max-width: 1200px) {
@@ -678,7 +685,7 @@ h3,
   line-height: var(--font-h3--line-height);
   letter-spacing: var(--font-h3--letter-spacing);
   text-transform: var(--font-h3--case);
-  color: var(--color);
+  color: var(--color, var(--color-heading));
 }
 
 @media screen and (max-width: 1200px) {
@@ -700,7 +707,7 @@ h4,
   line-height: var(--font-h4--line-height);
   letter-spacing: var(--font-h4--letter-spacing);
   text-transform: var(--font-h4--case);
-  color: var(--color);
+  color: var(--color, var(--color-heading));
 }
 
 @media screen and (max-width: 1200px) {
@@ -722,7 +729,7 @@ h5,
   line-height: var(--font-h5--line-height);
   letter-spacing: var(--font-h5--letter-spacing);
   text-transform: var(--font-h5--case);
-  color: var(--color);
+  color: var(--color, var(--color-heading));
 }
 
 @media screen and (max-width: 1200px) {
@@ -744,7 +751,7 @@ h6,
   line-height: var(--font-h6--line-height);
   letter-spacing: var(--font-h6--letter-spacing);
   text-transform: var(--font-h6--case);
-  color: var(--color);
+  color: var(--color, var(--color-heading));
 }
 
 @media screen and (max-width: 1200px) {
@@ -832,6 +839,8 @@ button.shopify-payment-button__button--unbranded {
 
 .button {
   font-family: var(--button-font-family-primary);
+  font-weight: var(--button-font-weight-primary);
+  letter-spacing: var(--button-letter-spacing);
   text-transform: var(--button-text-case-primary);
   border-radius: var(--style-border-radius-buttons-primary);
 }
@@ -842,12 +851,16 @@ button.shopify-payment-button__button--unbranded {
 
 .button-secondary {
   font-family: var(--button-font-family-secondary);
+  font-weight: var(--button-font-weight-secondary);
+  letter-spacing: var(--button-letter-spacing);
   text-transform: var(--button-text-case-secondary);
   border-radius: var(--style-border-radius-buttons-secondary);
 }
 
 button.shopify-payment-button__button--unbranded {
   font-family: var(--button-font-family-primary);
+  font-weight: var(--button-font-weight-primary);
+  letter-spacing: var(--button-letter-spacing);
   text-transform: var(--button-text-case-primary);
 }
 
@@ -916,6 +929,8 @@ button.shopify-payment-button__button--unbranded:hover:not([disabled]) {
   --button-focus-outline-color: var(--color-primary-button-focus-outline);
 
   font-family: var(--button-font-family-primary);
+  font-weight: var(--button-font-weight-primary);
+  letter-spacing: var(--button-letter-spacing);
   text-transform: var(--button-text-case-primary);
   border-radius: var(--style-border-radius-buttons-primary);
   outline-color: var(--button-focus-outline-color, var(--button-background-color));
@@ -943,7 +958,9 @@ button.shopify-payment-button__button--unbranded:hover:not([disabled]) {
   box-shadow: none;
   font-family: var(--font-paragraph--family);
   font-style: var(--font-paragraph--style);
+  font-weight: var(--font-paragraph--weight);
   font-size: var(--font-paragraph--size);
+  letter-spacing: normal;
 }
 
 .button-unstyled:hover {

@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "testimonials": "顧客評價",
+    "testimonial": "顧客評價",
+    "media_overlap": "重疊卡片",
+    "card_grid": "卡片網格",
     "404": "404",
     "colors": "調色盤",
     "custom_section": "自訂區段",
@@ -171,6 +175,14 @@
     "disclosures": "資訊揭露"
   },
   "settings": {
+    "focus_outline_color": "焦點外框",
+    "heading_text_color": "標題顏色",
+    "panel_background": "面板背景",
+    "show_quote_mark": "顯示引號",
+    "quote": "引言",
+    "card_background": "卡片背景",
+    "overlap": "重疊",
+    "first_row_columns": "第一列欄數",
     "alignment": "對齊",
     "autoplay": "自動播放",
     "background": "背景",
@@ -586,6 +598,9 @@
     "title_preset": "標題預設設定"
   },
   "options": {
+    "extra_loose": "特寬",
+    "ratio_3_2": "3:2",
+    "ratio_4_3": "4:3",
     "apple": "Apple",
     "arrow": "箭頭",
     "auto": "自動",
@@ -996,6 +1011,10 @@
     "page_text_color_contrast_info": "具有自訂背景顏色的區段，僅在色彩對比度充足時才會使用此文字顏色。"
   },
   "html_defaults": {
+    "testimonial_quote": "<p>新增一段滿意顧客的簡短評價。</p>",
+    "what_customers_say": "<p>顧客怎麼說</p>",
+    "media_overlap_heading": "<h2>我們的故事</h2>",
+    "card_grid_heading": "<h2>依類別選購</h2>",
     "share_information_about_your": "<p>向顧客分享您的品牌故事。可用來敘述產品、發布公告，或歡迎顧客造訪您的商店。</p>",
     "bestseller_h2": "<h2>熱銷商品</h2>",
     "bestseller_h3": "<h3>熱銷商品</h3>",
@@ -1053,6 +1072,7 @@
     "introducing_p": "<p><em>全新推出</em></p>"
   },
   "text_defaults": {
+    "testimonial_author": "顧客姓名",
     "button_label": "立即選購",
     "collapsible_row": "可摺疊列",
     "heading": "標題",
@@ -1091,6 +1111,9 @@
     "disclosures": "資訊揭露"
   },
   "info": {
+    "focus_outline_color": "聚焦的連結和控制項周圍顯示的外框。留空則使用文字顏色。",
+    "heading_text_color": "留空則與文字顏色一致。使用自訂顏色的區段會保留其對比度。",
+    "first_row_columns": "在桌面版第一列顯示較少、較寬的卡片",
     "carousel_layout_on_mobile": "在行動裝置上一律使用輪播",
     "video_alt_text": "為使用輔助技術的使用者描述影片",
     "video_autoplay": "影片預設為靜音播放",

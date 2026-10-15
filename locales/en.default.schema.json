@@ -166,6 +166,10 @@
     "navigation": "Navigation"
   },
   "html_defaults": {
+    "card_grid_heading": "<h2>Shop by category</h2>",
+    "media_overlap_heading": "<h2>Our story</h2>",
+    "what_customers_say": "<p>What customers say</p>",
+    "testimonial_quote": "<p>Add a short quote from a happy customer.</p>",
     "join_our_email_list": "<h2>Join our email list</h2>",
     "get_exclusive_deals_and_early_access_to_new_products": "<p>Get exclusive deals and early access to new products.</p>",
     "artistry_in_action": "<p>Artistry in action </p>",
@@ -223,6 +227,9 @@
     "work_quickly_to_ship": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>"
   },
   "info": {
+    "focus_outline_color": "Outline shown around focused links and controls. Leave blank to use the text color.",
+    "heading_text_color": "Leave blank to match the text color. Sections with their own colors keep their contrast.",
+    "first_row_columns": "Show fewer, wider cards in the first row on desktop",
     "actions_display_style": "Icons are always used on mobile",
     "applies_on_image_only": "Applies to images only",
     "aspect_ratio_adjusted": "Adjusted in some layouts",
@@ -252,6 +259,10 @@
     "media_type_info": "Features are populated from your menu links"
   },
   "names": {
+    "card_grid": "Card grid",
+    "media_overlap": "Overlapping card",
+    "testimonial": "Testimonial",
+    "testimonials": "Testimonials",
     "column": "Column",
     "product_title": "Product title",
     "custom_liquid": "Custom Liquid",
@@ -421,6 +432,9 @@
     "comparison_slider": "Comparison slider"
   },
   "options": {
+    "extra_loose": "Extra loose",
+    "ratio_4_3": "4:3",
+    "ratio_3_2": "3:2",
     "above_carousel": "Above carousel",
     "accent": "Accent",
     "all": "All",
@@ -746,6 +760,14 @@
     "below_media": "Below media"
   },
   "settings": {
+    "focus_outline_color": "Focus outline",
+    "heading_text_color": "Heading color",
+    "first_row_columns": "First row columns",
+    "overlap": "Overlap",
+    "card_background": "Card background",
+    "quote": "Quote",
+    "show_quote_mark": "Show quote mark",
+    "panel_background": "Panel background",
     "accordion": "Accordion",
     "account": "Account",
     "actions_display_style": "Menu style",
@@ -1199,6 +1221,7 @@
     "bottom_row_text": "Bottom row text"
   },
   "text_defaults": {
+    "testimonial_author": "Customer name",
     "accordion_heading": "Accordion heading",
     "are_purchases_final_sale": "Are any purchases final sale?",
     "be_bold": "Be bold.",

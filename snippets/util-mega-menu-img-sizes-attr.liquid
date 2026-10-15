@@ -32,6 +32,9 @@
 
   # Define breakpoints and max widths based on page width setting
   case settings.page_width
+    when 'compact'
+      assign page_max_width = '73.75rem'
+      assign breakpoint = '78.75rem'
     when 'narrow'
       assign page_max_width = '90rem'
       assign breakpoint = '95rem'
