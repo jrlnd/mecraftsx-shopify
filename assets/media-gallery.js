@@ -1,5 +1,5 @@
 import { Component } from '@theme/component';
-import { ThemeEvents, ZoomMediaSelectedEvent } from '@theme/events';
+import { SlideshowSelectEvent, ThemeEvents, ZoomMediaSelectedEvent } from '@theme/events';
 import { StandardEvents, ProductSelectEvent } from '@shopify/events';
 
 /**
@@ -23,15 +23,43 @@ export class MediaGallery extends Component {
     this.refs.zoomDialogComponent?.addEventListener(ThemeEvents.zoomMediaSelected, this.#handleZoomMediaSelected, {
       signal,
     });
+
+    if (this.hasAttribute('data-adaptive-height')) {
+      this.addEventListener(SlideshowSelectEvent.eventName, this.#updateAdaptiveHeight, { signal });
+      this.#resizeObserver = new ResizeObserver(() => this.#updateAdaptiveHeight());
+      for (const slide of this.slideshow?.slides ?? []) this.#resizeObserver.observe(slide);
+      this.#updateAdaptiveHeight();
+    }
   }
 
   #controller = new AbortController();
+
+  /** @type {ResizeObserver | undefined} */
+  #resizeObserver;
 
   disconnectedCallback() {
     super.disconnectedCallback();
 
     this.#controller.abort();
+    this.#resizeObserver?.disconnect();
   }
+
+  /**
+   * Sizes the slideshow track to the selected slide when adaptive height is on.
+   * Ignores selections bubbling up from nested slideshows such as the zoom dialog.
+   *
+   * @param {SlideshowSelectEvent} [event]
+   */
+  #updateAdaptiveHeight = (event) => {
+    const { slideshow } = this;
+    if (!slideshow || (event && event.target !== slideshow)) return;
+
+    const slide = event?.detail.slide ?? slideshow.slides?.[slideshow.current];
+    const track = slide?.parentElement;
+    if (!(slide instanceof HTMLElement) || !track) return;
+
+    track.style.setProperty('--adaptive-slide-height', `${slide.offsetHeight}px`);
+  };
 
   /**
    * Handles a product select event by replacing the current media gallery with a new one.

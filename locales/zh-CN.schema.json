@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "country_selector": "国家/地区选择器",
     "testimonials": "客户评价",
     "testimonial": "客户评价",
     "media_overlap": "重叠卡片",
@@ -175,6 +176,9 @@
     "disclosures": "披露信息"
   },
   "settings": {
+    "pinned_countries": "置顶国家/地区",
+    "transparent_header_gradient": "透明页眉后的渐变",
+    "adaptive_height": "高度适应当前媒体",
     "logo_accent_color": "徽标强调色",
     "border_only_when_sticky": "在页面顶部隐藏边框",
     "smooth_scroll": "平滑滚动",
@@ -1115,6 +1119,9 @@
     "disclosures": "披露信息"
   },
   "info": {
+    "pinned_countries": "优先按顺序显示的国家/地区代码，用逗号分隔。示例：US,CA",
+    "transparent_header_gradient": "在页面顶部添加柔和的深色渐变，让页眉在浅色图片上依然清晰可读。",
+    "adaptive_height": "每个项目以全宽及其自身高度显示。顾客切换项目时，图库会随之调整大小。",
     "border_only_when_sticky": "仅在滚动时页眉固定后显示底部边框。",
     "smooth_scroll": "让鼠标滚轮滚动更平滑。触控滚动保持原生，并且对偏好减少动态效果的访客关闭。",
     "focus_outline_color": "聚焦的链接和控件周围显示的轮廓。留空则使用文本颜色。",

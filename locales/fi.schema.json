@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "country_selector": "Maan/alueen valitsin",
     "testimonials": "Suosittelut",
     "testimonial": "Suosittelu",
     "media_overlap": "Päällekkäinen kortti",
@@ -175,6 +176,9 @@
     "disclosures": "Ilmoitukset"
   },
   "settings": {
+    "pinned_countries": "Kiinnitetyt maat",
+    "transparent_header_gradient": "Liukuväri läpinäkyvän ylätunnisteen takana",
+    "adaptive_height": "Sovita korkeus nykyiseen mediaan",
     "logo_accent_color": "Logon korostusväri",
     "border_only_when_sticky": "Piilota reunus sivun yläosassa",
     "smooth_scroll": "Pehmeä vieritys",
@@ -1115,6 +1119,9 @@
     "disclosures": "Ilmoitukset"
   },
   "info": {
+    "pinned_countries": "Ensin järjestyksessä näytettävät maakoodit pilkuilla erotettuina. Esimerkki: US,CA",
+    "transparent_header_gradient": "Lisää sivun yläosaan pehmeän tumman liukuvärin, jotta ylätunniste pysyy luettavana vaaleiden kuvien päällä.",
+    "adaptive_height": "Jokainen kohde näytetään täysleveänä omalla korkeudellaan. Galleria muuttaa kokoa, kun ostajat siirtyvät kohteesta toiseen.",
     "border_only_when_sticky": "Näyttää alareunuksen vasta, kun ylätunniste kiinnittyy vierityksen aikana.",
     "smooth_scroll": "Pehmentää hiiren rullalla vieritystä. Kosketusvieritys pysyy ennallaan, ja ominaisuus on pois päältä vähennettyä liikettä suosiville.",
     "focus_outline_color": "Ääriviiva kohdistettujen linkkien ja säätimien ympärillä. Jätä tyhjäksi, jos haluat käyttää tekstin väriä.",

@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "country_selector": "国/地域セレクター",
     "testimonials": "お客様の声",
     "testimonial": "お客様の声",
     "media_overlap": "重なりカード",
@@ -175,6 +176,9 @@
     "disclosures": "開示情報"
   },
   "settings": {
+    "pinned_countries": "固定する国",
+    "transparent_header_gradient": "透明ヘッダーの背後にグラデーション",
+    "adaptive_height": "高さを現在のメディアに合わせる",
     "logo_accent_color": "ロゴのアクセントカラー",
     "border_only_when_sticky": "ページ上部で枠線を非表示",
     "smooth_scroll": "スムーズスクロール",
@@ -1115,6 +1119,9 @@
     "disclosures": "開示情報"
   },
   "info": {
+    "pinned_countries": "最初に順番どおり表示する国コード（カンマ区切り）。例：US,CA",
+    "transparent_header_gradient": "ページ上部に柔らかい暗めのグラデーションを加え、明るい画像の上でもヘッダーを読みやすくします。",
+    "adaptive_height": "各アイテムを全幅かつ本来の高さで表示します。アイテムを切り替えるとギャラリーのサイズが変わります。",
     "border_only_when_sticky": "スクロール中にヘッダーが固定されたときだけ下枠線を表示します。",
     "smooth_scroll": "マウスホイールのスクロールを滑らかにします。タッチ操作のスクロールは変わらず、視差効果を減らす設定の訪問者には無効になります。",
     "focus_outline_color": "フォーカスされたリンクやコントロールの周囲に表示される枠線です。空白にするとテキストの色が使用されます。",

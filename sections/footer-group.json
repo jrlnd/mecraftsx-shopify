@@ -226,6 +226,22 @@
           },
           "blocks": {}
         },
+        "country_selector": {
+          "type": "country-selector",
+          "settings": {
+            "pinned_countries": "US,CA",
+            "show_flag": true,
+            "font": "body",
+            "font_size": "0.75rem"
+          }
+        },
+        "payment_icons": {
+          "type": "payment-icons",
+          "settings": {
+            "horizontal_alignment": "flex-end",
+            "gap": 8
+          }
+        },
         "footer_policy_list_YXDWfF": {
           "type": "footer-policy-list",
           "name": "t:names.policy_list",
@@ -238,7 +254,9 @@
       },
       "block_order": [
         "copyright",
-        "footer_policy_list_YXDWfF"
+        "footer_policy_list_YXDWfF",
+        "country_selector",
+        "payment_icons"
       ],
       "settings": {
         "section_width": "full-width-gutter",

@@ -270,6 +270,7 @@ p:empty {
 .page-width-wide,
 .page-width-normal,
 .page-width-narrow,
+.page-width-medium,
 .page-width-compact,
 .page-width-content {
   --page-margin: max(16px, var(--safe-area-inset-left, 0px), var(--safe-area-inset-right, 0px));
@@ -279,6 +280,7 @@ p:empty {
   .page-width-wide,
   .page-width-normal,
   .page-width-narrow,
+  .page-width-medium,
   .page-width-compact,
   .page-width-content {
     --page-margin: max(40px, var(--safe-area-inset-left, 0px), var(--safe-area-inset-right, 0px));
@@ -298,6 +300,11 @@ p:empty {
 
 .page-width-compact {
   --page-content-width: var(--compact-page-width);
+  --page-width: calc(var(--page-content-width) + (var(--page-margin) * 2));
+}
+
+.page-width-medium {
+  --page-content-width: var(--medium-page-width);
   --page-width: calc(var(--page-content-width) + (var(--page-margin) * 2));
 }
 

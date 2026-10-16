@@ -227,6 +227,9 @@
     "work_quickly_to_ship": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>"
   },
   "info": {
+    "pinned_countries": "Country codes shown first, in order, separated by commas. Example: US,CA",
+    "transparent_header_gradient": "Adds a soft dark gradient at the top of the page so the header stays readable over light images.",
+    "adaptive_height": "Each item shows at full width and its own height. The gallery resizes as shoppers move between items.",
     "border_only_when_sticky": "Shows the bottom border only after the header sticks while scrolling.",
     "smooth_scroll": "Eases mouse-wheel scrolling. Touch scrolling stays native, and it's off for visitors who prefer reduced motion.",
     "focus_outline_color": "Outline shown around focused links and controls. Leave blank to use the text color.",
@@ -261,6 +264,7 @@
     "media_type_info": "Features are populated from your menu links"
   },
   "names": {
+    "country_selector": "Country/region selector",
     "card_grid": "Card grid",
     "media_overlap": "Overlapping card",
     "testimonial": "Testimonial",
@@ -763,6 +767,9 @@
     "below_media": "Below media"
   },
   "settings": {
+    "pinned_countries": "Pinned countries",
+    "transparent_header_gradient": "Gradient behind transparent header",
+    "adaptive_height": "Fit height to current media",
     "logo_accent_color": "Logo accent color",
     "border_only_when_sticky": "Hide border at top of page",
     "smooth_scroll": "Smooth scrolling",

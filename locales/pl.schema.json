@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "country_selector": "Wybór kraju/regionu",
     "testimonials": "Opinie",
     "testimonial": "Opinia",
     "media_overlap": "Nakładająca się karta",
@@ -175,6 +176,9 @@
     "disclosures": "Informacje prawne"
   },
   "settings": {
+    "pinned_countries": "Przypięte kraje",
+    "transparent_header_gradient": "Gradient za przezroczystym nagłówkiem",
+    "adaptive_height": "Dopasuj wysokość do bieżących multimediów",
     "logo_accent_color": "Kolor akcentu logo",
     "border_only_when_sticky": "Ukryj obramowanie u góry strony",
     "smooth_scroll": "Płynne przewijanie",
@@ -1115,6 +1119,9 @@
     "disclosures": "Informacje prawne"
   },
   "info": {
+    "pinned_countries": "Kody krajów wyświetlane jako pierwsze, w kolejności, oddzielone przecinkami. Przykład: US,CA",
+    "transparent_header_gradient": "Dodaje delikatny ciemny gradient u góry strony, aby nagłówek był czytelny na jasnych obrazach.",
+    "adaptive_height": "Każdy element jest wyświetlany na pełnej szerokości i we własnej wysokości. Galeria zmienia rozmiar przy przechodzeniu między elementami.",
     "border_only_when_sticky": "Pokazuje dolne obramowanie dopiero po przypięciu nagłówka podczas przewijania.",
     "smooth_scroll": "Wygładza przewijanie kółkiem myszy. Przewijanie dotykowe pozostaje natywne i jest wyłączone dla osób preferujących ograniczony ruch.",
     "focus_outline_color": "Obrys wokół aktywnych linków i elementów sterujących. Pozostaw puste, aby użyć koloru tekstu.",

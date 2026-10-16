@@ -220,6 +220,14 @@
     },
     {
       "type": "checkbox",
+      "id": "adaptive_height",
+      "label": "t:settings.adaptive_height",
+      "info": "t:info.adaptive_height",
+      "default": false,
+      "visible_if": "{{ block.settings.media_presentation == 'carousel' and block.settings.aspect_ratio == 'adapt' }}"
+    },
+    {
+      "type": "checkbox",
       "id": "constrain_to_viewport",
       "label": "t:settings.limit_media_to_screen_height",
       "default": false
@@ -239,7 +247,7 @@
         }
       ],
       "default": "cover",
-      "visible_if": "{{ block.settings.aspect_ratio == 'adapt' and block.settings.constrain_to_viewport == true }}"
+      "visible_if": "{{ block.settings.aspect_ratio != 'adapt' or block.settings.constrain_to_viewport == true }}"
     },
     {
       "type": "range",

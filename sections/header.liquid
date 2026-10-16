@@ -237,6 +237,9 @@
     assign color_shadow = '--color-shadow: rgb(var(--color-foreground-rgb) / var(--opacity-10-25));'
     assign form_style = localization_font | append: localization_font_size | append: color_shadow
   %}
+  {% if show_language or show_country %}
+    {% render 'dropdown-localization-styles' %}
+  {% endif %}
   {% if show_language and show_country == false %}
     <div class="dropdown-localization mobile:hidden">
       {% render 'localization-form',
@@ -382,6 +385,9 @@
     {% endif %}
   "
 >
+  {% if transparent and section.settings.transparent_header_gradient %}
+    <div class="header__scrim" aria-hidden="true"></div>
+  {% endif %}
   <div class="header__underlay header__underlay-closed"></div>
   <div
     class="header__underlay header__underlay-open"
@@ -542,6 +548,7 @@
       var(--animation-speed-fast) var(--ease-out-cubic);
 
     --closed-underlay-height: 0px;
+    --header-scrim-opacity: 1;
 
     /* used to display the appropriate logo based on transparency state */
     --header-logo-display: none;
@@ -564,6 +571,7 @@
       --color-border: inherit;
       --color-border-rgb: inherit;
       --closed-underlay-height: 100%;
+      --header-scrim-opacity: 0;
     }
 
     /** For transparent header, apply transparent text color to rows when menu is not hovered */
@@ -591,6 +599,7 @@
     &:has(.mega-menu__list:hover),
     &:has(.menu-list__link:hover),
     &:has(header-menu[aria-expanded='true']) {
+      --header-scrim-opacity: 0;
       --header-logo-display: unset;
       --header-logo-inverse-display: unset;
       --color-foreground: inherit;
@@ -678,6 +687,20 @@
   .header__underlay {
     position: absolute;
     inset: 0;
+  }
+
+  /* Darkens the top of the hero behind a transparent header so light images keep the header legible.
+     Fades out whenever the header turns solid (sticky, menu hover or open). */
+  .header__scrim {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline: 0;
+    height: calc(var(--header-height, 60px) * 1.5);
+    z-index: var(--layer-lowest);
+    background: linear-gradient(to bottom, rgb(0 0 0 / var(--opacity-50)), rgb(0 0 0 / 0));
+    opacity: var(--header-scrim-opacity, 0);
+    pointer-events: none;
+    transition: opacity var(--animation-speed-slow) var(--animation-easing);
   }
 
   .header__underlay-closed {
@@ -1114,163 +1137,6 @@
   .header-menu .menu-list__submenu[data-active],
   .header-menu .menu-list__list-item[slot='overflow'] .menu-list__submenu {
     content-visibility: visible;
-  }
-
-  /* Dropdown Localization Styles */
-  .dropdown-localization__button {
-    display: flex;
-    position: relative;
-    align-items: center;
-    gap: 4px;
-    font-family: var(--menu-localization-font);
-    font-size: var(--menu-localization-font-size);
-    font-weight: var(--menu-top-level-font-weight);
-    padding-inline: var(--padding-2xs);
-    margin-inline: calc(-1 * var(--padding-2xs));
-  }
-
-  .dropdown-localization__button .svg-wrapper.icon-caret {
-    height: var(--icon-size-xs);
-    width: var(--icon-size-xs);
-    inset-inline-end: var(--margin-xs);
-    top: calc(50% - var(--padding-2xs));
-    flex-shrink: 0;
-    transition: transform var(--animation-speed) var(--animation-easing);
-  }
-
-  .dropdown-localization__button .icon-flag {
-    width: var(--menu-localization-font-size, var(--icon-size-sm));
-    height: var(--menu-localization-font-size, var(--icon-size-sm));
-    clip-path: circle(50%); /* stylelint-disable-line */
-    background-position: center;
-    background-size: cover;
-    margin-inline-end: 4px;
-    position: relative;
-  }
-
-  .dropdown-localization__button .icon-flag::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    box-shadow: inset 0 0 var(--size-shadow) var(--color-shadow);
-    border-radius: 50%;
-  }
-
-  .dropdown-localization__button[aria-expanded='true'] .icon-caret svg {
-    transform: rotate(180deg);
-  }
-
-  .dropdown-localization__button,
-  .dropdown-localization__button:hover {
-    box-shadow: none;
-    background-color: transparent;
-    border-color: transparent;
-    border-radius: 0;
-  }
-
-  dropdown-localization-component .localization-form__list {
-    max-height: 20.5rem;
-  }
-
-  .localization-wrapper {
-    position: fixed;
-    z-index: var(--layer-raised);
-    border-radius: var(--style-border-radius-popover);
-    transition-property: display, opacity, translate;
-    transition-duration: 0.3s;
-    transition-timing-function: var(--ease-out-quad);
-    transition-behavior: allow-discrete;
-    translate: 0 20px;
-    opacity: 0;
-  }
-
-  .localization-wrapper:not([hidden]) {
-    translate: 0 0;
-    opacity: 1;
-  }
-
-  @starting-style {
-    .localization-wrapper:not([hidden]) {
-      translate: 0 20px;
-      opacity: 0;
-    }
-  }
-
-  dropdown-localization-component {
-    position: relative;
-    background-color: transparent;
-  }
-
-  dropdown-localization-component .country-filter {
-    position: relative;
-    padding: 8px;
-  }
-
-  dropdown-localization-component .country-filter__input {
-    border: none;
-  }
-
-  dropdown-localization-component .localization-form__list-item {
-    margin-inline: 8px;
-  }
-
-  dropdown-localization-component .localization-wrapper {
-    box-shadow: var(--shadow-popover);
-    border: var(--style-border-popover);
-    background-color: var(--color-background);
-    max-height: 27.5rem;
-    position: absolute;
-    top: calc(100% + 10px);
-    z-index: calc(var(--layer-header-menu) + 1);
-  }
-
-  dropdown-localization-component .localization-wrapper.right-bound {
-    inset-inline-end: 0;
-    inset-inline-start: unset;
-  }
-
-  dropdown-localization-component .localization-wrapper.left-bound {
-    inset-inline-start: -8px;
-    inset-inline-end: unset;
-  }
-
-  /* Additional specificity due to dropdown-localization-component getting a low score */
-  dropdown-localization-component .language-selector.language-selector {
-    padding-block: 10px;
-    padding-inline: 16px 8px;
-  }
-
-  dropdown-localization-component .localization-form__currency {
-    width: max-content;
-    opacity: 0;
-    visibility: hidden;
-    transition: none;
-  }
-
-  dropdown-localization-component .localization-form__select:hover {
-    background-color: rgb(var(--color-foreground-rgb) / var(--opacity-8));
-  }
-
-  dropdown-localization-component
-    :is(
-      .localization-form__list-item:hover,
-      .localization-form__list-item[aria-selected='true'],
-      .localization-form__list-item[aria-current='true']
-    )
-    .localization-form__currency {
-    opacity: 1;
-    color: var(--color-foreground-muted);
-    transition: opacity var(--animation-speed-slow) var(--animation-easing);
-    visibility: visible;
-  }
-
-  .dropdown-localization .language-selector:where(:not(.language-selector--top-shadow)) {
-    font-weight: var(--menu-top-level-font-weight);
-  }
-
-  .dropdown-localization:not(dropdown-localization-component) .language-selector {
-    font-family: var(--menu-localization-font);
-    font-size: var(--menu-localization-font-size);
   }
 {% endstylesheet %}
 
@@ -1860,6 +1726,14 @@
       "label": "t:settings.text_color_transparent",
       "placeholder": "t:settings.default",
       "visible_if": "{{ section.settings.enable_transparent_header_collection }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "transparent_header_gradient",
+      "label": "t:settings.transparent_header_gradient",
+      "info": "t:info.transparent_header_gradient",
+      "default": false,
+      "visible_if": "{{ section.settings.enable_transparent_header_home or section.settings.enable_transparent_header_product or section.settings.enable_transparent_header_collection }}"
     }
   ],
   "presets": []

@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "country_selector": "Väljare för land/region",
     "testimonials": "Kundomdömen",
     "testimonial": "Kundomdöme",
     "media_overlap": "Överlappande kort",
@@ -175,6 +176,9 @@
     "disclosures": "Upplysningar"
   },
   "settings": {
+    "pinned_countries": "Fästa länder",
+    "transparent_header_gradient": "Gradient bakom transparent sidhuvud",
+    "adaptive_height": "Anpassa höjden efter aktuellt media",
     "logo_accent_color": "Logotypens accentfärg",
     "border_only_when_sticky": "Dölj kant högst upp på sidan",
     "smooth_scroll": "Mjuk rullning",
@@ -1115,6 +1119,9 @@
     "disclosures": "Upplysningar"
   },
   "info": {
+    "pinned_countries": "Landskoder som visas först i ordning, separerade med kommatecken. Exempel: US,CA",
+    "transparent_header_gradient": "Lägger till en mjuk mörk gradient högst upp på sidan så att sidhuvudet syns tydligt över ljusa bilder.",
+    "adaptive_height": "Varje objekt visas i full bredd och sin egen höjd. Galleriet ändrar storlek när kunderna bläddrar mellan objekt.",
     "border_only_when_sticky": "Visar den nedre kanten först när sidhuvudet fastnar under rullning.",
     "smooth_scroll": "Gör rullning med mushjulet mjukare. Rullning med pekskärm förblir inbyggd och är avstängd för besökare som föredrar minskad rörelse.",
     "focus_outline_color": "Ram runt länkar och kontroller i fokus. Lämna tomt för att använda textfärgen.",

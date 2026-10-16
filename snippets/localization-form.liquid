@@ -7,6 +7,8 @@
   @param {string} localization_style - The style of the localization form
   @param {string} [form_style] - The style tag string to be applied to the form
   @param {string} [back] - The URL to redirect to after form submission
+  @param {boolean} [show_flags] - Whether to show a flag before each country in the list
+  @param {string} [pinned_countries] - Comma-separated country codes (e.g. "US,CA") listed first, in that order, in place of Shopify's popular countries
 
   @example
   {% render 'localization-form', show_country: true, show_language: true, form_id: block.id, localization_style: 'dropdown' %}
@@ -30,6 +32,26 @@
     assign show_popular_countries = true
     # Popular countries get their own list above, so drop them here to avoid listing a country twice.
     assign other_countries = localization.available_countries | reject: 'popular?'
+  endif
+
+  # Merchant-pinned countries replace the popular list, keep the given order and leave the main list.
+  if pinned_countries != blank
+    assign pinned_list = '' | split: ','
+    assign unpinned_countries = localization.available_countries
+    assign pinned_codes = pinned_countries | upcase | split: ','
+    for pinned_code in pinned_codes
+      assign code = pinned_code | strip
+      assign pinned_match = localization.available_countries | where: 'iso_code', code
+      if pinned_match.size > 0
+        assign pinned_list = pinned_list | concat: pinned_match
+        assign unpinned_countries = unpinned_countries | reject: 'iso_code', code
+      endif
+    endfor
+    if pinned_list.size > 0
+      assign show_popular_countries = true
+      assign popular_countries = pinned_list
+      assign other_countries = unpinned_countries
+    endif
   endif
 
   assign show_currencies = false
@@ -161,6 +183,16 @@
                   <span class="svg-wrapper icon-checkmark">
                     {{- 'icon-checkmark.svg' | inline_asset_content -}}
                   </span>
+                  {% if show_flags %}
+                    <img
+                      class="localization-form__flag"
+                      src="{{ country | image_url: width: 32 }}"
+                      width="16"
+                      height="16"
+                      alt=""
+                      loading="lazy"
+                    >
+                  {% endif %}
                   <span class="country">{{- country.name }}</span>
                   <span
                     class="localization-form__currency"
@@ -216,6 +248,16 @@
                 <span class="svg-wrapper icon-checkmark">
                   {{- 'icon-checkmark.svg' | inline_asset_content -}}
                 </span>
+                {% if show_flags %}
+                  <img
+                    class="localization-form__flag"
+                    src="{{ country | image_url: width: 32 }}"
+                    width="16"
+                    height="16"
+                    alt=""
+                    loading="lazy"
+                  >
+                {% endif %}
                 <span class="country">{{- country.name }}</span>
                 <span
                   class="localization-form__currency"
@@ -321,6 +363,15 @@
     --button-color: var(--color-primary-active);
 
     background-color: rgb(var(--color-foreground-rgb) / var(--opacity-10));
+  }
+
+  .localization-form__flag {
+    flex-shrink: 0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 1px rgb(var(--color-foreground-rgb) / var(--opacity-10));
   }
 
   .localization-form__list-item-disabled {

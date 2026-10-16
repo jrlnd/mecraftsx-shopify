@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "country_selector": "Selettore paese/area geografica",
     "testimonials": "Testimonianze",
     "testimonial": "Testimonianza",
     "media_overlap": "Scheda sovrapposta",
@@ -175,6 +176,9 @@
     "disclosures": "Informative"
   },
   "settings": {
+    "pinned_countries": "Paesi fissati",
+    "transparent_header_gradient": "Sfumatura dietro l'header trasparente",
+    "adaptive_height": "Adatta l'altezza al contenuto multimediale attuale",
     "logo_accent_color": "Colore di accento del logo",
     "border_only_when_sticky": "Nascondi bordo in cima alla pagina",
     "smooth_scroll": "Scorrimento fluido",
@@ -1115,6 +1119,9 @@
     "disclosures": "Informative"
   },
   "info": {
+    "pinned_countries": "Codici paese mostrati per primi, in ordine, separati da virgole. Esempio: US,CA",
+    "transparent_header_gradient": "Aggiunge una leggera sfumatura scura in cima alla pagina per mantenere l'header leggibile sulle immagini chiare.",
+    "adaptive_height": "Ogni elemento viene mostrato a larghezza piena e con la propria altezza. La galleria si ridimensiona quando i clienti passano da un elemento all'altro.",
     "border_only_when_sticky": "Mostra il bordo inferiore solo quando l'header diventa fisso durante lo scorrimento.",
     "smooth_scroll": "Rende più fluido lo scorrimento con la rotellina. Lo scorrimento touch resta nativo ed è disattivato per chi preferisce ridurre il movimento.",
     "focus_outline_color": "Contorno mostrato attorno a link e controlli attivi. Lascia vuoto per usare il colore del testo.",

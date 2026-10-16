@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "country_selector": "Land/regio-kiezer",
     "testimonials": "Getuigenissen",
     "testimonial": "Getuigenis",
     "media_overlap": "Overlappende kaart",
@@ -175,6 +176,9 @@
     "disclosures": "Toelichtingen"
   },
   "settings": {
+    "pinned_countries": "Vastgezette landen",
+    "transparent_header_gradient": "Verloop achter transparante header",
+    "adaptive_height": "Hoogte aanpassen aan huidige media",
     "logo_accent_color": "Accentkleur van logo",
     "border_only_when_sticky": "Rand bovenaan de pagina verbergen",
     "smooth_scroll": "Vloeiend scrollen",
@@ -1115,6 +1119,9 @@
     "disclosures": "Toelichtingen"
   },
   "info": {
+    "pinned_countries": "Landcodes die als eerste in volgorde worden getoond, gescheiden door komma's. Voorbeeld: US,CA",
+    "transparent_header_gradient": "Voegt bovenaan de pagina een zacht donker verloop toe, zodat de header leesbaar blijft op lichte afbeeldingen.",
+    "adaptive_height": "Elk item wordt op volle breedte en eigen hoogte getoond. De galerij past zich aan wanneer klanten tussen items wisselen.",
     "border_only_when_sticky": "Toont de onderrand pas wanneer de header tijdens het scrollen vastzit.",
     "smooth_scroll": "Maakt scrollen met het muiswiel vloeiender. Scrollen met aanraking blijft native en het staat uit voor bezoekers die minder beweging verkiezen.",
     "focus_outline_color": "Kader rond gefocuste links en bedieningselementen. Laat leeg om de tekstkleur te gebruiken.",

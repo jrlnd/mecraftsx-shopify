@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "country_selector": "Výběr země/oblasti",
     "testimonials": "Reference",
     "testimonial": "Reference",
     "media_overlap": "Překrývající karta",
@@ -175,6 +176,9 @@
     "disclosures": "Prohlášení"
   },
   "settings": {
+    "pinned_countries": "Připnuté země",
+    "transparent_header_gradient": "Přechod za průhledným záhlavím",
+    "adaptive_height": "Přizpůsobit výšku aktuálnímu médiu",
     "logo_accent_color": "Zvýrazňující barva loga",
     "border_only_when_sticky": "Skrýt okraj v horní části stránky",
     "smooth_scroll": "Plynulé posouvání",
@@ -1115,6 +1119,9 @@
     "disclosures": "Prohlášení"
   },
   "info": {
+    "pinned_countries": "Kódy zemí zobrazené jako první v daném pořadí, oddělené čárkami. Příklad: US,CA",
+    "transparent_header_gradient": "Přidá jemný tmavý přechod v horní části stránky, aby záhlaví zůstalo čitelné i na světlých obrázcích.",
+    "adaptive_height": "Každá položka se zobrazí v plné šířce a ve vlastní výšce. Galerie mění velikost při přechodu mezi položkami.",
     "border_only_when_sticky": "Spodní okraj se zobrazí až poté, co se záhlaví při posouvání připne.",
     "smooth_scroll": "Zjemní posouvání kolečkem myši. Dotykové posouvání zůstává nativní a pro návštěvníky s preferencí omezeného pohybu je vypnuto.",
     "focus_outline_color": "Obrys zobrazený kolem zaměřených odkazů a ovládacích prvků. Ponechte prázdné pro barvu textu.",

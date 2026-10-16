@@ -158,7 +158,7 @@
     assign product_media_container_class = product_media_container_class | append: ' constrain-height'
   endif
   if block_settings.aspect_ratio != 'adapt'
-    assign product_media_container_class = product_media_container_class | append: ' media-fit-cover'
+    assign product_media_container_class = product_media_container_class | append: ' media-fit-' | append: block_settings.media_fit
   elsif block_settings.constrain_to_viewport
     assign product_media_container_class = product_media_container_class | append: ' media-fit-' | append: block_settings.media_fit
   else
@@ -292,6 +292,25 @@
     }
   {% endunless %}
 
+  {% if block_settings.aspect_ratio != 'adapt' and block_settings.media_fit == 'contain' %}
+    /* Fixed frame, uncropped media: each item keeps its own shape, centered in the frame, and carries
+       the corner radius itself so every item reads with the same rounded corners. */
+    .product-media-container.media-fit-contain:not(.dialog-zoomed-gallery *) .product-media {
+      flex: none;
+      aspect-ratio: var(--ratio);
+      width: min(100%, calc(100% * var(--ratio) / (var(--gallery-aspect-ratio))));
+      height: auto;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    @media screen and (min-width: 750px) {
+      .product-media-container.media-fit-contain:not(.dialog-zoomed-gallery *) .product-media {
+        border-radius: var(--media-radius, 0);
+      }
+    }
+  {% endif %}
+
   /* Add background color so carousel arrows' mix-blend-mode works correctly even on transparent areas. */
   {% if block_settings.media_fit == 'contain' %}
     .media-fit-contain :is(img, .deferred-media__poster-image) {
@@ -324,8 +343,12 @@
   {% endcapture %}
   {% if block_settings.aspect_ratio == 'adapt' and block_settings.constrain_to_viewport == false %}
     {{ view_transition_styles_contain }}
-  {% elsif block_settings.aspect_ratio == 'adapt' and block_settings.constrain_to_viewport == true and block_settings.media_fit == 'contain' %}
-    {{ view_transition_styles_contain }}
+  {% elsif block_settings.constrain_to_viewport == true or block_settings.aspect_ratio != 'adapt' %}
+    {% if block_settings.media_fit == 'contain' %}
+      {{ view_transition_styles_contain }}
+    {% else %}
+      {{ view_transition_styles_cover }}
+    {% endif %}
   {% else %}
     {{ view_transition_styles_cover }}
   {% endif %}
@@ -363,6 +386,9 @@
     "
     style="{% render 'spacing-style', settings: block_settings %} --thumbnail-width: {{ block_settings.thumbnail_width }}px; --media-radius: {{ block_settings.media_radius }}px;{% if block_settings.icons_style contains 'large' %} --slideshow-icon-padding: 0px;{% endif %}--image-gap: {{ block_settings.image_gap }}px;{% unless block_settings.aspect_ratio == 'adapt' %} --gallery-aspect-ratio: {{ block_settings.aspect_ratio }};{% endunless %}"
     data-presentation="{{ media_presentation }}"
+    {% if block_settings.adaptive_height and block_settings.media_presentation == 'carousel' and block_settings.aspect_ratio == 'adapt' %}
+      data-adaptive-height
+    {% endif %}
     {{ block_shopify_attributes }}
   >
     {% capture slides %}
@@ -1085,5 +1111,18 @@
 
   slideshow-slide.product-media-container--tallest {
     content-visibility: visible;
+  }
+
+  /* Adaptive height: each slide keeps its own full-width height and the track follows the selected
+     slide (height set by media-gallery.js), so the rounded frame always wraps the visible media. */
+  media-gallery[data-adaptive-height] slideshow-slides {
+    align-items: flex-start;
+    height: var(--adaptive-slide-height, auto);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    media-gallery[data-adaptive-height] slideshow-slides {
+      transition: height var(--animation-speed-slow) var(--animation-easing);
+    }
   }
 {% endstylesheet %}

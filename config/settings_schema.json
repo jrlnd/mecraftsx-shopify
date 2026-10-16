@@ -1156,6 +1156,10 @@
             "label": "t:options.narrow"
           },
           {
+            "value": "medium",
+            "label": "t:options.medium"
+          },
+          {
             "value": "normal",
             "label": "t:options.normal"
           },

@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "country_selector": "Ülke/bölge seçici",
     "testimonials": "Müşteri yorumları",
     "testimonial": "Müşteri yorumu",
     "media_overlap": "Üst üste kart",
@@ -175,6 +176,9 @@
     "disclosures": "Bildirimler"
   },
   "settings": {
+    "pinned_countries": "Sabitlenen ülkeler",
+    "transparent_header_gradient": "Şeffaf üst bilginin arkasında gradyan",
+    "adaptive_height": "Yüksekliği geçerli medyaya uydur",
     "logo_accent_color": "Logo vurgu rengi",
     "border_only_when_sticky": "Sayfanın üstünde kenarlığı gizle",
     "smooth_scroll": "Yumuşak kaydırma",
@@ -1115,6 +1119,9 @@
     "disclosures": "Bildirimler"
   },
   "info": {
+    "pinned_countries": "Önce sırayla gösterilecek ülke kodları, virgülle ayrılır. Örnek: US,CA",
+    "transparent_header_gradient": "Üst bilginin açık renkli görsellerde okunabilir kalması için sayfanın üstüne yumuşak koyu bir gradyan ekler.",
+    "adaptive_height": "Her öğe tam genişlikte ve kendi yüksekliğinde gösterilir. Alışveriş yapanlar öğeler arasında geçtikçe galeri yeniden boyutlanır.",
     "border_only_when_sticky": "Alt kenarlığı yalnızca kaydırırken üst bilgi sabitlendikten sonra gösterir.",
     "smooth_scroll": "Fare tekerleğiyle kaydırmayı yumuşatır. Dokunmatik kaydırma yerel kalır ve azaltılmış hareketi tercih eden ziyaretçiler için kapalıdır.",
     "focus_outline_color": "Odaklanılan bağlantıların ve kontrollerin çevresinde gösterilen çerçeve. Metin rengini kullanmak için boş bırakın.",

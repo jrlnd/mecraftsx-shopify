@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "country_selector": "Sélecteur de pays/région",
     "testimonials": "Témoignages",
     "testimonial": "Témoignage",
     "media_overlap": "Carte superposée",
@@ -175,6 +176,9 @@
     "disclosures": "Divulgations"
   },
   "settings": {
+    "pinned_countries": "Pays épinglés",
+    "transparent_header_gradient": "Dégradé derrière l'en-tête transparent",
+    "adaptive_height": "Adapter la hauteur au média actuel",
     "logo_accent_color": "Couleur d'accent du logo",
     "border_only_when_sticky": "Masquer la bordure en haut de la page",
     "smooth_scroll": "Défilement fluide",
@@ -1115,6 +1119,9 @@
     "disclosures": "Divulgations"
   },
   "info": {
+    "pinned_countries": "Codes pays affichés en premier, dans l'ordre, séparés par des virgules. Exemple : US,CA",
+    "transparent_header_gradient": "Ajoute un léger dégradé sombre en haut de la page pour que l'en-tête reste lisible sur les images claires.",
+    "adaptive_height": "Chaque élément s'affiche en pleine largeur et à sa propre hauteur. La galerie se redimensionne lorsque les clients passent d'un élément à l'autre.",
     "border_only_when_sticky": "Affiche la bordure inférieure uniquement lorsque l'en-tête devient fixe pendant le défilement.",
     "smooth_scroll": "Adoucit le défilement à la molette. Le défilement tactile reste natif, et l'effet est désactivé pour les visiteurs qui préfèrent réduire les animations.",
     "focus_outline_color": "Contour affiché autour des liens et commandes ciblés. Laissez vide pour utiliser la couleur du texte.",

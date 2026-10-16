@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "country_selector": "Vælger til land/område",
     "testimonials": "Udtalelser",
     "testimonial": "Udtalelse",
     "media_overlap": "Overlappende kort",
@@ -175,6 +176,9 @@
     "disclosures": "Oplysninger"
   },
   "settings": {
+    "pinned_countries": "Fastgjorte lande",
+    "transparent_header_gradient": "Gradient bag gennemsigtig header",
+    "adaptive_height": "Tilpas højden til det aktuelle medie",
     "logo_accent_color": "Logoets accentfarve",
     "border_only_when_sticky": "Skjul kant øverst på siden",
     "smooth_scroll": "Jævn rulning",
@@ -1115,6 +1119,9 @@
     "disclosures": "Oplysninger"
   },
   "info": {
+    "pinned_countries": "Landekoder, der vises først i rækkefølge, adskilt af kommaer. Eksempel: US,CA",
+    "transparent_header_gradient": "Tilføjer en blød mørk gradient øverst på siden, så headeren forbliver læselig over lyse billeder.",
+    "adaptive_height": "Hvert element vises i fuld bredde og sin egen højde. Galleriet ændrer størrelse, når kunderne skifter mellem elementer.",
     "border_only_when_sticky": "Viser kun den nederste kant, når headeren sidder fast under rulning.",
     "smooth_scroll": "Gør rulning med musehjulet blødere. Rulning med berøring forbliver uændret og er slået fra for besøgende, der foretrækker reduceret bevægelse.",
     "focus_outline_color": "Ramme rundt om links og kontrolelementer med fokus. Lad feltet være tomt for at bruge tekstfarven.",

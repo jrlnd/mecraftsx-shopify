@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "country_selector": "國家/地區選擇器",
     "testimonials": "顧客評價",
     "testimonial": "顧客評價",
     "media_overlap": "重疊卡片",
@@ -175,6 +176,9 @@
     "disclosures": "資訊揭露"
   },
   "settings": {
+    "pinned_countries": "置頂國家/地區",
+    "transparent_header_gradient": "透明頁首後的漸層",
+    "adaptive_height": "高度配合目前媒體",
     "logo_accent_color": "標誌強調色",
     "border_only_when_sticky": "在頁面頂端隱藏邊框",
     "smooth_scroll": "平滑捲動",
@@ -1115,6 +1119,9 @@
     "disclosures": "資訊揭露"
   },
   "info": {
+    "pinned_countries": "優先依序顯示的國家/地區代碼，以逗號分隔。範例：US,CA",
+    "transparent_header_gradient": "在頁面頂端加入柔和的深色漸層，讓頁首在淺色圖片上依然清晰易讀。",
+    "adaptive_height": "每個項目以全寬及其本身高度顯示。顧客切換項目時，圖庫會隨之調整大小。",
     "border_only_when_sticky": "僅在捲動時頁首固定後顯示底部邊框。",
     "smooth_scroll": "讓滑鼠滾輪捲動更平滑。觸控捲動維持原生，且對偏好減少動態效果的訪客關閉。",
     "focus_outline_color": "聚焦的連結和控制項周圍顯示的外框。留空則使用文字顏色。",

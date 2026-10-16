@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "country_selector": "Seletor de país/região",
     "testimonials": "Depoimentos",
     "testimonial": "Depoimento",
     "media_overlap": "Cartão sobreposto",
@@ -175,6 +176,9 @@
     "disclosures": "Divulgações"
   },
   "settings": {
+    "pinned_countries": "Países fixados",
+    "transparent_header_gradient": "Gradiente atrás do cabeçalho transparente",
+    "adaptive_height": "Ajustar altura à mídia atual",
     "logo_accent_color": "Cor de destaque do logotipo",
     "border_only_when_sticky": "Ocultar borda no topo da página",
     "smooth_scroll": "Rolagem suave",
@@ -1115,6 +1119,9 @@
     "disclosures": "Divulgações"
   },
   "info": {
+    "pinned_countries": "Códigos de país exibidos primeiro, na ordem, separados por vírgulas. Exemplo: US,CA",
+    "transparent_header_gradient": "Adiciona um gradiente escuro suave no topo da página para manter o cabeçalho legível sobre imagens claras.",
+    "adaptive_height": "Cada item aparece em largura total e com sua própria altura. A galeria se redimensiona conforme os clientes navegam entre os itens.",
     "border_only_when_sticky": "Mostra a borda inferior só depois que o cabeçalho fica fixo durante a rolagem.",
     "smooth_scroll": "Suaviza a rolagem com a roda do mouse. A rolagem por toque continua nativa e fica desativada para visitantes que preferem menos movimento.",
     "focus_outline_color": "Contorno exibido ao redor de links e controles em foco. Deixe em branco para usar a cor do texto.",

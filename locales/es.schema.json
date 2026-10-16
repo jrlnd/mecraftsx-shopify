@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "country_selector": "Selector de país/región",
     "testimonials": "Testimonios",
     "testimonial": "Testimonio",
     "media_overlap": "Tarjeta superpuesta",
@@ -175,6 +176,9 @@
     "disclosures": "Divulgaciones"
   },
   "settings": {
+    "pinned_countries": "Países fijados",
+    "transparent_header_gradient": "Degradado detrás del encabezado transparente",
+    "adaptive_height": "Ajustar la altura al contenido multimedia actual",
     "logo_accent_color": "Color de acento del logotipo",
     "border_only_when_sticky": "Ocultar borde en la parte superior de la página",
     "smooth_scroll": "Desplazamiento suave",
@@ -1115,6 +1119,9 @@
     "disclosures": "Divulgaciones"
   },
   "info": {
+    "pinned_countries": "Códigos de país que se muestran primero, en orden y separados por comas. Ejemplo: US,CA",
+    "transparent_header_gradient": "Añade un degradado oscuro suave en la parte superior para que el encabezado se lea bien sobre imágenes claras.",
+    "adaptive_height": "Cada elemento se muestra a ancho completo y con su propia altura. La galería cambia de tamaño al pasar de un elemento a otro.",
     "border_only_when_sticky": "Muestra el borde inferior solo cuando el encabezado queda fijo al desplazarse.",
     "smooth_scroll": "Suaviza el desplazamiento con la rueda del ratón. El desplazamiento táctil no cambia y se desactiva para quienes prefieren menos movimiento.",
     "focus_outline_color": "Contorno que rodea los enlaces y controles enfocados. Déjalo en blanco para usar el color del texto.",

@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "country_selector": "Länder-/Regionsauswahl",
     "testimonials": "Kundenstimmen",
     "testimonial": "Kundenstimme",
     "media_overlap": "Überlappende Karte",
@@ -175,6 +176,9 @@
     "disclosures": "Pflichtangaben"
   },
   "settings": {
+    "pinned_countries": "Angeheftete Länder",
+    "transparent_header_gradient": "Verlauf hinter transparentem Header",
+    "adaptive_height": "Höhe an aktuelles Medium anpassen",
     "logo_accent_color": "Akzentfarbe des Logos",
     "border_only_when_sticky": "Rahmen oben auf der Seite ausblenden",
     "smooth_scroll": "Sanftes Scrollen",
@@ -1115,6 +1119,9 @@
     "disclosures": "Pflichtangaben"
   },
   "info": {
+    "pinned_countries": "Ländercodes, die zuerst in dieser Reihenfolge angezeigt werden, durch Kommas getrennt. Beispiel: US,CA",
+    "transparent_header_gradient": "Fügt oben auf der Seite einen sanften dunklen Verlauf hinzu, damit der Header über hellen Bildern lesbar bleibt.",
+    "adaptive_height": "Jedes Element wird in voller Breite und eigener Höhe angezeigt. Die Galerie passt ihre Größe beim Wechseln zwischen Elementen an.",
     "border_only_when_sticky": "Zeigt den unteren Rahmen erst, wenn der Header beim Scrollen fixiert ist.",
     "smooth_scroll": "Glättet das Scrollen mit dem Mausrad. Touch-Scrollen bleibt nativ und ist für Besucher mit Präferenz für reduzierte Bewegung deaktiviert.",
     "focus_outline_color": "Rahmen um fokussierte Links und Bedienelemente. Leer lassen, um die Textfarbe zu verwenden.",
