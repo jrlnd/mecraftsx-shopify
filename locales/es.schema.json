@@ -175,6 +175,8 @@
     "disclosures": "Divulgaciones"
   },
   "settings": {
+    "logo_accent_color": "Color de acento del logotipo",
+    "border_only_when_sticky": "Ocultar borde en la parte superior de la página",
     "smooth_scroll": "Desplazamiento suave",
     "focus_outline_color": "Contorno de enfoque",
     "heading_text_color": "Color de los encabezados",
@@ -1113,6 +1115,7 @@
     "disclosures": "Divulgaciones"
   },
   "info": {
+    "border_only_when_sticky": "Muestra el borde inferior solo cuando el encabezado queda fijo al desplazarse.",
     "smooth_scroll": "Suaviza el desplazamiento con la rueda del ratón. El desplazamiento táctil no cambia y se desactiva para quienes prefieren menos movimiento.",
     "focus_outline_color": "Contorno que rodea los enlaces y controles enfocados. Déjalo en blanco para usar el color del texto.",
     "heading_text_color": "Déjalo en blanco para que coincida con el color del texto. Las secciones con colores propios mantienen su contraste.",

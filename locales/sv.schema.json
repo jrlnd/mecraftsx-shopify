@@ -175,6 +175,8 @@
     "disclosures": "Upplysningar"
   },
   "settings": {
+    "logo_accent_color": "Logotypens accentfärg",
+    "border_only_when_sticky": "Dölj kant högst upp på sidan",
     "smooth_scroll": "Mjuk rullning",
     "focus_outline_color": "Fokusram",
     "heading_text_color": "Färg på rubriker",
@@ -1113,6 +1115,7 @@
     "disclosures": "Upplysningar"
   },
   "info": {
+    "border_only_when_sticky": "Visar den nedre kanten först när sidhuvudet fastnar under rullning.",
     "smooth_scroll": "Gör rullning med mushjulet mjukare. Rullning med pekskärm förblir inbyggd och är avstängd för besökare som föredrar minskad rörelse.",
     "focus_outline_color": "Ram runt länkar och kontroller i fokus. Lämna tomt för att använda textfärgen.",
     "heading_text_color": "Lämna tomt för att matcha textfärgen. Avsnitt med egna färger behåller sin kontrast.",

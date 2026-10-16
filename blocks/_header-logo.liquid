@@ -57,14 +57,18 @@
     {% endif %}
     data-testid="header-logo"
   >
-    {% render 'image',
-      image: settings.logo,
-      class: 'header-logo__image',
-      height: settings.logo_height,
-      alt_text_fallback: alt_text_fallback,
-      text_fallback: shop.name,
-      style: logo_style
-    %}
+    {% if settings.logo != blank %}
+      {% render 'image',
+        image: settings.logo,
+        class: 'header-logo__image',
+        height: settings.logo_height,
+        alt_text_fallback: alt_text_fallback,
+        text_fallback: shop.name,
+        style: logo_style
+      %}
+    {% else %}
+      {% render 'brand-logo', class: 'header-logo__svg', style: logo_style, label: alt_text_fallback %}
+    {% endif %}
   </span>
 
   {% if use_inverse_logo %}
@@ -72,14 +76,18 @@
       class="header-logo__transparent-header-image-container"
       data-testid="header-logo-inverse"
     >
-      {% render 'image',
-        image: inverse_logo,
-        class: 'header-logo__image',
-        height: settings.logo_height,
-        alt_text_fallback: alt_text_fallback,
-        text_fallback: shop.name,
-        style: inverse_logo_style
-      %}
+      {% if inverse_logo != blank %}
+        {% render 'image',
+          image: inverse_logo,
+          class: 'header-logo__image',
+          height: settings.logo_height,
+          alt_text_fallback: alt_text_fallback,
+          text_fallback: shop.name,
+          style: inverse_logo_style
+        %}
+      {% else %}
+        {% render 'brand-logo', class: 'header-logo__svg', style: inverse_logo_style, label: alt_text_fallback %}
+      {% endif %}
     </span>
   {% endif %}
 </a>
@@ -130,6 +138,16 @@
     @media screen and (min-width: 750px) {
       height: var(--header-logo-image-height);
       width: var(--header-logo-image-width);
+    }
+  }
+
+  /* Without an uploaded logo the brand SVG keeps its own aspect ratio at the logo height setting. */
+  .header-logo__svg {
+    width: auto;
+    height: var(--header-logo-image-height-mobile);
+
+    @media screen and (min-width: 750px) {
+      height: var(--header-logo-image-height);
     }
   }
 

@@ -175,6 +175,8 @@
     "disclosures": "Ilmoitukset"
   },
   "settings": {
+    "logo_accent_color": "Logon korostusväri",
+    "border_only_when_sticky": "Piilota reunus sivun yläosassa",
     "smooth_scroll": "Pehmeä vieritys",
     "focus_outline_color": "Kohdistuksen ääriviiva",
     "heading_text_color": "Otsikoiden väri",
@@ -1113,6 +1115,7 @@
     "disclosures": "Ilmoitukset"
   },
   "info": {
+    "border_only_when_sticky": "Näyttää alareunuksen vasta, kun ylätunniste kiinnittyy vierityksen aikana.",
     "smooth_scroll": "Pehmentää hiiren rullalla vieritystä. Kosketusvieritys pysyy ennallaan, ja ominaisuus on pois päältä vähennettyä liikettä suosiville.",
     "focus_outline_color": "Ääriviiva kohdistettujen linkkien ja säätimien ympärillä. Jätä tyhjäksi, jos haluat käyttää tekstin väriä.",
     "heading_text_color": "Jätä tyhjäksi, jos haluat saman värin kuin tekstillä. Omilla väreillä varustetut osiot säilyttävät kontrastinsa.",

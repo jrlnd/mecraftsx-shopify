@@ -175,6 +175,8 @@
     "disclosures": "開示情報"
   },
   "settings": {
+    "logo_accent_color": "ロゴのアクセントカラー",
+    "border_only_when_sticky": "ページ上部で枠線を非表示",
     "smooth_scroll": "スムーズスクロール",
     "focus_outline_color": "フォーカスの枠線",
     "heading_text_color": "見出しの色",
@@ -1113,6 +1115,7 @@
     "disclosures": "開示情報"
   },
   "info": {
+    "border_only_when_sticky": "スクロール中にヘッダーが固定されたときだけ下枠線を表示します。",
     "smooth_scroll": "マウスホイールのスクロールを滑らかにします。タッチ操作のスクロールは変わらず、視差効果を減らす設定の訪問者には無効になります。",
     "focus_outline_color": "フォーカスされたリンクやコントロールの周囲に表示される枠線です。空白にするとテキストの色が使用されます。",
     "heading_text_color": "空白にするとテキストの色と同じになります。独自の色を持つセクションではコントラストが保たれます。",

@@ -37,7 +37,7 @@
       {% if image %}
         --logo-width: {{ image.width | times: 1.00 | divided_by: image.height | times: block_settings.pixel_height }}px;
       {% else %}
-        --logo-width: {{ shop.name.size | times: 0.65 }}em;
+        --logo-width: {{ block_settings.pixel_height | times: 564.00 | divided_by: 149 }}px;
         --logo-height: {{ block_settings.pixel_height }}px;
       {% endif %}
     {% endif %}
@@ -50,12 +50,18 @@
         {% if image %}
           --logo-width-mobile: {{ image.width | times: 1.00 | divided_by: image.height | times: block_settings.pixel_height_mobile }}px;
           {% else %}
-            --logo-width-mobile: {{ shop.name.size | times: 0.65 }}em;
+            --logo-width-mobile: {{ block_settings.pixel_height_mobile | times: 564.00 | divided_by: 149 }}px;
             --logo-height-mobile: {{ block_settings.pixel_height_mobile }}px;
         {% endif %}
       {% endif %}
     {% endif %}
     {% render 'spacing-style', settings: block_settings %}
+    {% if block_settings.text_color != blank %}
+      color: {{ block_settings.text_color }};
+    {% endif %}
+    {% if block_settings.logo_accent_color != blank %}
+      --brand-logo-accent-color: {{ block_settings.logo_accent_color }};
+    {% endif %}
   "
   {{ block.shopify_attributes }}
 >
@@ -64,7 +70,7 @@
       {{ logo_image }}
     </div>
   {% else %}
-    {% render 'jumbo-text', text: shop.name %}
+    {% render 'brand-logo', class: 'logo-block__svg', label: shop.name %}
   {% endif %}
 </div>
 
@@ -92,6 +98,11 @@
     width: 100%;
     max-width: 100%;
     max-height: 100%;
+  }
+
+  .logo-block__svg {
+    width: 100%;
+    height: auto;
   }
 
   .logo-block__image {
@@ -142,6 +153,12 @@
       "id": "text_color",
       "label": "t:settings.color",
       "visible_if": "{{ settings.logo == blank and settings.logo_inverse == blank or block.settings.inverse == false }}"
+    },
+    {
+      "type": "color",
+      "id": "logo_accent_color",
+      "label": "t:settings.logo_accent_color",
+      "visible_if": "{{ settings.logo == blank }}"
     },
     {
       "type": "paragraph",

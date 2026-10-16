@@ -50,6 +50,7 @@
                   "settings": {
                     "font": "heading",
                     "text_color": "#F7F2EC",
+                    "logo_accent_color": "#E9D6BD",
                     "unit": "pixel",
                     "pixel_height": 32
                   }

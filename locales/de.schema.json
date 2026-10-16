@@ -175,6 +175,8 @@
     "disclosures": "Pflichtangaben"
   },
   "settings": {
+    "logo_accent_color": "Akzentfarbe des Logos",
+    "border_only_when_sticky": "Rahmen oben auf der Seite ausblenden",
     "smooth_scroll": "Sanftes Scrollen",
     "focus_outline_color": "Fokusrahmen",
     "heading_text_color": "Farbe der Überschriften",
@@ -1113,6 +1115,7 @@
     "disclosures": "Pflichtangaben"
   },
   "info": {
+    "border_only_when_sticky": "Zeigt den unteren Rahmen erst, wenn der Header beim Scrollen fixiert ist.",
     "smooth_scroll": "Glättet das Scrollen mit dem Mausrad. Touch-Scrollen bleibt nativ und ist für Besucher mit Präferenz für reduzierte Bewegung deaktiviert.",
     "focus_outline_color": "Rahmen um fokussierte Links und Bedienelemente. Leer lassen, um die Textfarbe zu verwenden.",
     "heading_text_color": "Leer lassen, um der Textfarbe zu entsprechen. Abschnitte mit eigenen Farben behalten ihren Kontrast.",

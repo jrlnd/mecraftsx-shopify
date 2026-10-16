@@ -175,6 +175,8 @@
     "disclosures": "Bildirimler"
   },
   "settings": {
+    "logo_accent_color": "Logo vurgu rengi",
+    "border_only_when_sticky": "Sayfanın üstünde kenarlığı gizle",
     "smooth_scroll": "Yumuşak kaydırma",
     "focus_outline_color": "Odak çerçevesi",
     "heading_text_color": "Başlık rengi",
@@ -1113,6 +1115,7 @@
     "disclosures": "Bildirimler"
   },
   "info": {
+    "border_only_when_sticky": "Alt kenarlığı yalnızca kaydırırken üst bilgi sabitlendikten sonra gösterir.",
     "smooth_scroll": "Fare tekerleğiyle kaydırmayı yumuşatır. Dokunmatik kaydırma yerel kalır ve azaltılmış hareketi tercih eden ziyaretçiler için kapalıdır.",
     "focus_outline_color": "Odaklanılan bağlantıların ve kontrollerin çevresinde gösterilen çerçeve. Metin rengini kullanmak için boş bırakın.",
     "heading_text_color": "Metin rengiyle eşleşmesi için boş bırakın. Kendi renkleri olan bölümler kontrastlarını korur.",

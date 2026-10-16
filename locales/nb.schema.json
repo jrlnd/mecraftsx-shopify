@@ -175,6 +175,8 @@
     "disclosures": "Opplysninger"
   },
   "settings": {
+    "logo_accent_color": "Aksentfarge for logo",
+    "border_only_when_sticky": "Skjul kant øverst på siden",
     "smooth_scroll": "Jevn rulling",
     "focus_outline_color": "Fokusramme",
     "heading_text_color": "Farge på overskrifter",
@@ -1113,6 +1115,7 @@
     "disclosures": "Opplysninger"
   },
   "info": {
+    "border_only_when_sticky": "Viser den nederste kanten først når overskriften festes under rulling.",
     "smooth_scroll": "Gjør rulling med musehjulet mykere. Rulling med berøring er uendret, og funksjonen er av for besøkende som foretrekker redusert bevegelse.",
     "focus_outline_color": "Ramme rundt lenker og kontroller med fokus. La feltet stå tomt for å bruke tekstfargen.",
     "heading_text_color": "La feltet stå tomt for å matche tekstfargen. Seksjoner med egne farger beholder kontrasten.",

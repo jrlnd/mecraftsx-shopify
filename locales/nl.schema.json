@@ -175,6 +175,8 @@
     "disclosures": "Toelichtingen"
   },
   "settings": {
+    "logo_accent_color": "Accentkleur van logo",
+    "border_only_when_sticky": "Rand bovenaan de pagina verbergen",
     "smooth_scroll": "Vloeiend scrollen",
     "focus_outline_color": "Focuskader",
     "heading_text_color": "Kleur van koppen",
@@ -1113,6 +1115,7 @@
     "disclosures": "Toelichtingen"
   },
   "info": {
+    "border_only_when_sticky": "Toont de onderrand pas wanneer de header tijdens het scrollen vastzit.",
     "smooth_scroll": "Maakt scrollen met het muiswiel vloeiender. Scrollen met aanraking blijft native en het staat uit voor bezoekers die minder beweging verkiezen.",
     "focus_outline_color": "Kader rond gefocuste links en bedieningselementen. Laat leeg om de tekstkleur te gebruiken.",
     "heading_text_color": "Laat leeg om de tekstkleur te volgen. Secties met eigen kleuren behouden hun contrast.",

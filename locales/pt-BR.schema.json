@@ -175,6 +175,8 @@
     "disclosures": "Divulgações"
   },
   "settings": {
+    "logo_accent_color": "Cor de destaque do logotipo",
+    "border_only_when_sticky": "Ocultar borda no topo da página",
     "smooth_scroll": "Rolagem suave",
     "focus_outline_color": "Contorno de foco",
     "heading_text_color": "Cor dos títulos",
@@ -1113,6 +1115,7 @@
     "disclosures": "Divulgações"
   },
   "info": {
+    "border_only_when_sticky": "Mostra a borda inferior só depois que o cabeçalho fica fixo durante a rolagem.",
     "smooth_scroll": "Suaviza a rolagem com a roda do mouse. A rolagem por toque continua nativa e fica desativada para visitantes que preferem menos movimento.",
     "focus_outline_color": "Contorno exibido ao redor de links e controles em foco. Deixe em branco para usar a cor do texto.",
     "heading_text_color": "Deixe em branco para usar a cor do texto. Seções com cores próprias mantêm o contraste.",

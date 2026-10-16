@@ -175,6 +175,8 @@
     "disclosures": "披露信息"
   },
   "settings": {
+    "logo_accent_color": "徽标强调色",
+    "border_only_when_sticky": "在页面顶部隐藏边框",
     "smooth_scroll": "平滑滚动",
     "focus_outline_color": "焦点轮廓",
     "heading_text_color": "标题颜色",
@@ -1113,6 +1115,7 @@
     "disclosures": "披露信息"
   },
   "info": {
+    "border_only_when_sticky": "仅在滚动时页眉固定后显示底部边框。",
     "smooth_scroll": "让鼠标滚轮滚动更平滑。触控滚动保持原生，并且对偏好减少动态效果的访客关闭。",
     "focus_outline_color": "聚焦的链接和控件周围显示的轮廓。留空则使用文本颜色。",
     "heading_text_color": "留空则与文本颜色一致。使用自定义颜色的分区会保持其对比度。",

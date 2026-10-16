@@ -348,6 +348,9 @@
   {% if sticky %}
     sticky="{{ sticky }}"
   {% endif %}
+  {% if sticky and section.settings.border_width > 0 and section.settings.border_only_when_sticky %}
+    data-border-when-sticky
+  {% endif %}
   data-skip-node-update
   data-scroll-direction="none"
   {% if section.settings.menu_row == 'top' and bottom_row_blocks.size > 0 %}
@@ -788,6 +791,43 @@
   #header-component[data-menu-style='drawer'] .header__row--top.divider--page-width .header__columns {
     border-bottom-width: var(--border-bottom-width-mobile);
     border-bottom-color: var(--border-bottom-color-mobile);
+  }
+
+  /* The outer bottom border only shows once the header sticks to the top of the viewport.
+     Row dividers between the top and bottom rows stay visible. */
+  #header-component[data-border-when-sticky] {
+    .header__row--bottom,
+    .header__row--top:not(.divider--page-width),
+    .header__row--top.divider--page-width .header__columns {
+      transition: border-color var(--animation-speed) var(--animation-easing);
+    }
+
+    /* Wait for the closed underlay to finish filling in before the border fades in.
+       Fading out on the way back to the top stays immediate. */
+    &[data-sticky-state='active'] {
+      .header__row--bottom,
+      .header__row--top:not(.divider--page-width),
+      .header__row--top.divider--page-width .header__columns {
+        transition-delay: var(--animation-speed-slow);
+      }
+    }
+
+    &:not([data-sticky-state='active']) {
+      .header__row--bottom,
+      &[data-header-rows='single'] .header__row--top:not(.divider--page-width),
+      &[data-header-rows='single'] .header__row--top.divider--page-width .header__columns,
+      &[data-menu-style='drawer'] .header__row--top:not(.divider--page-width),
+      &[data-menu-style='drawer'] .header__row--top.divider--page-width .header__columns {
+        border-bottom-color: transparent;
+      }
+
+      @media screen and (max-width: 749px) {
+        .header__row--top:not(.divider--page-width),
+        .header__row--top.divider--page-width .header__columns {
+          border-bottom-color: transparent;
+        }
+      }
+    }
   }
 
   .header__row.divider--page-width:not(.section--page-width) .header__columns {
@@ -1588,6 +1628,14 @@
       "label": "t:settings.bottom_border_color",
       "placeholder": "t:settings.default",
       "visible_if": "{{ section.settings.border_width > 0 }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "border_only_when_sticky",
+      "label": "t:settings.border_only_when_sticky",
+      "info": "t:info.border_only_when_sticky",
+      "default": false,
+      "visible_if": "{{ section.settings.border_width > 0 and section.settings.enable_sticky_header != 'never' }}"
     },
     {
       "type": "header",

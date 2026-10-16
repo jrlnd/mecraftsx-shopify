@@ -47,11 +47,11 @@ function createLenis() {
   if (isDocument) {
     lenis = new Lenis({ autoRaf: true, allowNestedScroll: true, prevent: preventSmoothScroll });
   } else if (container instanceof HTMLElement) {
-    // `.page-wrapper` has a fixed height, so Lenis measures scroll length from the main content
-    // that grows as sections and paginated results load.
+    // `.page-wrapper` has a fixed height, so a cached scroll length goes stale whenever the header
+    // group, main content or footer grow after load. Read the live length instead.
     lenis = new Lenis({
       wrapper: container,
-      content: document.getElementById('MainContent') ?? container,
+      naiveDimensions: true,
       autoRaf: true,
       allowNestedScroll: true,
       prevent: preventSmoothScroll,

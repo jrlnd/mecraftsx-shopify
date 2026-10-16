@@ -175,6 +175,8 @@
     "disclosures": "고지 사항"
   },
   "settings": {
+    "logo_accent_color": "로고 강조 색상",
+    "border_only_when_sticky": "페이지 상단에서 테두리 숨기기",
     "smooth_scroll": "부드러운 스크롤",
     "focus_outline_color": "포커스 윤곽선",
     "heading_text_color": "제목 색상",
@@ -1113,6 +1115,7 @@
     "disclosures": "고지 사항"
   },
   "info": {
+    "border_only_when_sticky": "스크롤 중 헤더가 고정된 후에만 하단 테두리를 표시합니다.",
     "smooth_scroll": "마우스 휠 스크롤을 부드럽게 합니다. 터치 스크롤은 그대로 유지되며, 동작 줄이기를 선호하는 방문자에게는 꺼집니다.",
     "focus_outline_color": "포커스된 링크와 컨트롤 주위에 표시되는 윤곽선입니다. 비워 두면 텍스트 색상이 사용됩니다.",
     "heading_text_color": "비워 두면 텍스트 색상과 동일하게 표시됩니다. 자체 색상이 있는 섹션은 대비를 유지합니다.",

@@ -175,6 +175,8 @@
     "disclosures": "Divulgações"
   },
   "settings": {
+    "logo_accent_color": "Cor de destaque do logótipo",
+    "border_only_when_sticky": "Ocultar limite no topo da página",
     "smooth_scroll": "Deslocamento suave",
     "focus_outline_color": "Contorno de foco",
     "heading_text_color": "Cor dos títulos",
@@ -1113,6 +1115,7 @@
     "disclosures": "Divulgações"
   },
   "info": {
+    "border_only_when_sticky": "Mostra o limite inferior só depois de o cabeçalho ficar fixo durante o deslocamento.",
     "smooth_scroll": "Suaviza o deslocamento com a roda do rato. O deslocamento tátil mantém-se nativo e fica desativado para visitantes que preferem menos movimento.",
     "focus_outline_color": "Contorno apresentado à volta de ligações e controlos em foco. Deixe em branco para utilizar a cor do texto.",
     "heading_text_color": "Deixe em branco para utilizar a cor do texto. As secções com cores próprias mantêm o contraste.",

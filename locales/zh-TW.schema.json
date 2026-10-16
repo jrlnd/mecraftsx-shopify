@@ -175,6 +175,8 @@
     "disclosures": "資訊揭露"
   },
   "settings": {
+    "logo_accent_color": "標誌強調色",
+    "border_only_when_sticky": "在頁面頂端隱藏邊框",
     "smooth_scroll": "平滑捲動",
     "focus_outline_color": "焦點外框",
     "heading_text_color": "標題顏色",
@@ -1113,6 +1115,7 @@
     "disclosures": "資訊揭露"
   },
   "info": {
+    "border_only_when_sticky": "僅在捲動時頁首固定後顯示底部邊框。",
     "smooth_scroll": "讓滑鼠滾輪捲動更平滑。觸控捲動維持原生，且對偏好減少動態效果的訪客關閉。",
     "focus_outline_color": "聚焦的連結和控制項周圍顯示的外框。留空則使用文字顏色。",
     "heading_text_color": "留空則與文字顏色一致。使用自訂顏色的區段會保留其對比度。",

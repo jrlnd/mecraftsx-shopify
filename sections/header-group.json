@@ -71,7 +71,8 @@
         "enable_transparent_header_product": false,
         "enable_transparent_header_collection": false,
         "text_color_top": "#5A3A24",
-        "bottom_border_color": "#E2D6C6"
+        "bottom_border_color": "#E2D6C6",
+        "border_only_when_sticky": true
       }
     },
     "header_announcements": {
