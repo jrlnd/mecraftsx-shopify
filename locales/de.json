@@ -29,6 +29,7 @@
     "slider_label": "Slider"
   },
   "accessibility": {
+    "breadcrumb": "Brotkrümelnavigation",
     "play_model": "3D-Modell abspielen",
     "play_video": "Video abspielen",
     "unit_price": "Stückpreis",
@@ -130,6 +131,11 @@
     "back_to_main_menu": "Zurück zum Hauptmenü"
   },
   "content": {
+    "footer_privacy": "Datenschutz",
+    "footer_terms": "AGB",
+    "all_rights_reserved": "Alle Rechte vorbehalten.",
+    "breadcrumb_collections": "Kollektionen",
+    "breadcrumb_home": "Startseite",
     "reviews": "Reviews",
     "language": "Sprache",
     "localization_region_and_language": "Region und Sprache",

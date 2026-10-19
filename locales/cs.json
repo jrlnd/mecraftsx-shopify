@@ -29,6 +29,7 @@
     "slider_label": "Posuvník"
   },
   "accessibility": {
+    "breadcrumb": "Drobečková navigace",
     "play_model": "Přehrát 3D model",
     "play_video": "Přehrát video",
     "unit_price": "Jednotková cena",
@@ -134,6 +135,11 @@
     "back_to_main_menu": "Zpět do hlavní nabídky"
   },
   "content": {
+    "footer_privacy": "Soukromí",
+    "footer_terms": "Podmínky",
+    "all_rights_reserved": "Všechna práva vyhrazena.",
+    "breadcrumb_collections": "Kolekce",
+    "breadcrumb_home": "Domů",
     "reviews": "recen.",
     "language": "Jazyk",
     "localization_region_and_language": "Oblast a jazyk",

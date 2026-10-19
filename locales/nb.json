@@ -29,6 +29,7 @@
     "slider_label": "Glidefelt"
   },
   "accessibility": {
+    "breadcrumb": "Brødsmulesti",
     "play_model": "Spill av 3D-modell",
     "play_video": "Spill av video",
     "unit_price": "Enhetspris",
@@ -130,6 +131,11 @@
     "zoom_media": "Zoom medier {{ index }}"
   },
   "content": {
+    "footer_privacy": "Personvern",
+    "footer_terms": "Vilkår",
+    "all_rights_reserved": "Alle rettigheter forbeholdt.",
+    "breadcrumb_collections": "Kolleksjoner",
+    "breadcrumb_home": "Hjem",
     "reviews": "anmeldelser",
     "no_results_found": "Fant ingen resultater",
     "language": "Språk",

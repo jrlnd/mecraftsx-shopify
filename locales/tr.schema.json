@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "breadcrumbs": "İçerik haritası",
     "country_selector": "Ülke/bölge seçici",
     "testimonials": "Müşteri yorumları",
     "testimonial": "Müşteri yorumu",
@@ -176,6 +177,7 @@
     "disclosures": "Bildirimler"
   },
   "settings": {
+    "show_collections_link": "Koleksiyonlar bağlantısını göster",
     "pinned_countries": "Sabitlenen ülkeler",
     "transparent_header_gradient": "Şeffaf üst bilginin arkasında gradyan",
     "adaptive_height": "Yüksekliği geçerli medyaya uydur",

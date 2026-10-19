@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "breadcrumbs": "パンくずリスト",
     "country_selector": "国/地域セレクター",
     "testimonials": "お客様の声",
     "testimonial": "お客様の声",
@@ -176,6 +177,7 @@
     "disclosures": "開示情報"
   },
   "settings": {
+    "show_collections_link": "コレクションへのリンクを表示",
     "pinned_countries": "固定する国",
     "transparent_header_gradient": "透明ヘッダーの背後にグラデーション",
     "adaptive_height": "高さを現在のメディアに合わせる",

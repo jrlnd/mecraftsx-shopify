@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "breadcrumbs": "Fil d'Ariane",
     "country_selector": "Sélecteur de pays/région",
     "testimonials": "Témoignages",
     "testimonial": "Témoignage",
@@ -176,6 +177,7 @@
     "disclosures": "Divulgations"
   },
   "settings": {
+    "show_collections_link": "Afficher le lien vers les collections",
     "pinned_countries": "Pays épinglés",
     "transparent_header_gradient": "Dégradé derrière l'en-tête transparent",
     "adaptive_height": "Adapter la hauteur au média actuel",

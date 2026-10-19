@@ -29,6 +29,7 @@
     "slider_label": "滑块"
   },
   "accessibility": {
+    "breadcrumb": "面包屑导航",
     "play_model": "演示 3D 模型",
     "play_video": "播放视频",
     "unit_price": "单价",
@@ -130,6 +131,11 @@
     "back_to_main_menu": "返回主菜单"
   },
   "content": {
+    "footer_privacy": "隐私",
+    "footer_terms": "条款",
+    "all_rights_reserved": "保留所有权利。",
+    "breadcrumb_collections": "系列",
+    "breadcrumb_home": "首页",
     "reviews": "评价",
     "no_results_found": "未找到结果",
     "language": "语言",

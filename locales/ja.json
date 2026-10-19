@@ -29,6 +29,7 @@
     "slider_label": "スライダー"
   },
   "accessibility": {
+    "breadcrumb": "パンくずリスト",
     "play_model": "3Dモデルを再生",
     "play_video": "ビデオを再生",
     "unit_price": "単価",
@@ -130,6 +131,11 @@
     "back_to_main_menu": "メインメニューに戻る"
   },
   "content": {
+    "footer_privacy": "プライバシー",
+    "footer_terms": "利用規約",
+    "all_rights_reserved": "無断転載を禁じます。",
+    "breadcrumb_collections": "コレクション",
+    "breadcrumb_home": "ホーム",
     "reviews": "レビュー",
     "language": "言語",
     "localization_region_and_language": "地域と言語",

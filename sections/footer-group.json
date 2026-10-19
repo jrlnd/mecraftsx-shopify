@@ -100,12 +100,12 @@
                 "menu_H4cHLN": {
                   "type": "menu",
                   "settings": {
-                    "heading": "Help",
+                    "heading": "Collections",
                     "heading_preset": "h6",
                     "link_preset": "paragraph",
                     "menu_spacing": 8,
                     "text_color": "#F7F2ECD9",
-                    "menu": "footer-v2-menu-help-column"
+                    "menu": "footer-v2-menu-collections-column"
                   }
                 },
                 "menu_HFzgCj": {

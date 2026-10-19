@@ -29,6 +29,7 @@
     "slider_label": "Schuifregelaar"
   },
   "accessibility": {
+    "breadcrumb": "Kruimelpad",
     "play_model": "3D-model afspelen",
     "play_video": "Video afspelen",
     "unit_price": "Eenheidsprijs",
@@ -130,6 +131,11 @@
     "back_to_main_menu": "Terug naar hoofdmenu"
   },
   "content": {
+    "footer_privacy": "Privacy",
+    "footer_terms": "Voorwaarden",
+    "all_rights_reserved": "Alle rechten voorbehouden.",
+    "breadcrumb_collections": "Collecties",
+    "breadcrumb_home": "Home",
     "reviews": "recensies",
     "no_results_found": "Geen resultaten gevonden",
     "language": "Taal",

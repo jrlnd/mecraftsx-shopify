@@ -29,6 +29,7 @@
     "slider_label": "Billedkarrusel"
   },
   "accessibility": {
+    "breadcrumb": "Brødkrummesti",
     "play_model": "Afspil 3D-model",
     "play_video": "Afspil video",
     "unit_price": "Stykpris",
@@ -130,6 +131,11 @@
     "back_to_main_menu": "Tilbage til hovedmenu"
   },
   "content": {
+    "footer_privacy": "Privatliv",
+    "footer_terms": "Vilkår",
+    "all_rights_reserved": "Alle rettigheder forbeholdes.",
+    "breadcrumb_collections": "Kollektioner",
+    "breadcrumb_home": "Forside",
     "reviews": "anmeldelser",
     "language": "Sprog",
     "localization_region_and_language": "Område og sprog",

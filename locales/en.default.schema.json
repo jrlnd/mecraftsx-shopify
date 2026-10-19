@@ -264,6 +264,7 @@
     "media_type_info": "Features are populated from your menu links"
   },
   "names": {
+    "breadcrumbs": "Breadcrumbs",
     "country_selector": "Country/region selector",
     "card_grid": "Card grid",
     "media_overlap": "Overlapping card",
@@ -767,6 +768,7 @@
     "below_media": "Below media"
   },
   "settings": {
+    "show_collections_link": "Show collections link",
     "pinned_countries": "Pinned countries",
     "transparent_header_gradient": "Gradient behind transparent header",
     "adaptive_height": "Fit height to current media",

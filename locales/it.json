@@ -29,6 +29,7 @@
     "slider_label": "Cursore"
   },
   "accessibility": {
+    "breadcrumb": "Percorso di navigazione",
     "play_model": "Riproduci modello 3D",
     "play_video": "Riproduci video",
     "unit_price": "Prezzo unitario",
@@ -132,6 +133,11 @@
     "back_to_main_menu": "Torna al menu principale"
   },
   "content": {
+    "footer_privacy": "Privacy",
+    "footer_terms": "Termini",
+    "all_rights_reserved": "Tutti i diritti riservati.",
+    "breadcrumb_collections": "Collezioni",
+    "breadcrumb_home": "Home",
     "reviews": "recensioni",
     "no_results_found": "Nessun risultato trovato",
     "language": "Lingua",

@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "breadcrumbs": "Brødsmulesti",
     "country_selector": "Velger for land/region",
     "testimonials": "Kundeomtaler",
     "testimonial": "Kundeomtale",
@@ -176,6 +177,7 @@
     "disclosures": "Opplysninger"
   },
   "settings": {
+    "show_collections_link": "Vis lenke til kolleksjoner",
     "pinned_countries": "Festede land",
     "transparent_header_gradient": "Gradient bak gjennomsiktig topptekst",
     "adaptive_height": "Tilpass høyden til gjeldende medie",

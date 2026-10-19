@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "breadcrumbs": "Brødkrummesti",
     "country_selector": "Vælger til land/område",
     "testimonials": "Udtalelser",
     "testimonial": "Udtalelse",
@@ -176,6 +177,7 @@
     "disclosures": "Oplysninger"
   },
   "settings": {
+    "show_collections_link": "Vis link til kollektioner",
     "pinned_countries": "Fastgjorte lande",
     "transparent_header_gradient": "Gradient bag gennemsigtig header",
     "adaptive_height": "Tilpas højden til det aktuelle medie",

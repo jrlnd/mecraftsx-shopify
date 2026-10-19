@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "breadcrumbs": "Brotkrümelnavigation",
     "country_selector": "Länder-/Regionsauswahl",
     "testimonials": "Kundenstimmen",
     "testimonial": "Kundenstimme",
@@ -176,6 +177,7 @@
     "disclosures": "Pflichtangaben"
   },
   "settings": {
+    "show_collections_link": "Link zu Kollektionen anzeigen",
     "pinned_countries": "Angeheftete Länder",
     "transparent_header_gradient": "Verlauf hinter transparentem Header",
     "adaptive_height": "Höhe an aktuelles Medium anpassen",

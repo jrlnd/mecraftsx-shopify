@@ -1,3 +1,9 @@
+{% doc %}
+  Renders the store copyright, optional Shopify credit, and translated rights notice.
+
+  @example
+  {% content_for 'block', type: 'footer-copyright', id: 'copyright' %}
+{% enddoc %}
 
 {% assign block_settings = block.settings %}
 <div
@@ -14,10 +20,11 @@
 >
   <span class="footer-utilities__text">
     &copy; {{ 'now' | date: '%Y' }}
-    {{ shop.name | link_to: routes.root_url -}}
+    {{ shop.name | escape | link_to: routes.root_url -}}
     {%- if block_settings.show_powered_by -%}
       , {{ powered_by_link }}
     {%- endif -%}
+    . {{ 'content.all_rights_reserved' | t }}
   </span>
 </div>
 

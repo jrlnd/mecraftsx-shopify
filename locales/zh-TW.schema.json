@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "breadcrumbs": "階層導覽",
     "country_selector": "國家/地區選擇器",
     "testimonials": "顧客評價",
     "testimonial": "顧客評價",
@@ -176,6 +177,7 @@
     "disclosures": "資訊揭露"
   },
   "settings": {
+    "show_collections_link": "顯示系列連結",
     "pinned_countries": "置頂國家/地區",
     "transparent_header_gradient": "透明頁首後的漸層",
     "adaptive_height": "高度配合目前媒體",

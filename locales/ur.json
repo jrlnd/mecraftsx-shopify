@@ -9,6 +9,7 @@
  */
 {
   "accessibility": {
+    "breadcrumb": "بریڈ کرمب",
     "account": "اکاؤنٹ",
     "active_filters": "فعال فلٹر:",
     "cart": "کارٹ",
@@ -150,6 +151,11 @@
     }
   },
   "content": {
+    "footer_privacy": "رازداری",
+    "footer_terms": "شرائط",
+    "all_rights_reserved": "جملہ حقوق محفوظ ہیں۔",
+    "breadcrumb_collections": "کلیکشنز",
+    "breadcrumb_home": "ہوم",
     "cancel": "منسوخ کریں",
     "discount": "ڈسکاؤنٹ",
     "account_title": "اکاؤنٹ",

@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "breadcrumbs": "Kruimelpad",
     "country_selector": "Land/regio-kiezer",
     "testimonials": "Getuigenissen",
     "testimonial": "Getuigenis",
@@ -176,6 +177,7 @@
     "disclosures": "Toelichtingen"
   },
   "settings": {
+    "show_collections_link": "Link naar collecties weergeven",
     "pinned_countries": "Vastgezette landen",
     "transparent_header_gradient": "Verloop achter transparante header",
     "adaptive_height": "Hoogte aanpassen aan huidige media",

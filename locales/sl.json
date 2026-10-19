@@ -29,6 +29,7 @@
     "slider_label": "Drsnik"
   },
   "accessibility": {
+    "breadcrumb": "Drobtinice",
     "play_model": "Predvajaj 3D-model",
     "play_video": "Predvajaj videoposnetek",
     "unit_price": "Cena na enoto",
@@ -134,6 +135,11 @@
     "back_to_main_menu": "Nazaj na glavni meni"
   },
   "content": {
+    "footer_privacy": "Zasebnost",
+    "footer_terms": "Pogoji",
+    "all_rights_reserved": "Vse pravice pridržane.",
+    "breadcrumb_collections": "Zbirke",
+    "breadcrumb_home": "Domov",
     "reviews": "ocen.",
     "no_results_found": "Nobenega rezultata ni bilo mogoče najti",
     "language": "Jezik",

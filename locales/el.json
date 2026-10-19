@@ -29,6 +29,7 @@
     "slider_label": "Ρυθμιστικό"
   },
   "accessibility": {
+    "breadcrumb": "Διαδρομή πλοήγησης",
     "play_model": "Αναπαραγωγή μοντέλου 3D",
     "play_video": "Αναπαραγωγή βίντεο",
     "unit_price": "Τιμή μονάδας",
@@ -130,6 +131,11 @@
     "back_to_main_menu": "Επιστροφή στο κύριο μενού"
   },
   "content": {
+    "footer_privacy": "Απόρρητο",
+    "footer_terms": "Όροι",
+    "all_rights_reserved": "Με επιφύλαξη παντός δικαιώματος.",
+    "breadcrumb_collections": "Συλλογές",
+    "breadcrumb_home": "Αρχική",
     "reviews": "κριτικές",
     "no_results_found": "Δεν βρέθηκαν αποτελέσματα",
     "language": "Γλώσσα",

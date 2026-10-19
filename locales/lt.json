@@ -29,6 +29,7 @@
     "slider_label": "Slankiklis"
   },
   "accessibility": {
+    "breadcrumb": "Naršymo kelias",
     "play_model": "Paleisti 3D modelį",
     "play_video": "Paleisti vaizdo įrašą",
     "unit_price": "Vieneto kaina",
@@ -134,6 +135,11 @@
     "back_to_main_menu": "Atgal į pagrindinį meniu"
   },
   "content": {
+    "footer_privacy": "Privatumas",
+    "footer_terms": "Sąlygos",
+    "all_rights_reserved": "Visos teisės saugomos.",
+    "breadcrumb_collections": "Kolekcijos",
+    "breadcrumb_home": "Pradžia",
     "reviews": "apžvalgos (-ų; -a)",
     "language": "Kalba",
     "localization_region_and_language": "Regionas ir kalba",

@@ -9,6 +9,7 @@
  */
 {
   "accessibility": {
+    "breadcrumb": "مسار التنقل",
     "account": "الحساب",
     "active_filters": "عوامل التصفية النشطة:",
     "cart": "سلة التسوق",
@@ -162,6 +163,11 @@
     }
   },
   "content": {
+    "footer_privacy": "الخصوصية",
+    "footer_terms": "الشروط",
+    "all_rights_reserved": "جميع الحقوق محفوظة.",
+    "breadcrumb_collections": "المجموعات",
+    "breadcrumb_home": "الرئيسية",
     "cancel": "إلغاء",
     "discount": "الخصم",
     "account_title": "الحساب",

@@ -49,11 +49,35 @@
   }
 
   .utilities > * {
+    min-width: 0;
     text-align: center;
 
     @media screen and (min-width: 750px) {
       text-align: start;
       justify-self: start;
+    }
+  }
+
+  .utilities:has(> .footer-utilities__policy-list) {
+    text-wrap: wrap;
+
+    @media screen and (min-width: 750px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    .utilities > .footer-utilities__policy-list {
+      flex: 1 1 16rem;
+      text-align: start;
+    }
+
+    .utilities:has(> .footer-utilities__policy-list) > .payment-icons {
+      width: auto;
+      max-width: 100%;
     }
   }
 

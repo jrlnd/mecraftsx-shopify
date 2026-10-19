@@ -29,6 +29,7 @@
     "slider_label": "Kliznik"
   },
   "accessibility": {
+    "breadcrumb": "Navigacijski put",
     "play_model": "Reproduciraj 3D model",
     "play_video": "Reproduciraj videozapis",
     "unit_price": "Jedinična cijena",
@@ -132,6 +133,11 @@
     "back_to_main_menu": "Natrag na glavni izbornik"
   },
   "content": {
+    "footer_privacy": "Privatnost",
+    "footer_terms": "Uvjeti",
+    "all_rights_reserved": "Sva prava pridržana.",
+    "breadcrumb_collections": "Kolekcije",
+    "breadcrumb_home": "Početna",
     "reviews": "recenzije",
     "no_results_found": "Nema pronađenih rezultata",
     "language": "Jezik",

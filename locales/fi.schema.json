@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "breadcrumbs": "Murupolku",
     "country_selector": "Maan/alueen valitsin",
     "testimonials": "Suosittelut",
     "testimonial": "Suosittelu",
@@ -176,6 +177,7 @@
     "disclosures": "Ilmoitukset"
   },
   "settings": {
+    "show_collections_link": "Näytä kokoelmalinkki",
     "pinned_countries": "Kiinnitetyt maat",
     "transparent_header_gradient": "Liukuväri läpinäkyvän ylätunnisteen takana",
     "adaptive_height": "Sovita korkeus nykyiseen mediaan",

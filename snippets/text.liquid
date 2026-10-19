@@ -114,6 +114,9 @@
     flex-direction: column;
     align-items: var(--horizontal-alignment);
     color: var(--color, var(--color-foreground));
+
+    /* Also align bare text with no wrapping element, such as a collection description without paragraphs. */
+    text-align: var(--text-align, var(--text-align-default));
   }
 
   [style*='--horizontal-alignment: center'] .text-block {

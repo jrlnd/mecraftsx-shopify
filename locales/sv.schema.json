@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "breadcrumbs": "Brödsmulor",
     "country_selector": "Väljare för land/region",
     "testimonials": "Kundomdömen",
     "testimonial": "Kundomdöme",
@@ -176,6 +177,7 @@
     "disclosures": "Upplysningar"
   },
   "settings": {
+    "show_collections_link": "Visa länk till kollektioner",
     "pinned_countries": "Fästa länder",
     "transparent_header_gradient": "Gradient bakom transparent sidhuvud",
     "adaptive_height": "Anpassa höjden efter aktuellt media",

@@ -256,6 +256,7 @@
     "media_type_info": "تمت تعبئة الميزات من روابط القائمة الخاصة بك"
   },
   "names": {
+    "breadcrumbs": "مسار التنقل",
     "country_selector": "محدد الدولة/المنطقة",
     "testimonials": "الشهادات",
     "testimonial": "شهادة",
@@ -709,6 +710,7 @@
     "below_media": "أسفل الوسائط"
   },
   "settings": {
+    "show_collections_link": "إظهار رابط المجموعات",
     "pinned_countries": "الدول المثبتة",
     "transparent_header_gradient": "تدرج خلف الرأس الشفاف",
     "adaptive_height": "ملاءمة الارتفاع للوسائط الحالية",

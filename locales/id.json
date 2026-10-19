@@ -29,6 +29,7 @@
     "slider_label": "Slider"
   },
   "accessibility": {
+    "breadcrumb": "Breadcrumb",
     "play_model": "Putar model 3D",
     "play_video": "Putar video",
     "unit_price": "Harga satuan",
@@ -130,6 +131,11 @@
     "zoom_media": "Perbesar media {{ index }}"
   },
   "content": {
+    "footer_privacy": "Privasi",
+    "footer_terms": "Ketentuan",
+    "all_rights_reserved": "Hak cipta dilindungi.",
+    "breadcrumb_collections": "Koleksi",
+    "breadcrumb_home": "Beranda",
     "reviews": "ulasan",
     "language": "Bahasa",
     "localization_region_and_language": "Wilayah dan bahasa",

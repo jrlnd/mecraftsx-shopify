@@ -29,6 +29,7 @@
     "slider_label": "Bild"
   },
   "accessibility": {
+    "breadcrumb": "Brödsmulor",
     "play_model": "Spela 3D-modell",
     "play_video": "Spela video",
     "unit_price": "Enhetspris",
@@ -130,6 +131,11 @@
     "zoom_media": "Zooma media {{ index }}"
   },
   "content": {
+    "footer_privacy": "Integritet",
+    "footer_terms": "Villkor",
+    "all_rights_reserved": "Alla rättigheter förbehållna.",
+    "breadcrumb_collections": "Kollektioner",
+    "breadcrumb_home": "Hem",
     "reviews": "recensioner",
     "language": "Språk",
     "localization_region_and_language": "Region och språk",

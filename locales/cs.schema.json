@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "breadcrumbs": "Drobečková navigace",
     "country_selector": "Výběr země/oblasti",
     "testimonials": "Reference",
     "testimonial": "Reference",
@@ -176,6 +177,7 @@
     "disclosures": "Prohlášení"
   },
   "settings": {
+    "show_collections_link": "Zobrazit odkaz na kolekce",
     "pinned_countries": "Připnuté země",
     "transparent_header_gradient": "Přechod za průhledným záhlavím",
     "adaptive_height": "Přizpůsobit výšku aktuálnímu médiu",

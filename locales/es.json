@@ -29,6 +29,7 @@
     "slider_label": "Carrusel"
   },
   "accessibility": {
+    "breadcrumb": "Ruta de navegación",
     "play_model": "Reproducir el modelo 3D",
     "play_video": "Reproducir el video",
     "unit_price": "Precio unitario",
@@ -132,6 +133,11 @@
     "back_to_main_menu": "Volver al menú principal"
   },
   "content": {
+    "footer_privacy": "Privacidad",
+    "footer_terms": "Términos",
+    "all_rights_reserved": "Todos los derechos reservados.",
+    "breadcrumb_collections": "Colecciones",
+    "breadcrumb_home": "Inicio",
     "reviews": "reseñas",
     "language": "Idioma",
     "localization_region_and_language": "Región e idioma",

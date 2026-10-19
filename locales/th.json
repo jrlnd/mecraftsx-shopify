@@ -29,6 +29,7 @@
     "slider_label": "แถบเลื่อน"
   },
   "accessibility": {
+    "breadcrumb": "เส้นทางนำทาง",
     "play_model": "เล่นโมเดล 3 มิติ",
     "play_video": "เล่นวิดีโอ",
     "unit_price": "ราคาต่อหน่วย",
@@ -130,6 +131,11 @@
     "back_to_main_menu": "กลับไปที่เมนูหลัก"
   },
   "content": {
+    "footer_privacy": "ความเป็นส่วนตัว",
+    "footer_terms": "ข้อกำหนด",
+    "all_rights_reserved": "สงวนลิขสิทธิ์ทั้งหมด",
+    "breadcrumb_collections": "คอลเลกชัน",
+    "breadcrumb_home": "หน้าแรก",
     "reviews": "รีวิว",
     "language": "ภาษา",
     "localization_region_and_language": "ภูมิภาคและภาษา",

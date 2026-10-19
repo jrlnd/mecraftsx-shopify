@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "breadcrumbs": "Ruta de navegación",
     "country_selector": "Selector de país/región",
     "testimonials": "Testimonios",
     "testimonial": "Testimonio",
@@ -176,6 +177,7 @@
     "disclosures": "Divulgaciones"
   },
   "settings": {
+    "show_collections_link": "Mostrar enlace a colecciones",
     "pinned_countries": "Países fijados",
     "transparent_header_gradient": "Degradado detrás del encabezado transparente",
     "adaptive_height": "Ajustar la altura al contenido multimedia actual",

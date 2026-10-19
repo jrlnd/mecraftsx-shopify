@@ -29,6 +29,7 @@
     "slider_label": "投影播放器"
   },
   "accessibility": {
+    "breadcrumb": "階層導覽",
     "play_model": "播放 3D 模型",
     "play_video": "播放影片",
     "unit_price": "單價",
@@ -130,6 +131,11 @@
     "back_to_main_menu": "返回主選單"
   },
   "content": {
+    "footer_privacy": "隱私",
+    "footer_terms": "條款",
+    "all_rights_reserved": "保留所有權利。",
+    "breadcrumb_collections": "系列",
+    "breadcrumb_home": "首頁",
     "reviews": "評論數",
     "no_results_found": "找不到結果",
     "language": "語言",

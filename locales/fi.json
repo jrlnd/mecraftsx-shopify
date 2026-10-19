@@ -29,6 +29,7 @@
     "slider_label": "Liukusäädin"
   },
   "accessibility": {
+    "breadcrumb": "Murupolku",
     "play_model": "Toista 3D-malli",
     "play_video": "Toista video",
     "unit_price": "Yksikköhinta",
@@ -130,6 +131,11 @@
     "back_to_main_menu": "Takaisin päävalikkoon"
   },
   "content": {
+    "footer_privacy": "Tietosuoja",
+    "footer_terms": "Ehdot",
+    "all_rights_reserved": "Kaikki oikeudet pidätetään.",
+    "breadcrumb_collections": "Kokoelmat",
+    "breadcrumb_home": "Etusivu",
     "reviews": "arvostelua",
     "language": "Kieli",
     "localization_region_and_language": "Alue ja kieli",

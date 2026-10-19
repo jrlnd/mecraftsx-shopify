@@ -29,6 +29,7 @@
     "slider_label": "Kaydırıcı"
   },
   "accessibility": {
+    "breadcrumb": "İçerik haritası",
     "play_model": "3B modeli oynat",
     "play_video": "Videoyu oynat",
     "unit_price": "Birim fiyatı",
@@ -130,6 +131,11 @@
     "zoom_media": "Medyayı yakınlaştır: {{ index }}"
   },
   "content": {
+    "footer_privacy": "Gizlilik",
+    "footer_terms": "Koşullar",
+    "all_rights_reserved": "Tüm hakları saklıdır.",
+    "breadcrumb_collections": "Koleksiyonlar",
+    "breadcrumb_home": "Ana sayfa",
     "reviews": "değerlendirme",
     "language": "Dil",
     "localization_region_and_language": "Bölge ve dil",

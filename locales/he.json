@@ -9,6 +9,7 @@
  */
 {
   "accessibility": {
+    "breadcrumb": "פירורי לחם",
     "account": "חשבון",
     "active_filters": "מסננים פעילים:",
     "cart": "סל",
@@ -156,6 +157,11 @@
     }
   },
   "content": {
+    "footer_privacy": "פרטיות",
+    "footer_terms": "תנאים",
+    "all_rights_reserved": "כל הזכויות שמורות.",
+    "breadcrumb_collections": "קולקציות",
+    "breadcrumb_home": "דף הבית",
     "cancel": "ביטול",
     "discount": "הנחה",
     "account_title": "חשבון",

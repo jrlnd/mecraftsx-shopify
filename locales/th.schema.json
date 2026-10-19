@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "breadcrumbs": "เส้นทางนำทาง",
     "country_selector": "ตัวเลือกประเทศ/ภูมิภาค",
     "testimonials": "คำรับรอง",
     "testimonial": "คำรับรอง",
@@ -176,6 +177,7 @@
     "disclosures": "การเปิดเผยข้อมูล"
   },
   "settings": {
+    "show_collections_link": "แสดงลิงก์คอลเลกชัน",
     "pinned_countries": "ประเทศที่ปักหมุด",
     "transparent_header_gradient": "ไล่ระดับสีหลังส่วนหัวแบบโปร่งใส",
     "adaptive_height": "ปรับความสูงตามสื่อปัจจุบัน",

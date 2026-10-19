@@ -29,6 +29,7 @@
     "slider_label": "Csúszka"
   },
   "accessibility": {
+    "breadcrumb": "Morzsamenü",
     "play_model": "3D-modell lejátszása",
     "play_video": "Videó lejátszása",
     "unit_price": "Egységár",
@@ -130,6 +131,11 @@
     "back_to_main_menu": "Vissza a főmenübe"
   },
   "content": {
+    "footer_privacy": "Adatvédelem",
+    "footer_terms": "Feltételek",
+    "all_rights_reserved": "Minden jog fenntartva.",
+    "breadcrumb_collections": "Kollekciók",
+    "breadcrumb_home": "Kezdőlap",
     "reviews": "összegzés",
     "no_results_found": "Nincs találat",
     "language": "Nyelv",

@@ -1,0 +1,210 @@
+{%- doc -%}
+  Renders a breadcrumb trail from the home page to the current page, such as
+  Home / Collections / Sweatshirts on a collection or Home / Collections / Sweatshirts / Hoodie
+  on a product reached through that collection. Renders nothing on the home page.
+{%- enddoc -%}
+
+{%- unless request.page_type == 'index' -%}
+  <nav
+    class="breadcrumbs spacing-style"
+    aria-label="{{ 'accessibility.breadcrumb' | t }}"
+    style="
+      {% render 'spacing-style', settings: block.settings %}
+      --breadcrumbs-alignment: {{ block.settings.alignment | replace: 'left', 'flex-start' | replace: 'right', 'flex-end' }};
+    "
+    {{ block.shopify_attributes }}
+  >
+    <ol class="breadcrumbs__list list-unstyled">
+      <li class="breadcrumbs__item">
+        <a
+          class="breadcrumbs__link"
+          href="{{ routes.root_url }}"
+        >
+          {{- 'content.breadcrumb_home' | t -}}
+        </a>
+      </li>
+      {%- case request.page_type -%}
+        {%- when 'product' -%}
+          {%- if collection -%}
+            {%- if block.settings.show_collections_link -%}
+              <li class="breadcrumbs__item">
+                <a
+                  class="breadcrumbs__link"
+                  href="{{ routes.collections_url }}"
+                >
+                  {{- 'content.breadcrumb_collections' | t -}}
+                </a>
+              </li>
+            {%- endif -%}
+            <li class="breadcrumbs__item">
+              <a
+                class="breadcrumbs__link"
+                href="{{ collection.url }}"
+              >
+                {{- collection.title | escape -}}
+              </a>
+            </li>
+          {%- endif -%}
+          <li class="breadcrumbs__item">
+            <span aria-current="page">{{ product.title | escape }}</span>
+          </li>
+        {%- when 'collection' -%}
+          {%- if block.settings.show_collections_link -%}
+            <li class="breadcrumbs__item">
+              <a
+                class="breadcrumbs__link"
+                href="{{ routes.collections_url }}"
+              >
+                {{- 'content.breadcrumb_collections' | t -}}
+              </a>
+            </li>
+          {%- endif -%}
+          <li class="breadcrumbs__item">
+            <span aria-current="page">{{ collection.title | escape }}</span>
+          </li>
+        {%- when 'article' -%}
+          <li class="breadcrumbs__item">
+            <a
+              class="breadcrumbs__link"
+              href="{{ blog.url }}"
+            >
+              {{- blog.title | escape -}}
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span aria-current="page">{{ article.title | escape }}</span>
+          </li>
+        {%- when 'blog' -%}
+          <li class="breadcrumbs__item">
+            <span aria-current="page">{{ blog.title | escape }}</span>
+          </li>
+        {%- when 'page' -%}
+          <li class="breadcrumbs__item">
+            <span aria-current="page">{{ page.title | escape }}</span>
+          </li>
+        {%- else -%}
+          <li class="breadcrumbs__item">
+            <span aria-current="page">{{ page_title | escape }}</span>
+          </li>
+      {%- endcase -%}
+    </ol>
+  </nav>
+{%- endunless -%}
+
+{% stylesheet %}
+  .breadcrumbs {
+    width: 100%;
+    min-width: 0;
+    font-size: var(--font-size--sm, 0.875rem);
+    color: var(--color-foreground-muted);
+  }
+
+  .breadcrumbs__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: var(--breadcrumbs-alignment, flex-start);
+    gap: var(--gap-2xs, 0.25rem) var(--gap-xs, 0.5rem);
+    margin: 0;
+    padding: 0;
+  }
+
+  .breadcrumbs__item {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-xs, 0.5rem);
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .breadcrumbs__item + .breadcrumbs__item::before {
+    content: '/' / '';
+    opacity: var(--opacity-50);
+  }
+
+  .breadcrumbs__link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .breadcrumbs__link:hover {
+    color: var(--color-foreground);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  .breadcrumbs [aria-current='page'] {
+    color: var(--color-foreground);
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.breadcrumbs",
+  "tag": null,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_collections_link",
+      "label": "t:settings.show_collections_link",
+      "default": true
+    },
+    {
+      "type": "text_alignment",
+      "id": "alignment",
+      "label": "t:settings.alignment",
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-start",
+      "label": "t:settings.left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-end",
+      "label": "t:settings.right",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.breadcrumbs",
+      "category": "t:categories.basic"
+    }
+  ]
+}
+{% endschema %}

@@ -9,6 +9,7 @@
  */
 {
   "accessibility": {
+    "breadcrumb": "Breadcrumb",
     "account": "Account",
     "active_filters": "Active filters:",
     "cart": "Cart",
@@ -163,6 +164,11 @@
     }
   },
   "content": {
+    "footer_privacy": "Privacy",
+    "footer_terms": "Terms",
+    "all_rights_reserved": "All Rights Reserved.",
+    "breadcrumb_collections": "Collections",
+    "breadcrumb_home": "Home",
     "cancel": "Cancel",
     "discount": "Discount",
     "account_title": "Account",

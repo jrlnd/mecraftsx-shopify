@@ -29,6 +29,7 @@
     "slider_label": "Плъзгач"
   },
   "accessibility": {
+    "breadcrumb": "Навигационна пътека",
     "play_model": "Възпроизвеждане на 3D модел",
     "play_video": "Възпроизвеждане на видеоклип",
     "unit_price": "Единична цена",
@@ -130,6 +131,11 @@
     "back_to_main_menu": "Назад към главното меню"
   },
   "content": {
+    "footer_privacy": "Поверителност",
+    "footer_terms": "Условия",
+    "all_rights_reserved": "Всички права запазени.",
+    "breadcrumb_collections": "Колекции",
+    "breadcrumb_home": "Начало",
     "reviews": "мнения",
     "language": "Език",
     "localization_region_and_language": "Регион и език",

@@ -256,6 +256,7 @@
     "media_type_info": "خصوصیات آپ کے مینو کے لنک سے پُر کی گئی ہیں"
   },
   "names": {
+    "breadcrumbs": "بریڈ کرمبز",
     "country_selector": "ملک/علاقہ منتخب کنندہ",
     "testimonials": "تاثرات",
     "testimonial": "تاثرات",
@@ -709,6 +710,7 @@
     "below_media": "میڈیا کے نیچے"
   },
   "settings": {
+    "show_collections_link": "کلیکشنز کا لنک دکھائیں",
     "pinned_countries": "پن کیے گئے ممالک",
     "transparent_header_gradient": "شفاف ہیڈر کے پیچھے گریڈینٹ",
     "adaptive_height": "اونچائی موجودہ میڈیا کے مطابق کریں",

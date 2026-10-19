@@ -29,6 +29,7 @@
     "slider_label": "Carrousel"
   },
   "accessibility": {
+    "breadcrumb": "Fil d'Ariane",
     "play_model": "Jouer le modèle 3D",
     "play_video": "Lire la vidéo",
     "unit_price": "Prix unitaire",
@@ -132,6 +133,11 @@
     "zoom_media": "Zoom du support multimédia {{ index }}"
   },
   "content": {
+    "footer_privacy": "Confidentialité",
+    "footer_terms": "Conditions",
+    "all_rights_reserved": "Tous droits réservés.",
+    "breadcrumb_collections": "Collections",
+    "breadcrumb_home": "Accueil",
     "reviews": "avis",
     "language": "Langue",
     "localization_region_and_language": "Région et langue",
