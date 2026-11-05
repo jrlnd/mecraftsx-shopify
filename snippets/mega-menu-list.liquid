@@ -109,7 +109,7 @@
     <div>
       <a
         href="{{ link.url }}"
-        class="mega-menu__link {% if link.links != blank %}mega-menu__link--parent{% endif %}"
+        class="mega-menu__link{% if link.links != blank %} mega-menu__link--parent{% endif %}{% if menu_content_type == 'collection_images' %} mega-menu__card{% endif %}"
       >
         {% if menu_content_type == 'collection_images' %}
           {%- capture collection_image_sizes -%}
@@ -129,11 +129,36 @@
             -%}
           {%- endcapture -%}
 
-          {% render 'link-featured-image', link: link, class: 'mega-menu__link-image', sizes: collection_image_sizes %}
+          {%- capture collection_image -%}
+            {%- render 'link-featured-image',
+              link: link,
+              class: 'mega-menu__link-image',
+              sizes: collection_image_sizes,
+              decorative: true
+            -%}
+          {%- endcapture -%}
+
+          <span class="mega-menu__card-media{% if collection_image == blank %} mega-menu__card-media--empty{% endif %}">
+            {{- collection_image -}}
+          </span>
+          <span class="mega-menu__card-label">
+            <span class="wrap-text">
+              {{- link.title -}}
+            </span>
+            <svg
+              class="mega-menu__card-arrow"
+              aria-hidden="true"
+              focusable="false"
+              viewBox="0 0 20 20"
+            >
+              {%- render 'icon', icon: 'arrow' -%}
+            </svg>
+          </span>
+        {% else %}
+          <span class="wrap-text">
+            {{- link.title -}}
+          </span>
         {% endif %}
-        <span class="wrap-text">
-          {{- link.title -}}
-        </span>
       </a>
       {% if link.links != blank %}
         <ul
