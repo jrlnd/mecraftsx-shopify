@@ -1,0 +1,330 @@
+{
+  "sections": {
+    "about_hero": {
+      "type": "hero",
+      "custom_css": [
+        ".hero__media {object-position: center 22%;}"
+      ],
+      "blocks": {
+        "title": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>About ME</h1>",
+            "type_preset": "h1",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "text_color": "#FDFAF6"
+          }
+        },
+        "tagline": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A little love, a little culture, and a whole lot of creativity.</p>",
+            "type_preset": "custom",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "text_color": "#FDFAF6",
+            "font": "var(--font-accent--family)",
+            "font_size": "2rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "padding-inline-start": 20,
+            "padding-inline-end": 20
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "tagline"
+      ],
+      "settings": {
+        "media_type_1": "image",
+        "image_1": "shopify://shop_images/mecrafts-story-matt-erin-booth.webp",
+        "content_direction": "column",
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-end",
+        "gap": 8,
+        "section_width": "full-width",
+        "toggle_overlay": true,
+        "overlay_color": "#3B2517D9",
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 40,
+        "section_height": "custom",
+        "section_height_custom": 80
+      }
+    },
+    "about_main": {
+      "type": "section",
+      "custom_css": [
+        "@media screen and (min-width: 750px) {.image-block {position: sticky; top: calc(var(--sticky-header-offset, 72px) + 24px); align-self: flex-start;} .image-block__image {max-height: calc(100svh - 120px); object-fit: cover; object-position: center top;} .image-block + .group-block {max-width: 720px;}}"
+      ],
+      "blocks": {
+        "intro": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "horizontal_alignment_flex_direction_column": "center",
+            "gap": 24,
+            "width": "fill"
+          },
+          "blocks": {
+            "initials": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>The M stands for Matt. The E stands for Erin.</h2>",
+                "type_preset": "h2",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "center",
+                "text_color": "#5A3A24"
+              }
+            },
+            "together": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Together, we’re ME!</p>",
+                "type_preset": "custom",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "center",
+                "text_color": "#B8513C",
+                "font": "var(--font-accent--family)",
+                "font_size": "2.5rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty"
+              }
+            },
+            "heart_divider": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "horizontal_alignment_flex_direction_column": "center",
+                "width": "fill"
+              },
+              "blocks": {
+                "heart": {
+                  "type": "icon",
+                  "settings": {
+                    "icon": "heart",
+                    "width": 28,
+                    "icon_color": "#B8513C"
+                  }
+                }
+              },
+              "block_order": [
+                "heart"
+              ]
+            }
+          },
+          "block_order": [
+            "initials",
+            "together",
+            "heart_divider"
+          ]
+        },
+        "columns": {
+          "type": "group",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "flex-start",
+            "gap": 64,
+            "width": "fill"
+          },
+          "blocks": {
+            "photo": {
+              "type": "image",
+              "settings": {
+                "image": "shopify://shop_images/Screen_Shot_2022-07-13_at_11.47.42_AM.png",
+                "width": "custom",
+                "custom_width": 40,
+                "width_mobile": "fill",
+                "border_radius": 16
+              }
+            },
+            "letter": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "gap": 24,
+                "width": "fill"
+              },
+              "blocks": {
+                "beginning": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>We’re a Filipino-American and Filipino-Canadian couple who turned a whirlwind romance and a shared love for creativity into a dream of building something of our own.</p><p>Matt is a Bay Area native with a background in graphic design, while Erin grew up in Canada and spent eight years teaching abroad. After a year of long-distance love, Erin made the move to California in 2020, and we got married that same year!</p>",
+                    "type_preset": "rte",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left"
+                  }
+                },
+                "that_2020": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Yep, <em>that</em> 2020. We really decided to make it memorable!</p>",
+                    "type_preset": "custom",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "center",
+                    "text_color": "#B8513C",
+                    "font": "var(--font-accent--family)",
+                    "font_size": "2rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "padding-block-start": 8,
+                    "padding-block-end": 8
+                  }
+                },
+                "today": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Like many people during the pandemic, we picked up new hobbies. What started as an idea to make Christmas gifts for family quickly sparked a shared passion for creating, and <strong>ME CRAFTS was born.</strong></p><p>Over time, our creativity evolved, and so did our brand.</p><p>Today, simply known as <strong>ME</strong>, we create Filipino-inspired apparel and accessories that celebrate culture, identity, and a little bit of nostalgia (with some Bay Area love sprinkled in!).</p><p>As two Filipinos born and raised outside the Philippines, we’re on our own journey of reconnecting with our roots. Through ME, we get to explore our heritage, celebrate the things that make our culture special, and hopefully bring a few smiles along the way.</p><p>We’re still figuring things out, chasing big dreams, and learning as we go. But that’s all part of the adventure!</p><p><strong>ME is more than just our initials. It’s a celebration of where we come from, who we are, and the connections we make along the way.</strong></p>",
+                    "type_preset": "rte",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left"
+                  }
+                },
+                "thanks": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Thanks for being part of our journey!</p><p>And remember,</p>",
+                    "type_preset": "rte",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "center"
+                  }
+                },
+                "chase": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>life’s too short not to chase what you love!</p>",
+                    "type_preset": "custom",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "center",
+                    "text_color": "#B8513C",
+                    "font": "var(--font-accent--family)",
+                    "font_size": "2.5rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty"
+                  }
+                },
+                "with_love": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>With love,</p>",
+                    "type_preset": "rte",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "center",
+                    "padding-block-start": 16
+                  }
+                },
+                "signature": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Matt &amp; Erin ♡</p>",
+                    "type_preset": "custom",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "center",
+                    "text_color": "#5A3A24",
+                    "font": "var(--font-accent--family)",
+                    "font_size": "2rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty"
+                  }
+                },
+                "follow": {
+                  "type": "group",
+                  "settings": {
+                    "content_direction": "row",
+                    "vertical_on_mobile": false,
+                    "horizontal_alignment": "center",
+                    "vertical_alignment": "center",
+                    "gap": 12,
+                    "width": "fill",
+                    "padding-block-start": 16
+                  },
+                  "blocks": {
+                    "follow_matt": {
+                      "type": "button",
+                      "settings": {
+                        "label": "Follow Matt",
+                        "link": "https://www.instagram.com/matthew_inthemiddle/",
+                        "open_in_new_tab": true,
+                        "style_class": "button"
+                      }
+                    },
+                    "follow_erin": {
+                      "type": "button",
+                      "settings": {
+                        "label": "Follow Erin",
+                        "link": "https://www.instagram.com/breatheyourerin/",
+                        "open_in_new_tab": true,
+                        "style_class": "button"
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "follow_matt",
+                    "follow_erin"
+                  ]
+                }
+              },
+              "block_order": [
+                "beginning",
+                "that_2020",
+                "today",
+                "thanks",
+                "chase",
+                "with_love",
+                "signature",
+                "follow"
+              ]
+            }
+          },
+          "block_order": [
+            "photo",
+            "letter"
+          ]
+        }
+      },
+      "block_order": [
+        "intro",
+        "columns"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "horizontal_alignment_flex_direction_column": "center",
+        "gap": 48,
+        "section_width": "page-width",
+        "padding-block-start": 64,
+        "padding-block-end": 80
+      }
+    }
+  },
+  "order": [
+    "about_hero",
+    "about_main"
+  ]
+}
