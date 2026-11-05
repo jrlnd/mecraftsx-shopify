@@ -671,6 +671,7 @@
       transparent 75%
     );
     --mega-menu-card-transition: var(--animation-speed-slow) var(--animation-easing);
+    --mega-menu-card-shadow: 0 8px 20px rgb(0 0 0 / var(--opacity-30));
 
     position: relative;
     display: block;
@@ -696,6 +697,10 @@
     &,
     &:hover {
       color: var(--color-white);
+    }
+
+    &:hover {
+      box-shadow: var(--mega-menu-card-shadow);
     }
   }
 
@@ -745,6 +750,11 @@
   }
 
   @media (prefers-reduced-motion: no-preference) {
+    /* Two classes to outrank the transition reset that .header sets on its links. */
+    .mega-menu__link.mega-menu__card {
+      transition: box-shadow var(--mega-menu-card-transition);
+    }
+
     .mega-menu__card:hover .mega-menu__link-image {
       transform: scale(1.04);
     }
