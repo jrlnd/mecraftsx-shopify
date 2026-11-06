@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "countdown": "Conto alla rovescia",
     "breadcrumbs": "Percorso di navigazione",
     "country_selector": "Selettore paese/area geografica",
     "testimonials": "Testimonianze",
@@ -177,6 +178,8 @@
     "disclosures": "Informative"
   },
   "settings": {
+    "countdown_end_at": "Data e ora di fine",
+    "countdown_finished_text": "Messaggio alla fine",
     "show_collections_link": "Mostra link alle collezioni",
     "pinned_countries": "Paesi fissati",
     "transparent_header_gradient": "Sfumatura dietro l'header trasparente",
@@ -1121,6 +1124,8 @@
     "disclosures": "Informative"
   },
   "info": {
+    "countdown_end_at": "Usa questo formato, con la differenza del tuo fuso orario alla fine: 2026-12-01T09:00:00-08:00",
+    "countdown_finished_text": "Sostituisce il conto alla rovescia allo scadere del tempo.",
     "pinned_countries": "Codici paese mostrati per primi, in ordine, separati da virgole. Esempio: US,CA",
     "transparent_header_gradient": "Aggiunge una leggera sfumatura scura in cima alla pagina per mantenere l'header leggibile sulle immagini chiare.",
     "adaptive_height": "Ogni elemento viene mostrato a larghezza piena e con la propria altezza. La galleria si ridimensiona quando i clienti passano da un elemento all'altro.",

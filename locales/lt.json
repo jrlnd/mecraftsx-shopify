@@ -135,6 +135,11 @@
     "back_to_main_menu": "Atgal į pagrindinį meniu"
   },
   "content": {
+    "countdown_days": "Dienos",
+    "countdown_hours": "Valandos",
+    "countdown_label": "Atgalinis skaičiavimas iki {{ date }}",
+    "countdown_minutes": "Minutės",
+    "countdown_seconds": "Sekundės",
     "footer_privacy": "Privatumas",
     "footer_terms": "Sąlygos",
     "all_rights_reserved": "Visos teisės saugomos.",

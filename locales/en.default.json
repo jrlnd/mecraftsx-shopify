@@ -164,6 +164,11 @@
     }
   },
   "content": {
+    "countdown_days": "Days",
+    "countdown_hours": "Hours",
+    "countdown_label": "Countdown to {{ date }}",
+    "countdown_minutes": "Minutes",
+    "countdown_seconds": "Seconds",
     "footer_privacy": "Privacy",
     "footer_terms": "Terms",
     "all_rights_reserved": "All Rights Reserved.",

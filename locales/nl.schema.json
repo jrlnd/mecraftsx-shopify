@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "countdown": "Aftellen",
     "breadcrumbs": "Kruimelpad",
     "country_selector": "Land/regio-kiezer",
     "testimonials": "Getuigenissen",
@@ -177,6 +178,8 @@
     "disclosures": "Toelichtingen"
   },
   "settings": {
+    "countdown_end_at": "Einddatum en -tijd",
+    "countdown_finished_text": "Bericht na afloop",
     "show_collections_link": "Link naar collecties weergeven",
     "pinned_countries": "Vastgezette landen",
     "transparent_header_gradient": "Verloop achter transparante header",
@@ -1121,6 +1124,8 @@
     "disclosures": "Toelichtingen"
   },
   "info": {
+    "countdown_end_at": "Gebruik deze indeling, met je tijdzoneverschil aan het einde: 2026-12-01T09:00:00-08:00",
+    "countdown_finished_text": "Vervangt het aftellen wanneer de tijd om is.",
     "pinned_countries": "Landcodes die als eerste in volgorde worden getoond, gescheiden door komma's. Voorbeeld: US,CA",
     "transparent_header_gradient": "Voegt bovenaan de pagina een zacht donker verloop toe, zodat de header leesbaar blijft op lichte afbeeldingen.",
     "adaptive_height": "Elk item wordt op volle breedte en eigen hoogte getoond. De galerij past zich aan wanneer klanten tussen items wisselen.",

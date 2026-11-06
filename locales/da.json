@@ -131,6 +131,11 @@
     "back_to_main_menu": "Tilbage til hovedmenu"
   },
   "content": {
+    "countdown_days": "Dage",
+    "countdown_hours": "Timer",
+    "countdown_label": "Nedtælling til {{ date }}",
+    "countdown_minutes": "Minutter",
+    "countdown_seconds": "Sekunder",
     "footer_privacy": "Privatliv",
     "footer_terms": "Vilkår",
     "all_rights_reserved": "Alle rettigheder forbeholdes.",

@@ -135,6 +135,11 @@
     "back_to_main_menu": "Nazaj na glavni meni"
   },
   "content": {
+    "countdown_days": "Dnevi",
+    "countdown_hours": "Ure",
+    "countdown_label": "Odštevanje do {{ date }}",
+    "countdown_minutes": "Minute",
+    "countdown_seconds": "Sekunde",
     "footer_privacy": "Zasebnost",
     "footer_terms": "Pogoji",
     "all_rights_reserved": "Vse pravice pridržane.",

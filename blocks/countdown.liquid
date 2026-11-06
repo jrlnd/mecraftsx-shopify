@@ -1,0 +1,179 @@
+{%- doc -%}
+  Renders a live countdown to a merchant-set date and time, then swaps to an
+  optional message when the time is up. Reads its settings from block.settings.
+
+  @example
+  {% content_for 'block', type: 'countdown', id: 'countdown' %}
+{%- enddoc -%}
+
+{%- if block.settings.end_at != blank -%}
+  <script
+    src="{{ 'countdown.js' | asset_url }}"
+    type="module"
+    fetchpriority="low"
+  ></script>
+
+  {%- assign end_date = block.settings.end_at | date: '%B %-d, %Y' -%}
+  {%- assign units = 'days,hours,minutes,seconds' | split: ',' -%}
+
+  <countdown-timer
+    class="countdown spacing-style"
+    style="{% render 'spacing-style', settings: block.settings %}"
+    data-end-at="{{ block.settings.end_at | escape }}"
+    role="timer"
+    aria-label="{{ 'content.countdown_label' | t: date: end_date }}"
+    {{ block.shopify_attributes }}
+  >
+    <div
+      class="countdown__units"
+      ref="units"
+    >
+      {%- for unit in units -%}
+        {%- assign unit_label = 'content.countdown_' | append: unit -%}
+        <div class="countdown__unit">
+          <span
+            class="countdown__value"
+            ref="{{ unit }}"
+          >
+            --
+          </span>
+          <span class="countdown__label">{{ unit_label | t }}</span>
+        </div>
+      {%- endfor -%}
+    </div>
+
+    {%- if block.settings.finished_text != blank -%}
+      <p
+        class="countdown__finished"
+        ref="finished"
+        hidden
+      >
+        {{ block.settings.finished_text | escape }}
+      </p>
+    {%- endif -%}
+
+    <noscript>
+      <p class="countdown__finished">{{ end_date }}</p>
+    </noscript>
+  </countdown-timer>
+{%- endif -%}
+
+{% stylesheet %}
+  .countdown {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+  }
+
+  .countdown[hidden] {
+    display: none;
+  }
+
+  .countdown__units {
+    display: flex;
+    justify-content: center;
+    gap: var(--gap-2xl);
+  }
+
+  .countdown__units[hidden] {
+    display: none;
+  }
+
+  .countdown__unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-xs);
+    min-width: 0;
+  }
+
+  .countdown__value {
+    font-family: var(--font-heading--family);
+    font-style: var(--font-heading--style);
+    font-weight: var(--font-heading--weight);
+    font-size: var(--font-size--6xl);
+    font-variant-numeric: lining-nums tabular-nums;
+    line-height: 1;
+  }
+
+  .countdown__label {
+    font-family: var(--font-subheading--family);
+    font-size: var(--font-size--xs);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .countdown__finished {
+    font-family: var(--font-heading--family);
+    font-style: var(--font-heading--style);
+    font-weight: var(--font-heading--weight);
+    font-size: var(--font-size--4xl);
+    line-height: 1.2;
+  }
+
+  @media screen and (max-width: 749px) {
+    .countdown__units {
+      gap: var(--gap-lg);
+    }
+
+    .countdown__value {
+      font-size: var(--font-size--4xl);
+    }
+
+    .countdown__finished {
+      font-size: var(--font-size--3xl);
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.countdown",
+  "settings": [
+    {
+      "type": "text",
+      "id": "end_at",
+      "label": "t:settings.countdown_end_at",
+      "info": "t:info.countdown_end_at",
+      "placeholder": "2026-12-01T09:00:00-08:00"
+    },
+    {
+      "type": "text",
+      "id": "finished_text",
+      "label": "t:settings.countdown_finished_text",
+      "info": "t:info.countdown_finished_text"
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.countdown",
+      "category": "t:categories.basic"
+    }
+  ]
+}
+{% endschema %}

@@ -133,6 +133,11 @@
     "back_to_main_menu": "Volver al menú principal"
   },
   "content": {
+    "countdown_days": "Días",
+    "countdown_hours": "Horas",
+    "countdown_label": "Cuenta atrás hasta {{ date }}",
+    "countdown_minutes": "Minutos",
+    "countdown_seconds": "Segundos",
     "footer_privacy": "Privacidad",
     "footer_terms": "Términos",
     "all_rights_reserved": "Todos los derechos reservados.",

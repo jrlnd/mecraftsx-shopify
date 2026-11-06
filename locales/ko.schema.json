@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "countdown": "카운트다운",
     "breadcrumbs": "이동 경로",
     "country_selector": "국가/지역 선택기",
     "testimonials": "고객 후기",
@@ -177,6 +178,8 @@
     "disclosures": "고지 사항"
   },
   "settings": {
+    "countdown_end_at": "종료 날짜 및 시간",
+    "countdown_finished_text": "종료 시 메시지",
     "show_collections_link": "컬렉션 링크 표시",
     "pinned_countries": "고정 국가",
     "transparent_header_gradient": "투명 헤더 뒤 그라데이션",
@@ -1121,6 +1124,8 @@
     "disclosures": "고지 사항"
   },
   "info": {
+    "countdown_end_at": "끝에 시간대 오프셋을 붙여 다음 형식으로 입력하세요: 2026-12-01T09:00:00-08:00",
+    "countdown_finished_text": "시간이 끝나면 카운트다운 대신 표시됩니다.",
     "pinned_countries": "먼저 순서대로 표시할 국가 코드(쉼표로 구분). 예: US,CA",
     "transparent_header_gradient": "페이지 상단에 부드러운 어두운 그라데이션을 추가해 밝은 이미지 위에서도 헤더가 잘 보이게 합니다.",
     "adaptive_height": "각 항목이 전체 너비와 고유한 높이로 표시됩니다. 항목을 이동할 때 갤러리 크기가 조정됩니다.",

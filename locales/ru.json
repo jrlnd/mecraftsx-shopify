@@ -135,6 +135,11 @@
     "back_to_main_menu": "Назад в главное меню"
   },
   "content": {
+    "countdown_days": "Дни",
+    "countdown_hours": "Часы",
+    "countdown_label": "Обратный отсчёт до {{ date }}",
+    "countdown_minutes": "Минуты",
+    "countdown_seconds": "Секунды",
     "footer_privacy": "Конфиденциальность",
     "footer_terms": "Условия",
     "all_rights_reserved": "Все права защищены.",

@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "countdown": "Countdown",
     "breadcrumbs": "Brotkrümelnavigation",
     "country_selector": "Länder-/Regionsauswahl",
     "testimonials": "Kundenstimmen",
@@ -177,6 +178,8 @@
     "disclosures": "Pflichtangaben"
   },
   "settings": {
+    "countdown_end_at": "Enddatum und -uhrzeit",
+    "countdown_finished_text": "Nachricht nach Ablauf",
     "show_collections_link": "Link zu Kollektionen anzeigen",
     "pinned_countries": "Angeheftete Länder",
     "transparent_header_gradient": "Verlauf hinter transparentem Header",
@@ -1121,6 +1124,8 @@
     "disclosures": "Pflichtangaben"
   },
   "info": {
+    "countdown_end_at": "Verwende dieses Format mit deiner Zeitzonenabweichung am Ende: 2026-12-01T09:00:00-08:00",
+    "countdown_finished_text": "Ersetzt den Countdown, wenn die Zeit abgelaufen ist.",
     "pinned_countries": "Ländercodes, die zuerst in dieser Reihenfolge angezeigt werden, durch Kommas getrennt. Beispiel: US,CA",
     "transparent_header_gradient": "Fügt oben auf der Seite einen sanften dunklen Verlauf hinzu, damit der Header über hellen Bildern lesbar bleibt.",
     "adaptive_height": "Jedes Element wird in voller Breite und eigener Höhe angezeigt. Die Galerie passt ihre Größe beim Wechseln zwischen Elementen an.",

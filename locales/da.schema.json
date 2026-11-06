@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "countdown": "Nedtælling",
     "breadcrumbs": "Brødkrummesti",
     "country_selector": "Vælger til land/område",
     "testimonials": "Udtalelser",
@@ -177,6 +178,8 @@
     "disclosures": "Oplysninger"
   },
   "settings": {
+    "countdown_end_at": "Slutdato og -tidspunkt",
+    "countdown_finished_text": "Besked ved afslutning",
     "show_collections_link": "Vis link til kollektioner",
     "pinned_countries": "Fastgjorte lande",
     "transparent_header_gradient": "Gradient bag gennemsigtig header",
@@ -1121,6 +1124,8 @@
     "disclosures": "Oplysninger"
   },
   "info": {
+    "countdown_end_at": "Brug dette format med din tidszoneforskel til sidst: 2026-12-01T09:00:00-08:00",
+    "countdown_finished_text": "Erstatter nedtællingen, når tiden er gået.",
     "pinned_countries": "Landekoder, der vises først i rækkefølge, adskilt af kommaer. Eksempel: US,CA",
     "transparent_header_gradient": "Tilføjer en blød mørk gradient øverst på siden, så headeren forbliver læselig over lyse billeder.",
     "adaptive_height": "Hvert element vises i fuld bredde og sin egen højde. Galleriet ændrer størrelse, når kunderne skifter mellem elementer.",

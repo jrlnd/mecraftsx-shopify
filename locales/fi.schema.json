@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "countdown": "Lähtölaskenta",
     "breadcrumbs": "Murupolku",
     "country_selector": "Maan/alueen valitsin",
     "testimonials": "Suosittelut",
@@ -177,6 +178,8 @@
     "disclosures": "Ilmoitukset"
   },
   "settings": {
+    "countdown_end_at": "Päättymispäivä ja -aika",
+    "countdown_finished_text": "Viesti päättymisen jälkeen",
     "show_collections_link": "Näytä kokoelmalinkki",
     "pinned_countries": "Kiinnitetyt maat",
     "transparent_header_gradient": "Liukuväri läpinäkyvän ylätunnisteen takana",
@@ -1121,6 +1124,8 @@
     "disclosures": "Ilmoitukset"
   },
   "info": {
+    "countdown_end_at": "Käytä tätä muotoa ja lisää loppuun aikavyöhykkeesi poikkeama: 2026-12-01T09:00:00-08:00",
+    "countdown_finished_text": "Korvaa lähtölaskennan, kun aika on kulunut loppuun.",
     "pinned_countries": "Ensin järjestyksessä näytettävät maakoodit pilkuilla erotettuina. Esimerkki: US,CA",
     "transparent_header_gradient": "Lisää sivun yläosaan pehmeän tumman liukuvärin, jotta ylätunniste pysyy luettavana vaaleiden kuvien päällä.",
     "adaptive_height": "Jokainen kohde näytetään täysleveänä omalla korkeudellaan. Galleria muuttaa kokoa, kun ostajat siirtyvät kohteesta toiseen.",

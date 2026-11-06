@@ -131,6 +131,11 @@
     "zoom_media": "Zooma media {{ index }}"
   },
   "content": {
+    "countdown_days": "Dagar",
+    "countdown_hours": "Timmar",
+    "countdown_label": "Nedräkning till {{ date }}",
+    "countdown_minutes": "Minuter",
+    "countdown_seconds": "Sekunder",
     "footer_privacy": "Integritet",
     "footer_terms": "Villkor",
     "all_rights_reserved": "Alla rättigheter förbehållna.",

@@ -131,6 +131,11 @@
     "zoom_media": "Medyayı yakınlaştır: {{ index }}"
   },
   "content": {
+    "countdown_days": "Gün",
+    "countdown_hours": "Saat",
+    "countdown_label": "{{ date }} tarihine geri sayım",
+    "countdown_minutes": "Dakika",
+    "countdown_seconds": "Saniye",
     "footer_privacy": "Gizlilik",
     "footer_terms": "Koşullar",
     "all_rights_reserved": "Tüm hakları saklıdır.",

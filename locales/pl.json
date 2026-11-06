@@ -135,6 +135,11 @@
     "back_to_main_menu": "Wróć do menu głównego"
   },
   "content": {
+    "countdown_days": "Dni",
+    "countdown_hours": "Godziny",
+    "countdown_label": "Odliczanie do {{ date }}",
+    "countdown_minutes": "Minuty",
+    "countdown_seconds": "Sekundy",
     "footer_privacy": "Prywatność",
     "footer_terms": "Warunki",
     "all_rights_reserved": "Wszelkie prawa zastrzeżone.",

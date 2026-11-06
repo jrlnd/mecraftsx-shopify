@@ -131,6 +131,11 @@
     "zoom_media": "{{ index }} 미디어 확대/축소"
   },
   "content": {
+    "countdown_days": "일",
+    "countdown_hours": "시간",
+    "countdown_label": "{{ date }}까지 카운트다운",
+    "countdown_minutes": "분",
+    "countdown_seconds": "초",
     "footer_privacy": "개인정보 보호",
     "footer_terms": "이용약관",
     "all_rights_reserved": "모든 권리 보유.",

@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "countdown": "Contagem decrescente",
     "breadcrumbs": "Trilho de navegação",
     "country_selector": "Seletor de país/região",
     "testimonials": "Testemunhos",
@@ -177,6 +178,8 @@
     "disclosures": "Divulgações"
   },
   "settings": {
+    "countdown_end_at": "Data e hora de fim",
+    "countdown_finished_text": "Mensagem ao terminar",
     "show_collections_link": "Mostrar ligação para coleções",
     "pinned_countries": "Países afixados",
     "transparent_header_gradient": "Gradiente atrás do cabeçalho transparente",
@@ -1121,6 +1124,8 @@
     "disclosures": "Divulgações"
   },
   "info": {
+    "countdown_end_at": "Utilize este formato, com o fuso horário no final: 2026-12-01T09:00:00-08:00",
+    "countdown_finished_text": "Substitui a contagem decrescente quando o tempo termina.",
     "pinned_countries": "Códigos de país apresentados primeiro, por ordem, separados por vírgulas. Exemplo: US,CA",
     "transparent_header_gradient": "Adiciona um gradiente escuro suave no topo da página para manter o cabeçalho legível sobre imagens claras.",
     "adaptive_height": "Cada item é apresentado em largura total e com a sua própria altura. A galeria redimensiona-se à medida que os clientes navegam entre itens.",

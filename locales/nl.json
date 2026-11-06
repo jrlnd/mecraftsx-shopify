@@ -131,6 +131,11 @@
     "back_to_main_menu": "Terug naar hoofdmenu"
   },
   "content": {
+    "countdown_days": "Dagen",
+    "countdown_hours": "Uren",
+    "countdown_label": "Aftellen tot {{ date }}",
+    "countdown_minutes": "Minuten",
+    "countdown_seconds": "Seconden",
     "footer_privacy": "Privacy",
     "footer_terms": "Voorwaarden",
     "all_rights_reserved": "Alle rechten voorbehouden.",

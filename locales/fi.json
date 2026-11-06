@@ -131,6 +131,11 @@
     "back_to_main_menu": "Takaisin päävalikkoon"
   },
   "content": {
+    "countdown_days": "Päivää",
+    "countdown_hours": "Tuntia",
+    "countdown_label": "Lähtölaskenta: {{ date }}",
+    "countdown_minutes": "Minuuttia",
+    "countdown_seconds": "Sekuntia",
     "footer_privacy": "Tietosuoja",
     "footer_terms": "Ehdot",
     "all_rights_reserved": "Kaikki oikeudet pidätetään.",

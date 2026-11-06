@@ -227,6 +227,8 @@
     "work_quickly_to_ship": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>"
   },
   "info": {
+    "countdown_end_at": "Use this format, with your timezone offset at the end: 2026-12-01T09:00:00-08:00",
+    "countdown_finished_text": "Replaces the countdown when the time is up.",
     "pinned_countries": "Country codes shown first, in order, separated by commas. Example: US,CA",
     "transparent_header_gradient": "Adds a soft dark gradient at the top of the page so the header stays readable over light images.",
     "adaptive_height": "Each item shows at full width and its own height. The gallery resizes as shoppers move between items.",
@@ -264,6 +266,7 @@
     "media_type_info": "Features are populated from your menu links"
   },
   "names": {
+    "countdown": "Countdown",
     "breadcrumbs": "Breadcrumbs",
     "country_selector": "Country/region selector",
     "card_grid": "Card grid",
@@ -768,6 +771,8 @@
     "below_media": "Below media"
   },
   "settings": {
+    "countdown_end_at": "End date and time",
+    "countdown_finished_text": "Message when finished",
     "show_collections_link": "Show collections link",
     "pinned_countries": "Pinned countries",
     "transparent_header_gradient": "Gradient behind transparent header",

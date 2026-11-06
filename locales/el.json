@@ -131,6 +131,11 @@
     "back_to_main_menu": "Επιστροφή στο κύριο μενού"
   },
   "content": {
+    "countdown_days": "Ημέρες",
+    "countdown_hours": "Ώρες",
+    "countdown_label": "Αντίστροφη μέτρηση έως {{ date }}",
+    "countdown_minutes": "Λεπτά",
+    "countdown_seconds": "Δευτερόλεπτα",
     "footer_privacy": "Απόρρητο",
     "footer_terms": "Όροι",
     "all_rights_reserved": "Με επιφύλαξη παντός δικαιώματος.",

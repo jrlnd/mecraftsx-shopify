@@ -133,6 +133,11 @@
     "zoom_media": "Fă zoom pe elementul media {{ index }}"
   },
   "content": {
+    "countdown_days": "Zile",
+    "countdown_hours": "Ore",
+    "countdown_label": "Numărătoare inversă până la {{ date }}",
+    "countdown_minutes": "Minute",
+    "countdown_seconds": "Secunde",
     "footer_privacy": "Confidențialitate",
     "footer_terms": "Termeni",
     "all_rights_reserved": "Toate drepturile rezervate.",

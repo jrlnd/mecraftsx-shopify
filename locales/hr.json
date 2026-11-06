@@ -133,6 +133,11 @@
     "back_to_main_menu": "Natrag na glavni izbornik"
   },
   "content": {
+    "countdown_days": "Dani",
+    "countdown_hours": "Sati",
+    "countdown_label": "Odbrojavanje do {{ date }}",
+    "countdown_minutes": "Minute",
+    "countdown_seconds": "Sekunde",
     "footer_privacy": "Privatnost",
     "footer_terms": "Uvjeti",
     "all_rights_reserved": "Sva prava pridržana.",

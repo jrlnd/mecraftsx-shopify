@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "countdown": "Compte à rebours",
     "breadcrumbs": "Fil d'Ariane",
     "country_selector": "Sélecteur de pays/région",
     "testimonials": "Témoignages",
@@ -177,6 +178,8 @@
     "disclosures": "Divulgations"
   },
   "settings": {
+    "countdown_end_at": "Date et heure de fin",
+    "countdown_finished_text": "Message à la fin",
     "show_collections_link": "Afficher le lien vers les collections",
     "pinned_countries": "Pays épinglés",
     "transparent_header_gradient": "Dégradé derrière l'en-tête transparent",
@@ -1121,6 +1124,8 @@
     "disclosures": "Divulgations"
   },
   "info": {
+    "countdown_end_at": "Utilisez ce format, avec le décalage de votre fuseau horaire à la fin : 2026-12-01T09:00:00-08:00",
+    "countdown_finished_text": "Remplace le compte à rebours lorsque le temps est écoulé.",
     "pinned_countries": "Codes pays affichés en premier, dans l'ordre, séparés par des virgules. Exemple : US,CA",
     "transparent_header_gradient": "Ajoute un léger dégradé sombre en haut de la page pour que l'en-tête reste lisible sur les images claires.",
     "adaptive_height": "Chaque élément s'affiche en pleine largeur et à sa propre hauteur. La galerie se redimensionne lorsque les clients passent d'un élément à l'autre.",

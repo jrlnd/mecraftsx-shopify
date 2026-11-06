@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "countdown": "Geri sayım",
     "breadcrumbs": "İçerik haritası",
     "country_selector": "Ülke/bölge seçici",
     "testimonials": "Müşteri yorumları",
@@ -177,6 +178,8 @@
     "disclosures": "Bildirimler"
   },
   "settings": {
+    "countdown_end_at": "Bitiş tarihi ve saati",
+    "countdown_finished_text": "Bitince gösterilecek mesaj",
     "show_collections_link": "Koleksiyonlar bağlantısını göster",
     "pinned_countries": "Sabitlenen ülkeler",
     "transparent_header_gradient": "Şeffaf üst bilginin arkasında gradyan",
@@ -1121,6 +1124,8 @@
     "disclosures": "Bildirimler"
   },
   "info": {
+    "countdown_end_at": "Sonunda saat dilimi farkı olacak şekilde bu biçimi kullanın: 2026-12-01T09:00:00-08:00",
+    "countdown_finished_text": "Süre dolduğunda geri sayımın yerini alır.",
     "pinned_countries": "Önce sırayla gösterilecek ülke kodları, virgülle ayrılır. Örnek: US,CA",
     "transparent_header_gradient": "Üst bilginin açık renkli görsellerde okunabilir kalması için sayfanın üstüne yumuşak koyu bir gradyan ekler.",
     "adaptive_height": "Her öğe tam genişlikte ve kendi yüksekliğinde gösterilir. Alışveriş yapanlar öğeler arasında geçtikçe galeri yeniden boyutlanır.",

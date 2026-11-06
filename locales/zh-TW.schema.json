@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "countdown": "倒數計時",
     "breadcrumbs": "階層導覽",
     "country_selector": "國家/地區選擇器",
     "testimonials": "顧客評價",
@@ -177,6 +178,8 @@
     "disclosures": "資訊揭露"
   },
   "settings": {
+    "countdown_end_at": "結束日期和時間",
+    "countdown_finished_text": "結束時顯示的訊息",
     "show_collections_link": "顯示系列連結",
     "pinned_countries": "置頂國家/地區",
     "transparent_header_gradient": "透明頁首後的漸層",
@@ -1121,6 +1124,8 @@
     "disclosures": "資訊揭露"
   },
   "info": {
+    "countdown_end_at": "請使用此格式，並在結尾加上時區偏移：2026-12-01T09:00:00-08:00",
+    "countdown_finished_text": "時間結束後取代倒數計時。",
     "pinned_countries": "優先依序顯示的國家/地區代碼，以逗號分隔。範例：US,CA",
     "transparent_header_gradient": "在頁面頂端加入柔和的深色漸層，讓頁首在淺色圖片上依然清晰易讀。",
     "adaptive_height": "每個項目以全寬及其本身高度顯示。顧客切換項目時，圖庫會隨之調整大小。",

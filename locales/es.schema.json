@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "countdown": "Cuenta atrás",
     "breadcrumbs": "Ruta de navegación",
     "country_selector": "Selector de país/región",
     "testimonials": "Testimonios",
@@ -177,6 +178,8 @@
     "disclosures": "Divulgaciones"
   },
   "settings": {
+    "countdown_end_at": "Fecha y hora de finalización",
+    "countdown_finished_text": "Mensaje al finalizar",
     "show_collections_link": "Mostrar enlace a colecciones",
     "pinned_countries": "Países fijados",
     "transparent_header_gradient": "Degradado detrás del encabezado transparente",
@@ -1121,6 +1124,8 @@
     "disclosures": "Divulgaciones"
   },
   "info": {
+    "countdown_end_at": "Usa este formato, con la diferencia de tu zona horaria al final: 2026-12-01T09:00:00-08:00",
+    "countdown_finished_text": "Sustituye a la cuenta atrás cuando se acaba el tiempo.",
     "pinned_countries": "Códigos de país que se muestran primero, en orden y separados por comas. Ejemplo: US,CA",
     "transparent_header_gradient": "Añade un degradado oscuro suave en la parte superior para que el encabezado se lea bien sobre imágenes claras.",
     "adaptive_height": "Cada elemento se muestra a ancho completo y con su propia altura. La galería cambia de tamaño al pasar de un elemento a otro.",

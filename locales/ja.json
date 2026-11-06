@@ -131,6 +131,11 @@
     "back_to_main_menu": "メインメニューに戻る"
   },
   "content": {
+    "countdown_days": "日",
+    "countdown_hours": "時間",
+    "countdown_label": "{{ date }}までのカウントダウン",
+    "countdown_minutes": "分",
+    "countdown_seconds": "秒",
     "footer_privacy": "プライバシー",
     "footer_terms": "利用規約",
     "all_rights_reserved": "無断転載を禁じます。",

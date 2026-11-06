@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "countdown": "Nedräkning",
     "breadcrumbs": "Brödsmulor",
     "country_selector": "Väljare för land/region",
     "testimonials": "Kundomdömen",
@@ -177,6 +178,8 @@
     "disclosures": "Upplysningar"
   },
   "settings": {
+    "countdown_end_at": "Slutdatum och -tid",
+    "countdown_finished_text": "Meddelande när tiden är ute",
     "show_collections_link": "Visa länk till kollektioner",
     "pinned_countries": "Fästa länder",
     "transparent_header_gradient": "Gradient bakom transparent sidhuvud",
@@ -1121,6 +1124,8 @@
     "disclosures": "Upplysningar"
   },
   "info": {
+    "countdown_end_at": "Använd det här formatet, med tidszonsförskjutningen sist: 2026-12-01T09:00:00-08:00",
+    "countdown_finished_text": "Ersätter nedräkningen när tiden är ute.",
     "pinned_countries": "Landskoder som visas först i ordning, separerade med kommatecken. Exempel: US,CA",
     "transparent_header_gradient": "Lägger till en mjuk mörk gradient högst upp på sidan så att sidhuvudet syns tydligt över ljusa bilder.",
     "adaptive_height": "Varje objekt visas i full bredd och sin egen höjd. Galleriet ändrar storlek när kunderna bläddrar mellan objekt.",

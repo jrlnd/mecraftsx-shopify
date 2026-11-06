@@ -131,6 +131,11 @@
     "back_to_main_menu": "Quay lại menu chính"
   },
   "content": {
+    "countdown_days": "Ngày",
+    "countdown_hours": "Giờ",
+    "countdown_label": "Đếm ngược đến {{ date }}",
+    "countdown_minutes": "Phút",
+    "countdown_seconds": "Giây",
     "footer_privacy": "Quyền riêng tư",
     "footer_terms": "Điều khoản",
     "all_rights_reserved": "Bảo lưu mọi quyền.",

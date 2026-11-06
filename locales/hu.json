@@ -131,6 +131,11 @@
     "back_to_main_menu": "Vissza a főmenübe"
   },
   "content": {
+    "countdown_days": "Nap",
+    "countdown_hours": "Óra",
+    "countdown_label": "Visszaszámlálás eddig: {{ date }}",
+    "countdown_minutes": "Perc",
+    "countdown_seconds": "Másodperc",
     "footer_privacy": "Adatvédelem",
     "footer_terms": "Feltételek",
     "all_rights_reserved": "Minden jog fenntartva.",

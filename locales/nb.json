@@ -131,6 +131,11 @@
     "zoom_media": "Zoom medier {{ index }}"
   },
   "content": {
+    "countdown_days": "Dager",
+    "countdown_hours": "Timer",
+    "countdown_label": "Nedtelling til {{ date }}",
+    "countdown_minutes": "Minutter",
+    "countdown_seconds": "Sekunder",
     "footer_privacy": "Personvern",
     "footer_terms": "Vilkår",
     "all_rights_reserved": "Alle rettigheter forbeholdt.",

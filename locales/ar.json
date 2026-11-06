@@ -163,6 +163,11 @@
     }
   },
   "content": {
+    "countdown_days": "أيام",
+    "countdown_hours": "ساعات",
+    "countdown_label": "العد التنازلي حتى {{ date }}",
+    "countdown_minutes": "دقائق",
+    "countdown_seconds": "ثوانٍ",
     "footer_privacy": "الخصوصية",
     "footer_terms": "الشروط",
     "all_rights_reserved": "جميع الحقوق محفوظة.",

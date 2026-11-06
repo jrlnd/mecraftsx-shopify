@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "countdown": "倒计时",
     "breadcrumbs": "面包屑导航",
     "country_selector": "国家/地区选择器",
     "testimonials": "客户评价",
@@ -177,6 +178,8 @@
     "disclosures": "披露信息"
   },
   "settings": {
+    "countdown_end_at": "结束日期和时间",
+    "countdown_finished_text": "结束时显示的消息",
     "show_collections_link": "显示系列链接",
     "pinned_countries": "置顶国家/地区",
     "transparent_header_gradient": "透明页眉后的渐变",
@@ -1121,6 +1124,8 @@
     "disclosures": "披露信息"
   },
   "info": {
+    "countdown_end_at": "请使用此格式，并在末尾加上时区偏移：2026-12-01T09:00:00-08:00",
+    "countdown_finished_text": "时间结束后替换倒计时。",
     "pinned_countries": "优先按顺序显示的国家/地区代码，用逗号分隔。示例：US,CA",
     "transparent_header_gradient": "在页面顶部添加柔和的深色渐变，让页眉在浅色图片上依然清晰可读。",
     "adaptive_height": "每个项目以全宽及其自身高度显示。顾客切换项目时，图库会随之调整大小。",

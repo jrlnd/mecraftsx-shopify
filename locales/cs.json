@@ -135,6 +135,11 @@
     "back_to_main_menu": "Zpět do hlavní nabídky"
   },
   "content": {
+    "countdown_days": "Dny",
+    "countdown_hours": "Hodiny",
+    "countdown_label": "Odpočet do {{ date }}",
+    "countdown_minutes": "Minuty",
+    "countdown_seconds": "Sekundy",
     "footer_privacy": "Soukromí",
     "footer_terms": "Podmínky",
     "all_rights_reserved": "Všechna práva vyhrazena.",

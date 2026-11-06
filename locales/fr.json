@@ -133,6 +133,11 @@
     "zoom_media": "Zoom du support multimédia {{ index }}"
   },
   "content": {
+    "countdown_days": "Jours",
+    "countdown_hours": "Heures",
+    "countdown_label": "Compte à rebours jusqu’au {{ date }}",
+    "countdown_minutes": "Minutes",
+    "countdown_seconds": "Secondes",
     "footer_privacy": "Confidentialité",
     "footer_terms": "Conditions",
     "all_rights_reserved": "Tous droits réservés.",

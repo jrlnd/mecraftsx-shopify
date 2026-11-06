@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "countdown": "Nedtelling",
     "breadcrumbs": "Brødsmulesti",
     "country_selector": "Velger for land/region",
     "testimonials": "Kundeomtaler",
@@ -177,6 +178,8 @@
     "disclosures": "Opplysninger"
   },
   "settings": {
+    "countdown_end_at": "Sluttdato og -tidspunkt",
+    "countdown_finished_text": "Melding når tiden er ute",
     "show_collections_link": "Vis lenke til kolleksjoner",
     "pinned_countries": "Festede land",
     "transparent_header_gradient": "Gradient bak gjennomsiktig topptekst",
@@ -1121,6 +1124,8 @@
     "disclosures": "Opplysninger"
   },
   "info": {
+    "countdown_end_at": "Bruk dette formatet, med tidssoneforskyvningen til slutt: 2026-12-01T09:00:00-08:00",
+    "countdown_finished_text": "Erstatter nedtellingen når tiden er ute.",
     "pinned_countries": "Landkoder som vises først i rekkefølge, atskilt med komma. Eksempel: US,CA",
     "transparent_header_gradient": "Legger til en myk mørk gradient øverst på siden slik at toppteksten forblir lesbar over lyse bilder.",
     "adaptive_height": "Hvert element vises i full bredde og sin egen høyde. Galleriet endrer størrelse når kundene blar mellom elementene.",

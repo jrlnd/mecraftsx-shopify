@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "countdown": "カウントダウン",
     "breadcrumbs": "パンくずリスト",
     "country_selector": "国/地域セレクター",
     "testimonials": "お客様の声",
@@ -177,6 +178,8 @@
     "disclosures": "開示情報"
   },
   "settings": {
+    "countdown_end_at": "終了日時",
+    "countdown_finished_text": "終了時のメッセージ",
     "show_collections_link": "コレクションへのリンクを表示",
     "pinned_countries": "固定する国",
     "transparent_header_gradient": "透明ヘッダーの背後にグラデーション",
@@ -1121,6 +1124,8 @@
     "disclosures": "開示情報"
   },
   "info": {
+    "countdown_end_at": "末尾にタイムゾーンのオフセットを付けて、次の形式で入力してください：2026-12-01T09:00:00-08:00",
+    "countdown_finished_text": "時間になるとカウントダウンの代わりに表示されます。",
     "pinned_countries": "最初に順番どおり表示する国コード（カンマ区切り）。例：US,CA",
     "transparent_header_gradient": "ページ上部に柔らかい暗めのグラデーションを加え、明るい画像の上でもヘッダーを読みやすくします。",
     "adaptive_height": "各アイテムを全幅かつ本来の高さで表示します。アイテムを切り替えるとギャラリーのサイズが変わります。",

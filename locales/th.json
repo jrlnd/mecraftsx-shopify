@@ -131,6 +131,11 @@
     "back_to_main_menu": "กลับไปที่เมนูหลัก"
   },
   "content": {
+    "countdown_days": "วัน",
+    "countdown_hours": "ชั่วโมง",
+    "countdown_label": "นับถอยหลังถึง {{ date }}",
+    "countdown_minutes": "นาที",
+    "countdown_seconds": "วินาที",
     "footer_privacy": "ความเป็นส่วนตัว",
     "footer_terms": "ข้อกำหนด",
     "all_rights_reserved": "สงวนลิขสิทธิ์ทั้งหมด",

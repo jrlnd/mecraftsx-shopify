@@ -157,6 +157,11 @@
     }
   },
   "content": {
+    "countdown_days": "ימים",
+    "countdown_hours": "שעות",
+    "countdown_label": "ספירה לאחור עד {{ date }}",
+    "countdown_minutes": "דקות",
+    "countdown_seconds": "שניות",
     "footer_privacy": "פרטיות",
     "footer_terms": "תנאים",
     "all_rights_reserved": "כל הזכויות שמורות.",

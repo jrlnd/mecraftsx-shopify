@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "countdown": "Odpočet",
     "breadcrumbs": "Drobečková navigace",
     "country_selector": "Výběr země/oblasti",
     "testimonials": "Reference",
@@ -177,6 +178,8 @@
     "disclosures": "Prohlášení"
   },
   "settings": {
+    "countdown_end_at": "Datum a čas ukončení",
+    "countdown_finished_text": "Zpráva po skončení",
     "show_collections_link": "Zobrazit odkaz na kolekce",
     "pinned_countries": "Připnuté země",
     "transparent_header_gradient": "Přechod za průhledným záhlavím",
@@ -1121,6 +1124,8 @@
     "disclosures": "Prohlášení"
   },
   "info": {
+    "countdown_end_at": "Použijte tento formát s posunem časového pásma na konci: 2026-12-01T09:00:00-08:00",
+    "countdown_finished_text": "Nahradí odpočet po uplynutí času.",
     "pinned_countries": "Kódy zemí zobrazené jako první v daném pořadí, oddělené čárkami. Příklad: US,CA",
     "transparent_header_gradient": "Přidá jemný tmavý přechod v horní části stránky, aby záhlaví zůstalo čitelné i na světlých obrázcích.",
     "adaptive_height": "Každá položka se zobrazí v plné šířce a ve vlastní výšce. Galerie mění velikost při přechodu mezi položkami.",

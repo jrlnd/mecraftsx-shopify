@@ -131,6 +131,11 @@
     "zoom_media": "Perbesar media {{ index }}"
   },
   "content": {
+    "countdown_days": "Hari",
+    "countdown_hours": "Jam",
+    "countdown_label": "Hitung mundur hingga {{ date }}",
+    "countdown_minutes": "Menit",
+    "countdown_seconds": "Detik",
     "footer_privacy": "Privasi",
     "footer_terms": "Ketentuan",
     "all_rights_reserved": "Hak cipta dilindungi.",

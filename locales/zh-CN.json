@@ -131,6 +131,11 @@
     "back_to_main_menu": "返回主菜单"
   },
   "content": {
+    "countdown_days": "天",
+    "countdown_hours": "小时",
+    "countdown_label": "距离 {{ date }} 的倒计时",
+    "countdown_minutes": "分钟",
+    "countdown_seconds": "秒",
     "footer_privacy": "隐私",
     "footer_terms": "条款",
     "all_rights_reserved": "保留所有权利。",

@@ -151,6 +151,11 @@
     }
   },
   "content": {
+    "countdown_days": "دن",
+    "countdown_hours": "گھنٹے",
+    "countdown_label": "{{ date }} تک الٹی گنتی",
+    "countdown_minutes": "منٹ",
+    "countdown_seconds": "سیکنڈ",
     "footer_privacy": "رازداری",
     "footer_terms": "شرائط",
     "all_rights_reserved": "جملہ حقوق محفوظ ہیں۔",
