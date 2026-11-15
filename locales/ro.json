@@ -26,7 +26,11 @@
       "error_heading": "Ajustează următoarele:"
     },
     "payment_methods": "Metode de plată",
-    "slider_label": "Cursor"
+    "slider_label": "Cursor",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Traseu de navigare",

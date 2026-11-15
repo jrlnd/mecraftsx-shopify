@@ -26,7 +26,11 @@
       "post_success": "Agradecemos seu contato. Retornaremos o mais rápido possível.",
       "error_heading": "Ajuste o seguinte:"
     },
-    "slider_label": "Controle deslizante"
+    "slider_label": "Controle deslizante",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Trilha de navegação",

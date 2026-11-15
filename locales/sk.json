@@ -26,7 +26,11 @@
       "post_success": "Ďakujeme, že ste nás kontaktovali. Budeme sa vám venovať čo najskôr.",
       "error_heading": "Upravte tieto údaje:"
     },
-    "slider_label": "Jazdec"
+    "slider_label": "Jazdec",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Navigačná cesta",

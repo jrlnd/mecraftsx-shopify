@@ -1,0 +1,242 @@
+{%- doc -%}
+  Renders a "Size guide" button that opens a modal with the product's size chart.
+  The chart comes from the product's `custom.size_chart` field, a reference to a
+  "Size chart" metaobject entry, so one chart can be shared by many products.
+  Renders nothing when the product has no size chart.
+
+  Metaobject fields read here:
+  - `name` (single line text): chart title shown in the modal
+  - `table` (multi-line text): one row per line, cells separated by commas; the
+    first line is the header row and the first cell of each row is its label
+  - `image` (file): optional chart or diagram
+  - `notes` (rich text): optional "how to measure" guidance
+
+  @example
+  {% content_for 'block', type: 'size-guide', id: 'size-guide' %}
+{%- enddoc -%}
+
+{%- liquid
+  assign block_settings = block.settings
+  assign chart = closest.product.metafields.custom.size_chart.value
+  assign table_text = chart.table.value | strip
+  assign notes = chart.notes.value
+  assign chart_image = chart.image.value
+-%}
+
+{%- if chart != blank -%}
+  <script
+    src="{{ 'dialog.js' | asset_url }}"
+    type="module"
+  ></script>
+
+  {% render 'dialog-styles' %}
+
+  <dialog-component
+    class="size-guide"
+    {{ block.shopify_attributes }}
+  >
+    <button
+      type="button"
+      on:click="/showDialog"
+      class="button button-unstyled size-guide__button"
+    >
+      {{- block_settings.label -}}
+    </button>
+
+    <dialog
+      ref="dialog"
+      class="size-guide__dialog dialog-modal color-custom-popover"
+      scroll-lock
+      aria-labelledby="size-guide-heading-{{ block.id }}"
+    >
+      <h2
+        id="size-guide-heading-{{ block.id }}"
+        class="size-guide__heading h4"
+      >
+        {{- chart.name.value | default: block_settings.label -}}
+      </h2>
+
+      <div class="size-guide__body">
+        {%- if table_text != blank -%}
+          {%- assign table_rows = table_text | newline_to_br | split: '<br />' -%}
+          <div
+            class="size-guide__table-wrapper"
+            role="region"
+            aria-label="{{ 'blocks.size_guide.table_label' | t }}"
+            tabindex="0"
+          >
+            <table class="size-guide__table">
+              <thead>
+                <tr>
+                  {%- assign header_cells = table_rows.first | strip | split: ',' -%}
+                  {%- for cell in header_cells -%}
+                    <th scope="col">{{ cell | strip | escape }}</th>
+                  {%- endfor -%}
+                </tr>
+              </thead>
+              <tbody>
+                {%- for row in table_rows offset: 1 -%}
+                  {%- assign row_text = row | strip -%}
+                  {%- if row_text != blank -%}
+                    <tr>
+                      {%- assign cells = row_text | split: ',' -%}
+                      {%- for cell in cells -%}
+                        {%- if forloop.first -%}
+                          <th scope="row">{{ cell | strip | escape }}</th>
+                        {%- else -%}
+                          <td>{{ cell | strip | escape }}</td>
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </tr>
+                  {%- endif -%}
+                {%- endfor -%}
+              </tbody>
+            </table>
+          </div>
+        {%- endif -%}
+
+        {%- if chart_image != blank -%}
+          {%- assign fallback_alt = 'blocks.size_guide.chart_image_alt' | t -%}
+          {%- assign image_alt = chart_image.alt | default: fallback_alt -%}
+          {{
+            chart_image
+            | image_url: width: 1200
+            | image_tag:
+              widths: '400, 600, 800, 1200',
+              sizes: '(min-width: 750px) 600px, 90vw',
+              loading: 'lazy',
+              alt: image_alt,
+              class: 'size-guide__image'
+          }}
+        {%- endif -%}
+
+        {%- if notes != blank -%}
+          <div class="size-guide__notes rte">
+            {{ notes }}
+          </div>
+        {%- endif -%}
+      </div>
+
+      <button
+        type="button"
+        ref="closeButton"
+        on:click="/closeDialog"
+        class="button button-unstyled close-button size-guide__close"
+        aria-label="{{ 'accessibility.close_dialog' | t }}"
+      >
+        {{- 'icon-close.svg' | inline_asset_content -}}
+      </button>
+    </dialog>
+  </dialog-component>
+{%- endif -%}
+
+{% stylesheet %}
+  .size-guide__button {
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    font-size: var(--font-paragraph--size);
+    cursor: pointer;
+  }
+
+  .size-guide__dialog {
+    box-shadow: var(--shadow-popover);
+    border: var(--style-border-popover);
+    border-radius: var(--style-border-radius-popover);
+    background-color: var(--color-background);
+    padding: var(--padding-4xl) var(--padding-xl) var(--padding-xl);
+    width: min(100%, 40rem);
+    max-width: var(--normal-content-width);
+    max-height: var(--modal-max-height);
+
+    @media screen and (min-width: 750px) {
+      padding: var(--padding-5xl);
+    }
+  }
+
+  .size-guide__dialog[open] {
+    animation: modalSlideInTop var(--animation-speed) var(--animation-easing) forwards;
+  }
+
+  .size-guide__dialog.dialog-closing {
+    animation: modalSlideOutTop var(--animation-speed) var(--animation-easing) forwards;
+  }
+
+  .size-guide__heading {
+    margin-block: 0 var(--margin-lg);
+    overflow-wrap: anywhere;
+  }
+
+  .size-guide__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-lg);
+    min-width: 0;
+  }
+
+  .size-guide__table-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .size-guide__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--font-paragraph--size);
+    text-align: center;
+  }
+
+  .size-guide__table th,
+  .size-guide__table td {
+    padding: var(--padding-sm) var(--padding-md);
+    border-block-end: var(--style-border-width) solid var(--color-border);
+    white-space: nowrap;
+  }
+
+  .size-guide__table thead th {
+    font-weight: 600;
+  }
+
+  .size-guide__table tbody th {
+    font-weight: 600;
+    text-align: start;
+  }
+
+  .size-guide__image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .size-guide__close {
+    top: var(--margin-2xs);
+    inset-inline-end: var(--margin-2xs);
+    opacity: 0.8;
+    animation: none;
+  }
+
+  /* Match the specificity of the base [dir='rtl'] .close-button safe-area rule */
+  [dir='rtl'] .size-guide__close {
+    inset-inline-end: var(--margin-2xs);
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.size_guide",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "t:settings.label",
+      "info": "t:info.size_guide",
+      "default": "t:text_defaults.size_guide"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.size_guide"
+    }
+  ]
+}
+{% endschema %}

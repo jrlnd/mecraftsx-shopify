@@ -26,7 +26,11 @@
       "post_success": "Agradecemos o seu contacto. Responder-lhe-emos logo que possível.",
       "error_heading": "Ajuste o seguinte:"
     },
-    "slider_label": "Slider"
+    "slider_label": "Slider",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Trilho de navegação",

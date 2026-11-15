@@ -26,7 +26,11 @@
       "post_success": "Danke, dass du uns kontaktiert hast. Wir werden uns so schnell wie möglich bei dir melden.",
       "error_heading": "Bitte passe Folgendes an:"
     },
-    "slider_label": "Slider"
+    "slider_label": "Slider",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Brotkrümelnavigation",

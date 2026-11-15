@@ -26,7 +26,11 @@
       "post_success": "Terima kasih sudah menghubungi kami. Kami akan segera menghubungi Anda.",
       "error_heading": "Mohon sesuaikan:"
     },
-    "slider_label": "Slider"
+    "slider_label": "Slider",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Breadcrumb",

@@ -26,7 +26,11 @@
       "post_success": "Tack för att du kontaktar oss. Vi återkommer till dig så snart som möjligt.",
       "error_heading": "Justera följande:"
     },
-    "slider_label": "Bild"
+    "slider_label": "Bild",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Brödsmulor",

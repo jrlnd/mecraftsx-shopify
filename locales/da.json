@@ -26,7 +26,11 @@
       "post_success": "Tak for din henvendelse. Vi kontakter dig hurtigst muligt.",
       "error_heading": "Juster følgende:"
     },
-    "slider_label": "Billedkarrusel"
+    "slider_label": "Billedkarrusel",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Brødkrummesti",

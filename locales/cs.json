@@ -26,7 +26,11 @@
       "post_success": "Děkujeme, že jste nás kontaktovali. Ozveme se vám co možná nejdříve.",
       "error_heading": "Upravte prosím následující informace:"
     },
-    "slider_label": "Posuvník"
+    "slider_label": "Posuvník",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Drobečková navigace",

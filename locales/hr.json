@@ -26,7 +26,11 @@
       "post_success": "Hvala vam na javljanju. Odgovorit ćemo vam u najkraćem mogućem roku.",
       "error_heading": "Prilagodite sljedeće:"
     },
-    "slider_label": "Kliznik"
+    "slider_label": "Kliznik",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Navigacijski put",

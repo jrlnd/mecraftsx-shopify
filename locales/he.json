@@ -132,7 +132,11 @@
     "load_video": "טעינת הסרטון: {{ description }}",
     "sold_out": "אזל מהמלאי",
     "payment_methods": "אמצעי תשלום",
-    "slider_label": "סליידר"
+    "slider_label": "סליידר",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "blogs": {
     "article": {

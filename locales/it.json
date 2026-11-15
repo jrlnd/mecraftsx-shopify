@@ -26,7 +26,11 @@
       "post_success": "Grazie per averci contattato. Risponderemo il prima possibile.",
       "error_heading": "Correggi gli errori seguenti:"
     },
-    "slider_label": "Cursore"
+    "slider_label": "Cursore",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Percorso di navigazione",

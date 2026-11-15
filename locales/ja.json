@@ -26,7 +26,11 @@
       "post_success": "お問い合わせいただきありがとうございます。早急に返信いたします。",
       "error_heading": "以下を確認してください。"
     },
-    "slider_label": "スライダー"
+    "slider_label": "スライダー",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "パンくずリスト",

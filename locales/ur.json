@@ -128,7 +128,11 @@
     "load_video": "ویڈیو لوڈ کریں: {{ description }}",
     "sold_out": "فروخت ہو گیا",
     "payment_methods": "ادائیگی کے طریقے",
-    "slider_label": "سلائیڈر"
+    "slider_label": "سلائیڈر",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "blogs": {
     "article": {

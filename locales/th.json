@@ -26,7 +26,11 @@
       "post_success": "ขอบคุณที่ติดต่อเรา เราจะติดต่อกลับหาคุณโดยเร็วที่สุด",
       "error_heading": "โปรดแก้ไขข้อมูลดังต่อไปนี้"
     },
-    "slider_label": "แถบเลื่อน"
+    "slider_label": "แถบเลื่อน",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "เส้นทางนำทาง",

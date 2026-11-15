@@ -26,7 +26,11 @@
       "post_success": "感谢您联系我们。我们会尽快回复您。",
       "error_heading": "请调整以下内容："
     },
-    "slider_label": "滑块"
+    "slider_label": "滑块",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "面包屑导航",

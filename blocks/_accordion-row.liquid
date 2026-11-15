@@ -1,6 +1,30 @@
 
 {% assign block_settings = block.settings %}
 
+{% comment %}
+  Rows can hide themselves when their content has no visible text (for example a
+  product field that is blank). Images, video and embeds count as content.
+{% endcomment %}
+{% capture row_content %}
+  {% content_for 'blocks' %}
+{% endcapture %}
+
+{% liquid
+  assign row_is_empty = false
+  if block_settings.hide_when_empty
+    assign row_text = row_content | strip_html | strip
+    if row_text == blank
+      unless row_content contains '<img' or row_content contains '<video' or row_content contains '<iframe' or row_content contains '<picture'
+        assign row_is_empty = true
+      endunless
+    endif
+  endif
+%}
+
+{% if row_is_empty %}
+  {%- comment -%} Keeps the block selectable in the theme editor while hiding it from shoppers. {%- endcomment -%}
+  <div hidden {{ block.shopify_attributes }}></div>
+{% else %}
 {% capture accordion_row_children %}
   <details
     class="details"
@@ -27,7 +51,7 @@
     </summary>
 
     <div class="details-content">
-      {% content_for 'blocks' %}
+      {{ row_content }}
     </div>
   </details>
 {% endcapture %}
@@ -36,6 +60,7 @@
   open_by_default_on_desktop: block_settings.open_by_default,
   open_by_default_on_mobile: block_settings.open_by_default
 %}
+{% endif %}
 
 {% schema %}
 {
@@ -60,6 +85,13 @@
       "type": "checkbox",
       "id": "open_by_default",
       "label": "t:settings.open_row_by_default",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_when_empty",
+      "label": "t:settings.hide_row_when_empty",
+      "info": "t:info.hide_row_when_empty",
       "default": false
     },
     {

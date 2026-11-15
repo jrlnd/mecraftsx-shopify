@@ -26,7 +26,11 @@
       "post_success": "Hvala za vaše sporočilo. Z vami bomo v stiku takoj, ko bo mogoče.",
       "error_heading": "Prilagodite naslednje:"
     },
-    "slider_label": "Drsnik"
+    "slider_label": "Drsnik",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Drobtinice",

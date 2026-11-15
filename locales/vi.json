@@ -26,7 +26,11 @@
       "post_success": "Cảm ơn bạn đã liên hệ với chúng tôi. Chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất.",
       "error_heading": "Vui lòng điều chỉnh các mục sau:"
     },
-    "slider_label": "Thanh trượt"
+    "slider_label": "Thanh trượt",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Đường dẫn",

@@ -26,7 +26,11 @@
       "post_success": "Bizimle iletişime geçtiğiniz için teşekkür ederiz. Mümkün olan en kısa sürede size dönüş yapacağız.",
       "error_heading": "Lütfen aşağıdakileri düzenleyin:"
     },
-    "slider_label": "Kaydırıcı"
+    "slider_label": "Kaydırıcı",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "İçerik haritası",

@@ -26,7 +26,11 @@
       "post_success": "Takk for at du kontaktet oss. Vi svarer så snart som mulig.",
       "error_heading": "Juster følgende:"
     },
-    "slider_label": "Glidefelt"
+    "slider_label": "Glidefelt",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Brødsmulesti",

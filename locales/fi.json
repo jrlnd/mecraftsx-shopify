@@ -26,7 +26,11 @@
       "post_success": "Kiitos yhteydenotostasi. Vastaamme sinulle mahdollisimman pian.",
       "error_heading": "Muokkaa seuraavia:"
     },
-    "slider_label": "Liukusäädin"
+    "slider_label": "Liukusäädin",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Murupolku",

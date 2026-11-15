@@ -26,7 +26,11 @@
       "post_success": "感謝您聯絡我們。我們會盡快回覆您。",
       "error_heading": "請調整以下內容："
     },
-    "slider_label": "投影播放器"
+    "slider_label": "投影播放器",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "階層導覽",

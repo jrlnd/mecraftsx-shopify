@@ -26,7 +26,11 @@
       "post_success": "Спасибо за обращение. Мы свяжемся с вами как можно скорее.",
       "error_heading": "Измените следующие элементы:"
     },
-    "slider_label": "Ползунок"
+    "slider_label": "Ползунок",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Навигационная цепочка",

@@ -26,7 +26,11 @@
       "post_success": "Dėkojame, kad kreipėtės. Atsakysime kaip galėdami greičiau.",
       "error_heading": "Pakoreguokite toliau pateiktą informaciją:"
     },
-    "slider_label": "Slankiklis"
+    "slider_label": "Slankiklis",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Naršymo kelias",

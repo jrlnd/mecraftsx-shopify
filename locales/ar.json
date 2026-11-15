@@ -136,7 +136,11 @@
     "load_video": "تحميل الفيديو: {{ description }}",
     "sold_out": "نفد المخزون",
     "payment_methods": "طرق الدفع",
-    "slider_label": "شريط التمرير"
+    "slider_label": "شريط التمرير",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "blogs": {
     "article": {

@@ -26,7 +26,11 @@
       "post_success": "Ευχαριστούμε που επικοινωνήσατε μαζί μας. Θα σας απαντήσουμε το συντομότερο δυνατόν.",
       "error_heading": "Προσαρμόστε τα παρακάτω:"
     },
-    "slider_label": "Ρυθμιστικό"
+    "slider_label": "Ρυθμιστικό",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Διαδρομή πλοήγησης",

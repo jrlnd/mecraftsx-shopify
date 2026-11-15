@@ -26,7 +26,11 @@
       "post_success": "Gracias por contactarnos. Te responderemos lo antes posible.",
       "error_heading": "Realiza los ajustes siguientes:"
     },
-    "slider_label": "Carrusel"
+    "slider_label": "Carrusel",
+    "size_guide": {
+      "table_label": "Size chart measurements",
+      "chart_image_alt": "Size chart"
+    }
   },
   "accessibility": {
     "breadcrumb": "Ruta de navegación",
