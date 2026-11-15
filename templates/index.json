@@ -375,7 +375,7 @@
       },
       "name": "t:names.product_list",
       "settings": {
-        "collection": "frontpage",
+        "collection": "culture-collection",
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "max_products": 4,
@@ -500,62 +500,6 @@
         "card_background_color": "#EEE5DA",
         "padding-block-start": 72,
         "padding-block-end": 72
-      }
-    },
-    "hero_culture": {
-      "type": "hero",
-      "blocks": {
-        "heading": {
-          "type": "text",
-          "settings": {
-            "text": "<h2>Culture &amp; Filipino Pride</h2>",
-            "type_preset": "custom",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "text_color": "#FDFAF6",
-            "font": "var(--font-heading--family)",
-            "font_size": "2.5rem",
-            "line_height": "tight",
-            "letter_spacing": "tight",
-            "case": "none",
-            "wrap": "pretty",
-            "padding-inline-start": 20,
-            "padding-inline-end": 20
-          }
-        },
-        "cta": {
-          "type": "button",
-          "settings": {
-            "label": "Shop the collection",
-            "link": "shopify://collections/culture-collection",
-            "style_class": "button-custom",
-            "custom_button_background": "#E97D6A",
-            "custom_button_text": "#FFFFFF",
-            "custom_button_border": "#E97D6A"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "cta"
-      ],
-      "settings": {
-        "media_type_1": "image",
-        "image_1": "shopify://shop_images/mecrafts-banner-mahjong-friends.webp",
-        "content_direction": "column",
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 20,
-        "section_width": "full-width",
-        "toggle_overlay": true,
-        "overlay_color": "#3B2517B8",
-        "overlay_style": "gradient",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 56,
-        "section_height": "custom",
-        "section_height_custom": 62
       }
     },
     "card_grid_collections": {
@@ -891,7 +835,7 @@
         "card_radius": 10,
         "section_width": "page-width",
         "padding-block-start": 72,
-        "padding-block-end": 0
+        "padding-block-end": 72
       }
     },
     "card_grid_values": {
@@ -1130,64 +1074,11 @@
         "gap": 20,
         "card_radius": 16,
         "section_width": "page-width",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "hero_MVUtj6": {
-      "type": "hero",
-      "blocks": {
-        "heading": {
-          "type": "text",
-          "settings": {
-            "text": "<h2>Small business, big heart</h2>",
-            "type_preset": "custom",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "text_color": "#FDFAF6",
-            "font": "var(--font-heading--family)",
-            "font_size": "2.5rem",
-            "line_height": "tight",
-            "letter_spacing": "tight",
-            "case": "none",
-            "wrap": "pretty",
-            "padding-inline-start": 20,
-            "padding-inline-end": 20
-          }
-        },
-        "cta": {
-          "type": "button",
-          "settings": {
-            "label": "Shop best sellers",
-            "link": "shopify://collections/all",
-            "style_class": "button-custom",
-            "custom_button_background": "#E97D6A",
-            "custom_button_text": "#FFFFFF",
-            "custom_button_border": "#E97D6A"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "cta"
-      ],
-      "settings": {
-        "media_type_1": "image",
-        "image_1": "shopify://shop_images/mecrafts-banner-friends-table.webp",
-        "content_direction": "column",
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 20,
-        "section_width": "full-width",
-        "toggle_overlay": true,
-        "overlay_color": "#3B2517B8",
-        "overlay_style": "gradient",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 56,
-        "section_height": "custom",
-        "section_height_custom": 62
+        "padding-block-start": 96,
+        "padding-block-end": 96,
+        "background_color": "#D6BFA0",
+        "background_pattern": "woven",
+        "pattern_color": "#7A523624"
       }
     },
     "product_list_best_sellers": {
@@ -1578,7 +1469,7 @@
         "panel_color": "#EEE5DA",
         "corner_radius": 16,
         "padding-block-start": 72,
-        "padding-block-end": 0
+        "padding-block-end": 72
       }
     },
     "card_grid_instagram": {
@@ -1746,18 +1637,73 @@
         "padding-block-start": 56,
         "padding-block-end": 56
       }
+    },
+    "hero_MVUtj6": {
+      "type": "hero",
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Small business, big heart</h2>",
+            "type_preset": "custom",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "text_color": "#FDFAF6",
+            "font": "var(--font-heading--family)",
+            "font_size": "2.5rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "pretty",
+            "padding-inline-start": 20,
+            "padding-inline-end": 20
+          }
+        },
+        "cta": {
+          "type": "button",
+          "settings": {
+            "label": "Shop best sellers",
+            "link": "shopify://collections/all",
+            "style_class": "button-custom",
+            "custom_button_background": "#E97D6A",
+            "custom_button_text": "#FFFFFF",
+            "custom_button_border": "#E97D6A"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "cta"
+      ],
+      "settings": {
+        "media_type_1": "image",
+        "image_1": "shopify://shop_images/mecrafts-banner-friends-table.webp",
+        "content_direction": "column",
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-end",
+        "gap": 20,
+        "section_width": "full-width",
+        "toggle_overlay": true,
+        "overlay_color": "#3B2517B8",
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 56,
+        "section_height": "custom",
+        "section_height_custom": 62
+      }
     }
   },
   "order": [
     "hero_iyt6zg",
     "product_list_UwRqN4",
-    "media_overlap_story",
-    "hero_culture",
     "card_grid_collections",
     "card_grid_values",
-    "hero_MVUtj6",
     "product_list_best_sellers",
     "testimonials_customers",
+    "hero_MVUtj6",
+    "media_overlap_story",
     "card_grid_instagram",
     "section_newsletter"
   ]
