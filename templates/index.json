@@ -111,7 +111,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h2>This month’s picks</h2>",
+                "text": "<h2>This month\u2019s picks</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -420,7 +420,7 @@
             "heading": {
               "type": "text",
               "settings": {
-                "text": "<h2>Hi, we’re Matt + Erin</h2>",
+                "text": "<h2>Hi, we\u2019re Matt + Erin</h2>",
                 "type_preset": "h2",
                 "width": "100%",
                 "max_width": "normal",
@@ -915,7 +915,7 @@
             "heading": {
               "type": "text",
               "settings": {
-                "text": "<h3>1. Drawn by hand</h3>",
+                "text": "<h3>1. Inspired by culture. Created with intention.</h3>",
                 "type_preset": "h4",
                 "width": "100%",
                 "max_width": "normal",
@@ -926,7 +926,7 @@
             "body": {
               "type": "text",
               "settings": {
-                "text": "<p>Every design starts as one of Matt’s drawings. Nothing is licensed, generated or bought in.</p>",
+                "text": "<p>Every design begins with an idea inspired by the things we love \u2014 our roots, our experiences, and the little moments that connect us.</p>",
                 "type_preset": "custom",
                 "width": "100%",
                 "max_width": "narrow",
@@ -942,7 +942,7 @@
             "link": {
               "type": "text",
               "settings": {
-                "text": "<p><a href=\"/collections/all\">Shop the collection</a></p>",
+                "text": "<p><a href=\"/collections/culture-collection\">Shop the collection</a></p>",
                 "type_preset": "h6",
                 "width": "100%",
                 "max_width": "normal",
@@ -1048,10 +1048,21 @@
             "padding-inline-end": 40
           },
           "blocks": {
+            "eyebrow": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Little gifts, big love</p>",
+                "type_preset": "h6",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "text_color": "#5A3A24"
+              }
+            },
             "heading": {
               "type": "text",
               "settings": {
-                "text": "<h3>3. Packed with care in the Bay Area</h3>",
+                "text": "<h3>3. Good things come in small packages.</h3>",
                 "type_preset": "h4",
                 "width": "100%",
                 "max_width": "normal",
@@ -1062,7 +1073,7 @@
             "body": {
               "type": "text",
               "settings": {
-                "text": "<p>Free U.S. shipping on orders over $75, sent out from our home base.</p>",
+                "text": "<p>Thoughtful little finds, all under $25. Perfect for gifting, sharing, or treating yourself.</p>",
                 "type_preset": "custom",
                 "width": "100%",
                 "max_width": "narrow",
@@ -1078,7 +1089,7 @@
             "link": {
               "type": "text",
               "settings": {
-                "text": "<p><a href=\"/policies/shipping-policy\">Shipping &amp; returns</a></p>",
+                "text": "<p><a href=\"/collections/gifts-under-25\">Shop gifts under $25</a></p>",
                 "type_preset": "h6",
                 "width": "100%",
                 "max_width": "normal",
@@ -1088,6 +1099,7 @@
             }
           },
           "block_order": [
+            "eyebrow",
             "heading",
             "body",
             "link"
