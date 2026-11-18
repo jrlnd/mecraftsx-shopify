@@ -10,6 +10,7 @@
 {
   "names": {
     "countdown": "Countdown",
+    "instagram_feed": "Instagram feed",
     "breadcrumbs": "Brotkrümelnavigation",
     "country_selector": "Länder-/Regionsauswahl",
     "testimonials": "Kundenstimmen",
@@ -180,6 +181,9 @@
   },
   "settings": {
     "countdown_end_at": "Enddatum und -uhrzeit",
+    "posts": "Posts",
+    "label_title": "Label title",
+    "label_handle": "Label handle",
     "password_page_title": "Password page title",
     "countdown_finished_text": "Nachricht nach Ablauf",
     "show_collections_link": "Link zu Kollektionen anzeigen",
@@ -904,6 +908,7 @@
   },
   "content": {
     "background_video": "Hintergrundvideo",
+    "label": "Label",
     "describe_the_video_for": "Beschreibe das Video für Kunden, die Bildschirmlesegeräte benutzen. [Mehr Informationen](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)",
     "width_is_automatically_optimized": "Die Breite wird für Mobilgeräte automatisch optimiert.",
     "advanced": "Erweitert",

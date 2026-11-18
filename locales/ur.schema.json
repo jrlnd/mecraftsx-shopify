@@ -31,6 +31,7 @@
   },
   "content": {
     "visible_if_collection_has_more_products": "اگر کلیکشن میں دکھائے گئے پروڈکٹ سے زیادہ پروڈکٹ ہوں تو ظاہر ہوتا ہے",
+    "label": "Label",
     "advanced": "ایڈوانسڈ",
     "appearance": "ظاہری شکل",
     "arrows": "تیر کے نشانات",
@@ -262,6 +263,7 @@
   },
   "names": {
     "countdown": "الٹی گنتی",
+    "instagram_feed": "Instagram feed",
     "breadcrumbs": "بریڈ کرمبز",
     "country_selector": "ملک/علاقہ منتخب کنندہ",
     "testimonials": "تاثرات",
@@ -720,6 +722,9 @@
   },
   "settings": {
     "countdown_end_at": "اختتام کی تاریخ اور وقت",
+    "posts": "Posts",
+    "label_title": "Label title",
+    "label_handle": "Label handle",
     "password_page_title": "Password page title",
     "countdown_finished_text": "اختتام پر پیغام",
     "show_collections_link": "کلیکشنز کا لنک دکھائیں",

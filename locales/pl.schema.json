@@ -10,6 +10,7 @@
 {
   "names": {
     "countdown": "Odliczanie",
+    "instagram_feed": "Instagram feed",
     "breadcrumbs": "Ścieżka nawigacji",
     "country_selector": "Wybór kraju/regionu",
     "testimonials": "Opinie",
@@ -180,6 +181,9 @@
   },
   "settings": {
     "countdown_end_at": "Data i godzina zakończenia",
+    "posts": "Posts",
+    "label_title": "Label title",
+    "label_handle": "Label handle",
     "password_page_title": "Password page title",
     "countdown_finished_text": "Wiadomość po zakończeniu",
     "show_collections_link": "Pokaż link do kolekcji",
@@ -904,6 +908,7 @@
   },
   "content": {
     "background_video": "Wideo w tle",
+    "label": "Label",
     "describe_the_video_for": "Opisz film dla klientów korzystających z czytników ekranu. [Dowiedz się więcej](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)",
     "width_is_automatically_optimized": "Szerokość jest automatycznie optymalizowana pod kątem urządzeń mobilnych.",
     "advanced": "Zaawansowane",

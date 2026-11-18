@@ -10,6 +10,7 @@
 {
   "names": {
     "countdown": "Contagem regressiva",
+    "instagram_feed": "Instagram feed",
     "breadcrumbs": "Trilha de navegação",
     "country_selector": "Seletor de país/região",
     "testimonials": "Depoimentos",
@@ -180,6 +181,9 @@
   },
   "settings": {
     "countdown_end_at": "Data e hora de término",
+    "posts": "Posts",
+    "label_title": "Label title",
+    "label_handle": "Label handle",
     "password_page_title": "Password page title",
     "countdown_finished_text": "Mensagem ao terminar",
     "show_collections_link": "Mostrar link para coleções",
@@ -904,6 +908,7 @@
   },
   "content": {
     "advanced": "Avançado",
+    "label": "Label",
     "background_image": "Imagem de fundo",
     "background_video": "Vídeo de fundo",
     "block_size": "Tamanho do bloco",

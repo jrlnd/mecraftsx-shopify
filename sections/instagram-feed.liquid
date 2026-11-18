@@ -1,0 +1,276 @@
+{% comment %}
+  Section contract.
+  Lays a label card and the first few posts of an Instagram feed app block out as one even
+  grid of square tiles. The section owns columns, gap, corners, and the label card; the app
+  owns the posts. The app block's own wrappers are flattened with `display: contents`, so the
+  CSS below is coupled to the Instafeed markup (`.instafeed-shoppable__*`). Recheck it after
+  changing the feed style or app version.
+  @example
+  <!-- Add "Instagram feed" in the theme editor, then add the Instafeed app block inside it -->
+{% endcomment %}
+
+{% liquid
+  if section.settings.background_color != blank
+    render 'contrast-override', background_color: section.settings.background_color, section_id: section.id
+  endif
+
+  assign posts = section.settings.posts
+  assign hidden_from = posts | plus: 1
+%}
+
+<div
+  class="
+    section-background
+    {% if section.settings.background_color != blank %}color-custom-{{ section.id }}{% endif %}
+  "
+></div>
+
+<div
+  class="
+    section
+    section--{{ section.settings.section_width }}
+    instagram-feed
+    spacing-style
+    {% if section.settings.background_color != blank %}color-custom-{{ section.id }}{% endif %}
+  "
+  style="{% render 'spacing-style', settings: section.settings %}"
+>
+  <div
+    class="instagram-feed__grid"
+    style="
+      --instagram-feed-columns: {{ posts | plus: 1 }};
+      --instagram-feed-gap: {{ section.settings.gap }}px;
+      --instagram-feed-radius: {{ section.settings.corner_radius }}px;
+    "
+  >
+    {%- if section.settings.label_title != blank or section.settings.label_handle != blank -%}
+      <div
+        class="instagram-feed__label"
+        style="
+          {% if section.settings.label_background != blank %}--instagram-feed-label-background: {{ section.settings.label_background }};{% endif %}
+          {% if section.settings.label_color != blank %}--instagram-feed-label-color: {{ section.settings.label_color }};{% endif %}
+        "
+      >
+        {%- if section.settings.label_title != blank -%}
+          <span class="instagram-feed__label-title">{{ section.settings.label_title | escape }}</span>
+        {%- endif -%}
+        {%- if section.settings.label_handle != blank -%}
+          <span class="instagram-feed__label-handle">{{ section.settings.label_handle | escape }}</span>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {% content_for 'blocks' %}
+  </div>
+</div>
+
+{% style %}
+  /* The app lazy-loads more posts than the grid shows; hide the extras. */
+  #shopify-section-{{ section.id }} .instafeed-shoppable__card:nth-child(n + {{ hidden_from }}) {
+    display: none !important;
+  }
+{% endstyle %}
+
+{% stylesheet %}
+  .instagram-feed__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--instagram-feed-gap, 12px);
+  }
+
+  .instagram-feed__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--padding-3xs, 2px);
+    min-width: 0;
+    padding: 20px;
+    border-radius: var(--instagram-feed-radius, 10px);
+    background-color: var(--instagram-feed-label-background, #eee5da);
+    color: var(--instagram-feed-label-color, #7a5236);
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+
+  .instagram-feed__label-title {
+    font-family: var(--font-h6--family);
+    font-size: var(--font-h6--size);
+    font-weight: var(--font-h6--weight);
+    line-height: var(--font-h6--line-height);
+  }
+
+  .instagram-feed__label-handle {
+    font-size: var(--font-size--sm, 0.875rem);
+  }
+
+  /* Flatten the app's wrappers so its posts become direct items of the section grid. */
+  .instagram-feed__grid .shopify-app-block,
+  .instagram-feed__grid #insta-feed,
+  .instagram-feed__grid .instafeed-shoppable,
+  .instagram-feed__grid .instafeed-shoppable__scroller,
+  .instagram-feed__grid .instafeed-shoppable__track {
+    display: contents;
+  }
+
+  .instagram-feed__grid .instafeed-shoppable__nav {
+    display: none !important;
+  }
+
+  /* The app sets its post ratio inline on the feed root, so only !important can win. */
+  .instagram-feed__grid .instafeed-shoppable {
+    --instafeed-shoppable-ratio: 1 !important;
+  }
+
+  .instagram-feed__grid .instafeed-shoppable__card {
+    width: auto;
+    min-width: 0;
+  }
+
+  .instagram-feed__grid .instafeed-shoppable__frame {
+    aspect-ratio: 1 !important;
+    border: 0;
+    border-radius: var(--instagram-feed-radius, 10px);
+    box-shadow: none;
+  }
+
+  @media screen and (min-width: 750px) {
+    .instagram-feed__grid {
+      grid-template-columns: repeat(var(--instagram-feed-columns, 5), minmax(0, 1fr));
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.instagram_feed",
+  "class": "section-wrapper",
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:content.label"
+    },
+    {
+      "type": "text",
+      "id": "label_title",
+      "label": "t:settings.label_title",
+      "default": "Instagram"
+    },
+    {
+      "type": "text",
+      "id": "label_handle",
+      "label": "t:settings.label_handle",
+      "default": "@me_craftsx"
+    },
+    {
+      "type": "color",
+      "id": "label_background",
+      "label": "t:settings.background",
+      "default": "#eee5da"
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "t:settings.text",
+      "default": "#7a5236"
+    },
+    {
+      "type": "header",
+      "content": "t:content.layout"
+    },
+    {
+      "type": "range",
+      "id": "posts",
+      "label": "t:settings.posts",
+      "min": 2,
+      "max": 8,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "t:settings.gap",
+      "min": 0,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "corner_radius",
+      "label": "t:settings.corner_radius",
+      "min": 0,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "t:settings.width",
+      "options": [
+        {
+          "value": "page-width",
+          "label": "t:options.page"
+        },
+        {
+          "value": "full-width",
+          "label": "t:options.full"
+        }
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "header",
+      "content": "t:content.colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:settings.background",
+      "alpha": true
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 72
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.instagram_feed",
+      "category": "t:categories.layout"
+    }
+  ]
+}
+{% endschema %}

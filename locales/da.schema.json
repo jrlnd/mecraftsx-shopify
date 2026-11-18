@@ -10,6 +10,7 @@
 {
   "names": {
     "countdown": "Nedtælling",
+    "instagram_feed": "Instagram feed",
     "breadcrumbs": "Brødkrummesti",
     "country_selector": "Vælger til land/område",
     "testimonials": "Udtalelser",
@@ -180,6 +181,9 @@
   },
   "settings": {
     "countdown_end_at": "Slutdato og -tidspunkt",
+    "posts": "Posts",
+    "label_title": "Label title",
+    "label_handle": "Label handle",
     "password_page_title": "Password page title",
     "countdown_finished_text": "Besked ved afslutning",
     "show_collections_link": "Vis link til kollektioner",
@@ -904,6 +908,7 @@
   },
   "content": {
     "advanced": "Avanceret",
+    "label": "Label",
     "background_image": "Baggrundsbillede",
     "background_video": "Baggrundsvideo",
     "block_size": "Blokstørrelse",

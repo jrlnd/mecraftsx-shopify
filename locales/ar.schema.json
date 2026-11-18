@@ -31,6 +31,7 @@
   },
   "content": {
     "visible_if_collection_has_more_products": "مرئي إذا كانت المجموعة تحتوي على منتجات أكثر من المعروضة",
+    "label": "Label",
     "advanced": "متقدم",
     "appearance": "المظهر",
     "arrows": "أسهم",
@@ -262,6 +263,7 @@
   },
   "names": {
     "countdown": "العد التنازلي",
+    "instagram_feed": "Instagram feed",
     "breadcrumbs": "مسار التنقل",
     "country_selector": "محدد الدولة/المنطقة",
     "testimonials": "الشهادات",
@@ -720,6 +722,9 @@
   },
   "settings": {
     "countdown_end_at": "تاريخ ووقت الانتهاء",
+    "posts": "Posts",
+    "label_title": "Label title",
+    "label_handle": "Label handle",
     "password_page_title": "Password page title",
     "countdown_finished_text": "الرسالة عند الانتهاء",
     "show_collections_link": "إظهار رابط المجموعات",

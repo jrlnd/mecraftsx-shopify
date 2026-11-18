@@ -31,6 +31,7 @@
   },
   "content": {
     "visible_if_collection_has_more_products": "גלוי אם באוסף יש יותר מוצרים ממה שמוצג",
+    "label": "Label",
     "advanced": "מתקדם",
     "appearance": "מראה",
     "arrows": "חצים",
@@ -262,6 +263,7 @@
   },
   "names": {
     "countdown": "ספירה לאחור",
+    "instagram_feed": "Instagram feed",
     "breadcrumbs": "פירורי לחם",
     "country_selector": "בורר מדינה/אזור",
     "testimonials": "המלצות",
@@ -720,6 +722,9 @@
   },
   "settings": {
     "countdown_end_at": "תאריך ושעת סיום",
+    "posts": "Posts",
+    "label_title": "Label title",
+    "label_handle": "Label handle",
     "password_page_title": "Password page title",
     "countdown_finished_text": "הודעה בסיום",
     "show_collections_link": "הצגת קישור לקולקציות",
