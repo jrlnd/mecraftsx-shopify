@@ -2569,7 +2569,7 @@
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 10,
+            "gap": 12,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -2598,10 +2598,35 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "eyebrow": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Follow our adventure</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h6",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#7a5236",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "heading": {
               "type": "text",
               "settings": {
-                "text": "<h2>Follow along</h2>",
+                "text": "<h2>@me_craftsx</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -2623,35 +2648,29 @@
               },
               "blocks": {}
             },
-            "intro": {
-              "type": "text",
+            "cta": {
+              "type": "button",
               "settings": {
-                "text": "<p>@me_craftsx on Instagram</p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "center",
-                "type_preset": "paragraph",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "#6b5b4f",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "label": "Follow on Instagram",
+                "link": "https://www.instagram.com/me_craftsx/",
+                "open_in_new_tab": true,
+                "style_class": "button-custom",
+                "custom_button_background": "#e97d6a",
+                "custom_button_text": "#ffffff",
+                "custom_button_border": "#e97d6a",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
               },
               "blocks": {}
             }
           },
           "block_order": [
+            "eyebrow",
             "heading",
-            "intro"
+            "cta"
           ]
         }
       },
