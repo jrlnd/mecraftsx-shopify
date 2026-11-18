@@ -2712,7 +2712,7 @@
             "heading": {
               "type": "text",
               "settings": {
-                "text": "<h2>Stay in the loop</h2>",
+                "text": "<h2>A little ME Crafts in your inbox.</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -2737,7 +2737,7 @@
             "body": {
               "type": "text",
               "settings": {
-                "text": "<p>Be the first to know about new releases, special offers and more.</p>",
+                "text": "<p>Be the first to see new designs, behind-the-scenes sketches, special releases and little surprises from us.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
