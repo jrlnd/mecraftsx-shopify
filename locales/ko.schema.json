@@ -180,6 +180,7 @@
   },
   "settings": {
     "countdown_end_at": "종료 날짜 및 시간",
+    "password_page_title": "Password page title",
     "countdown_finished_text": "종료 시 메시지",
     "show_collections_link": "컬렉션 링크 표시",
     "pinned_countries": "고정 국가",
@@ -1132,6 +1133,7 @@
   },
   "info": {
     "countdown_end_at": "끝에 시간대 오프셋을 붙여 다음 형식으로 입력하세요: 2026-12-01T09:00:00-08:00",
+    "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "countdown_finished_text": "시간이 끝나면 카운트다운 대신 표시됩니다.",
     "pinned_countries": "먼저 순서대로 표시할 국가 코드(쉼표로 구분). 예: US,CA",
     "transparent_header_gradient": "페이지 상단에 부드러운 어두운 그라데이션을 추가해 밝은 이미지 위에서도 헤더가 잘 보이게 합니다.",

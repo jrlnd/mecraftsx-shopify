@@ -229,6 +229,7 @@
   "info": {
     "countdown_end_at": "Use this format, with your timezone offset at the end: 2026-12-01T09:00:00-08:00",
     "countdown_finished_text": "Replaces the countdown when the time is up.",
+    "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "pinned_countries": "Country codes shown first, in order, separated by commas. Example: US,CA",
     "transparent_header_gradient": "Adds a soft dark gradient at the top of the page so the header stays readable over light images.",
     "adaptive_height": "Each item shows at full width and its own height. The gallery resizes as shoppers move between items.",
@@ -1041,6 +1042,7 @@
     "page": "Page",
     "page_background_color": "Background",
     "page_text_color": "Text",
+    "password_page_title": "Password page title",
     "page_transition_enabled": "Page transition",
     "page_width": "Page width",
     "pagination": "Pagination",

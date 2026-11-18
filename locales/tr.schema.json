@@ -180,6 +180,7 @@
   },
   "settings": {
     "countdown_end_at": "Bitiş tarihi ve saati",
+    "password_page_title": "Password page title",
     "countdown_finished_text": "Bitince gösterilecek mesaj",
     "show_collections_link": "Koleksiyonlar bağlantısını göster",
     "pinned_countries": "Sabitlenen ülkeler",
@@ -1132,6 +1133,7 @@
   },
   "info": {
     "countdown_end_at": "Sonunda saat dilimi farkı olacak şekilde bu biçimi kullanın: 2026-12-01T09:00:00-08:00",
+    "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "countdown_finished_text": "Süre dolduğunda geri sayımın yerini alır.",
     "pinned_countries": "Önce sırayla gösterilecek ülke kodları, virgülle ayrılır. Örnek: US,CA",
     "transparent_header_gradient": "Üst bilginin açık renkli görsellerde okunabilir kalması için sayfanın üstüne yumuşak koyu bir gradyan ekler.",

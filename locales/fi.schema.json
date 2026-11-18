@@ -180,6 +180,7 @@
   },
   "settings": {
     "countdown_end_at": "Päättymispäivä ja -aika",
+    "password_page_title": "Password page title",
     "countdown_finished_text": "Viesti päättymisen jälkeen",
     "show_collections_link": "Näytä kokoelmalinkki",
     "pinned_countries": "Kiinnitetyt maat",
@@ -1132,6 +1133,7 @@
   },
   "info": {
     "countdown_end_at": "Käytä tätä muotoa ja lisää loppuun aikavyöhykkeesi poikkeama: 2026-12-01T09:00:00-08:00",
+    "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "countdown_finished_text": "Korvaa lähtölaskennan, kun aika on kulunut loppuun.",
     "pinned_countries": "Ensin järjestyksessä näytettävät maakoodit pilkuilla erotettuina. Esimerkki: US,CA",
     "transparent_header_gradient": "Lisää sivun yläosaan pehmeän tumman liukuvärin, jotta ylätunniste pysyy luettavana vaaleiden kuvien päällä.",

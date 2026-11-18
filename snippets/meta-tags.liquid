@@ -19,7 +19,12 @@
 >
 
 {%- liquid
-  assign og_title = page_title | default: shop.name
+  assign document_title = page_title
+  if request.page_type == 'password' and settings.password_page_title != blank
+    assign document_title = settings.password_page_title
+  endif
+
+  assign og_title = document_title | default: shop.name
   assign og_url = canonical_url | default: request.origin
   assign og_type = 'website'
   assign og_description = page_description | default: shop.description | default: shop.name
@@ -104,10 +109,10 @@
 >
 
 <title>
-  {{ page_title }}
+  {{ document_title }}
   {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
   {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
-  {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+  {%- unless document_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
 </title>
 
 <link

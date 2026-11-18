@@ -220,6 +220,7 @@
   },
   "info": {
     "countdown_end_at": "یہ فارمیٹ استعمال کریں، آخر میں ٹائم زون کا فرق لکھیں: 2026-12-01T09:00:00-08:00",
+    "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "countdown_finished_text": "وقت ختم ہونے پر الٹی گنتی کی جگہ دکھایا جاتا ہے۔",
     "pinned_countries": "ممالک کے کوڈ جو ترتیب سے پہلے دکھائے جائیں، کاما سے الگ کریں۔ مثال: US,CA",
     "transparent_header_gradient": "صفحے کے اوپر ہلکا گہرا گریڈینٹ شامل کرتا ہے تاکہ ہلکی تصاویر پر بھی ہیڈر پڑھنے کے قابل رہے۔",
@@ -719,6 +720,7 @@
   },
   "settings": {
     "countdown_end_at": "اختتام کی تاریخ اور وقت",
+    "password_page_title": "Password page title",
     "countdown_finished_text": "اختتام پر پیغام",
     "show_collections_link": "کلیکشنز کا لنک دکھائیں",
     "pinned_countries": "پن کیے گئے ممالک",

@@ -180,6 +180,7 @@
   },
   "settings": {
     "countdown_end_at": "Slutdatum och -tid",
+    "password_page_title": "Password page title",
     "countdown_finished_text": "Meddelande när tiden är ute",
     "show_collections_link": "Visa länk till kollektioner",
     "pinned_countries": "Fästa länder",
@@ -1132,6 +1133,7 @@
   },
   "info": {
     "countdown_end_at": "Använd det här formatet, med tidszonsförskjutningen sist: 2026-12-01T09:00:00-08:00",
+    "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "countdown_finished_text": "Ersätter nedräkningen när tiden är ute.",
     "pinned_countries": "Landskoder som visas först i ordning, separerade med kommatecken. Exempel: US,CA",
     "transparent_header_gradient": "Lägger till en mjuk mörk gradient högst upp på sidan så att sidhuvudet syns tydligt över ljusa bilder.",

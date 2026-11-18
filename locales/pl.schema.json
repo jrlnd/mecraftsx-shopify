@@ -180,6 +180,7 @@
   },
   "settings": {
     "countdown_end_at": "Data i godzina zakończenia",
+    "password_page_title": "Password page title",
     "countdown_finished_text": "Wiadomość po zakończeniu",
     "show_collections_link": "Pokaż link do kolekcji",
     "pinned_countries": "Przypięte kraje",
@@ -1132,6 +1133,7 @@
   },
   "info": {
     "countdown_end_at": "Użyj tego formatu z przesunięciem strefy czasowej na końcu: 2026-12-01T09:00:00-08:00",
+    "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "countdown_finished_text": "Zastępuje odliczanie po upływie czasu.",
     "pinned_countries": "Kody krajów wyświetlane jako pierwsze, w kolejności, oddzielone przecinkami. Przykład: US,CA",
     "transparent_header_gradient": "Dodaje delikatny ciemny gradient u góry strony, aby nagłówek był czytelny na jasnych obrazach.",

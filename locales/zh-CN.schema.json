@@ -180,6 +180,7 @@
   },
   "settings": {
     "countdown_end_at": "结束日期和时间",
+    "password_page_title": "Password page title",
     "countdown_finished_text": "结束时显示的消息",
     "show_collections_link": "显示系列链接",
     "pinned_countries": "置顶国家/地区",
@@ -1132,6 +1133,7 @@
   },
   "info": {
     "countdown_end_at": "请使用此格式，并在末尾加上时区偏移：2026-12-01T09:00:00-08:00",
+    "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "countdown_finished_text": "时间结束后替换倒计时。",
     "pinned_countries": "优先按顺序显示的国家/地区代码，用逗号分隔。示例：US,CA",
     "transparent_header_gradient": "在页面顶部添加柔和的深色渐变，让页眉在浅色图片上依然清晰可读。",

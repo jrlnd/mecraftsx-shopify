@@ -220,6 +220,7 @@
   },
   "info": {
     "countdown_end_at": "استخدم هذا التنسيق مع فرق المنطقة الزمنية في النهاية: 2026-12-01T09:00:00-08:00",
+    "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "countdown_finished_text": "تحل محل العد التنازلي عند انتهاء الوقت.",
     "pinned_countries": "رموز الدول التي تظهر أولًا بالترتيب، مفصولة بفواصل. مثال: US,CA",
     "transparent_header_gradient": "يضيف تدرجًا داكنًا ناعمًا أعلى الصفحة ليبقى الرأس مقروءًا فوق الصور الفاتحة.",
@@ -719,6 +720,7 @@
   },
   "settings": {
     "countdown_end_at": "تاريخ ووقت الانتهاء",
+    "password_page_title": "Password page title",
     "countdown_finished_text": "الرسالة عند الانتهاء",
     "show_collections_link": "إظهار رابط المجموعات",
     "pinned_countries": "الدول المثبتة",

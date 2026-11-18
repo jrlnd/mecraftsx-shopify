@@ -220,6 +220,7 @@
   },
   "info": {
     "countdown_end_at": "השתמשו בפורמט הזה, עם הפרש אזור הזמן בסוף: 2026-12-01T09:00:00-08:00",
+    "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "countdown_finished_text": "מחליפה את הספירה לאחור כשהזמן נגמר.",
     "pinned_countries": "קודי מדינות שיוצגו ראשונים לפי הסדר, מופרדים בפסיקים. לדוגמה: US,CA",
     "transparent_header_gradient": "מוסיף מעבר צבע כהה ועדין בראש העמוד כדי שהכותרת תישאר קריאה מעל תמונות בהירות.",
@@ -719,6 +720,7 @@
   },
   "settings": {
     "countdown_end_at": "תאריך ושעת סיום",
+    "password_page_title": "Password page title",
     "countdown_finished_text": "הודעה בסיום",
     "show_collections_link": "הצגת קישור לקולקציות",
     "pinned_countries": "מדינות מוצמדות",

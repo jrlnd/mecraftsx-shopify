@@ -180,6 +180,7 @@
   },
   "settings": {
     "countdown_end_at": "終了日時",
+    "password_page_title": "Password page title",
     "countdown_finished_text": "終了時のメッセージ",
     "show_collections_link": "コレクションへのリンクを表示",
     "pinned_countries": "固定する国",
@@ -1132,6 +1133,7 @@
   },
   "info": {
     "countdown_end_at": "末尾にタイムゾーンのオフセットを付けて、次の形式で入力してください：2026-12-01T09:00:00-08:00",
+    "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "countdown_finished_text": "時間になるとカウントダウンの代わりに表示されます。",
     "pinned_countries": "最初に順番どおり表示する国コード（カンマ区切り）。例：US,CA",
     "transparent_header_gradient": "ページ上部に柔らかい暗めのグラデーションを加え、明るい画像の上でもヘッダーを読みやすくします。",

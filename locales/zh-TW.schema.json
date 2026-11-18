@@ -180,6 +180,7 @@
   },
   "settings": {
     "countdown_end_at": "結束日期和時間",
+    "password_page_title": "Password page title",
     "countdown_finished_text": "結束時顯示的訊息",
     "show_collections_link": "顯示系列連結",
     "pinned_countries": "置頂國家/地區",
@@ -1132,6 +1133,7 @@
   },
   "info": {
     "countdown_end_at": "請使用此格式，並在結尾加上時區偏移：2026-12-01T09:00:00-08:00",
+    "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "countdown_finished_text": "時間結束後取代倒數計時。",
     "pinned_countries": "優先依序顯示的國家/地區代碼，以逗號分隔。範例：US,CA",
     "transparent_header_gradient": "在頁面頂端加入柔和的深色漸層，讓頁首在淺色圖片上依然清晰易讀。",
