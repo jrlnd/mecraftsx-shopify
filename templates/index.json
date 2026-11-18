@@ -2737,7 +2737,7 @@
             "body": {
               "type": "text",
               "settings": {
-                "text": "<p>Be the first to see new designs, behind-the-scenes sketches, special releases and little surprises from us.</p>",
+                "text": "<p>Be the first to see new designs, behind-the-scenes sketches, special releases and little surprises from us</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
