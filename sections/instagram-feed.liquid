@@ -5,6 +5,8 @@
   owns the posts. The app block's own wrappers are flattened with `display: contents`, so the
   CSS below is coupled to the Instafeed markup (`.instafeed-shoppable__*`). Recheck it after
   changing the feed style or app version.
+  Posts are plain links to Instagram, not the app's popup: the inline script reads each post's
+  permalink from the app's feed response and overlays an anchor on its tile.
   @example
   <!-- Add "Instagram feed" in the theme editor, then add the Instafeed app block inside it -->
 {% endcomment %}
@@ -24,6 +26,63 @@
     {% if section.settings.background_color != blank %}color-custom-{{ section.id }}{% endif %}
   "
 ></div>
+
+<script>
+  /* Instagram feed: link tiles straight to Instagram instead of the app's popup.
+     Runs before the app loads so it can read the feed response it fetches. */
+  (() => {
+    const sectionId = {{ section.id | json }};
+    const fallbackLabel = {{ 'instagram_feed.view_post' | t | json }};
+    const permalinks = new Map();
+
+    const linkTiles = () => {
+      const root = document.getElementById('shopify-section-' + sectionId);
+      if (!root) return;
+
+      for (const card of root.querySelectorAll('.instafeed-shoppable__card[data-instafeed-post-id]')) {
+        const href = permalinks.get(card.dataset.instafeedPostId);
+        const frame = card.querySelector('.instafeed-shoppable__frame');
+        if (!href || !frame || frame.querySelector('.instagram-feed__link')) continue;
+
+        const media = frame.querySelector('.instafeed-shoppable__media');
+        const link = document.createElement('a');
+        link.className = 'instagram-feed__link';
+        link.href = href;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.setAttribute('aria-label', media?.getAttribute('aria-label') || fallbackLabel);
+        frame.append(link);
+
+        // The tile's own button would open the popup, so take it out of the way.
+        media?.setAttribute('tabindex', '-1');
+        media?.setAttribute('aria-hidden', 'true');
+      }
+    };
+
+    const nativeFetch = window.fetch;
+    window.fetch = function (...args) {
+      const response = nativeFetch.apply(this, args);
+      const url = String(args[0]?.url ?? args[0]);
+
+      if (url.includes('api.nfcube.com/feed/')) {
+        response
+          .then((result) => result.clone().json())
+          .then((feed) => {
+            for (const post of feed.data ?? []) permalinks.set(String(post.id), post.link);
+            linkTiles();
+          })
+          .catch(() => {});
+      }
+
+      return response;
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const root = document.getElementById('shopify-section-' + sectionId);
+      if (root) new MutationObserver(linkTiles).observe(root, { childList: true, subtree: true });
+    });
+  })();
+</script>
 
 <div
   class="
@@ -132,6 +191,37 @@
     border: 0;
     border-radius: var(--instagram-feed-radius, 10px);
     box-shadow: none;
+  }
+
+  /* Tiles are links to Instagram, with no hover lift, shadow, or zoom. */
+  .instagram-feed__grid .instafeed-shoppable__frame {
+    position: relative;
+  }
+
+  .instagram-feed__link {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    border-radius: inherit;
+  }
+
+  .instagram-feed__link:focus-visible {
+    outline: 2px solid var(--color-foreground);
+    outline-offset: -2px;
+  }
+
+  .instagram-feed__grid .instafeed-shoppable__media {
+    pointer-events: none;
+  }
+
+  .instagram-feed__grid .instafeed-shoppable__card:hover .instafeed-shoppable__frame {
+    transform: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+  }
+
+  .instagram-feed__grid .instafeed-shoppable__card:hover .instafeed-shoppable__post-image {
+    transform: none !important;
   }
 
   @media screen and (min-width: 750px) {

@@ -8,6 +8,9 @@
  * ------------------------------------------------------------
  */
 {
+  "instagram_feed": {
+    "view_post": "View this post on Instagram"
+  },
   "blocks": {
     "load_video": "ビデオを読み込む: {{ description }}",
     "sold_out": "売り切れ",

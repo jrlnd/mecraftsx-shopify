@@ -8,6 +8,9 @@
  * ------------------------------------------------------------
  */
 {
+  "instagram_feed": {
+    "view_post": "View this post on Instagram"
+  },
   "blocks": {
     "load_video": "Charger la vidéo : {{ description }}",
     "sold_out": "Épuisé",
