@@ -182,8 +182,6 @@
   "settings": {
     "countdown_end_at": "結束日期和時間",
     "posts": "Posts",
-    "label_title": "Label title",
-    "label_handle": "Label handle",
     "password_page_title": "Password page title",
     "countdown_finished_text": "結束時顯示的訊息",
     "show_collections_link": "顯示系列連結",
@@ -908,7 +906,6 @@
   },
   "content": {
     "advanced": "進階",
-    "label": "Label",
     "background_image": "背景圖片",
     "background_video": "背景影片",
     "block_size": "區塊大小",

@@ -182,8 +182,6 @@
   "settings": {
     "countdown_end_at": "終了日時",
     "posts": "Posts",
-    "label_title": "Label title",
-    "label_handle": "Label handle",
     "password_page_title": "Password page title",
     "countdown_finished_text": "終了時のメッセージ",
     "show_collections_link": "コレクションへのリンクを表示",
@@ -908,7 +906,6 @@
   },
   "content": {
     "advanced": "高度な設定",
-    "label": "Label",
     "background_image": "背景画像",
     "background_video": "背景動画",
     "block_size": "ブロックサイズ",

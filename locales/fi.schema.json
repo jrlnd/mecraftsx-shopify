@@ -182,8 +182,6 @@
   "settings": {
     "countdown_end_at": "Päättymispäivä ja -aika",
     "posts": "Posts",
-    "label_title": "Label title",
-    "label_handle": "Label handle",
     "password_page_title": "Password page title",
     "countdown_finished_text": "Viesti päättymisen jälkeen",
     "show_collections_link": "Näytä kokoelmalinkki",
@@ -908,7 +906,6 @@
   },
   "content": {
     "advanced": "Lisäasetukset",
-    "label": "Label",
     "background_image": "Taustakuva",
     "background_video": "Taustavideo",
     "block_size": "Lohkon koko",

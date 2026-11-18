@@ -34,7 +34,6 @@
   },
   "content": {
     "visible_if_collection_has_more_products": "Visible if collection has more products than shown",
-    "label": "Label",
     "advanced": "Advanced",
     "appearance": "Appearance",
     "arrows": "Arrows",
@@ -781,8 +780,6 @@
   "settings": {
     "countdown_end_at": "End date and time",
     "posts": "Posts",
-    "label_title": "Label title",
-    "label_handle": "Label handle",
     "countdown_finished_text": "Message when finished",
     "show_collections_link": "Show collections link",
     "pinned_countries": "Pinned countries",

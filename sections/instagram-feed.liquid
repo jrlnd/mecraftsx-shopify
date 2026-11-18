@@ -1,8 +1,7 @@
 {% comment %}
   Section contract.
-  Lays a label card and the first few posts of an Instagram feed app block out as one even
-  grid of square tiles. The section owns columns, gap, corners, and the label card; the app
-  owns the posts. The app block's own wrappers are flattened with `display: contents`, so the
+  Shows the first few posts of an Instagram feed app block as an even grid of square tiles
+  under an optional heading. The section owns columns, gap, and corners; the app owns the posts. The app block's own wrappers are flattened with `display: contents`, so the
   CSS below is coupled to the Instafeed markup (`.instafeed-shoppable__*`). Recheck it after
   changing the feed style or app version.
   Posts are plain links to Instagram, not the app's popup: the inline script reads each post's
@@ -94,32 +93,19 @@
   "
   style="{% render 'spacing-style', settings: section.settings %}"
 >
-  <div
-    class="instagram-feed__grid"
-    style="
-      --instagram-feed-columns: {{ posts | plus: 1 }};
-      --instagram-feed-gap: {{ section.settings.gap }}px;
-      --instagram-feed-radius: {{ section.settings.corner_radius }}px;
-    "
-  >
-    {%- if section.settings.label_title != blank or section.settings.label_handle != blank -%}
-      <div
-        class="instagram-feed__label"
-        style="
-          {% if section.settings.label_background != blank %}--instagram-feed-label-background: {{ section.settings.label_background }};{% endif %}
-          {% if section.settings.label_color != blank %}--instagram-feed-label-color: {{ section.settings.label_color }};{% endif %}
-        "
-      >
-        {%- if section.settings.label_title != blank -%}
-          <span class="instagram-feed__label-title">{{ section.settings.label_title | escape }}</span>
-        {%- endif -%}
-        {%- if section.settings.label_handle != blank -%}
-          <span class="instagram-feed__label-handle">{{ section.settings.label_handle | escape }}</span>
-        {%- endif -%}
-      </div>
-    {%- endif -%}
+  <div class="instagram-feed__inner">
+    {% content_for 'block', type: 'group', id: 'instagram-feed-header' %}
 
-    {% content_for 'blocks' %}
+    <div
+      class="instagram-feed__grid"
+      style="
+        --instagram-feed-columns: {{ posts }};
+        --instagram-feed-gap: {{ section.settings.gap }}px;
+        --instagram-feed-radius: {{ section.settings.corner_radius }}px;
+      "
+    >
+      {% content_for 'blocks' %}
+    </div>
   </div>
 </div>
 
@@ -137,30 +123,15 @@
     gap: var(--instagram-feed-gap, 12px);
   }
 
-  .instagram-feed__label {
+  .instagram-feed__inner {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: var(--padding-3xs, 2px);
+    gap: var(--padding-4xl);
     min-width: 0;
-    padding: 20px;
-    border-radius: var(--instagram-feed-radius, 10px);
-    background-color: var(--instagram-feed-label-background, #eee5da);
-    color: var(--instagram-feed-label-color, #7a5236);
-    text-align: center;
-    overflow-wrap: anywhere;
   }
 
-  .instagram-feed__label-title {
-    font-family: var(--font-h6--family);
-    font-size: var(--font-h6--size);
-    font-weight: var(--font-h6--weight);
-    line-height: var(--font-h6--line-height);
-  }
-
-  .instagram-feed__label-handle {
-    font-size: var(--font-size--sm, 0.875rem);
+  .instagram-feed__inner > .group-block:not(:has(.group-block-content > *)) {
+    display: none;
   }
 
   /* Flatten the app's wrappers so its posts become direct items of the section grid. */
@@ -244,34 +215,6 @@
     "groups": ["header"]
   },
   "settings": [
-    {
-      "type": "header",
-      "content": "t:content.label"
-    },
-    {
-      "type": "text",
-      "id": "label_title",
-      "label": "t:settings.label_title",
-      "default": "Instagram"
-    },
-    {
-      "type": "text",
-      "id": "label_handle",
-      "label": "t:settings.label_handle",
-      "default": "@me_craftsx"
-    },
-    {
-      "type": "color",
-      "id": "label_background",
-      "label": "t:settings.background",
-      "default": "#eee5da"
-    },
-    {
-      "type": "color",
-      "id": "label_color",
-      "label": "t:settings.text",
-      "default": "#7a5236"
-    },
     {
       "type": "header",
       "content": "t:content.layout"
@@ -359,7 +302,37 @@
   "presets": [
     {
       "name": "t:names.instagram_feed",
-      "category": "t:categories.layout"
+      "category": "t:categories.layout",
+      "blocks": {
+        "instagram-feed-header": {
+          "type": "group",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "center",
+            "gap": 10
+          },
+          "blocks": {
+            "heading": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Follow along</h2>",
+                "type_preset": "h2",
+                "width": "100%",
+                "alignment": "center"
+              }
+            },
+            "intro": {
+              "type": "text",
+              "settings": {
+                "text": "<p>@me_craftsx on Instagram</p>",
+                "width": "100%",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": ["heading", "intro"]
+        }
+      }
     }
   ]
 }

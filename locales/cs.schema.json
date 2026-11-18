@@ -182,8 +182,6 @@
   "settings": {
     "countdown_end_at": "Datum a čas ukončení",
     "posts": "Posts",
-    "label_title": "Label title",
-    "label_handle": "Label handle",
     "password_page_title": "Password page title",
     "countdown_finished_text": "Zpráva po skončení",
     "show_collections_link": "Zobrazit odkaz na kolekce",
@@ -908,7 +906,6 @@
   },
   "content": {
     "advanced": "Pokročilé",
-    "label": "Label",
     "background_image": "Obrázek na pozadí",
     "background_video": "Video na pozadí",
     "block_size": "Velikost bloku",

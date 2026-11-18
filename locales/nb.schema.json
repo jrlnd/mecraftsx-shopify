@@ -182,8 +182,6 @@
   "settings": {
     "countdown_end_at": "Sluttdato og -tidspunkt",
     "posts": "Posts",
-    "label_title": "Label title",
-    "label_handle": "Label handle",
     "password_page_title": "Password page title",
     "countdown_finished_text": "Melding når tiden er ute",
     "show_collections_link": "Vis lenke til kolleksjoner",
@@ -908,7 +906,6 @@
   },
   "content": {
     "advanced": "Avansert",
-    "label": "Label",
     "background_image": "Bakgrunnsbilde",
     "background_video": "Bakgrunnsvideo",
     "block_size": "Blokkstørrelse",

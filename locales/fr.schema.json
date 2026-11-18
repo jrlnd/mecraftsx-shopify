@@ -182,8 +182,6 @@
   "settings": {
     "countdown_end_at": "Date et heure de fin",
     "posts": "Posts",
-    "label_title": "Label title",
-    "label_handle": "Label handle",
     "password_page_title": "Password page title",
     "countdown_finished_text": "Message à la fin",
     "show_collections_link": "Afficher le lien vers les collections",
@@ -908,7 +906,6 @@
   },
   "content": {
     "background_video": "Vidéo de fond",
-    "label": "Label",
     "describe_the_video_for": "Décrivez la vidéo pour les clients utilisant des lecteurs d’écran. [En savoir plus](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)",
     "width_is_automatically_optimized": "La largeur est automatiquement optimisée pour les appareils mobiles.",
     "advanced": "Avancé",

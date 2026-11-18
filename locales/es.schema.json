@@ -182,8 +182,6 @@
   "settings": {
     "countdown_end_at": "Fecha y hora de finalización",
     "posts": "Posts",
-    "label_title": "Label title",
-    "label_handle": "Label handle",
     "password_page_title": "Password page title",
     "countdown_finished_text": "Mensaje al finalizar",
     "show_collections_link": "Mostrar enlace a colecciones",
@@ -908,7 +906,6 @@
   },
   "content": {
     "advanced": "Avanzado",
-    "label": "Label",
     "background_image": "Imagen de fondo",
     "background_video": "Video de fondo",
     "block_size": "Tamaño del bloque",

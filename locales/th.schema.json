@@ -182,8 +182,6 @@
   "settings": {
     "countdown_end_at": "วันที่และเวลาสิ้นสุด",
     "posts": "Posts",
-    "label_title": "Label title",
-    "label_handle": "Label handle",
     "password_page_title": "Password page title",
     "countdown_finished_text": "ข้อความเมื่อสิ้นสุด",
     "show_collections_link": "แสดงลิงก์คอลเลกชัน",
@@ -908,7 +906,6 @@
   },
   "content": {
     "advanced": "ขั้นสูง",
-    "label": "Label",
     "background_image": "รูปภาพพื้นหลัง",
     "background_video": "วิดีโอพื้นหลัง",
     "block_size": "ขนาดบล็อก",

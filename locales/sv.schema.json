@@ -182,8 +182,6 @@
   "settings": {
     "countdown_end_at": "Slutdatum och -tid",
     "posts": "Posts",
-    "label_title": "Label title",
-    "label_handle": "Label handle",
     "password_page_title": "Password page title",
     "countdown_finished_text": "Meddelande när tiden är ute",
     "show_collections_link": "Visa länk till kollektioner",
@@ -908,7 +906,6 @@
   },
   "content": {
     "advanced": "Avancerat",
-    "label": "Label",
     "background_image": "Bakgrundsbild",
     "background_video": "Bakgrundsvideo",
     "block_size": "Blockstorlek",
