@@ -2626,7 +2626,7 @@
             "heading": {
               "type": "text",
               "settings": {
-                "text": "<h2>@me_craftsx</h2>",
+                "text": "<h2><a href=\"https://www.instagram.com/me_craftsx/\" target=\"_blank\" rel=\"noopener noreferrer\">@me_craftsx</a></h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -2647,30 +2647,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "cta": {
-              "type": "button",
-              "settings": {
-                "label": "Follow on Instagram",
-                "link": "https://www.instagram.com/me_craftsx/",
-                "open_in_new_tab": true,
-                "style_class": "button-custom",
-                "custom_button_background": "#e97d6a",
-                "custom_button_text": "#ffffff",
-                "custom_button_border": "#e97d6a",
-                "link_text_color": "",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "eyebrow",
-            "heading",
-            "cta"
+            "heading"
           ]
         }
       },

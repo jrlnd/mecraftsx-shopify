@@ -134,6 +134,23 @@
     display: none;
   }
 
+  /* The handle in the heading links to the Instagram profile; show it on hover and focus. */
+  .instagram-feed__inner .group-block h2 a {
+    text-decoration: none;
+    text-underline-offset: 0.15em;
+    text-decoration-thickness: 1px;
+  }
+
+  .instagram-feed__inner .group-block h2 a:hover {
+    text-decoration-line: underline;
+  }
+
+  .instagram-feed__inner .group-block h2 a:focus-visible {
+    outline: 2px solid currentcolor;
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+
   /* Flatten the app's wrappers so its posts become direct items of the section grid. */
   .instagram-feed__grid .shopify-app-block,
   .instagram-feed__grid #insta-feed,
@@ -324,22 +341,14 @@
             "heading": {
               "type": "text",
               "settings": {
-                "text": "<h2>@me_craftsx</h2>",
+                "text": "<h2><a href=\"https://www.instagram.com/me_craftsx/\" target=\"_blank\" rel=\"noopener noreferrer\">@me_craftsx</a></h2>",
                 "type_preset": "h2",
                 "width": "100%",
                 "alignment": "center"
               }
-            },
-            "cta": {
-              "type": "button",
-              "settings": {
-                "label": "Follow on Instagram",
-                "link": "https://www.instagram.com/me_craftsx/",
-                "open_in_new_tab": true
-              }
             }
           },
-          "block_order": ["eyebrow", "heading", "cta"]
+          "block_order": ["eyebrow", "heading"]
         }
       }
     }
