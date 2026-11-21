@@ -739,7 +739,8 @@
         "padding-block-end": 72,
         "double_padding_desktop": false,
         "panel_color": "{{ settings.color_palette.color2 }}",
-        "corner_radius": 16
+        "corner_radius": 16,
+        "panel_border_color": "#5a3a2440"
       }
     },
     "product_recommendations_qnzPkn": {
@@ -1025,7 +1026,7 @@
         "section_width": "page-width",
         "gap": 28,
         "background_color": "{{ settings.color_palette.color2 }}",
-        "padding-block-start": 72,
+        "padding-block-start": 58,
         "padding-block-end": 72,
         "double_padding_desktop": false
       }

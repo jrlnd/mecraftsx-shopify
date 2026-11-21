@@ -37,6 +37,17 @@
     color: var(--color-foreground);
   }
 
+  .product-recommendations__panel--bordered {
+    border: 1px solid var(--product-recommendations-panel-border);
+  }
+
+  /* The heading is a small one-line label, so trim the top padding by about its line height to balance the panel. */
+  @media screen and (min-width: 750px) {
+    .product-recommendations__panel {
+      padding-block-start: calc(var(--padding-5xl) - 14px);
+    }
+  }
+
   @media screen and (max-width: 749px) {
     .product-recommendations__panel {
       padding: var(--padding-2xl);

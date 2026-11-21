@@ -80,8 +80,8 @@
     {% if has_panel %}
       {% render 'contrast-override', background_color: section.settings.panel_color, section_id: panel_id %}
       <div
-        class="product-recommendations__panel color-custom-{{ panel_id }}"
-        style="--product-recommendations-panel-radius: {{ section.settings.corner_radius }}px;"
+        class="product-recommendations__panel{% if section.settings.panel_border_color != blank %} product-recommendations__panel--bordered{% endif %} color-custom-{{ panel_id }}"
+        style="--product-recommendations-panel-radius: {{ section.settings.corner_radius }}px;{% if section.settings.panel_border_color != blank %} --product-recommendations-panel-border: {{ section.settings.panel_border_color }};{% endif %}"
       >
     {% endif %}
     <div class="section-resource-list__content">
@@ -462,6 +462,13 @@
       "step": 1,
       "unit": "px",
       "default": 16,
+      "visible_if": "{{ section.settings.panel_color != blank }}"
+    },
+    {
+      "type": "color",
+      "id": "panel_border_color",
+      "label": "t:settings.border_color",
+      "alpha": true,
       "visible_if": "{{ section.settings.panel_color != blank }}"
     },
     {
