@@ -2663,6 +2663,7 @@
         "gap": 12,
         "corner_radius": 10,
         "section_width": "page-width",
+        "background_color": "",
         "padding-block-start": 72,
         "padding-block-end": 72
       }
@@ -2712,7 +2713,7 @@
             "heading": {
               "type": "text",
               "settings": {
-                "text": "<h2>A little ME Crafts in your inbox ♡</h2>",
+                "text": "<h2>A little bit of ME in your inbox ♡</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
