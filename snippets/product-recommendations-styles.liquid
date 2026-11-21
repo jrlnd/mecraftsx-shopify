@@ -23,23 +23,6 @@
     }
   }
 
-  /* Optional inset panel behind the heading and cards. The section's own grid row-gap moves inside it. */
-  .product-recommendations__panel {
-    display: grid;
-    row-gap: var(--gap);
-    min-width: 0;
-    padding: var(--padding-5xl) var(--padding-3xl);
-    border-radius: var(--product-recommendations-panel-radius);
-    background-color: var(--color-background);
-    color: var(--color-foreground);
-  }
-
-  @media screen and (max-width: 749px) {
-    .product-recommendations__panel {
-      padding-inline: var(--padding-lg);
-    }
-  }
-
   product-recommendations:has([data-has-recommendations='false']) {
     display: none;
   }
