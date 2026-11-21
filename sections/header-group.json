@@ -90,9 +90,22 @@
             "case": "uppercase",
             "text_color": "#F7F2EC"
           }
+        },
+        "announcement_christmas": {
+          "type": "_announcement",
+          "settings": {
+            "text": "Shopping for Christmas? Order by Dec 3 for delivery before Christmas.",
+            "font": "var(--font-subheading--family)",
+            "font_size": "0.75rem",
+            "weight": "600",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "text_color": "#F7F2EC"
+          }
         }
       },
       "block_order": [
+        "announcement_christmas",
         "announcement_shipping"
       ],
       "settings": {
