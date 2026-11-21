@@ -23,6 +23,13 @@
     echo '--column-count: ' | append: section.settings.columns | append: ';'
     echo '--column-count-mobile: ' | append: section.settings.mobile_columns | append: ';'
   endcapture
+
+  # Optional inset panel behind the heading and cards (off when no panel color is set)
+  assign has_panel = false
+  if section.settings.panel_color != blank
+    assign has_panel = true
+    assign panel_id = section.id | append: '-panel'
+  endif
 %}
 
 {% render 'quick-add-styles' %}
@@ -70,6 +77,13 @@
       {{ styles }}
     "
   >
+    {% if has_panel %}
+      {% render 'contrast-override', background_color: section.settings.panel_color, section_id: panel_id %}
+      <div
+        class="product-recommendations__panel color-custom-{{ panel_id }}"
+        style="--product-recommendations-panel-radius: {{ section.settings.corner_radius }}px;"
+      >
+    {% endif %}
     <div class="section-resource-list__content">
       {% content_for 'blocks' %}
     </div>
@@ -188,6 +202,9 @@
         {% endfor %}
       </div>
     {%- endif -%}
+    {% if has_panel %}
+      </div>
+    {% endif %}
   </div>
 </product-recommendations>
 
@@ -429,6 +446,23 @@
       "id": "background_color",
       "label": "t:settings.background_color",
       "placeholder": "t:settings.default"
+    },
+    {
+      "type": "color",
+      "id": "panel_color",
+      "label": "t:settings.panel_background",
+      "alpha": true
+    },
+    {
+      "type": "range",
+      "id": "corner_radius",
+      "label": "t:settings.corner_radius",
+      "min": 0,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 16,
+      "visible_if": "{{ section.settings.panel_color != blank }}"
     },
     {
       "type": "header",

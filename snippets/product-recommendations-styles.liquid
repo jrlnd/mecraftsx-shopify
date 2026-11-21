@@ -23,6 +23,26 @@
     }
   }
 
+  /* Optional inset panel behind the heading and cards. The section's own grid row-gap moves inside it. */
+  .product-recommendations__panel {
+    display: grid;
+    row-gap: var(--gap);
+    min-width: 0;
+    padding: var(--padding-5xl);
+    border-radius: var(--product-recommendations-panel-radius);
+    /* Bottom-only shadow in the warm heading brown (not black, which reads grey). The negative spread
+       keeps it from showing at the top and sides. */
+    box-shadow: 0 10px 14px -10px color-mix(in srgb, var(--color-heading, var(--color-foreground)) 28%, transparent);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  @media screen and (max-width: 749px) {
+    .product-recommendations__panel {
+      padding: var(--padding-2xl);
+    }
+  }
+
   product-recommendations:has([data-has-recommendations='false']) {
     display: none;
   }
