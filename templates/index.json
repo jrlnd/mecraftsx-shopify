@@ -448,7 +448,7 @@
       },
       "name": "t:names.product_list",
       "settings": {
-        "collection": "culture-collection",
+        "collection": "monthly-picks",
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "max_products": 4,
@@ -1233,7 +1233,7 @@
             "link": {
               "type": "text",
               "settings": {
-                "text": "<p><a href=\"/collections/all\">Shop best sellers</a></p>",
+                "text": "<p><a href=\"/collections/best-sellers\">Shop best sellers</a></p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -1851,7 +1851,7 @@
       },
       "name": "t:names.product_list",
       "settings": {
-        "collection": "all",
+        "collection": "best-sellers",
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "max_products": 4,
@@ -2025,7 +2025,7 @@
           "type": "button",
           "settings": {
             "label": "Shop best sellers",
-            "link": "shopify://collections/all",
+            "link": "shopify://collections/best-sellers",
             "open_in_new_tab": false,
             "style_class": "button-custom",
             "custom_button_background": "#e97d6a",
