@@ -219,6 +219,8 @@
     "work_quickly_to_ship": "<p>נעבוד מהר כדי לשלוח את ההזמנה שלך בהקדם האפשרי. לאחר שההזמנה שלך תישלח, תקבל דוא&quot;ל עם מידע נוסף. זמני האספקה משתנים בהתאם למיקומך.</p>"
   },
   "info": {
+    "free_shipping_threshold": "Order total that qualifies for free shipping, in your store currency. Match your shipping rate settings.",
+    "free_shipping_amount_placeholder": "Use [amount] where the remaining amount should appear.",
     "countdown_end_at": "השתמשו בפורמט הזה, עם הפרש אזור הזמן בסוף: 2026-12-01T09:00:00-08:00",
     "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "countdown_finished_text": "מחליפה את הספירה לאחור כשהזמן נגמר.",
@@ -261,6 +263,7 @@
     "media_type_info": "התכונות מאוכלסות מקישורי התפריט שלך"
   },
   "names": {
+    "free_shipping_progress": "Free shipping progress",
     "countdown": "ספירה לאחור",
     "instagram_feed": "Instagram feed",
     "breadcrumbs": "פירורי לחם",
@@ -720,6 +723,9 @@
     "direction_top_start": "למעלה, התחלה"
   },
   "settings": {
+    "free_shipping_threshold": "Free shipping threshold",
+    "free_shipping_progress_message": "Progress message",
+    "free_shipping_success_message": "Success message",
     "double_padding_desktop": "Double top and bottom padding on desktop",
     "countdown_end_at": "תאריך ושעת סיום",
     "posts": "Posts",

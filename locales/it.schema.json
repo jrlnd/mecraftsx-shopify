@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "free_shipping_progress": "Free shipping progress",
     "countdown": "Conto alla rovescia",
     "instagram_feed": "Instagram feed",
     "breadcrumbs": "Percorso di navigazione",
@@ -180,6 +181,9 @@
     "disclosures": "Informative"
   },
   "settings": {
+    "free_shipping_threshold": "Free shipping threshold",
+    "free_shipping_progress_message": "Progress message",
+    "free_shipping_success_message": "Success message",
     "double_padding_desktop": "Double top and bottom padding on desktop",
     "countdown_end_at": "Data e ora di fine",
     "posts": "Posts",
@@ -1135,6 +1139,8 @@
     "disclosures": "Informative"
   },
   "info": {
+    "free_shipping_threshold": "Order total that qualifies for free shipping, in your store currency. Match your shipping rate settings.",
+    "free_shipping_amount_placeholder": "Use [amount] where the remaining amount should appear.",
     "countdown_end_at": "Usa questo formato, con la differenza del tuo fuso orario alla fine: 2026-12-01T09:00:00-08:00",
     "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "countdown_finished_text": "Sostituisce il conto alla rovescia allo scadere del tempo.",

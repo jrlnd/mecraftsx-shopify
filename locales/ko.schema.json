@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "free_shipping_progress": "Free shipping progress",
     "countdown": "카운트다운",
     "instagram_feed": "Instagram feed",
     "breadcrumbs": "이동 경로",
@@ -180,6 +181,9 @@
     "disclosures": "고지 사항"
   },
   "settings": {
+    "free_shipping_threshold": "Free shipping threshold",
+    "free_shipping_progress_message": "Progress message",
+    "free_shipping_success_message": "Success message",
     "double_padding_desktop": "Double top and bottom padding on desktop",
     "countdown_end_at": "종료 날짜 및 시간",
     "posts": "Posts",
@@ -1135,6 +1139,8 @@
     "disclosures": "고지 사항"
   },
   "info": {
+    "free_shipping_threshold": "Order total that qualifies for free shipping, in your store currency. Match your shipping rate settings.",
+    "free_shipping_amount_placeholder": "Use [amount] where the remaining amount should appear.",
     "countdown_end_at": "끝에 시간대 오프셋을 붙여 다음 형식으로 입력하세요: 2026-12-01T09:00:00-08:00",
     "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "countdown_finished_text": "시간이 끝나면 카운트다운 대신 표시됩니다.",

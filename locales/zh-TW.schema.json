@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "free_shipping_progress": "Free shipping progress",
     "countdown": "倒數計時",
     "instagram_feed": "Instagram feed",
     "breadcrumbs": "階層導覽",
@@ -180,6 +181,9 @@
     "disclosures": "資訊揭露"
   },
   "settings": {
+    "free_shipping_threshold": "Free shipping threshold",
+    "free_shipping_progress_message": "Progress message",
+    "free_shipping_success_message": "Success message",
     "double_padding_desktop": "Double top and bottom padding on desktop",
     "countdown_end_at": "結束日期和時間",
     "posts": "Posts",
@@ -1135,6 +1139,8 @@
     "disclosures": "資訊揭露"
   },
   "info": {
+    "free_shipping_threshold": "Order total that qualifies for free shipping, in your store currency. Match your shipping rate settings.",
+    "free_shipping_amount_placeholder": "Use [amount] where the remaining amount should appear.",
     "countdown_end_at": "請使用此格式，並在結尾加上時區偏移：2026-12-01T09:00:00-08:00",
     "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "countdown_finished_text": "時間結束後取代倒數計時。",

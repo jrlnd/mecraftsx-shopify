@@ -1,0 +1,171 @@
+{% doc %}
+  Renders a free shipping progress bar based on the current cart total. The threshold is entered in the
+  shop's currency; the script converts it for other presentment currencies and updates the bar whenever
+  the cart changes. Messages come from block settings, with [amount] replaced by the remaining amount.
+
+  @example
+  {% content_for 'block', type: 'free-shipping-progress', id: 'free-shipping' %}
+{% enddoc %}
+
+{% liquid
+  assign threshold_cents = block.settings.threshold | times: 100 | round
+  assign same_currency = false
+  if cart.currency.iso_code == shop.currency
+    assign same_currency = true
+  endif
+
+  assign remaining_cents = threshold_cents | minus: cart.total_price
+  if remaining_cents < 0
+    assign remaining_cents = 0
+  endif
+
+  assign progress = 100
+  if threshold_cents > 0
+    assign progress = cart.total_price | times: 100 | divided_by: threshold_cents
+    if progress > 100
+      assign progress = 100
+    endif
+  endif
+
+  assign remaining_money = remaining_cents | money | strip_html
+  if remaining_cents == 0
+    assign initial_message = block.settings.success_message
+  else
+    assign initial_message = block.settings.progress_message | replace: '[amount]', remaining_money
+  endif
+%}
+
+{%- if threshold_cents > 0 -%}
+  <script
+    src="{{ 'free-shipping-progress.js' | asset_url }}"
+    type="module"
+    fetchpriority="low"
+  ></script>
+
+  <free-shipping-progress
+    class="free-shipping-progress{% if remaining_cents == 0 %} free-shipping-progress--complete{% endif %}"
+    data-threshold-cents="{{ threshold_cents }}"
+    data-shop-currency="{{ shop.currency }}"
+    data-cart-total="{{ cart.total_price }}"
+    data-cart-currency="{{ cart.currency.iso_code }}"
+    data-money-format="{{ shop.money_format | strip_html | escape }}"
+    data-progress-message="{{ block.settings.progress_message | escape }}"
+    data-success-message="{{ block.settings.success_message | escape }}"
+    {% unless same_currency %}
+      hidden
+    {% endunless %}
+    {{ block.shopify_attributes }}
+  >
+    <p class="free-shipping-progress__message">
+      <svg
+        class="free-shipping-progress__icon icon-default"
+        aria-hidden="true"
+        focusable="false"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 20 20"
+      >
+        {%- render 'icon', icon: 'truck' -%}
+      </svg>
+      <span ref="message">{{ initial_message | escape }}</span>
+    </p>
+    <div
+      class="free-shipping-progress__track"
+      aria-hidden="true"
+    >
+      <div
+        class="free-shipping-progress__fill"
+        ref="fill"
+        style="--free-shipping-progress: {{ progress | divided_by: 100.0 }};"
+      ></div>
+    </div>
+  </free-shipping-progress>
+{%- endif -%}
+
+{% stylesheet %}
+  .free-shipping-progress {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-xs, 6px);
+    width: 100%;
+    min-width: 0;
+  }
+
+  .free-shipping-progress[hidden] {
+    display: none;
+  }
+
+  .free-shipping-progress__message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    font-size: 0.75rem;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+
+  .free-shipping-progress__icon {
+    flex-shrink: 0;
+  }
+
+  .free-shipping-progress__track {
+    height: 6px;
+    border-radius: 999px;
+    background-color: rgb(var(--color-foreground-rgb) / var(--opacity-10));
+    overflow: hidden;
+  }
+
+  .free-shipping-progress__fill {
+    height: 100%;
+    border-radius: inherit;
+    background-color: var(--color-heading, var(--color-foreground));
+    transform: scaleX(var(--free-shipping-progress, 0));
+    transform-origin: left center;
+    transition: transform var(--animation-speed, 0.3s) var(--animation-easing, ease);
+
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
+  }
+
+  [dir='rtl'] .free-shipping-progress__fill {
+    transform-origin: right center;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.free_shipping_progress",
+  "settings": [
+    {
+      "type": "number",
+      "id": "threshold",
+      "label": "t:settings.free_shipping_threshold",
+      "info": "t:info.free_shipping_threshold",
+      "default": 75
+    },
+    {
+      "type": "text",
+      "id": "progress_message",
+      "label": "t:settings.free_shipping_progress_message",
+      "info": "t:info.free_shipping_amount_placeholder",
+      "default": "Add [amount] more for free U.S. shipping"
+    },
+    {
+      "type": "text",
+      "id": "success_message",
+      "label": "t:settings.free_shipping_success_message",
+      "default": "You've unlocked free U.S. shipping!"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.free_shipping_progress",
+      "category": "t:categories.product"
+    }
+  ]
+}
+{% endschema %}

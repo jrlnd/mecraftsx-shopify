@@ -376,43 +376,13 @@
                 "padding-block-end": 4
               },
               "blocks": {
-                "shipping_row": {
-                  "type": "group",
+                "free_shipping_progress": {
+                  "type": "free-shipping-progress",
                   "settings": {
-                    "content_direction": "row",
-                    "vertical_on_mobile": false,
-                    "horizontal_alignment": "center",
-                    "vertical_alignment": "center",
-                    "gap": 10,
-                    "width": "fill",
-                    "width_mobile": "fill",
-                    "height": "fit",
-                    "background_media": "none",
-                    "border": "none"
-                  },
-                  "blocks": {
-                    "shipping_icon": {
-                      "type": "icon",
-                      "settings": {
-                        "icon": "truck",
-                        "width": 16
-                      }
-                    },
-                    "shipping_text": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Free U.S. shipping on orders over $75</p>",
-                        "type_preset": "custom",
-                        "font": "var(--font-body--family)",
-                        "font_size": "0.75rem",
-                        "width": "fit-content"
-                      }
-                    }
-                  },
-                  "block_order": [
-                    "shipping_icon",
-                    "shipping_text"
-                  ]
+                    "threshold": 75,
+                    "progress_message": "Add [amount] more for free U.S. shipping",
+                    "success_message": "You've unlocked free U.S. shipping!"
+                  }
                 },
                 "christmas_row": {
                   "type": "group",
@@ -454,7 +424,7 @@
                 }
               },
               "block_order": [
-                "shipping_row",
+                "free_shipping_progress",
                 "christmas_row"
               ]
             },

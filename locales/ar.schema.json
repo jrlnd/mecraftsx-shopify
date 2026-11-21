@@ -219,6 +219,8 @@
     "work_quickly_to_ship": "<p>سنعمل بسرعة لشحن طلبك في أقرب وقت ممكن. بمجرد شحن طلبك، ستتلقى رسالة بريد إلكتروني تحتوي على مزيد من المعلومات. تختلف أوقات التوصيل حسب موقعك.</p>"
   },
   "info": {
+    "free_shipping_threshold": "Order total that qualifies for free shipping, in your store currency. Match your shipping rate settings.",
+    "free_shipping_amount_placeholder": "Use [amount] where the remaining amount should appear.",
     "countdown_end_at": "استخدم هذا التنسيق مع فرق المنطقة الزمنية في النهاية: 2026-12-01T09:00:00-08:00",
     "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "countdown_finished_text": "تحل محل العد التنازلي عند انتهاء الوقت.",
@@ -261,6 +263,7 @@
     "media_type_info": "تمت تعبئة الميزات من روابط القائمة الخاصة بك"
   },
   "names": {
+    "free_shipping_progress": "Free shipping progress",
     "countdown": "العد التنازلي",
     "instagram_feed": "Instagram feed",
     "breadcrumbs": "مسار التنقل",
@@ -720,6 +723,9 @@
     "below_media": "أسفل الوسائط"
   },
   "settings": {
+    "free_shipping_threshold": "Free shipping threshold",
+    "free_shipping_progress_message": "Progress message",
+    "free_shipping_success_message": "Success message",
     "double_padding_desktop": "Double top and bottom padding on desktop",
     "countdown_end_at": "تاريخ ووقت الانتهاء",
     "posts": "Posts",

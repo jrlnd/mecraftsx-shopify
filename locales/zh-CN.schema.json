@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "free_shipping_progress": "Free shipping progress",
     "countdown": "倒计时",
     "instagram_feed": "Instagram feed",
     "breadcrumbs": "面包屑导航",
@@ -180,6 +181,9 @@
     "disclosures": "披露信息"
   },
   "settings": {
+    "free_shipping_threshold": "Free shipping threshold",
+    "free_shipping_progress_message": "Progress message",
+    "free_shipping_success_message": "Success message",
     "double_padding_desktop": "Double top and bottom padding on desktop",
     "countdown_end_at": "结束日期和时间",
     "posts": "Posts",
@@ -1135,6 +1139,8 @@
     "disclosures": "披露信息"
   },
   "info": {
+    "free_shipping_threshold": "Order total that qualifies for free shipping, in your store currency. Match your shipping rate settings.",
+    "free_shipping_amount_placeholder": "Use [amount] where the remaining amount should appear.",
     "countdown_end_at": "请使用此格式，并在末尾加上时区偏移：2026-12-01T09:00:00-08:00",
     "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
     "countdown_finished_text": "时间结束后替换倒计时。",

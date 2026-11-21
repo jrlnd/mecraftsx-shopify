@@ -227,6 +227,8 @@
     "work_quickly_to_ship": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>"
   },
   "info": {
+    "free_shipping_threshold": "Order total that qualifies for free shipping, in your store currency. Match your shipping rate settings.",
+    "free_shipping_amount_placeholder": "Use [amount] where the remaining amount should appear.",
     "countdown_end_at": "Use this format, with your timezone offset at the end: 2026-12-01T09:00:00-08:00",
     "countdown_finished_text": "Replaces the countdown when the time is up.",
     "password_page_title": "Shown in the browser tab and link previews while the store is password protected. Leave blank to use the store name.",
@@ -269,6 +271,7 @@
     "media_type_info": "Features are populated from your menu links"
   },
   "names": {
+    "free_shipping_progress": "Free shipping progress",
     "countdown": "Countdown",
     "instagram_feed": "Instagram feed",
     "breadcrumbs": "Breadcrumbs",
@@ -778,6 +781,9 @@
     "below_media": "Below media"
   },
   "settings": {
+    "free_shipping_threshold": "Free shipping threshold",
+    "free_shipping_progress_message": "Progress message",
+    "free_shipping_success_message": "Success message",
     "countdown_end_at": "End date and time",
     "posts": "Posts",
     "countdown_finished_text": "Message when finished",
