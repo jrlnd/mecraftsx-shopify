@@ -363,7 +363,10 @@
             "product_assurances": {
               "type": "group",
               "settings": {
-                "content_direction": "column",
+                "content_direction": "row",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "center",
+                "vertical_alignment": "center",
                 "gap": 10,
                 "width": "fill",
                 "width_mobile": "fill",
@@ -379,23 +382,32 @@
                 "shipping_row": {
                   "type": "group",
                   "settings": {
-                    "content_direction": "row",
-                    "vertical_on_mobile": false,
-                    "horizontal_alignment": "center",
-                    "vertical_alignment": "center",
-                    "gap": 10,
+                    "content_direction": "column",
+                    "horizontal_alignment_flex_direction_column": "center",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 6,
                     "width": "fill",
                     "width_mobile": "fill",
                     "height": "fit",
                     "background_media": "none",
-                    "border": "none"
+                    "background_color": "#EFE7E1",
+                    "border": "solid",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_color": "#D3C3B7",
+                    "border_radius": 8,
+                    "padding-block-start": 10,
+                    "padding-block-end": 10,
+                    "padding-inline-start": 16,
+                    "padding-inline-end": 16
                   },
                   "blocks": {
                     "shipping_icon": {
                       "type": "icon",
                       "settings": {
                         "icon": "truck",
-                        "width": 16
+                        "width": 16,
+                        "icon_color": "#5A3A24"
                       }
                     },
                     "shipping_text": {
@@ -405,7 +417,10 @@
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "0.75rem",
-                        "width": "fit-content"
+                        "width": "100%",
+                        "alignment": "center",
+                        "wrap": "balance",
+                        "text_color": "#5A3A24"
                       }
                     }
                   },
@@ -417,23 +432,32 @@
                 "christmas_row": {
                   "type": "group",
                   "settings": {
-                    "content_direction": "row",
-                    "vertical_on_mobile": false,
-                    "horizontal_alignment": "center",
-                    "vertical_alignment": "center",
-                    "gap": 10,
+                    "content_direction": "column",
+                    "horizontal_alignment_flex_direction_column": "center",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 6,
                     "width": "fill",
                     "width_mobile": "fill",
                     "height": "fit",
                     "background_media": "none",
-                    "border": "none"
+                    "background_color": "#F1E1DE",
+                    "border": "solid",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_color": "#D8B7B2",
+                    "border_radius": 8,
+                    "padding-block-start": 10,
+                    "padding-block-end": 10,
+                    "padding-inline-start": 16,
+                    "padding-inline-end": 16
                   },
                   "blocks": {
                     "christmas_icon": {
                       "type": "icon",
                       "settings": {
-                        "icon": "heart",
-                        "width": 16
+                        "icon": "tree",
+                        "width": 16,
+                        "icon_color": "#8b2e2a"
                       }
                     },
                     "christmas_text": {
@@ -443,7 +467,10 @@
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "0.75rem",
-                        "width": "fit-content"
+                        "width": "100%",
+                        "alignment": "center",
+                        "wrap": "balance",
+                        "text_color": "#8b2e2a"
                       }
                     }
                   },
