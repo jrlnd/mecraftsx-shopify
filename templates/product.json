@@ -449,7 +449,7 @@
         "background_color": "{{ settings.color_palette.background }}",
         "padding-block-start": 72,
         "padding-block-end": 72,
-        "double_padding_desktop": true
+        "double_padding_desktop": false
       }
     },
     "complete_the_look": {
@@ -1027,7 +1027,7 @@
         "background_color": "#e3d4c0",
         "padding-block-start": 72,
         "padding-block-end": 72,
-        "double_padding_desktop": true
+        "double_padding_desktop": false
       }
     }
   },
