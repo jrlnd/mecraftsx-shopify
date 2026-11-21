@@ -720,6 +720,7 @@
     "direction_top_start": "למעלה, התחלה"
   },
   "settings": {
+    "double_padding_desktop": "Double top and bottom padding on desktop",
     "countdown_end_at": "תאריך ושעת סיום",
     "posts": "Posts",
     "password_page_title": "Password page title",

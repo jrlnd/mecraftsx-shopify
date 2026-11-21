@@ -61,6 +61,7 @@
       {% if section.settings.background_color != blank %}color-custom-{{ section.id }}{% endif %}
       section-resource-list
       spacing-style
+      {% if section.settings.double_padding_desktop %}spacing-style--double-block{% endif %}
       gap-style
     "
     style="
@@ -452,6 +453,12 @@
       "step": 1,
       "unit": "px",
       "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "double_padding_desktop",
+      "label": "t:settings.double_padding_desktop",
+      "default": false
     }
   ],
   "presets": [

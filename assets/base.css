@@ -1134,6 +1134,15 @@ summary:hover {
   margin-inline: var(--margin-inline-start) var(--margin-inline-end);
 }
 
+/* Optional merchant setting: doubles a section's vertical padding on desktop only, since the
+   padding range tops out at 100px. Doubled class so it wins over .spacing-style regardless of load order. */
+@media screen and (min-width: 990px) {
+  .spacing-style.spacing-style--double-block {
+    padding-block: calc(var(--padding-block-start) * 2 + var(--section-top-offset, 0px))
+      calc(var(--padding-block-end) * 2);
+  }
+}
+
 /* Size style */
 .size-style {
   width: var(--size-style-width-mobile, var(--size-style-width));

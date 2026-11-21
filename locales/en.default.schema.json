@@ -913,6 +913,7 @@
     "enable_filtering": "Filters",
     "enable_grid_density": "Grid layout control",
     "enable_sorting": "Sorting",
+    "double_padding_desktop": "Double top and bottom padding on desktop",
     "enable_sticky_add_to_cart": "Sticky add to cart bar",
     "enable_sticky_content": "Sticky content on desktop",
     "enable_video_looping": "Video looping",

@@ -720,6 +720,7 @@
     "below_media": "أسفل الوسائط"
   },
   "settings": {
+    "double_padding_desktop": "Double top and bottom padding on desktop",
     "countdown_end_at": "تاريخ ووقت الانتهاء",
     "posts": "Posts",
     "password_page_title": "Password page title",

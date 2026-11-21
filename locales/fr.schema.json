@@ -180,6 +180,7 @@
     "disclosures": "Divulgations"
   },
   "settings": {
+    "double_padding_desktop": "Double top and bottom padding on desktop",
     "countdown_end_at": "Date et heure de fin",
     "posts": "Posts",
     "password_page_title": "Password page title",

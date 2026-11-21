@@ -180,6 +180,7 @@
     "disclosures": "Ilmoitukset"
   },
   "settings": {
+    "double_padding_desktop": "Double top and bottom padding on desktop",
     "countdown_end_at": "Päättymispäivä ja -aika",
     "posts": "Posts",
     "password_page_title": "Password page title",

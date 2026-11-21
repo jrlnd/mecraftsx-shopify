@@ -180,6 +180,7 @@
     "disclosures": "披露信息"
   },
   "settings": {
+    "double_padding_desktop": "Double top and bottom padding on desktop",
     "countdown_end_at": "结束日期和时间",
     "posts": "Posts",
     "password_page_title": "Password page title",
