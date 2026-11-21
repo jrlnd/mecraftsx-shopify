@@ -7,6 +7,14 @@
 {%- assign block_index = section.blocks | find_index: 'id', block.id -%}
 
 {%- unless plain_text == '' -%}
+  {%- if block_settings.background_color != blank -%}
+    {%- comment -%} Recolors the section's full-width bar while this announcement is the visible slide. {%- endcomment -%}
+    {% style %}
+      #shopify-section-{{ section.id }}:has(.text-block--{{ block.id }}[aria-hidden='false']) .section-background {
+        background-color: {{ block_settings.background_color }};
+      }
+    {% endstyle %}
+  {%- endif -%}
   <slideshow-slide
     ref="slides[]"
     class="
@@ -250,6 +258,12 @@
       "type": "color",
       "id": "text_color",
       "label": "t:settings.text_color",
+      "placeholder": "t:settings.default"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:settings.background_color",
       "placeholder": "t:settings.default"
     }
   ],

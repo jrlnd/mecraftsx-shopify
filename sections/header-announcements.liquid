@@ -41,6 +41,15 @@
 </aside>
 
 {% stylesheet %}
+  /* Fades the bar color with the slides when announcements set their own background. */
+  .shopify-section:has(> .section-background + .announcement-bar) > .section-background {
+    transition: background-color 0.5s ease-in-out;
+
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
+  }
+
   .announcement-bar {
     border-block-end: var(--border-bottom-width) solid var(--color-border);
   }
