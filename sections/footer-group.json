@@ -42,7 +42,7 @@
                 "width": "custom",
                 "width_mobile": "fill",
                 "height": "fit",
-                "custom_width": 28
+                "custom_width": 22
               },
               "blocks": {
                 "footer_logo": {
@@ -83,13 +83,14 @@
                 "width": "custom",
                 "width_mobile": "fill",
                 "height": "fit",
-                "custom_width": 48
+                "custom_width": 56
               },
               "blocks": {
                 "menu_zf63TX": {
                   "type": "menu",
                   "settings": {
                     "heading": "Shop",
+                    "columns": "2",
                     "heading_preset": "h6",
                     "link_preset": "paragraph",
                     "menu_spacing": 8,
@@ -139,7 +140,7 @@
                 "width": "custom",
                 "width_mobile": "fill",
                 "height": "fit",
-                "custom_width": 18
+                "custom_width": 16
               },
               "blocks": {
                 "footer_friends": {
