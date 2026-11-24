@@ -62,6 +62,10 @@
   case block_settings.image_ratio
     when 'landscape'
       assign ratio = '16 / 9'
+    when 'wide'
+      # Banner shape (1200 x 440 at page width); eased to 4 / 3 on narrow screens below.
+      assign ratio = '30 / 11'
+      assign ratio_mobile = '4 / 3'
     when 'portrait'
       assign ratio = '4 / 5'
     when 'square'
@@ -125,6 +129,13 @@
   {% elsif content_type == 'collections' %}
     .collection-card[data-block-id="{{ parent_block_id }}"] {
       --ratio: {{ ratio }};
+    }
+  {% endif %}
+  {% if ratio_mobile != blank %}
+    @media screen and (max-width: 749px) {
+      {% if content_type == 'articles' %}.featured-blog-posts-card{% else %}.collection-card{% endif %}[data-block-id="{{ parent_block_id }}"] {
+        --ratio: {{ ratio_mobile }};
+      }
     }
   {% endif %}
 {% endstyle %}
