@@ -37,11 +37,18 @@
             "padding-inline-start": 20,
             "padding-inline-end": 20
           }
+        },
+        "all_tagline": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "{%- if collection.handle == 'all' -%}<p style=\"margin: 0; padding-inline: 20px; font-family: var(--font-accent--family); font-size: 2rem; line-height: normal; color: #FDFAF6; text-align: center; text-wrap: pretty;\">Original. Cultural. Made with heart.</p>{%- endif -%}"
+          }
         }
       },
       "block_order": [
         "title",
-        "description"
+        "description",
+        "all_tagline"
       ],
       "settings": {
         "media_type_1": "image",

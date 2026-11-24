@@ -8,53 +8,91 @@
  * ------------------------------------------------------------
  */{
   "sections": {
+    "collections_hero": {
+      "type": "hero",
+      "blocks": {
+        "title": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>Collections</h1>",
+            "type_preset": "h1",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "text_color": "#FDFAF6",
+            "wrap": "balance",
+            "padding-inline-start": 20,
+            "padding-inline-end": 20
+          }
+        },
+        "description": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Thoughtfully curated, specially made.</p>",
+            "type_preset": "custom",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "text_color": "#FDFAF6",
+            "padding-inline-start": 20,
+            "padding-inline-end": 20,
+            "font": "var(--font-accent--family)",
+            "font_size": "2rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "description"
+      ],
+      "settings": {
+        "media_type_1": "image",
+        "image_1": "shopify://shop_images/mecrafts-banner-friends-table.webp",
+        "content_direction": "column",
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-end",
+        "gap": 12,
+        "section_width": "full-width",
+        "section_height": "custom",
+        "section_height_custom": 60,
+        "background_color": "#5A3A24",
+        "toggle_overlay": true,
+        "overlay_color": "#3B2517B8",
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
     "collection_list_ddHtab": {
       "type": "main-collection-list",
       "blocks": {
-        "group_w6rGRC": {
-          "type": "group",
-          "name": "t:names.header",
+        "static-collection-card": {
+          "type": "_collection-card",
+          "name": "t:names.collection_card",
+          "static": true,
           "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
+            "placement": "on_image",
+            "horizontal_alignment": "center",
             "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 84,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
+            "collection_card_gap": 8,
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "open_in_new_tab": false,
-            "padding-block-start": 36,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "border_radius": 16
           },
           "blocks": {
-            "text_i8fTDP": {
-              "type": "text",
-              "name": "t:names.text",
+            "collection_title_Rkbewm": {
+              "type": "collection-title",
+              "name": "t:names.collection_title",
               "settings": {
-                "text": "<h1>Collections</h1>",
-                "width": "100%",
+                "width": "fit-content",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "h2",
                 "font": "var(--font-body--family)",
                 "line_height": "normal",
@@ -67,65 +105,8 @@
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "divider_cLfWwN": {
-              "type": "_divider",
-              "name": "t:names.divider",
-              "settings": {
-                "thickness": 1,
-                "divider_color": "{{ settings.color_palette.color2 }}",
-                "corner_radius": "square",
-                "width_percent": 100,
-                "padding-block-start": 0,
-                "padding-block-end": 24
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_i8fTDP",
-            "divider_cLfWwN"
-          ]
-        },
-        "static-collection-card": {
-          "type": "_collection-card",
-          "name": "t:names.collection_card",
-          "static": true,
-          "settings": {
-            "placement": "below_image",
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "flex-start",
-            "collection_card_gap": 8,
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0
-          },
-          "blocks": {
-            "collection_title_Rkbewm": {
-              "type": "collection-title",
-              "name": "t:names.collection_title",
-              "settings": {
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h5",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-inline-end": 0,
+                "text_color": "#ffffff"
               },
               "blocks": {}
             },
@@ -134,15 +115,15 @@
               "name": "t:names.collection_card_image",
               "static": true,
               "settings": {
-                "image_ratio": "portrait",
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
+                "image_ratio": "wide",
+                "toggle_overlay": true,
+                "overlay_color": "#00000059",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
-                "border_radius": 0
+                "border_radius": 16
               },
               "blocks": {}
             }
@@ -152,30 +133,34 @@
           ]
         }
       },
-      "block_order": [
-        "group_w6rGRC"
-      ],
+      "block_order": [],
       "name": "t:names.collection_list",
       "settings": {
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "columns": 3,
-        "mobile_columns": "2",
+        "columns": 1,
+        "mobile_columns": "1",
         "columns_gap": 22,
         "bento_gap": 8,
-        "rows_gap": 22,
+        "rows_gap": 24,
         "max_collections": 4,
         "icons_style": "arrow",
         "icons_shape": "none",
         "section_width": "page-width",
         "gap": 12,
         "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 0,
-        "padding-block-end": 48
+        "padding-block-start": 48,
+        "padding-block-end": 48,
+        "collection_list": [
+          "bay-made-collection",
+          "culture-collection",
+          "little-gifts-big-love"
+        ]
       }
     }
   },
   "order": [
+    "collections_hero",
     "collection_list_ddHtab"
   ]
 }
