@@ -708,6 +708,12 @@
     display: block;
     aspect-ratio: 4 / 3;
     background-color: rgb(var(--color-foreground-rgb) / var(--opacity-10));
+
+    /* A shared height keeps every dropdown the same size however many cards it has. */
+    @media screen and (min-width: 990px) {
+      aspect-ratio: auto;
+      height: clamp(180px, 17vw, 280px);
+    }
   }
 
   .mega-menu__link-image {
@@ -738,11 +744,20 @@
     text-transform: none;
   }
 
+  .mega-menu__list--compact-cards .mega-menu__card-label {
+    padding: var(--padding-sm);
+    font-size: var(--font-size--md);
+  }
+
   .mega-menu__card-arrow {
     flex-shrink: 0;
     width: 1.25em;
     height: 1.25em;
     transition: translate var(--mega-menu-card-transition);
+  }
+
+  .mega-menu__list--compact-cards .mega-menu__card-arrow {
+    display: none;
   }
 
   [dir='rtl'] .mega-menu__card-arrow {
@@ -793,18 +808,6 @@
 
   .mega-menu__column--span-4 {
     grid-column: span 4;
-  }
-
-  .mega-menu__column--wide-collection-image {
-    grid-column: span 1;
-
-    @media screen and (min-width: 990px) {
-      grid-column: span 2;
-    }
-  }
-
-  .mega-menu__submenu .mega-menu__column--wide-collection-image {
-    grid-column: span 1;
   }
 
   .mega-menu__content-list {
