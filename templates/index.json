@@ -470,6 +470,272 @@
     "card_grid_collections": {
       "type": "card-grid",
       "blocks": {
+        "card-grid-header": {
+          "type": "group",
+          "static": true,
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 10,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 12,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "heading": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Seven things we make</h2>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h2",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#5a3a24",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "intro": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Apparel, accessories and small gifts, all illustrated in-house.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#6b5b4f",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading",
+            "intro"
+          ]
+        },
+        "tile_totes": {
+          "type": "_card",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-end",
+            "gap": 4,
+            "background_media": "image",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image": "shopify://shop_images/Calamansi_and_Mahal_Tote_Collection-2.png",
+            "background_image_position": "cover",
+            "aspect_ratio": "landscape",
+            "toggle_overlay": true,
+            "overlay_color": "#3b2517b8",
+            "overlay_style": "gradient",
+            "gradient_direction": "to top",
+            "link": "/collections/types?q=Tote%20Bag",
+            "open_in_new_tab": false,
+            "padding-block-start": 24,
+            "padding-block-end": 22,
+            "padding-inline-start": 26,
+            "padding-inline-end": 26
+          },
+          "blocks": {
+            "title": {
+              "type": "text",
+              "settings": {
+                "text": "<h3>Tote Bags</h3>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#fdfaf6",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "subtitle": {
+              "type": "text",
+              "settings": {
+                "text": "<p>For the places that feel like home</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.875rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#f7f2ecd9",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "title",
+            "subtitle"
+          ]
+        },
+        "tile_shirts": {
+          "type": "_card",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-end",
+            "gap": 4,
+            "background_media": "image",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image": "shopify://shop_images/mecrafts-banner-mahjong-friends.webp",
+            "background_image_position": "cover",
+            "aspect_ratio": "landscape",
+            "toggle_overlay": true,
+            "overlay_color": "#3b2517b8",
+            "overlay_style": "gradient",
+            "gradient_direction": "to top",
+            "link": "/collections/types?q=T-Shirt",
+            "open_in_new_tab": false,
+            "padding-block-start": 24,
+            "padding-block-end": 22,
+            "padding-inline-start": 26,
+            "padding-inline-end": 26
+          },
+          "blocks": {
+            "title": {
+              "type": "text",
+              "settings": {
+                "text": "<h3>T-Shirts</h3>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#fdfaf6",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "subtitle": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Soft cotton, everyday</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.875rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#f7f2ecd9",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "title",
+            "subtitle"
+          ]
+        },
         "tile_sweaters": {
           "type": "_card",
           "settings": {
@@ -491,7 +757,7 @@
             "overlay_color": "#3b2517b8",
             "overlay_style": "gradient",
             "gradient_direction": "to top",
-            "link": "shopify://collections/sweatshirts",
+            "link": "/collections/types?q=Sweatshirt",
             "open_in_new_tab": false,
             "padding-block-start": 24,
             "padding-block-end": 22,
@@ -555,7 +821,7 @@
             "subtitle"
           ]
         },
-        "tile_shirts": {
+        "tile_hats": {
           "type": "_card",
           "settings": {
             "content_direction": "column",
@@ -569,14 +835,14 @@
             "background_media": "image",
             "background_color": "",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/mecrafts-banner-mahjong-friends.webp",
+            "background_image": "shopify://shop_images/Gemini_Generated_Image_xmwi8oxmwi8oxmwi.jpg",
             "background_image_position": "cover",
             "aspect_ratio": "landscape",
             "toggle_overlay": true,
             "overlay_color": "#3b2517b8",
             "overlay_style": "gradient",
             "gradient_direction": "to top",
-            "link": "shopify://collections/culture-collection",
+            "link": "/collections/types?q=Hat",
             "open_in_new_tab": false,
             "padding-block-start": 24,
             "padding-block-end": 22,
@@ -587,7 +853,7 @@
             "title": {
               "type": "text",
               "settings": {
-                "text": "<h3>Shirts</h3>",
+                "text": "<h3>Hats</h3>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -612,7 +878,7 @@
             "subtitle": {
               "type": "text",
               "settings": {
-                "text": "<p>Soft cotton, everyday</p>",
+                "text": "<p>Easy everyday caps</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -640,7 +906,7 @@
             "subtitle"
           ]
         },
-        "tile_totes": {
+        "tile_pins": {
           "type": "_card",
           "settings": {
             "content_direction": "column",
@@ -654,14 +920,14 @@
             "background_media": "image",
             "background_color": "",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/Calamansi_and_Mahal_Tote_Collection-2.png",
+            "background_image": "shopify://shop_images/IMG_3785.jpg",
             "background_image_position": "cover",
             "aspect_ratio": "landscape",
             "toggle_overlay": true,
             "overlay_color": "#3b2517b8",
             "overlay_style": "gradient",
             "gradient_direction": "to top",
-            "link": "shopify://collections/tote-bags",
+            "link": "/collections/types?q=Enamel%20Pin",
             "open_in_new_tab": false,
             "padding-block-start": 24,
             "padding-block-end": 22,
@@ -672,7 +938,7 @@
             "title": {
               "type": "text",
               "settings": {
-                "text": "<h3>Tote bags</h3>",
+                "text": "<h3>Pins</h3>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -697,7 +963,7 @@
             "subtitle": {
               "type": "text",
               "settings": {
-                "text": "<p>For the places that feel like home</p>",
+                "text": "<p>Little pieces of home</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -746,7 +1012,7 @@
             "overlay_color": "#3b2517b8",
             "overlay_style": "gradient",
             "gradient_direction": "to top",
-            "link": "shopify://collections/waterproof-stickers",
+            "link": "/collections/types?q=Sticker",
             "open_in_new_tab": false,
             "padding-block-start": 24,
             "padding-block-end": 22,
@@ -810,7 +1076,7 @@
             "subtitle"
           ]
         },
-        "tile_accessories": {
+        "tile_onesies": {
           "type": "_card",
           "settings": {
             "content_direction": "column",
@@ -824,14 +1090,14 @@
             "background_media": "image",
             "background_color": "",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/Gemini_Generated_Image_xmwi8oxmwi8oxmwi.jpg",
+            "background_image": "shopify://shop_images/7824374283168155991_2048.jpg",
             "background_image_position": "cover",
             "aspect_ratio": "landscape",
             "toggle_overlay": true,
             "overlay_color": "#3b2517b8",
             "overlay_style": "gradient",
             "gradient_direction": "to top",
-            "link": "shopify://collections/enamel-pins",
+            "link": "/collections/types?q=Onesie",
             "open_in_new_tab": false,
             "padding-block-start": 24,
             "padding-block-end": 22,
@@ -842,7 +1108,7 @@
             "title": {
               "type": "text",
               "settings": {
-                "text": "<h3>Accessories</h3>",
+                "text": "<h3>Onesies</h3>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -867,7 +1133,7 @@
             "subtitle": {
               "type": "text",
               "settings": {
-                "text": "<p>Pins, caps and glassware</p>",
+                "text": "<p>For the littlest ones</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -894,114 +1160,20 @@
             "title",
             "subtitle"
           ]
-        },
-        "card-grid-header": {
-          "type": "group",
-          "static": true,
-          "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 10,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "background_color": "",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 12,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "heading": {
-              "type": "text",
-              "settings": {
-                "text": "<h2>Five things we make</h2>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "center",
-                "type_preset": "h2",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "#5a3a24",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "intro": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Apparel, accessories and small gifts, all illustrated in-house.</p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "center",
-                "type_preset": "paragraph",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "#6b5b4f",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "heading",
-            "intro"
-          ]
         }
       },
       "block_order": [
-        "tile_sweaters",
-        "tile_shirts",
         "tile_totes",
+        "tile_shirts",
+        "tile_sweaters",
+        "tile_hats",
+        "tile_pins",
         "tile_stickers",
-        "tile_accessories"
+        "tile_onesies"
       ],
       "settings": {
-        "columns": 3,
-        "first_row_columns": "2",
+        "columns": 4,
+        "first_row_columns": "3",
         "mobile_columns": "1",
         "item_ratio": "landscape",
         "gap": 20,

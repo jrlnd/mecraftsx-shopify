@@ -29,13 +29,19 @@
           "type": "text",
           "settings": {
             "text": "{{ closest.collection.description }}",
-            "type_preset": "rte",
+            "type_preset": "custom",
             "width": "100%",
-            "max_width": "narrow",
+            "max_width": "normal",
             "alignment": "center",
-            "text_color": "#F7F2ECE6",
+            "text_color": "#FDFAF6",
             "padding-inline-start": 20,
-            "padding-inline-end": 20
+            "padding-inline-end": 20,
+            "font": "var(--font-accent--family)",
+            "font_size": "2rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty"
           }
         },
         "all_tagline": {
