@@ -24,6 +24,11 @@
     if dividers_enabled == true
       assign menu_class = menu_class | append: ' menu--dividers'
     endif
+    assign columns = block_settings.columns | default: 1 | plus: 0
+    if columns > 1
+      assign menu_class = menu_class | append: ' menu--columns'
+      assign column_rows = menu.links.size | times: 1.0 | divided_by: columns | ceil | at_least: 1
+    endif
     assign should_disable_on_mobile = false
     assign should_open_by_default_on_mobile = false
     if show_as_accordion == false
@@ -41,6 +46,10 @@
       data-testid="menu-details"
       style="
         --spacing--size: {{ block_settings.menu_spacing }}px;
+        {% if columns > 1 %}
+          --menu-columns: {{ columns }};
+          --menu-rows: {{ column_rows }};
+        {% endif %}
         {% render 'spacing-style', settings: block_settings %}
       "
       {% if show_as_accordion == false %}
@@ -107,6 +116,26 @@
     margin-block-start: var(--spacing--size);
   }
 
+  /* Links read down each column, then across. */
+  .menu--columns .details-content > ul {
+    display: grid;
+    grid-template-rows: repeat(var(--menu-rows), auto);
+    grid-template-columns: repeat(var(--menu-columns), minmax(0, 1fr));
+    grid-auto-flow: column;
+    gap: var(--spacing--size) var(--gap-xl);
+  }
+
+  .menu--columns .menu__item + .menu__item {
+    margin-block-start: 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    /* Gives multi-column menus proportionally more room beside single-column ones. */
+    .layout-panel-flex--row > .menu--columns {
+      width: 200%;
+    }
+  }
+
   .menu .menu__heading--empty {
     display: none;
   }
@@ -170,6 +199,22 @@
     {
       "type": "header",
       "content": "t:content.appearance"
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "t:settings.columns",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "1"
     },
     {
       "type": "range",
