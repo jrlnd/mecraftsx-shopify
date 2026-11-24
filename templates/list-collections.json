@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "collections_hero": {
       "type": "hero",
@@ -15,12 +16,12 @@
           "type": "text",
           "settings": {
             "text": "<h1>Collections</h1>",
-            "type_preset": "h1",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
-            "text_color": "#FDFAF6",
+            "type_preset": "h1",
             "wrap": "balance",
+            "text_color": "#FDFAF6",
             "padding-inline-start": 20,
             "padding-inline-end": 20
           }
@@ -29,19 +30,19 @@
           "type": "text",
           "settings": {
             "text": "<p>Thoughtfully curated, specially made.</p>",
-            "type_preset": "custom",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
-            "text_color": "#FDFAF6",
-            "padding-inline-start": 20,
-            "padding-inline-end": 20,
+            "type_preset": "custom",
             "font": "var(--font-accent--family)",
             "font_size": "2rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
-            "wrap": "pretty"
+            "wrap": "pretty",
+            "text_color": "#FDFAF6",
+            "padding-inline-start": 20,
+            "padding-inline-end": 20
           }
         }
       },
@@ -101,12 +102,12 @@
                 "wrap": "pretty",
                 "background": false,
                 "background_color": "#00000026",
+                "text_color": "#ffffff",
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0,
-                "text_color": "#ffffff"
+                "padding-inline-end": 0
               },
               "blocks": {}
             },
@@ -133,9 +134,13 @@
           ]
         }
       },
-      "block_order": [],
       "name": "t:names.collection_list",
       "settings": {
+        "collection_list": [
+          "bay-made-collection",
+          "culture-collection",
+          "little-gifts-big-love"
+        ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "columns": 1,
@@ -150,12 +155,7 @@
         "gap": 12,
         "background_color": "{{ settings.color_palette.background }}",
         "padding-block-start": 48,
-        "padding-block-end": 48,
-        "collection_list": [
-          "bay-made-collection",
-          "culture-collection",
-          "little-gifts-big-love"
-        ]
+        "padding-block-end": 48
       }
     }
   },
