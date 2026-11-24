@@ -5,7 +5,7 @@
   @param {string} id - Unique ID to assign to the `<ul>` element.
   @param {number} [grid_columns_count] - Number of grid columns for the mega menu.
   @param {number} [grid_columns_count_tablet] - Number of grid columns for the mega menu on tablets.
-  @param {number} [grid_columns_count_collection_images] - Number of grid columns when `menu_content_type` is 'collection_images'.
+  @param {number} [grid_columns_count_collection_images] - Maximum cards per row when `menu_content_type` is 'collection_images'.
   @param {string} [menu_content_type] - Type of content: 'featured_products', 'featured_collections', 'collection_images', or 'text'.
   @param {number} [content_aspect_ratio] - Aspect ratio for content images.
   @param {number} [image_border_radius] - Border radius for content images.
@@ -47,6 +47,16 @@
     if collection_links.size == 0 and catalog_links.size == 0 and collection_list_links.size == 0
       assign menu_content_type = 'text'
     endif
+
+    # One column per card, up to the maximum
+    assign max_collection_image_columns = grid_columns_count_collection_images | default: 8
+    assign collection_image_columns = parent_link.links.size | at_least: 1 | at_most: max_collection_image_columns
+
+    # Compact cards are taller than wide, so request a wider image to keep the crop sharp
+    assign image_columns_per_item = 1
+    if collection_image_columns > 4
+      assign image_columns_per_item = 2
+    endif
   endif
 
   if menu_content_type == 'featured_collections'
@@ -73,7 +83,7 @@
 %}
 <ul
   data-menu-list-id="{{ id }}"
-  class="mega-menu__list list-unstyled"
+  class="mega-menu__list list-unstyled{% if menu_content_type == 'collection_images' and collection_image_columns > 4 %} mega-menu__list--compact-cards{% endif %}"
   style="--menu-image-border-radius: {{ image_border_radius }}px;"
 >
   {% for link in parent_link.links %}
@@ -95,8 +105,7 @@
 
         if menu_content_type == 'collection_images'
           assign should_break_columns = false
-          # Collection image mode uses an 8-column grid with cards spanning 2, so every menu shows 4 cards per row
-          assign span_class = 'mega-menu__column--wide-collection-image'
+          # Collection image mode gives each card one column, so the cards fill a single row
         else
           # For all other modes, column span is determined by the number of links in the parent link
           assign span_class = 'mega-menu__column--span-' | append: column_span
@@ -116,8 +125,8 @@
               settings: settings,
               grid_columns: grid_columns_count,
               grid_columns_tablet: grid_columns_count_tablet,
-              grid_columns_collection_images: grid_columns_count_collection_images,
-              columns_per_item: 2
+              grid_columns_collection_images: collection_image_columns,
+              columns_per_item: image_columns_per_item
             -%}
           {%- endcapture -%}
 
@@ -266,7 +275,7 @@
 {% style %}
   [data-menu-grid-id="{{ id }}"] {
     {% if menu_content_type == 'collection_images' %}
-      --menu-columns-desktop: {{ grid_columns_count_collection_images }};
+      --menu-columns-desktop: {{ collection_image_columns }};
       --menu-columns-tablet: {{ grid_columns_count_tablet }};
     {% else %}
       --menu-columns-desktop: {{ grid_columns_count }};
@@ -276,7 +285,7 @@
 
   [data-menu-list-id="{{ id }}"] {
     {% if menu_content_type == 'collection_images' %}
-      --menu-columns-desktop: {{ grid_columns_count_collection_images }};
+      --menu-columns-desktop: {{ collection_image_columns }};
       --menu-columns-tablet: {{ max_menu_columns_tablet }};
     {% else %}
       --menu-columns-desktop: {{ max_menu_columns }};
