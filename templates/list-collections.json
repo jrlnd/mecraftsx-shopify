@@ -20,11 +20,22 @@
             "max_width": "normal",
             "alignment": "center",
             "type_preset": "h1",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
             "wrap": "balance",
-            "text_color": "#FDFAF6",
+            "text_color": "#fdfaf6",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
             "padding-inline-start": 20,
             "padding-inline-end": 20
-          }
+          },
+          "blocks": {}
         },
         "description": {
           "type": "text",
@@ -40,10 +51,16 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "text_color": "#FDFAF6",
+            "text_color": "#fdfaf6",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
             "padding-inline-start": 20,
             "padding-inline-end": 20
-          }
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -52,19 +69,32 @@
       ],
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/mecrafts-banner-friends-table.webp",
+        "image_1": "shopify://shop_images/ElevenLabs_image_gpt-image-2-6-sunburst_Edit_the_banner_2026-11-25T06_54_30.png",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
+        "link": "",
+        "open_in_new_tab": false,
         "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "flex-end",
         "gap": 12,
         "section_width": "full-width",
         "section_height": "custom",
         "section_height_custom": 60,
-        "background_color": "#5A3A24",
+        "background_color": "#5a3a24",
         "toggle_overlay": true,
-        "overlay_color": "#3B2517B8",
+        "overlay_color": "#3b2517b8",
         "overlay_style": "gradient",
         "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
         "padding-block-start": 48,
         "padding-block-end": 48
       }
@@ -81,9 +111,11 @@
             "horizontal_alignment": "center",
             "vertical_alignment": "center",
             "collection_card_gap": 8,
+            "background_color": "",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
+            "border_color": "",
             "border_radius": 16
           },
           "blocks": {
@@ -96,6 +128,7 @@
                 "alignment": "center",
                 "type_preset": "h1",
                 "font": "var(--font-body--family)",
+                "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
@@ -108,23 +141,6 @@
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "collection-card-image": {
-              "type": "_collection-card-image",
-              "name": "t:names.collection_card_image",
-              "static": true,
-              "settings": {
-                "image_ratio": "wide",
-                "toggle_overlay": true,
-                "overlay_color": "#0000008c",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 16
               },
               "blocks": {}
             },
@@ -150,6 +166,24 @@
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "collection-card-image": {
+              "type": "_collection-card-image",
+              "name": "t:names.collection_card_image",
+              "static": true,
+              "settings": {
+                "image_ratio": "wide",
+                "toggle_overlay": true,
+                "overlay_color": "#0000008c",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 16
               },
               "blocks": {}
             }
