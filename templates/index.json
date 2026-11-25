@@ -1564,7 +1564,7 @@
               "type": "button",
               "settings": {
                 "label": "Shop gifts under $25",
-                "link": "/collections/gifts-under-25",
+                "link": "shopify://collections/little-gifts-big-love",
                 "open_in_new_tab": false,
                 "style_class": "button-custom",
                 "custom_button_background": "#c64e39",
