@@ -90,6 +90,23 @@
     },
     {
       "type": "select",
+      "id": "size",
+      "label": "t:settings.size",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:options.default"
+        },
+        {
+          "value": "small",
+          "label": "t:options.small"
+        }
+      ],
+      "default": "default",
+      "visible_if": "{{ block.settings.style_class != 'button-unstyled' }}"
+    },
+    {
+      "type": "select",
       "id": "width",
       "label": "t:settings.width_desktop",
       "options": [
