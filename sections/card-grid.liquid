@@ -117,28 +117,35 @@
         (100% - (var(--card-grid-current-columns) - 1) * var(--card-grid-gap)) / var(--card-grid-current-columns)
       );
     min-width: 0;
-    /* Lets text cards grow past the ratio instead of clipping longer copy. */
-    min-height: min-content;
   }
 
-  .card-grid--ratio-square > * {
-    aspect-ratio: 1;
+  .card-grid--ratio-square {
+    --card-grid-ratio: 1;
   }
 
-  .card-grid--ratio-landscape > * {
-    aspect-ratio: 4 / 3;
+  .card-grid--ratio-landscape {
+    --card-grid-ratio: 4 / 3;
   }
 
-  .card-grid--ratio-wide > * {
-    aspect-ratio: 3 / 2;
+  .card-grid--ratio-wide {
+    --card-grid-ratio: 3 / 2;
   }
 
-  .card-grid--ratio-portrait > * {
-    aspect-ratio: 4 / 5;
+  .card-grid--ratio-portrait {
+    --card-grid-ratio: 4 / 5;
   }
 
   .card-grid .card {
     height: auto;
+  }
+
+  /* The ratio is a minimum, sized from the card's own container width, so longer copy
+     grows the card instead of being clipped. */
+  .card-grid:not(.card-grid--ratio-auto) .card > .card__content {
+    flex: 1 0 auto;
+    height: auto;
+    min-height: calc(100cqw / (var(--card-grid-ratio)));
+    aspect-ratio: auto;
   }
 
   @media screen and (min-width: 750px) {

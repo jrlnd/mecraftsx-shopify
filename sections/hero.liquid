@@ -593,6 +593,11 @@
     z-index: var(--layer-flat);
   }
 
+  /* Keeps long button labels off the screen edges in full-width heroes. */
+  .hero__content-wrapper:not(.page-width) > .size-style {
+    max-width: calc(100% - 2 * var(--padding-lg));
+  }
+
   .hero__content-wrapper .group-block-content {
     position: relative;
   }
