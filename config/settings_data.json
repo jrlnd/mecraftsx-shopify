@@ -12,7 +12,7 @@
     "logo_height": 30,
     "logo_height_mobile": 26,
     "favicon": "shopify://shop_images/android-chrome-512x512.png",
-    "password_page_title": "ME ❤️ Reopening November 24!",
+    "password_page_title": "ME ❤️ Reopening November 25!",
     "focus_outline_color": "#E97D6A",
     "page_text_color": "{{ settings.color_palette.foreground }}",
     "heading_text_color": "{{ settings.color_palette.color1 }}",
