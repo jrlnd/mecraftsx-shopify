@@ -94,7 +94,7 @@
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
-                "type_preset": "h2",
+                "type_preset": "h1",
                 "font": "var(--font-body--family)",
                 "line_height": "normal",
                 "letter_spacing": "normal",
@@ -118,7 +118,7 @@
               "settings": {
                 "image_ratio": "wide",
                 "toggle_overlay": true,
-                "overlay_color": "#00000059",
+                "overlay_color": "#0000008c",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
                 "border": "none",
@@ -127,10 +127,36 @@
                 "border_radius": 16
               },
               "blocks": {}
+            },
+            "collection_description": {
+              "type": "text",
+              "settings": {
+                "text": "{{ closest.collection.description }}",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "custom",
+                "font": "var(--font-accent--family)",
+                "font_size": "2rem",
+                "line_height": "tight",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "balance",
+                "text_color": "#ffffff",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
-            "collection_title_Rkbewm"
+            "collection_title_Rkbewm",
+            "collection_description"
           ]
         }
       },

@@ -146,6 +146,13 @@
     padding: var(--padding-lg);
   }
 
+  /* Text sits over a fixed-ratio image, so cap custom sizes where cards are narrow. */
+  @media screen and (max-width: 749px) {
+    .collection-card--image-bg :is(.custom-font-size, .custom-font-size > *) {
+      font-size: min(var(--font-size), 1.5rem);
+    }
+  }
+
   .collection-card--image-height-fixed {
     height: 100%;
   }
