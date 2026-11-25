@@ -907,6 +907,7 @@
     "input_field": "Giriş alanı"
   },
   "content": {
+    "success_message": "Success message",
     "background_video": "Arka plan videosu",
     "describe_the_video_for": "Ekran okuyucu kullanan müşteriler için videoyu açıklayın. [Daha fazla bilgi edinin](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)",
     "width_is_automatically_optimized": "Genişlik, mobil cihazlar için otomatik olarak optimize edilir.",

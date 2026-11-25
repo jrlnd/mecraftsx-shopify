@@ -907,6 +907,7 @@
     "direction_top_start": "Uppe till vänster"
   },
   "content": {
+    "success_message": "Success message",
     "advanced": "Avancerat",
     "background_image": "Bakgrundsbild",
     "background_video": "Bakgrundsvideo",

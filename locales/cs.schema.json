@@ -907,6 +907,7 @@
     "direction_top_start": "Vlevo nahoře"
   },
   "content": {
+    "success_message": "Success message",
     "advanced": "Pokročilé",
     "background_image": "Obrázek na pozadí",
     "background_video": "Video na pozadí",

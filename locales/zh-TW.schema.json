@@ -907,6 +907,7 @@
     "direction_top_start": "左上"
   },
   "content": {
+    "success_message": "Success message",
     "advanced": "進階",
     "background_image": "背景圖片",
     "background_video": "背景影片",

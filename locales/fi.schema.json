@@ -907,6 +907,7 @@
     "direction_top_start": "Ylhäällä vasemmalla"
   },
   "content": {
+    "success_message": "Success message",
     "advanced": "Lisäasetukset",
     "background_image": "Taustakuva",
     "background_video": "Taustavideo",

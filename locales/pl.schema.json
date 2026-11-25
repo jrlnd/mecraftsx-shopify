@@ -907,6 +907,7 @@
     "direction_top_start": "Góra po lewej"
   },
   "content": {
+    "success_message": "Success message",
     "background_video": "Wideo w tle",
     "describe_the_video_for": "Opisz film dla klientów korzystających z czytników ekranu. [Dowiedz się więcej](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)",
     "width_is_automatically_optimized": "Szerokość jest automatycznie optymalizowana pod kątem urządzeń mobilnych.",
