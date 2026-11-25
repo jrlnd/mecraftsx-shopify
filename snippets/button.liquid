@@ -22,6 +22,7 @@
     size-style
     {{ block_settings.style_class }}
     {{ block_settings.style_class }}--{{ block.id }}
+    {% if block_settings.size == 'small' and block_settings.style_class != 'button-unstyled' %}button-size-small{% endif %}
   "
   style="{% render 'size-style', settings: block_settings %}"
   {%- if block_settings.open_in_new_tab -%}
@@ -32,3 +33,13 @@
 >
   {{ block_settings.label }}
 </a>
+
+{% stylesheet %}
+  .size-style.button-size-small {
+    --button-padding-block: 8px;
+    --button-padding-inline: 16px;
+
+    min-height: var(--button-size-md);
+    font-size: var(--font-size--sm);
+  }
+{% endstylesheet %}
