@@ -907,6 +907,7 @@
     "input_field": "入力フィールド"
   },
   "content": {
+    "success_message": "Success message",
     "advanced": "高度な設定",
     "background_image": "背景画像",
     "background_video": "背景動画",

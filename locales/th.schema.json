@@ -907,6 +907,7 @@
     "direction_top_start": "บนซ้าย"
   },
   "content": {
+    "success_message": "Success message",
     "advanced": "ขั้นสูง",
     "background_image": "รูปภาพพื้นหลัง",
     "background_video": "วิดีโอพื้นหลัง",

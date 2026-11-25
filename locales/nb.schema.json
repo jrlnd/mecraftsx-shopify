@@ -907,6 +907,7 @@
     "direction_top_start": "Oppe til venstre"
   },
   "content": {
+    "success_message": "Success message",
     "advanced": "Avansert",
     "background_image": "Bakgrunnsbilde",
     "background_video": "Bakgrunnsvideo",

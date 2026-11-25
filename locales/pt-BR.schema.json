@@ -907,6 +907,7 @@
     "direction_top_start": "Superior à esquerda"
   },
   "content": {
+    "success_message": "Success message",
     "advanced": "Avançado",
     "background_image": "Imagem de fundo",
     "background_video": "Vídeo de fundo",

@@ -8,7 +8,22 @@
   endif
 %}
 {% render 'button-custom-styles', block_settings: block_settings, block_id: block.id %}
-<div
+{% render 'dialog-styles' %}
+
+<script
+  src="{{ 'email-signup.js' | asset_url }}"
+  type="module"
+  fetchpriority="low"
+></script>
+
+{% liquid
+  assign success_heading = block_settings.success_heading
+  if success_heading == blank
+    assign success_heading = 'blocks.email_signup.success' | t
+  endif
+%}
+
+<email-signup-component
   class="email-signup-block size-style spacing-style"
   style="
     {% render 'size-style', settings: block_settings %}
@@ -100,6 +115,7 @@
       <div
         id="Email-signup__message-error-{{ block.id }}"
         class="email-signup__message"
+        data-server-message="error"
         tabindex="-1"
       >
         <svg
@@ -120,6 +136,7 @@
       <div
         id="Email-signup__message-success-{{ block.id }}"
         class="email-signup__message"
+        data-server-message="success"
         tabindex="-1"
       >
         <span class="svg-wrapper icon-success">
@@ -129,10 +146,79 @@
       </div>
     {%- endif -%}
   {% endform %}
-</div>
+
+  <div role="alert">
+    <div
+      id="EmailSignupError-{{ block.id }}"
+      class="email-signup__message"
+      ref="error"
+      hidden
+    >
+      <svg
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        focusable="false"
+        aria-hidden="true"
+        class="icon-error"
+      >
+        {%- render 'icon', icon: 'error' -%}
+      </svg>
+      <span ref="errorText"></span>
+    </div>
+  </div>
+
+  <div
+    class="email-signup__inline-success"
+    ref="inlineSuccess"
+    role="status"
+    tabindex="-1"
+    hidden
+  >
+    <p class="email-signup__success-heading h4">{{ success_heading | escape }}</p>
+    {%- if block_settings.success_text != blank -%}
+      <p class="email-signup__success-text">{{ block_settings.success_text | escape }}</p>
+    {%- endif -%}
+  </div>
+
+  <dialog-component>
+    <dialog
+      class="email-signup__dialog dialog-modal"
+      ref="dialog"
+      scroll-lock
+      aria-labelledby="EmailSignupSuccess-{{ block.id }}"
+      {% if block_settings.success_text != blank %}
+        aria-describedby="EmailSignupSuccessText-{{ block.id }}"
+      {% endif %}
+    >
+      <button
+        type="button"
+        class="button button-unstyled close-button email-signup__dialog-close"
+        on:click="/closeDialog"
+        aria-label="{{ 'accessibility.close_dialog' | t }}"
+      >
+        {{- 'icon-close.svg' | inline_asset_content -}}
+      </button>
+      <h2
+        id="EmailSignupSuccess-{{ block.id }}"
+        class="email-signup__success-heading h3"
+      >
+        {{ success_heading | escape }}
+      </h2>
+      {%- if block_settings.success_text != blank -%}
+        <p
+          id="EmailSignupSuccessText-{{ block.id }}"
+          class="email-signup__success-text"
+        >
+          {{ block_settings.success_text | escape }}
+        </p>
+      {%- endif -%}
+    </dialog>
+  </dialog-component>
+</email-signup-component>
 
 {% stylesheet %}
   .email-signup-block {
+    display: block;
     --arrow-button-size: 58px;
     --arrow-button-size-integrated: 42px;
     --arrow-button-size-small: 20px;
@@ -403,6 +489,76 @@
   .email-signup__message-text {
     margin: 0;
   }
+
+  .email-signup__form[hidden],
+  .email-signup__message[hidden] {
+    display: none;
+  }
+
+  .email-signup__form[aria-busy='true'] .email-signup__button {
+    opacity: var(--opacity-70);
+    cursor: progress;
+  }
+
+  .email-signup__dialog.dialog-modal {
+    width: calc(100vw - 2 * var(--padding-lg));
+    max-width: 420px;
+    height: fit-content;
+    max-height: calc(100dvh - 2 * var(--padding-lg));
+    margin: auto;
+    padding: var(--padding-5xl) var(--padding-3xl);
+    overflow: auto;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+
+  .email-signup__dialog.dialog-modal[open] {
+    border-radius: var(--style-border-radius-popover);
+  }
+
+  /* The shared entrance ends on margin-top: 0, which would undo the vertical centering. */
+  .email-signup__dialog[open]:not(.dialog-closing) {
+    animation: email-signup-dialog-enter var(--animation-speed) var(--animation-easing);
+  }
+
+  @keyframes email-signup-dialog-enter {
+    from {
+      transform: translateY(var(--padding-sm));
+      opacity: 0;
+    }
+  }
+
+  .email-signup__dialog .email-signup__dialog-close {
+    position: absolute;
+    inset-block-start: var(--padding-xs);
+    inset-inline-end: var(--padding-xs);
+    display: grid;
+    place-items: center;
+    width: var(--minimum-touch-target);
+    height: var(--minimum-touch-target);
+    padding: 0;
+    color: inherit;
+  }
+
+  .email-signup__success-heading,
+  .email-signup__success-text {
+    margin: 0;
+  }
+
+  .email-signup__success-text {
+    margin-block-start: var(--margin-xs);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    /* Keep a near-zero duration so closing still receives its animation end. */
+    .email-signup__dialog.dialog-modal[open],
+    .email-signup__dialog.dialog-modal[open]:not(.dialog-closing),
+    .email-signup__dialog.dialog-modal::backdrop {
+      animation-duration: 1ms;
+    }
+  }
 {% endstylesheet %}
 
 {% schema %}
@@ -495,6 +651,20 @@
       ],
       "default": "h3",
       "info": "t:info.edit_presets_in_theme_settings"
+    },
+    {
+      "type": "header",
+      "content": "t:content.success_message"
+    },
+    {
+      "type": "text",
+      "id": "success_heading",
+      "label": "t:settings.heading"
+    },
+    {
+      "type": "text",
+      "id": "success_text",
+      "label": "t:settings.text"
     },
     {
       "type": "header",

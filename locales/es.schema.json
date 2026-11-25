@@ -907,6 +907,7 @@
     "input_field": "Campo de entrada"
   },
   "content": {
+    "success_message": "Success message",
     "advanced": "Avanzado",
     "background_image": "Imagen de fondo",
     "background_video": "Video de fondo",

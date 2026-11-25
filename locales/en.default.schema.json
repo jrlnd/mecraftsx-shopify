@@ -33,6 +33,7 @@
     "text": "Text"
   },
   "content": {
+    "success_message": "Success message",
     "visible_if_collection_has_more_products": "Visible if collection has more products than shown",
     "advanced": "Advanced",
     "appearance": "Appearance",
